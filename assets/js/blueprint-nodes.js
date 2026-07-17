@@ -41,6 +41,36 @@
     return node;
   }
 
+  function makeShowcasePin(pin, output) {
+    var element = document.createElement("span");
+    element.className = "bp-port bp-port--" + pin.kind + (output ? " bp-port--out" : "");
+    var dot = document.createElement("i");
+    dot.className = "bp-port__dot";
+    dot.setAttribute("aria-hidden", "true");
+    element.appendChild(dot);
+    element.appendChild(document.createTextNode(pin.name));
+    return element;
+  }
+
+  function enhanceShowcase() {
+    document.querySelectorAll(".bp-graph .bp-node").forEach(function (node) {
+      var header = node.querySelector(".bp-node__header");
+      var ports = node.querySelector(".bp-node__ports");
+      var definition = header && nodes[header.textContent.trim()];
+      if (!ports || !definition) return;
+
+      ports.replaceChildren();
+      var rows = Math.max(definition.inputs.length, definition.outputs.length, 1);
+      for (var index = 0; index < rows; index += 1) {
+        var row = document.createElement("div");
+        row.className = "bp-node__port-row";
+        if (definition.inputs[index]) row.appendChild(makeShowcasePin(definition.inputs[index], false));
+        if (definition.outputs[index]) row.appendChild(makeShowcasePin(definition.outputs[index], true));
+        ports.appendChild(row);
+      }
+    });
+  }
+
   function enhanceTables() {
     if (!/blueprint-nodes/i.test(window.location.pathname)) return;
     document.querySelectorAll(".doc-article table tbody tr").forEach(function (row) {
@@ -57,6 +87,7 @@
     });
   }
 
+  enhanceShowcase();
   enhanceTables();
 }());
 
