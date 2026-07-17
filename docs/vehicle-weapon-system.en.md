@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Vehicle Weapon System — English"
-description: "Configuration and integration quick start"
+description: "Vehicle Weapon System setup and integration guide"
 lang: en
 page_kind: reference
 ---
@@ -12,9 +12,12 @@ page_kind: reference
   <a class="is-active" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">English</a>
 </div>
 
-# Vehicle Weapon System Quick Start
+# Vehicle Weapon System setup and integration
 
-`TurretSystemRuntime` is an independent Runtime module inside the plugin. It does not depend on the track solver. A vehicle normally needs one visible `Vehicle Weapon System` actor component; its per-axis controllers and per-weapon muzzles are created internally from configuration.
+`TurretSystemRuntime` is a separate plugin module and does not depend on
+the track solver. A vehicle normally uses one visible
+`Vehicle Weapon System` actor component. The component creates the axis
+controllers and per-weapon muzzle points from its configuration.
 
 ## Minimal vehicle setup
 
@@ -25,9 +28,22 @@ page_kind: reference
 5. Add one `Embedded Weapon Installation` for each Weapon ID.
 6. Click `Rebuild Embedded Weapon Runtime` and then `Validate Vehicle Weapon System Configuration` in the component Details panel.
 
-The readiness result should report equal configured/ready counts and no errors. A warning is informational; an error blocks a complete setup.
+The configured and ready counts should match, with no errors in the readiness result. Warnings do not block the system, but errors must be resolved.
 
-The normal Details view intentionally shows only configuration/readiness, performance, debug, and replication controls/status. Configured array rows use their stable IDs as titles (`MainTurretAxes`, `MainGun`, `CoaxMG`) instead of anonymous element numbers. Internal maps, registries, cached frames, pending commands, revisions, routing results, and presentation caches are hidden from Details entirely; they remain Blueprint-readable and available through the compact query APIs when diagnostics or custom integration needs them. Rare compatibility and presentation options live under `Configuration | Advanced`. Settings that belong to a disabled mode are hidden entirely: cone angles, optional yaw limits, restricted pitch-sector values, rate limits, continuous-trace options, ballistic parameters, debug duration/thickness, and native-replication tuning appear only when their owning feature is enabled. Low-level migration, registry, detailed-frame, and direct-routing Blueprint nodes are grouped under `Vehicle | Weapon System | Advanced`; the normal palette keeps the compact update/control/query nodes. These changes affect editor presentation only; existing serialized vehicle/profile values and saved nodes remain compatible.
+The standard Details view shows the sections used for vehicle setup:
+configuration and readiness, performance, debugging, and replication.
+Configured array rows are labelled with stable IDs such as
+`MainTurretAxes`, `MainGun`, and `CoaxMG` instead of
+anonymous element numbers.
+
+Internal registries, cached frames, and pending commands stay out of the
+Details panel. They remain available to Blueprint through compact query APIs
+when diagnostics or a custom integration needs them. Less common compatibility
+options live under `Configuration | Advanced`. Settings for a disabled
+feature appear only after that feature is enabled. Low-level migration and
+direct-routing nodes are grouped under
+`Vehicle | Weapon System | Advanced`. Existing serialized values and
+saved Blueprint nodes remain compatible.
 
 The normal Blueprint graph uses only the compact frame calls:
 
