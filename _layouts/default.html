@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-theme="light">
+  <head>
+    <meta charset="UTF-8">
+    <script>
+      (function () {
+        var saved;
+        try { saved = localStorage.getItem("tt-theme"); } catch (error) {}
+        var preferred = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = saved || preferred;
+      }());
+    </script>
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10283d">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">{% if page.lang == 'ru' %}Перейти к содержанию{% else %}Skip to content{% endif %}</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Tread & Traverse">
+          <span class="site-brand__mark">T&T</span>
+          <span class="site-brand__copy">
+            <strong>Tread & Traverse</strong>
+            <small>Unreal Engine Vehicle Systems</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="{% if page.lang == 'ru' %}Основная навигация{% else %}Main navigation{% endif %}">
+          <a class="site-nav__link {% if page.lang == 'ru' %}is-active{% endif %}" href="{{ '/ru/' | relative_url }}">Русский</a>
+          <a class="site-nav__link {% if page.lang == 'en' %}is-active{% endif %}" href="{{ '/en/' | relative_url }}">English</a>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="{% if page.lang == 'ru' %}Переключить тему{% else %}Toggle theme{% endif %}">
+            <span class="theme-toggle__icon" data-theme-icon aria-hidden="true">◐</span>
+            <span data-theme-label>{% if page.lang == 'ru' %}Тема{% else %}Theme{% endif %}</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="main-content page-kind-{{ page.page_kind | default: 'reference' }}" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span>© 2026 JustAndante. All rights reserved.</span>
+        <a href="{{ site.github.repository_url }}">GitHub</a>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var toggle = document.querySelector("[data-theme-toggle]");
+        var icon = document.querySelector("[data-theme-icon]");
+        var label = document.querySelector("[data-theme-label]");
+        var isRussian = root.lang.toLowerCase().indexOf("ru") === 0;
+
+        function renderTheme() {
+          var dark = root.dataset.theme === "dark";
+          if (icon) icon.textContent = dark ? "☾" : "☀";
+          if (label) label.textContent = dark ? (isRussian ? "Тёмная" : "Dark") : (isRussian ? "Светлая" : "Light");
+          if (toggle) toggle.setAttribute("aria-pressed", dark ? "true" : "false");
+        }
+
+        if (toggle) {
+          toggle.addEventListener("click", function () {
+            root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+            try { localStorage.setItem("tt-theme", root.dataset.theme); } catch (error) {}
+            renderTheme();
+          });
+        }
+        renderTheme();
+
+        var main = document.querySelector(".page-kind-reference");
+        if (!main) return;
+        var headings = Array.prototype.slice.call(main.querySelectorAll("h2"));
+        if (headings.length < 4) return;
+
+        var outline = document.createElement("nav");
+        outline.className = "doc-outline";
+        outline.setAttribute("aria-label", isRussian ? "Содержание страницы" : "On this page");
+
+        var title = document.createElement("strong");
+        title.className = "doc-outline__title";
+        title.textContent = isRussian ? "Содержание" : "On this page";
+        outline.appendChild(title);
+
+        var grid = document.createElement("div");
+        grid.className = "doc-outline__grid";
+        headings.forEach(function (heading, index) {
+          if (!heading.id) heading.id = "section-" + (index + 1);
+          var link = document.createElement("a");
+          link.href = "#" + heading.id;
+          link.textContent = heading.textContent;
+          grid.appendChild(link);
+        });
+        outline.appendChild(grid);
+        headings[0].parentNode.insertBefore(outline, headings[0]);
+      }());
+    </script>
+  </body>
+</html>
