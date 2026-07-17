@@ -43,7 +43,24 @@
     </header>
 
     <main id="content" class="main-content page-kind-{{ page.page_kind | default: 'reference' }}" role="main">
+      {% if page.page_kind == 'reference' %}
+      <div class="reference-shell">
+        <aside class="doc-sidebar" aria-label="{% if page.lang == 'ru' %}Навигация по странице{% else %}Page navigation{% endif %}">
+          <details class="doc-sidebar__panel" data-doc-sidebar open>
+            <summary>
+              <span>{% if page.lang == 'ru' %}Содержание{% else %}On this page{% endif %}</span>
+              <span class="doc-sidebar__chevron" aria-hidden="true"></span>
+            </summary>
+            <nav class="doc-sidebar__nav" data-doc-outline></nav>
+          </details>
+        </aside>
+        <article class="doc-article" data-doc-article>
+          {{ content }}
+        </article>
+      </div>
+      {% else %}
       {{ content }}
+      {% endif %}
 
       <footer class="site-footer">
         <span>© 2026 JustAndante. All rights reserved.</span>
@@ -75,31 +92,108 @@
         }
         renderTheme();
 
-        var main = document.querySelector(".page-kind-reference");
-        if (!main) return;
-        var headings = Array.prototype.slice.call(main.querySelectorAll("h2"));
-        if (headings.length < 4) return;
+        var article = document.querySelector("[data-doc-article]");
+        var outline = document.querySelector("[data-doc-outline]");
+        var sidebar = document.querySelector("[data-doc-sidebar]");
+        if (!article || !outline || !sidebar) return;
 
-        var outline = document.createElement("nav");
-        outline.className = "doc-outline";
-        outline.setAttribute("aria-label", isRussian ? "Содержание страницы" : "On this page");
+        var headings = Array.prototype.slice.call(article.querySelectorAll("h2, h3"));
+        var sectionHeadings = headings.filter(function (heading) { return heading.tagName === "H2"; });
+        if (sectionHeadings.length < 2) {
+          sidebar.parentNode.hidden = true;
+          return;
+        }
 
-        var title = document.createElement("strong");
-        title.className = "doc-outline__title";
-        title.textContent = isRussian ? "Содержание" : "On this page";
-        outline.appendChild(title);
-
-        var grid = document.createElement("div");
-        grid.className = "doc-outline__grid";
         headings.forEach(function (heading, index) {
           if (!heading.id) heading.id = "section-" + (index + 1);
-          var link = document.createElement("a");
-          link.href = "#" + heading.id;
-          link.textContent = heading.textContent;
-          grid.appendChild(link);
         });
-        outline.appendChild(grid);
-        headings[0].parentNode.insertBefore(outline, headings[0]);
+
+        var linkById = {};
+        sectionHeadings.forEach(function (heading, index) {
+          var childHeadings = [];
+          var cursor = heading.nextElementSibling;
+          while (cursor && cursor.tagName !== "H2") {
+            if (cursor.tagName === "H3") childHeadings.push(cursor);
+            cursor = cursor.nextElementSibling;
+          }
+
+          var group;
+          if (childHeadings.length) {
+            group = document.createElement("details");
+            group.className = "doc-nav-group";
+            if (index === 0) group.open = true;
+
+            var summary = document.createElement("summary");
+            var sectionLink = document.createElement("a");
+            sectionLink.href = "#" + heading.id;
+            sectionLink.textContent = heading.textContent;
+            sectionLink.dataset.headingId = heading.id;
+            summary.appendChild(sectionLink);
+            group.appendChild(summary);
+            linkById[heading.id] = sectionLink;
+
+            var children = document.createElement("div");
+            children.className = "doc-nav-group__children";
+            childHeadings.forEach(function (child) {
+              var childLink = document.createElement("a");
+              childLink.href = "#" + child.id;
+              childLink.textContent = child.textContent;
+              childLink.dataset.headingId = child.id;
+              children.appendChild(childLink);
+              linkById[child.id] = childLink;
+            });
+            group.appendChild(children);
+          } else {
+            group = document.createElement("a");
+            group.className = "doc-nav-link";
+            group.href = "#" + heading.id;
+            group.textContent = heading.textContent;
+            group.dataset.headingId = heading.id;
+            linkById[heading.id] = group;
+          }
+          outline.appendChild(group);
+        });
+
+        var compact = window.matchMedia("(max-width: 58rem)");
+        function applySidebarMode() {
+          if (compact.matches) sidebar.removeAttribute("open");
+          else sidebar.setAttribute("open", "");
+        }
+        applySidebarMode();
+        if (compact.addEventListener) compact.addEventListener("change", applySidebarMode);
+
+        outline.addEventListener("click", function (event) {
+          var link = event.target.closest("a");
+          if (link && compact.matches) sidebar.removeAttribute("open");
+        });
+
+        var ticking = false;
+        function updateActiveLink() {
+          ticking = false;
+          var active = headings[0];
+          for (var index = 0; index < headings.length; index += 1) {
+            if (headings[index].getBoundingClientRect().top <= 150) active = headings[index];
+            else break;
+          }
+
+          Object.keys(linkById).forEach(function (id) {
+            linkById[id].classList.toggle("is-active", id === active.id);
+          });
+
+          var activeLink = linkById[active.id];
+          if (activeLink) {
+            var parentGroup = activeLink.closest("details");
+            if (parentGroup) parentGroup.open = true;
+          }
+        }
+
+        window.addEventListener("scroll", function () {
+          if (!ticking) {
+            ticking = true;
+            window.requestAnimationFrame(updateActiveLink);
+          }
+        }, { passive: true });
+        updateActiveLink();
       }());
     </script>
   </body>
