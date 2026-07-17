@@ -1,0 +1,131 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+:root {
+  --tt-ink: #13263a;
+  --tt-muted: #5e6d7c;
+  --tt-line: #dce5ec;
+  --tt-blue: #183d59;
+  --tt-teal: #138a8a;
+  --tt-paper: #ffffff;
+  --tt-wash: #f4f8fa;
+}
+
+.page-header {
+  background-color: var(--tt-blue);
+  background-image:
+    radial-gradient(circle at 80% 20%, rgba(31, 177, 174, .34), transparent 32rem),
+    linear-gradient(135deg, #10283d 0%, #183d59 55%, #126f76 100%);
+}
+
+.project-name {
+  letter-spacing: -.025em;
+}
+
+.project-tagline {
+  opacity: .86;
+}
+
+.main-content {
+  max-width: 76rem;
+  color: var(--tt-ink);
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: var(--tt-blue);
+}
+
+.main-content h2 {
+  margin-top: 2.6rem;
+  padding-bottom: .45rem;
+  border-bottom: 1px solid var(--tt-line);
+}
+
+.eyebrow {
+  margin: 0 0 .35rem;
+  color: var(--tt-teal);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.hero-line {
+  margin: -.35rem 0 1.5rem;
+  color: var(--tt-muted);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.product-card {
+  display: flex;
+  min-height: 9rem;
+  flex-direction: column;
+  gap: .45rem;
+  padding: 1.2rem 1.25rem;
+  color: var(--tt-ink);
+  text-decoration: none;
+  background: linear-gradient(180deg, var(--tt-paper), var(--tt-wash));
+  border: 1px solid var(--tt-line);
+  border-radius: .7rem;
+  box-shadow: 0 .35rem 1.25rem rgba(19, 38, 58, .07);
+  transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+
+.product-card:hover {
+  color: var(--tt-ink);
+  text-decoration: none;
+  border-color: var(--tt-teal);
+  box-shadow: 0 .55rem 1.6rem rgba(19, 38, 58, .12);
+  transform: translateY(-2px);
+}
+
+.product-card strong {
+  color: var(--tt-blue);
+  font-size: 1.08rem;
+}
+
+.product-card span:last-child {
+  color: var(--tt-muted);
+  line-height: 1.45;
+}
+
+.product-kicker {
+  color: var(--tt-teal) !important;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.main-content table {
+  display: table;
+  width: 100%;
+  font-size: .9rem;
+}
+
+.main-content blockquote {
+  color: #40576a;
+  background: var(--tt-wash);
+  border-left-color: var(--tt-teal);
+}
+
+@media (max-width: 42rem) {
+  .main-content table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .hero-line {
+    font-size: 1.12rem;
+  }
+}
