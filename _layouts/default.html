@@ -182,7 +182,7 @@
 
           var activeLink = linkById[active.id];
           if (activeLink) {
-            var parentGroup = activeLink.closest("details");
+            var parentGroup = activeLink.closest(".doc-nav-group");
             if (parentGroup) parentGroup.open = true;
           }
         }
