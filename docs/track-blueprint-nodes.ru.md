@@ -9,7 +9,7 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
   <a href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры</a>
-  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Ноды</a>
+  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
   <a href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">English</a>
 </div>
 
@@ -17,7 +17,44 @@ page_kind: reference
 
 Этот справочник описывает публичные Blueprint-ноды компонентов `Track Spline Builder` и `Track Physics Solver`. Служебные функции редактора, старый reference-loop workflow и примерный пресет конкретной машины намеренно скрыты из палитры и здесь не описываются.
 
-## Что обычно нужно в графе
+<section class="bp-showcase" aria-label="Пример Blueprint-графа гусеницы">
+  <div class="bp-showcase__copy">
+    <span class="bp-showcase__eyebrow">БЫСТРЫЙ МАРШРУТ</span>
+    <strong>Три знакомые ноды вместо стены текста</strong>
+    <p>Сначала создайте точки по колёсам, затем перестройте визуальные звенья. Скорость задавайте отдельно, только если движение трака управляется вручную.</p>
+    <span class="bp-showcase__note">Упрощённый внешний вид: названия и назначение соответствуют нодам в Unreal Engine.</span>
+  </div>
+  <div class="bp-graph" role="img" aria-label="Последовательность Generate Control Points From Wheels, Rebuild Track и Set Track Speed">
+    <div class="bp-graph__flow">
+      <div class="bp-node">
+        <span class="bp-node__phase">01 · SETUP</span>
+        <div class="bp-node__header">Generate Control Points From Wheels</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span></div>
+        </div>
+      </div>
+      <span class="bp-wire" aria-hidden="true"></span>
+      <div class="bp-node">
+        <span class="bp-node__phase">02 · AFTER CHANGES</span>
+        <div class="bp-node__header">Rebuild Track</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span><span class="bp-port bp-port--number bp-port--out"><i class="bp-port__dot"></i>Link Count</span></div>
+        </div>
+      </div>
+      <span class="bp-wire" aria-hidden="true"></span>
+      <div class="bp-node">
+        <span class="bp-node__phase">03 · OPTIONAL RUNTIME</span>
+        <div class="bp-node__header">Set Track Speed</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port bp-port--number"><i class="bp-port__dot"></i>New Track Speed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>\n\n## Что обычно нужно в графе
 
 В штатной конфигурации физический solver и builder обновляются автоматически. Обычный Blueprint чаще всего использует только:
 
