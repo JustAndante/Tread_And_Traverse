@@ -8,8 +8,9 @@ page_kind: reference
 
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
+  <a class="is-active" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">Guide</a>
+  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
   <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Русский</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">English</a>
 </div>
 
 # Vehicle Weapon System setup and integration
