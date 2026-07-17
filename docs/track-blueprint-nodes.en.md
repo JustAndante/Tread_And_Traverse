@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Track Blueprint Nodes — English"
+title: "Track Blueprint nodes — English"
 description: "Blueprint node reference for Track Spline Builder and Track Physics Solver"
 lang: en
 page_kind: reference
@@ -9,7 +9,7 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Settings</a>
-  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Nodes</a>
+  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
   <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Русский</a>
 </div>
 
@@ -17,7 +17,44 @@ page_kind: reference
 
 This reference covers the public Blueprint nodes exposed by `Track Spline Builder` and `Track Physics Solver`. Editor-only helpers, the retired reference-loop workflow, and the vehicle-specific example preset are intentionally hidden from the palette and omitted here.
 
-## Normal graph
+<section class="bp-showcase" aria-label="Example track Blueprint graph">
+  <div class="bp-showcase__copy">
+    <span class="bp-showcase__eyebrow">QUICK PATH</span>
+    <strong>Three recognizable nodes before the full reference</strong>
+    <p>Generate the wheel-based control points first, then rebuild the visible links. Set track speed separately only when belt travel is driven manually.</p>
+    <span class="bp-showcase__note">Simplified presentation: names and roles match the Unreal Engine nodes.</span>
+  </div>
+  <div class="bp-graph" role="img" aria-label="Generate Control Points From Wheels, Rebuild Track, and Set Track Speed workflow">
+    <div class="bp-graph__flow">
+      <div class="bp-node">
+        <span class="bp-node__phase">01 · SETUP</span>
+        <div class="bp-node__header">Generate Control Points From Wheels</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span></div>
+        </div>
+      </div>
+      <span class="bp-wire" aria-hidden="true"></span>
+      <div class="bp-node">
+        <span class="bp-node__phase">02 · AFTER CHANGES</span>
+        <div class="bp-node__header">Rebuild Track</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span><span class="bp-port bp-port--number bp-port--out"><i class="bp-port__dot"></i>Link Count</span></div>
+        </div>
+      </div>
+      <span class="bp-wire" aria-hidden="true"></span>
+      <div class="bp-node">
+        <span class="bp-node__phase">03 · OPTIONAL RUNTIME</span>
+        <div class="bp-node__header">Set Track Speed</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port bp-port--number"><i class="bp-port__dot"></i>New Track Speed</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>\n\n## Normal graph
 
 With automatic updates enabled, the solver and builder run without a per-frame Blueprint graph. A typical setup only needs:
 
