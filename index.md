@@ -2,54 +2,52 @@
 layout: default
 title: Tread & Traverse
 description: Advanced armored vehicle systems for Unreal Engine
+page_kind: landing
 ---
 
-<p class="eyebrow">UNREAL ENGINE VEHICLE SYSTEMS</p>
+<section class="landing-hero">
+  <p class="eyebrow">UNREAL ENGINE VEHICLE SYSTEMS</p>
+  <h1>Tread &<br>Traverse</h1>
+  <p class="landing-hero__tagline">Build the motion. Control the firepower. A focused vehicle-systems toolkit for physically responsive tracks, stabilized turrets, aiming, and weapon runtime.</p>
+</section>
 
-# Tread & Traverse
-
-<p class="hero-line">Build the motion. Control the firepower.</p>
-
-**Advanced armored vehicle systems for Unreal Engine:** realistic tracks, suspension response, turret control, stabilization, aiming, and weapon runtime.
-
-<div class="product-grid">
-  <a class="product-card" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">
-    <span class="product-kicker">TRACK SYSTEM</span>
-    <strong>Track Spline Builder</strong>
-    <span>Русский справочник Track Physics Solver</span>
+<div class="language-grid">
+  <a class="language-card" data-code="RU" href="{{ '/ru/' | relative_url }}">
+    <div>
+      <span class="language-card__code">RU · ПОЛНАЯ ВЕРСИЯ</span>
+      <strong>Документация на русском</strong>
+      <p>Track Spline Builder и Vehicle Weapon System в одном русскоязычном каталоге — с понятным маршрутом настройки и полными справочниками.</p>
+    </div>
+    <span class="language-card__cta">Открыть русскую версию</span>
   </a>
-  <a class="product-card" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">
-    <span class="product-kicker">TRACK SYSTEM</span>
-    <strong>Track Spline Builder</strong>
-    <span>English Track Physics Solver reference</span>
-  </a>
-  <a class="product-card" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">
-    <span class="product-kicker">WEAPON SYSTEM</span>
-    <strong>Vehicle Weapon System</strong>
-    <span>Configuration and integration quick start</span>
+
+  <a class="language-card" data-code="EN" href="{{ '/en/' | relative_url }}">
+    <div>
+      <span class="language-card__code">EN · COMPLETE EDITION</span>
+      <strong>English documentation</strong>
+      <p>Track Spline Builder and Vehicle Weapon System presented as one structured English reference with clear setup paths and complete guides.</p>
+    </div>
+    <span class="language-card__cta">Open English version</span>
   </a>
 </div>
 
-## Product family
+## Two systems. One vehicle stack.
 
-### Track Spline Builder
+<div class="feature-grid">
+  <div class="feature-card">
+    <strong>Track Spline Builder</strong>
+    <span>Bone-driven track generation, wheel wrapping, ground contact, suspension response, upper-run motion, and instanced links.</span>
+  </div>
+  <div class="feature-card">
+    <strong>Vehicle Weapon System</strong>
+    <span>Reusable turret axes, stabilization, aim sources, muzzle routing, ballistic caches, UI projection, and optional replication.</span>
+  </div>
+  <div class="feature-card">
+    <strong>Release-focused documentation</strong>
+    <span>Supported controls and production workflows are documented; experimental and legacy-only settings stay out of the main guide.</span>
+  </div>
+</div>
 
-Builds and animates physically responsive tracked-vehicle belts from an Unreal Engine bone rig. It covers road-wheel contact, top-run motion, suspension response, ground tracing, sprocket wrapping, and instanced track-link output.
-
-### Vehicle Weapon System
-
-Provides reusable turret axes, stabilization, aiming sources, weapon installations, muzzle routing, traces, ballistics caches, validation, and optional replication.
-
-## Documentation status
-
-The online guides document the supported release workflow. Experimental, legacy, and serialization-only controls are intentionally excluded.
-
-> This repository contains documentation only. Commercial plugin source code is not published here.
-
-## Support
-
-When reporting a setup problem, include the Unreal Engine version, plugin version, affected component, configuration status, and a screenshot or diagnostic status string.
-
----
-
-© 2026 JustAndante. All rights reserved.
+<div class="notice-panel">
+  This public repository contains documentation only. Commercial plugin source code is not published here.
+</div>
