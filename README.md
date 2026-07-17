@@ -1,17 +1,15 @@
 # Tread & Traverse
 
-**Build the motion. Control the firepower.**
+Documentation for two Unreal Engine vehicle systems:
 
-Advanced armored vehicle systems for Unreal Engine: realistic tracks, suspension, turrets, stabilization, aiming, and weapons.
+- **Track Spline Builder** — track generation, wheel wrapping, terrain contact, suspension response, and visual links.
+- **Vehicle Weapon System** — turret axes, stabilization, aiming, muzzle traces, ballistics, and optional replication.
 
-## Documentation
+## Read the documentation
 
-- [Track Physics Solver — Русский](docs/track-physics-solver.ru.md)
-- [Track Physics Solver — English](docs/track-physics-solver.en.md)
-- [Vehicle Weapon System — English](docs/vehicle-weapon-system.en.md)
+- [Русская версия](https://justandante.github.io/Tread_And_Traverse/ru/)
+- [English version](https://justandante.github.io/Tread_And_Traverse/en/)
 
-The public website will be available through GitHub Pages after Pages is enabled for the `main` branch.
-
-This repository contains documentation only. Commercial plugin source code is not published here.
+The public repository contains documentation only. Commercial plugin source code is not included.
 
 © 2026 JustAndante. All rights reserved.
