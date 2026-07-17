@@ -17,6 +17,8 @@ page_kind: reference
 
 This reference covers the public Blueprint nodes exposed by `Track Spline Builder` and `Track Physics Solver`. Editor-only helpers, the retired reference-loop workflow, and the vehicle-specific example preset are intentionally hidden from the palette and omitted here.
 
+> The visual block in every row below is generated from the current public `UFUNCTION` signature, including the node name, exec/data pins, and their direction.
+
 <section class="bp-showcase" aria-label="Example track Blueprint graph">
   <div class="bp-showcase__copy">
     <span class="bp-showcase__eyebrow">QUICK PATH</span>
