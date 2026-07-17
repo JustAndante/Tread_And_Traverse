@@ -61,7 +61,9 @@ Start with `Core`. Use `Advanced` only when the standard component workflow does
       </div>
     </div>
   </div>
-</section>\n\n## Normal runtime graph
+</section>
+
+## Normal runtime graph
 
 After preparing the camera and AimCubes, call:
 
