@@ -1,40 +1,40 @@
 ---
 layout: default
 title: Tread & Traverse Documentation
-description: Choose the language for Tread & Traverse documentation
+description: Документация Tread & Traverse / Tread & Traverse documentation
 page_kind: landing
 ---
 
 <section class="language-gateway">
   <div class="language-gateway__intro">
-    <span class="language-gateway__mark">T&T</span>
-    <p class="eyebrow">DOCUMENTATION · ДОКУМЕНТАЦИЯ</p>
-    <h1>Выберите язык <span>/ Choose your language</span></h1>
-    <p>Каждая версия содержит отдельный каталог Track Spline Builder и Vehicle Weapon System.<br>Each language opens its own complete Track Spline Builder and Vehicle Weapon System catalog.</p>
+    <p class="eyebrow">TREAD & TRAVERSE · DOCUMENTATION</p>
+    <h1>Выберите язык <span>Choose a language</span></h1>
+    <p>Содержание обеих версий одинаково.<br>Both versions contain the same guides.</p>
   </div>
 
   <div class="language-grid language-grid--gateway">
     <a class="language-card" data-code="RU" href="{{ '/ru/' | relative_url }}">
       <div>
-        <span class="language-card__code">RU · ПОЛНАЯ ВЕРСИЯ</span>
-        <strong>Русский</strong>
-        <p>Полные инструкции, последовательность настройки и справочник всех релизных параметров.</p>
+        <span class="language-card__code">РУССКАЯ ВЕРСИЯ</span>
+        <strong>Документация на русском</strong>
+        <p>Настройка гусениц, башен, прицелов и вооружения — с пояснениями и справочниками параметров.</p>
       </div>
-      <span class="language-card__cta">Открыть документацию</span>
+      <span class="language-card__cta">Перейти к русской версии</span>
     </a>
 
     <a class="language-card" data-code="EN" href="{{ '/en/' | relative_url }}">
       <div>
-        <span class="language-card__code">EN · COMPLETE EDITION</span>
-        <strong>English</strong>
-        <p>Complete setup guides, recommended workflows, and references for every release-facing control.</p>
+        <span class="language-card__code">ENGLISH VERSION</span>
+        <strong>Documentation in English</strong>
+        <p>Setup guides for tracks, turrets, sights, and weapons, with explanations and parameter references.</p>
       </div>
-      <span class="language-card__cta">Open documentation</span>
+      <span class="language-card__cta">Open the English version</span>
     </a>
   </div>
 
   <div class="language-gateway__footer">
-    <strong>Tread & Traverse</strong>
-    <span>Advanced armored vehicle systems for Unreal Engine</span>
+    <strong>Track Spline Builder</strong>
+    <span>·</span>
+    <strong>Vehicle Weapon System</strong>
   </div>
 </section>
