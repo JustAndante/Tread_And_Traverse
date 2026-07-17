@@ -1,10 +1,16 @@
 ---
 layout: default
-title: "Vehicle Weapon System"
+title: "Vehicle Weapon System — English"
 description: "Configuration and integration quick start"
+lang: en
+page_kind: reference
 ---
 
-[← Home]({{ '/' | relative_url }})
+<div class="doc-breadcrumbs">
+  <a href="{{ '/en/' | relative_url }}">← English documentation</a>
+  <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Русский</a>
+  <a class="is-active" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">English</a>
+</div>
 
 # Vehicle Weapon System Quick Start
 
