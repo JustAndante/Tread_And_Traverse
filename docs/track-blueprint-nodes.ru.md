@@ -24,7 +24,7 @@ page_kind: reference
     <span class="bp-showcase__eyebrow">БЫСТРЫЙ МАРШРУТ</span>
     <strong>Три знакомые ноды вместо стены текста</strong>
     <p>Сначала создайте точки по колёсам, затем перестройте визуальные звенья. Скорость задавайте отдельно, только если движение трака управляется вручную.</p>
-    <span class="bp-showcase__note">Визуальный язык повторяет Blueprint Editor; компоновка сокращена только для удобства чтения.</span>
+    <span class="bp-showcase__note">Пины строятся по актуальным UFUNCTION-сигнатурам; это стилизованная схема, а не снимок редактора.</span>
   </div>
   <div class="bp-graph" role="img" aria-label="Последовательность Generate Control Points From Wheels, Rebuild Track и Set Track Speed">
     <div class="bp-graph__flow">
