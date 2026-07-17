@@ -5,40 +5,38 @@
 
 :root {
   color-scheme: light;
-  --tt-bg: #e8eaed;
-  --tt-surface: #f7f8fa;
-  --tt-surface-soft: #eff1f3;
-  --tt-ink: #20252b;
-  --tt-muted: #606872;
-  --tt-line: #c8cdd3;
-  --tt-blue: #27313b;
-  --tt-blue-strong: #151a20;
-  --tt-accent: #0d73b7;
-  --tt-accent-strong: #075a92;
-  --tt-accent-soft: #dcecf7;
-  --tt-code: #e1e4e7;
-  --tt-grid-line: rgba(39, 49, 59, .035);
-  --tt-shadow: 0 1.1rem 2.8rem rgba(16, 20, 24, .14);
-  --tt-card-shadow: 0 .45rem 1.35rem rgba(16, 20, 24, .09);
+  --tt-bg: #f4f5f6;
+  --tt-surface: #ffffff;
+  --tt-surface-soft: #f7f8f9;
+  --tt-ink: #202327;
+  --tt-muted: #676d74;
+  --tt-line: #dfe2e5;
+  --tt-blue: #252b31;
+  --tt-blue-strong: #121518;
+  --tt-accent: #147eb8;
+  --tt-accent-strong: #086596;
+  --tt-accent-soft: #e5f1f8;
+  --tt-code: #eceef0;
+  --tt-shadow: 0 .5rem 1.5rem rgba(16, 20, 24, .10);
+  --tt-card-shadow: 0 1px 2px rgba(16, 20, 24, .06);
 }
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --tt-bg: #0e0f11;
-  --tt-surface: #181a1d;
-  --tt-surface-soft: #202328;
-  --tt-ink: #e2e5e8;
-  --tt-muted: #9da4ac;
-  --tt-line: #34383e;
-  --tt-blue: #edf1f4;
+  --tt-bg: #0f1011;
+  --tt-surface: #16181a;
+  --tt-surface-soft: #1b1e21;
+  --tt-ink: #eef0f2;
+  --tt-muted: #9ca1a7;
+  --tt-line: #2b2e32;
+  --tt-blue: #f1f3f5;
   --tt-blue-strong: #ffffff;
-  --tt-accent: #2a9bd9;
-  --tt-accent-strong: #55b6ed;
-  --tt-accent-soft: #132f40;
-  --tt-code: #111316;
-  --tt-grid-line: rgba(255, 255, 255, .018);
-  --tt-shadow: 0 1.1rem 2.8rem rgba(0, 0, 0, .42);
-  --tt-card-shadow: 0 .45rem 1.35rem rgba(0, 0, 0, .30);
+  --tt-accent: #2798d3;
+  --tt-accent-strong: #58b7e8;
+  --tt-accent-soft: #122a38;
+  --tt-code: #121416;
+  --tt-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .28);
+  --tt-card-shadow: 0 1px 2px rgba(0, 0, 0, .22);
 }
 
 html {
@@ -51,11 +49,8 @@ body {
   margin: 0;
   color: var(--tt-ink);
   background:
-    radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--tt-accent) 12%, transparent), transparent 30rem),
-    linear-gradient(var(--tt-grid-line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--tt-grid-line) 1px, transparent 1px),
+    radial-gradient(circle at 10% 0%, color-mix(in srgb, var(--tt-accent) 5%, transparent), transparent 32rem),
     var(--tt-bg);
-  background-size: auto, 36px 36px, 36px 36px, auto;
   transition: color .2s ease, background-color .2s ease;
 }
 
@@ -94,7 +89,7 @@ a:hover {
   top: 0;
   border-bottom: 1px solid var(--tt-line);
   background: color-mix(in srgb, var(--tt-surface) 94%, transparent);
-  box-shadow: 0 .2rem .9rem rgba(0, 0, 0, .12);
+  box-shadow: none;
   backdrop-filter: blur(18px);
 }
 
@@ -132,9 +127,9 @@ a:hover {
   font-size: .78rem;
   font-weight: 800;
   letter-spacing: -.04em;
-  background: linear-gradient(145deg, var(--tt-blue-strong), var(--tt-accent));
-  border-radius: .72rem;
-  box-shadow: 0 .35rem 1rem rgba(0, 104, 170, .30);
+  background: var(--tt-accent);
+  border-radius: .52rem;
+  box-shadow: none;
 }
 
 .site-brand__copy {
@@ -294,11 +289,11 @@ a:hover {
   padding: clamp(1.45rem, 3vw, 2.2rem);
   color: var(--tt-ink);
   text-decoration: none;
-  background: linear-gradient(145deg, var(--tt-surface), var(--tt-surface-soft));
+  background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: 1.05rem;
+  border-radius: .65rem;
   box-shadow: var(--tt-card-shadow);
-  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  transition: background-color .18s ease, border-color .18s ease;
 }
 
 .language-card::after {
@@ -316,9 +311,8 @@ a:hover {
 .language-card:hover {
   color: var(--tt-ink);
   text-decoration: none;
-  border-color: var(--tt-accent);
-  box-shadow: var(--tt-shadow);
-  transform: translateY(-4px);
+  background: var(--tt-surface-soft);
+  border-color: color-mix(in srgb, var(--tt-accent) 55%, var(--tt-line));
 }
 
 .language-card > * {
@@ -406,8 +400,8 @@ a:hover {
   padding: 1.35rem;
   background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: .9rem;
-  box-shadow: var(--tt-card-shadow);
+  border-radius: .6rem;
+  box-shadow: none;
 }
 
 .hub-hero__aside strong {
@@ -445,8 +439,8 @@ a:hover {
   padding: clamp(1.4rem, 3vw, 2rem);
   background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: 1rem;
-  box-shadow: var(--tt-card-shadow);
+  border-radius: .65rem;
+  box-shadow: none;
 }
 
 .system-card h2 {
@@ -507,7 +501,7 @@ a:hover {
   padding: 1.25rem;
   background: var(--tt-surface-soft);
   border: 1px solid var(--tt-line);
-  border-radius: .85rem;
+  border-radius: .55rem;
 }
 
 .step-card strong {
@@ -532,7 +526,7 @@ a:hover {
   padding: 1.1rem 1.2rem;
   background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: .8rem;
+  border-radius: .55rem;
 }
 
 .feature-card strong {
@@ -553,7 +547,7 @@ a:hover {
   color: var(--tt-ink);
   background: var(--tt-accent-soft);
   border: 1px solid color-mix(in srgb, var(--tt-accent) 28%, var(--tt-line));
-  border-radius: .8rem;
+  border-radius: .55rem;
 }
 
 .doc-breadcrumbs {
@@ -565,8 +559,8 @@ a:hover {
   padding: .72rem .85rem;
   background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: .72rem;
-  box-shadow: var(--tt-card-shadow);
+  border-radius: .5rem;
+  box-shadow: none;
 }
 
 .doc-breadcrumbs a {
@@ -608,8 +602,8 @@ a:hover {
   overflow: hidden;
   background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: .85rem;
-  box-shadow: var(--tt-card-shadow);
+  border-radius: .55rem;
+  box-shadow: none;
 }
 
 .doc-sidebar__panel > summary {
@@ -764,8 +758,8 @@ a:hover {
   font-size: .88rem;
   background: var(--tt-surface);
   border: 1px solid var(--tt-line);
-  border-radius: .6rem;
-  box-shadow: 0 .25rem 1rem rgba(18, 42, 60, .04);
+  border-radius: .45rem;
+  box-shadow: none;
 }
 
 .main-content table th {
@@ -934,7 +928,7 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
-  height: .22rem;
+  height: .125rem;
   content: "";
   background: linear-gradient(90deg, var(--tt-accent), color-mix(in srgb, var(--tt-accent) 18%, transparent));
 }
@@ -1040,9 +1034,9 @@ a:hover {
   margin: 1.75rem 0 2rem;
   padding: 1.15rem;
   border: 1px solid var(--tt-line);
-  border-radius: 1rem;
-  background: linear-gradient(135deg, var(--tt-surface), var(--tt-surface-soft));
-  box-shadow: var(--tt-card-shadow);
+  border-radius: .65rem;
+  background: var(--tt-surface);
+  box-shadow: none;
 }
 
 .bp-showcase__copy {
