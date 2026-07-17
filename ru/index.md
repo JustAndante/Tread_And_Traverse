@@ -33,7 +33,10 @@ permalink: /ru/
       <span class="tag">Ground Contact</span>
       <span class="tag">Spline Output</span>
     </div>
-    <div class="card-actions">\n      <a class="card-link" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры и настройка</a>\n      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>\n    </div>
+    <div class="card-actions">
+      <a class="card-link" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры и настройка</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
+    </div>
   </article>
 
   <article class="system-card">
@@ -46,7 +49,10 @@ permalink: /ru/
       <span class="tag">Ballistics</span>
       <span class="tag">Replication</span>
     </div>
-    <div class="card-actions">\n      <a class="card-link" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Настройка системы</a>\n      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>\n    </div>
+    <div class="card-actions">
+      <a class="card-link" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Настройка системы</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
+    </div>
   </article>
 </div>
 
