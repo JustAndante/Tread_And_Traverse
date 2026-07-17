@@ -102,6 +102,7 @@ a:hover {
 
 .site-brand {
   display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
   gap: .8rem;
   color: var(--tt-ink);
@@ -129,6 +130,7 @@ a:hover {
 
 .site-brand__copy {
   display: flex;
+  min-width: 10rem;
   flex-direction: column;
   line-height: 1.1;
 }
@@ -150,6 +152,7 @@ a:hover {
 
 .site-nav {
   display: flex;
+  flex: 0 0 auto;
   align-items: center;
   gap: .35rem;
 }
