@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Tread & Traverse — English Documentation"
-description: "Complete English documentation for track and weapon systems"
+description: "Setup guides for tracks, turrets, aiming, and weapons"
 lang: en
 page_kind: hub
 permalink: /en/
@@ -9,64 +9,64 @@ permalink: /en/
 
 <section class="hub-hero">
   <div class="hub-hero__copy">
-    <p class="eyebrow">ENGLISH EDITION</p>
-    <h1>Armored vehicle systems without fragmented setup notes</h1>
-    <p>Two independent Runtime toolsets: a physically responsive track solution and a universal turret, aiming, and weapon framework. Choose a system below for its complete reference and recommended setup path.</p>
+    <p class="eyebrow">TREAD & TRAVERSE · DOCUMENTATION</p>
+    <h1>Tracks, turrets, and weapons</h1>
+    <p><strong>Track Spline Builder</strong> handles track shape and physics. <strong>Vehicle Weapon System</strong> handles turrets, aiming, and weapons. The two systems are independent, so a project can use either one or both.</p>
   </div>
   <aside class="hub-hero__aside">
     <strong>Предпочитаете русский?</strong>
-    <span>Both editions use the same structure, so switching languages stays predictable.</span>
-    <a href="{{ '/ru/' | relative_url }}">Открыть русскую документацию →</a>
+    <span>The sections follow the same order in both languages, making it easy to switch between them.</span>
+    <a href="{{ '/ru/' | relative_url }}">Перейти к русской версии →</a>
   </aside>
 </section>
 
-## Choose a system
+## Choose a guide
 
 <div class="system-grid">
   <article class="system-card">
-    <span class="system-number">01 · TRACK SYSTEM</span>
+    <span class="system-number">01 · TRACKS</span>
     <h2>Track Spline Builder</h2>
-    <p>Closed-loop generation from wheel bones, wheel wrapping, terrain contact, suspension response, upper-run dynamics, and instanced visual track links.</p>
+    <p>Builds a closed track spline from suspension bones, wraps it around the wheels, responds to terrain and suspension movement, and places the visible track links.</p>
     <div class="tag-row">
       <span class="tag">Bone Rig</span>
       <span class="tag">Chaos</span>
       <span class="tag">Ground Contact</span>
       <span class="tag">Spline Output</span>
     </div>
-    <a class="card-link" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Open the complete reference</a>
+    <a class="card-link" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Open the guide</a>
   </article>
 
   <article class="system-card">
-    <span class="system-number">02 · WEAPON SYSTEM</span>
+    <span class="system-number">02 · WEAPONS</span>
     <h2>Vehicle Weapon System</h2>
-    <p>Independent turret axes, stabilization, aim sources, weapon installations, muzzle rays, ballistics, UI data, reusable profiles, and optional replication.</p>
+    <p>Controls turret axes, stabilization, aim sources, muzzle rays, and ballistics. It supports multiple weapon installations and optional replication.</p>
     <div class="tag-row">
       <span class="tag">Turret Axes</span>
       <span class="tag">Stabilization</span>
       <span class="tag">Ballistics</span>
       <span class="tag">Replication</span>
     </div>
-    <a class="card-link" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">Open the complete reference</a>
+    <a class="card-link" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">Open the guide</a>
   </article>
 </div>
 
-## Recommended path
+## Where to start
 
 <div class="step-grid">
   <div class="step-card">
-    <strong>1. Build the base configuration</strong>
-    <p>Bind components, bones, sockets, and stable IDs before tuning behavior.</p>
+    <strong>1. Connect the essentials</strong>
+    <p>Assign the components, bones, sockets, and stable IDs used by the selected system.</p>
   </div>
   <div class="step-card">
-    <strong>2. Reach Ready status</strong>
-    <p>Use the built-in validation path and resolve errors before feel or performance tuning.</p>
+    <strong>2. Validate the setup</strong>
+    <p>Resolve validation errors and confirm that the system reaches Ready status.</p>
   </div>
   <div class="step-card">
-    <strong>3. Test under motion</strong>
-    <p>Exercise suspension, contacts, stabilization, cameras, and network roles in representative gameplay.</p>
+    <strong>3. Test the vehicle</strong>
+    <p>Check the result while driving over uneven ground, rotating the hull, switching cameras, and running a network session.</p>
   </div>
 </div>
 
 <div class="notice-panel">
-  The main documentation covers supported release modes only. Experimental and legacy-only controls are intentionally excluded.
+  The guides cover settings intended for normal project use. Experimental and legacy-only controls are not included.
 </div>
