@@ -8,7 +8,8 @@ page_kind: reference
 
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
-  <a class="is-active" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Русский</a>
+  <a class="is-active" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры</a>
+  <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
   <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">English</a>
 </div>
 
