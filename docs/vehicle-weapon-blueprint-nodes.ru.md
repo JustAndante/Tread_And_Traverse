@@ -22,6 +22,8 @@ page_kind: reference
 
 Начинайте с `Core`. Переходите к `Advanced` только тогда, когда стандартный компонентный workflow действительно не подходит.
 
+> Визуальный блок в каждой строке ниже строится по актуальной публичной `UFUNCTION`-сигнатуре: показаны реальное имя ноды, exec/data-пины и их направления.
+
 <section class="bp-showcase" aria-label="Пример Blueprint-графа Vehicle Weapon System">
   <div class="bp-showcase__copy">
     <span class="bp-showcase__eyebrow">ОБЫЧНЫЙ RUNTIME-КАДР</span>
