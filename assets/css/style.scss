@@ -1339,3 +1339,169 @@ a:hover {
     width: 13.25rem;
   }
 }
+
+
+/* Per-function Blueprint reference nodes, generated from public UFUNCTION signatures */
+.bp-node-table th:first-child,
+.bp-node-table td:first-child {
+  width: 20rem;
+  min-width: 20rem;
+}
+
+.bp-node-cell {
+  position: relative;
+  padding: .85rem !important;
+}
+
+.bp-node-cell__fallback {
+  display: none;
+}
+
+.bp-mini-node {
+  position: relative;
+  width: 18.4rem;
+  max-width: 100%;
+  overflow: hidden;
+  color: #d8dadd;
+  background: #1b1c1e;
+  border: 1px solid #08090a;
+  border-radius: .26rem;
+  box-shadow:
+    0 0 0 1px #50555a,
+    0 .45rem .95rem rgba(0, 0, 0, .42),
+    inset 0 1px rgba(255, 255, 255, .035);
+}
+
+.bp-mini-node__header {
+  position: relative;
+  display: flex;
+  min-height: 2.25rem;
+  box-sizing: border-box;
+  align-items: center;
+  gap: .45rem;
+  padding: .45rem .58rem .45rem .48rem;
+  color: #f4f6f7;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .12), transparent 30%),
+    linear-gradient(180deg, #1678b3, #0d4f7d 62%, #0a4168);
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  border-bottom: 1px solid #061d2e;
+  font-size: .72rem;
+  font-weight: 700;
+  line-height: 1.22;
+  text-shadow: 0 1px 1px #071018;
+}
+
+.bp-mini-node__header::before {
+  display: inline-grid;
+  width: 1.02rem;
+  height: 1.02rem;
+  flex: 0 0 1.02rem;
+  place-items: center;
+  color: #eaf7ff;
+  content: "ƒ";
+  font-family: Georgia, serif;
+  font-size: .72rem;
+  background: rgba(3, 24, 38, .58);
+  border: 1px solid rgba(210, 237, 251, .48);
+  border-radius: .16rem;
+}
+
+.bp-mini-node--pure .bp-mini-node__header {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .1), transparent 30%),
+    linear-gradient(180deg, #4a8550, #2e6539 62%, #24532e);
+  border-bottom-color: #18371e;
+}
+
+.bp-mini-node--pure .bp-mini-node__header::before {
+  background: rgba(15, 47, 20, .62);
+  border-color: rgba(218, 246, 220, .42);
+}
+
+.bp-mini-node__body {
+  display: grid;
+  gap: .3rem;
+  padding: .55rem .52rem .62rem;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .02), transparent 28%, transparent 72%, rgba(0, 0, 0, .09)),
+    #1c1d1f;
+  font-family: "Segoe UI", sans-serif;
+  font-size: .61rem;
+  text-shadow: 0 1px #000;
+}
+
+.bp-mini-node__row {
+  display: flex;
+  min-height: .76rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: .65rem;
+}
+
+.bp-mini-pin {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: .32rem;
+  white-space: nowrap;
+}
+
+.bp-mini-pin--out {
+  flex-direction: row-reverse;
+  margin-left: auto;
+  text-align: right;
+}
+
+.bp-mini-pin__dot {
+  width: .48rem;
+  height: .48rem;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  background: #161719;
+  border: 2px solid #4c9ac8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .85);
+}
+
+.bp-mini-pin--exec .bp-mini-pin__dot {
+  width: .58rem;
+  height: .52rem;
+  background: #f1f2f2;
+  border: 0;
+  border-radius: 0;
+  clip-path: polygon(0 0, 100% 50%, 0 100%, 28% 50%);
+  filter: drop-shadow(0 1px 0 #000);
+}
+
+.bp-mini-pin--bool .bp-mini-pin__dot {
+  border-color: #b74343;
+}
+
+.bp-mini-pin--number .bp-mini-pin__dot {
+  border-color: #6ecb63;
+}
+
+.bp-mini-pin--string .bp-mini-pin__dot {
+  border-color: #d86fb8;
+}
+
+.bp-mini-pin--struct .bp-mini-pin__dot {
+  border-color: #e0b75d;
+}
+
+.bp-mini-pin--enum .bp-mini-pin__dot {
+  border-color: #78c6d8;
+}
+
+@media (max-width: 520px) {
+  .bp-node-table th:first-child,
+  .bp-node-table td:first-child {
+    width: 18.5rem;
+    min-width: 18.5rem;
+  }
+
+  .bp-mini-node {
+    width: 17rem;
+  }
+}
