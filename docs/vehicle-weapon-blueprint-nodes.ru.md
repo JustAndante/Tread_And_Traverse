@@ -61,7 +61,9 @@ page_kind: reference
       </div>
     </div>
   </div>
-</section>\n\n## Обычный runtime-граф
+</section>
+
+## Обычный runtime-граф
 
 Вызывайте эти ноды в указанном порядке после подготовки камеры и AimCube:
 
