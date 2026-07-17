@@ -22,6 +22,8 @@ The Blueprint API is intentionally split into two levels:
 
 Start with `Core`. Use `Advanced` only when the standard component workflow does not cover the rig.
 
+> The visual block in every row below is generated from the current public `UFUNCTION` signature, including the node name, exec/data pins, and their direction.
+
 <section class="bp-showcase" aria-label="Example Vehicle Weapon System Blueprint graph">
   <div class="bp-showcase__copy">
     <span class="bp-showcase__eyebrow">NORMAL RUNTIME FRAME</span>
