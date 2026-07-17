@@ -1025,7 +1025,7 @@ a:hover {
 /* Blueprint node diagrams */
 .bp-showcase {
   display: grid;
-  grid-template-columns: minmax(13rem, .72fr) minmax(0, 1.5fr);
+  grid-template-columns: 1fr;
   gap: 1.25rem;
   align-items: stretch;
   margin: 1.75rem 0 2rem;
@@ -1037,10 +1037,29 @@ a:hover {
 }
 
 .bp-showcase__copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(12rem, .58fr) minmax(0, 1.42fr);
+  gap: .2rem 1.4rem;
+  align-items: center;
   padding: .35rem .25rem;
+}
+
+.bp-showcase__copy .bp-showcase__eyebrow,
+.bp-showcase__copy strong {
+  grid-column: 1;
+}
+
+.bp-showcase__copy p,
+.bp-showcase__note {
+  grid-column: 2;
+}
+
+.bp-showcase__copy p {
+  grid-row: 1 / span 2;
+}
+
+.bp-showcase__note {
+  grid-row: 3;
 }
 
 .bp-showcase__eyebrow,
@@ -1207,8 +1226,8 @@ a:hover {
 }
 
 @media (max-width: 860px) {
-  .bp-showcase {
-    grid-template-columns: 1fr;
+  .bp-showcase__copy {
+    display: block;
   }
 
   .bp-graph__flow {
