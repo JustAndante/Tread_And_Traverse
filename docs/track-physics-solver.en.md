@@ -8,8 +8,9 @@ page_kind: reference
 
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
+  <a class="is-active" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Settings</a>
+  <a href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
   <a href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Русский</a>
-  <a class="is-active" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">English</a>
 </div>
 
 # Track Physics Solver settings and setup
