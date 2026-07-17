@@ -17,12 +17,14 @@ page_kind: reference
 
 Этот справочник описывает публичные Blueprint-ноды компонентов `Track Spline Builder` и `Track Physics Solver`. Служебные функции редактора, старый reference-loop workflow и примерный пресет конкретной машины намеренно скрыты из палитры и здесь не описываются.
 
+> Визуальный блок в каждой строке ниже строится по актуальной публичной `UFUNCTION`-сигнатуре: показаны реальное имя ноды, exec/data-пины и их направления.
+
 <section class="bp-showcase" aria-label="Пример Blueprint-графа гусеницы">
   <div class="bp-showcase__copy">
     <span class="bp-showcase__eyebrow">БЫСТРЫЙ МАРШРУТ</span>
     <strong>Три знакомые ноды вместо стены текста</strong>
     <p>Сначала создайте точки по колёсам, затем перестройте визуальные звенья. Скорость задавайте отдельно, только если движение трака управляется вручную.</p>
-    <span class="bp-showcase__note">Упрощённый внешний вид: названия и назначение соответствуют нодам в Unreal Engine.</span>
+    <span class="bp-showcase__note">Визуальный язык повторяет Blueprint Editor; компоновка сокращена только для удобства чтения.</span>
   </div>
   <div class="bp-graph" role="img" aria-label="Последовательность Generate Control Points From Wheels, Rebuild Track и Set Track Speed">
     <div class="bp-graph__flow">
