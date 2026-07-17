@@ -997,3 +997,232 @@ a:hover {
     flex-direction: column;
   }
 }
+
+
+
+/* Reference-page reading rhythm */
+.doc-article > p,
+.doc-article > ul,
+.doc-article > ol,
+.doc-article > blockquote {
+  max-width: 80ch;
+}
+
+.doc-article p,
+.doc-article li {
+  line-height: 1.68;
+}
+
+.main-content table td {
+  vertical-align: top;
+  line-height: 1.48;
+}
+
+.main-content table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--tt-surface-soft) 62%, transparent);
+}
+
+/* Blueprint node diagrams */
+.bp-showcase {
+  display: grid;
+  grid-template-columns: minmax(13rem, .72fr) minmax(0, 1.5fr);
+  gap: 1.25rem;
+  align-items: stretch;
+  margin: 1.75rem 0 2rem;
+  padding: 1.15rem;
+  border: 1px solid var(--tt-line);
+  border-radius: 1rem;
+  background: linear-gradient(135deg, var(--tt-surface), var(--tt-surface-soft));
+  box-shadow: var(--tt-card-shadow);
+}
+
+.bp-showcase__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .35rem .25rem;
+}
+
+.bp-showcase__eyebrow,
+.bp-node__phase {
+  color: var(--tt-accent-strong);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.bp-showcase__copy strong {
+  display: block;
+  margin: .35rem 0 .55rem;
+  color: var(--tt-blue-strong);
+  font-size: 1.22rem;
+  line-height: 1.25;
+}
+
+.bp-showcase__copy p {
+  margin: 0;
+  color: var(--tt-muted);
+  font-size: .92rem;
+}
+
+.bp-showcase__note {
+  display: block;
+  margin-top: .7rem;
+  color: var(--tt-muted);
+  font-size: .75rem;
+}
+
+.bp-graph {
+  min-width: 0;
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid #263b4b;
+  border-radius: .8rem;
+  background:
+    linear-gradient(rgba(98, 132, 157, .065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(98, 132, 157, .065) 1px, transparent 1px),
+    #071019;
+  background-size: 18px 18px;
+  box-shadow: inset 0 0 2.4rem rgba(0, 0, 0, .35);
+  scrollbar-color: #35566d #0a151e;
+}
+
+.bp-graph__flow {
+  display: flex;
+  min-width: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.bp-node {
+  width: 13.4rem;
+  overflow: hidden;
+  color: #dfeaf1;
+  border: 1px solid #416c8a;
+  border-radius: .48rem;
+  background: #111c25;
+  box-shadow: 0 .7rem 1.35rem rgba(0, 0, 0, .42);
+}
+
+.bp-node__phase {
+  display: block;
+  padding: .42rem .62rem .28rem;
+  color: #75d9d4;
+  background: #0c1720;
+  font-size: .61rem;
+}
+
+.bp-node__header {
+  min-height: 2.4rem;
+  padding: .52rem .65rem;
+  color: #fff;
+  background: linear-gradient(180deg, #287db4, #15527f);
+  border-top: 1px solid rgba(255, 255, 255, .18);
+  border-bottom: 1px solid #0e3c60;
+  font-size: .77rem;
+  font-weight: 750;
+  line-height: 1.24;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+}
+
+.bp-node--system .bp-node__header {
+  background: linear-gradient(180deg, #167b87, #0e5662);
+  border-bottom-color: #0a414a;
+}
+
+.bp-node__ports {
+  display: grid;
+  gap: .4rem;
+  padding: .58rem .62rem .66rem;
+  font-size: .68rem;
+}
+
+.bp-node__port-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: .85rem;
+  gap: .75rem;
+}
+
+.bp-port {
+  display: inline-flex;
+  align-items: center;
+  gap: .34rem;
+  white-space: nowrap;
+}
+
+.bp-port--out {
+  flex-direction: row-reverse;
+  margin-left: auto;
+  text-align: right;
+}
+
+.bp-port__dot {
+  width: .52rem;
+  height: .52rem;
+  box-sizing: border-box;
+  border: 2px solid #5da2d4;
+  border-radius: 50%;
+  background: #0d1821;
+}
+
+.bp-port--exec .bp-port__dot {
+  width: .5rem;
+  height: .5rem;
+  border: 1px solid #f2f5f5;
+  border-radius: .08rem;
+  background: #f2f5f5;
+  transform: rotate(45deg);
+}
+
+.bp-port--bool .bp-port__dot {
+  border-color: #b95050;
+}
+
+.bp-port--number .bp-port__dot {
+  border-color: #8bcf66;
+}
+
+.bp-wire {
+  position: relative;
+  flex: 0 0 2rem;
+  height: 2px;
+  margin: 0 .28rem;
+  background: #edf3f4;
+  box-shadow: 0 0 .35rem rgba(237, 243, 244, .55);
+}
+
+.bp-wire::after {
+  position: absolute;
+  top: 50%;
+  right: -.05rem;
+  width: .48rem;
+  height: .48rem;
+  content: "";
+  border-top: 2px solid #edf3f4;
+  border-right: 2px solid #edf3f4;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+@media (max-width: 860px) {
+  .bp-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .bp-graph__flow {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .bp-showcase {
+    margin-inline: 0;
+    padding: .85rem;
+  }
+
+  .bp-node {
+    width: 12.5rem;
+  }
+}
