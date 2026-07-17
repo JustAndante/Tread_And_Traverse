@@ -1,53 +1,40 @@
 ---
 layout: default
-title: Tread & Traverse
-description: Advanced armored vehicle systems for Unreal Engine
+title: Tread & Traverse Documentation
+description: Choose the language for Tread & Traverse documentation
 page_kind: landing
 ---
 
-<section class="landing-hero">
-  <p class="eyebrow">UNREAL ENGINE VEHICLE SYSTEMS</p>
-  <h1>Tread &<br>Traverse</h1>
-  <p class="landing-hero__tagline">Build the motion. Control the firepower. A focused vehicle-systems toolkit for physically responsive tracks, stabilized turrets, aiming, and weapon runtime.</p>
+<section class="language-gateway">
+  <div class="language-gateway__intro">
+    <span class="language-gateway__mark">T&T</span>
+    <p class="eyebrow">DOCUMENTATION · ДОКУМЕНТАЦИЯ</p>
+    <h1>Выберите язык <span>/ Choose your language</span></h1>
+    <p>Каждая версия содержит отдельный каталог Track Spline Builder и Vehicle Weapon System.<br>Each language opens its own complete Track Spline Builder and Vehicle Weapon System catalog.</p>
+  </div>
+
+  <div class="language-grid language-grid--gateway">
+    <a class="language-card" data-code="RU" href="{{ '/ru/' | relative_url }}">
+      <div>
+        <span class="language-card__code">RU · ПОЛНАЯ ВЕРСИЯ</span>
+        <strong>Русский</strong>
+        <p>Полные инструкции, последовательность настройки и справочник всех релизных параметров.</p>
+      </div>
+      <span class="language-card__cta">Открыть документацию</span>
+    </a>
+
+    <a class="language-card" data-code="EN" href="{{ '/en/' | relative_url }}">
+      <div>
+        <span class="language-card__code">EN · COMPLETE EDITION</span>
+        <strong>English</strong>
+        <p>Complete setup guides, recommended workflows, and references for every release-facing control.</p>
+      </div>
+      <span class="language-card__cta">Open documentation</span>
+    </a>
+  </div>
+
+  <div class="language-gateway__footer">
+    <strong>Tread & Traverse</strong>
+    <span>Advanced armored vehicle systems for Unreal Engine</span>
+  </div>
 </section>
-
-<div class="language-grid">
-  <a class="language-card" data-code="RU" href="{{ '/ru/' | relative_url }}">
-    <div>
-      <span class="language-card__code">RU · ПОЛНАЯ ВЕРСИЯ</span>
-      <strong>Документация на русском</strong>
-      <p>Track Spline Builder и Vehicle Weapon System в одном русскоязычном каталоге — с понятным маршрутом настройки и полными справочниками.</p>
-    </div>
-    <span class="language-card__cta">Открыть русскую версию</span>
-  </a>
-
-  <a class="language-card" data-code="EN" href="{{ '/en/' | relative_url }}">
-    <div>
-      <span class="language-card__code">EN · COMPLETE EDITION</span>
-      <strong>English documentation</strong>
-      <p>Track Spline Builder and Vehicle Weapon System presented as one structured English reference with clear setup paths and complete guides.</p>
-    </div>
-    <span class="language-card__cta">Open English version</span>
-  </a>
-</div>
-
-## Two systems. One vehicle stack.
-
-<div class="feature-grid">
-  <div class="feature-card">
-    <strong>Track Spline Builder</strong>
-    <span>Bone-driven track generation, wheel wrapping, ground contact, suspension response, upper-run motion, and instanced links.</span>
-  </div>
-  <div class="feature-card">
-    <strong>Vehicle Weapon System</strong>
-    <span>Reusable turret axes, stabilization, aim sources, muzzle routing, ballistic caches, UI projection, and optional replication.</span>
-  </div>
-  <div class="feature-card">
-    <strong>Release-focused documentation</strong>
-    <span>Supported controls and production workflows are documented; experimental and legacy-only settings stay out of the main guide.</span>
-  </div>
-</div>
-
-<div class="notice-panel">
-  This public repository contains documentation only. Commercial plugin source code is not published here.
-</div>
