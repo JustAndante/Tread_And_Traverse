@@ -9,7 +9,7 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
   <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Руководство</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Ноды</a>
+  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
   <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">English</a>
 </div>
 
@@ -22,7 +22,44 @@ page_kind: reference
 
 Начинайте с `Core`. Переходите к `Advanced` только тогда, когда стандартный компонентный workflow действительно не подходит.
 
-## Обычный runtime-граф
+<section class="bp-showcase" aria-label="Пример Blueprint-графа Vehicle Weapon System">
+  <div class="bp-showcase__copy">
+    <span class="bp-showcase__eyebrow">ОБЫЧНЫЙ RUNTIME-КАДР</span>
+    <strong>Три вызова в фиксированном порядке</strong>
+    <p>Сначала обновляются лучи и баллистика, затем источники прицеливания, после чего система рассчитывает и применяет команды всех осей.</p>
+    <span class="bp-showcase__note">Это основной маршрут. Подробные Advanced-ноды нужны только нестандартным интеграциям.</span>
+  </div>
+  <div class="bp-graph" role="img" aria-label="Последовательность трёх основных runtime-нод Vehicle Weapon System">
+    <div class="bp-graph__flow">
+      <div class="bp-node bp-node--system">
+        <span class="bp-node__phase">01 · TRACES</span>
+        <div class="bp-node__header">Update Weapon Traces And Ballistics</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span><span class="bp-port bp-port--bool bp-port--out"><i class="bp-port__dot"></i>Success</span></div>
+        </div>
+      </div>
+      <span class="bp-wire" aria-hidden="true"></span>
+      <div class="bp-node bp-node--system">
+        <span class="bp-node__phase">02 · AIM SOURCES</span>
+        <div class="bp-node__header">Update Vehicle Aim Sources</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span><span class="bp-port bp-port--bool bp-port--out"><i class="bp-port__dot"></i>Success</span></div>
+        </div>
+      </div>
+      <span class="bp-wire" aria-hidden="true"></span>
+      <div class="bp-node bp-node--system">
+        <span class="bp-node__phase">03 · SOLVE</span>
+        <div class="bp-node__header">Update Vehicle Weapon System</div>
+        <div class="bp-node__ports">
+          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
+          <div class="bp-node__port-row"><span class="bp-port bp-port--number"><i class="bp-port__dot"></i>Delta Seconds</span><span class="bp-port bp-port--bool bp-port--out"><i class="bp-port__dot"></i>Success</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>\n\n## Обычный runtime-граф
 
 Вызывайте эти ноды в указанном порядке после подготовки камеры и AimCube:
 
