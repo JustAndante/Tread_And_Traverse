@@ -2,9 +2,15 @@
 layout: default
 title: "Track Physics Solver — Русский"
 description: "Справочник релизных настроек Track Physics Solver"
+lang: ru
+page_kind: reference
 ---
 
-[← Главная]({{ '/' | relative_url }}) · [English]({{ '/docs/track-physics-solver.en.html' | relative_url }})
+<div class="doc-breadcrumbs">
+  <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
+  <a class="is-active" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Русский</a>
+  <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">English</a>
+</div>
 
 # Track Physics Solver: справочник настроек
 
