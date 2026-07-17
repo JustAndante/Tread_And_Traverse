@@ -24,7 +24,7 @@ This reference covers the public Blueprint nodes exposed by `Track Spline Builde
     <span class="bp-showcase__eyebrow">QUICK PATH</span>
     <strong>Three recognizable nodes before the full reference</strong>
     <p>Generate the wheel-based control points first, then rebuild the visible links. Set track speed separately only when belt travel is driven manually.</p>
-    <span class="bp-showcase__note">Simplified presentation: names and roles match the Unreal Engine nodes.</span>
+    <span class="bp-showcase__note">Pins come from the current UFUNCTION signatures; this is a styled diagram rather than an editor screenshot.</span>
   </div>
   <div class="bp-graph" role="img" aria-label="Generate Control Points From Wheels, Rebuild Track, and Set Track Speed workflow">
     <div class="bp-graph__flow">
