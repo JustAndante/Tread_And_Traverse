@@ -56,7 +56,9 @@ This reference covers the public Blueprint nodes exposed by `Track Spline Builde
       </div>
     </div>
   </div>
-</section>\n\n## Normal graph
+</section>
+
+## Normal graph
 
 With automatic updates enabled, the solver and builder run without a per-frame Blueprint graph. A typical setup only needs:
 
