@@ -1114,14 +1114,14 @@ a:hover {
 .bp-graph__flow {
   display: flex;
   min-width: max-content;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: .35rem 0;
 }
 
 .bp-node {
   position: relative;
-  width: 14.15rem;
+  width: 15.25rem;
   overflow: hidden;
   color: #d6d9dc;
   background: rgba(25, 26, 28, .97);
@@ -1277,11 +1277,25 @@ a:hover {
   border-color: #6ecb63;
 }
 
+
+.bp-port--string .bp-port__dot {
+  border-color: #d86fb8;
+}
+
+.bp-port--struct .bp-port__dot {
+  border-color: #e0b75d;
+}
+
+.bp-port--enum .bp-port__dot {
+  border-color: #78c6d8;
+}
+
 .bp-wire {
   position: relative;
   flex: 0 0 2.45rem;
   height: 1.05rem;
-  margin: 0 .18rem;
+  align-self: flex-start;
+  margin: 3.95rem .18rem 0;
 }
 
 .bp-wire::before,
@@ -1336,7 +1350,7 @@ a:hover {
   }
 
   .bp-node {
-    width: 13.25rem;
+    width: 15rem;
   }
 }
 
