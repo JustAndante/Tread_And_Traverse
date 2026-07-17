@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Track Physics Solver — English"
-description: "Release settings reference for Track Physics Solver"
+description: "Track Physics Solver settings and setup guide"
 lang: en
 page_kind: reference
 ---
@@ -12,19 +12,18 @@ page_kind: reference
   <a class="is-active" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">English</a>
 </div>
 
-# Track Physics Solver Settings Reference
+# Track Physics Solver settings and setup
 
-This reference follows the release-facing `Track Physics Solver` component
-Details panel from top to bottom. It covers the normal bone-rig workflow,
-useful diagnostics, and supported physics, output, and runtime controls.
+The settings below follow the same order as the `Track Physics Solver`
+Details panel. Use this reference to build the track from suspension bones,
+configure terrain contact and physical behavior, and enable diagnostics when
+you need them.
 
-The values shown below are native class defaults. Selecting `Physics Feel
-Preset` immediately applies that preset's tuning values, so an existing vehicle
-may display different values. Child settings are hidden when their parent
-feature is disabled. Distances use Unreal centimeters unless stated otherwise.
-
-This guide focuses on the supported release workflow built from suspension and
-wheel bones.
+Field names match Unreal Engine exactly. The tables show native class defaults.
+Selecting a `Physics Feel Preset` applies that preset's values, so an
+existing vehicle may display different numbers. Child settings are hidden when
+their parent feature is disabled. Distances use Unreal centimeters unless
+stated otherwise.
 
 ## Output: target spline
 
@@ -314,18 +313,18 @@ to the exposed controls if necessary.
 | `Solve Interval` (Advanced) | 0.033 s | Minimum time between solves. A value of 0 solves every component tick; larger values reduce work but also reduce response cadence. |
 | `Max Solve Delta Time` (Advanced) | 0.05 s | Maximum time step accepted by one solve. Longer accumulated frames are clamped to protect the physical integration from large jumps. |
 
-## Recommended documentation path
+## Quick setup order
 
-For customer-facing setup material, pair this field reference with a shorter
-task-oriented Quick Start that covers:
+For a first setup, work through the component in this order:
 
-1. component wiring and left/right naming;
-2. generation and validation;
-3. road/top/end radii and track width;
-4. choosing a physics preset;
-5. Builder link count, orientation, and drive setup;
-6. debug/status interpretation;
-7. performance and multiplayer quality modes.
+1. connect the components and verify the left/right naming;
+2. generate the control points and check that the loop is correct;
+3. set the road, top, and end-wheel radii, then verify track width;
+4. choose a suitable `Physics Feel Preset`;
+5. configure link count, orientation, and drive behavior in `Track Builder`;
+6. use debug drawing and status fields only when investigating a specific problem;
+7. finish by testing performance and quality modes under the intended gameplay conditions.
 
-This guide intentionally stays focused on supported release controls.
-
+You do not need to tune every Advanced setting for a first pass. Start with a
+preset and open the additional controls only when you know which behavior needs
+to change.
