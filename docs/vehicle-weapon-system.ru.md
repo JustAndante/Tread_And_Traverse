@@ -8,7 +8,8 @@ page_kind: reference
 
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Русский</a>
+  <a class="is-active" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Руководство</a>
+  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
   <a href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">English</a>
 </div>
 
