@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
   <a class="is-active" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Руководство</a>
-  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
-  <a href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
+  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды плагина</a>
+  <a href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Blueprint проекта</a>
+  <a href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">English</a>
 </div>
 
@@ -165,9 +166,7 @@ page_kind: reference
 - `Get Vehicle Weapon Trace UI(Vehicle, Weapon ID)` возвращает начало дульного луча, рассчитанный конец, экранную позицию, флаги попадания и проекции;
 - `Get Vehicle Weapon Ballistic UI(Vehicle, Weapon ID)` возвращает баллистическую точку прицеливания, экранную позицию, флаги попадания и проекции;
 - `Get Vehicle Weapon UI Pair(Vehicle, Primary ID, Secondary ID)` удобен для традиционного HUD двух оружий;
-- `Find Vehicle Weapon System(Vehicle)` используется, когда виджету нужен сам компонент или запрос именованного либо стандартного источника прицеливания.
-
-Blueprint, уже имеющий ссылку на компонент, может вместо этого использовать Core-ноды `Get Cached Weapon Trace UI`, `Get Cached Weapon Ballistic UI`, `Get Cached Aim Source UI State` или `Get Cached Standard Aim Source UI State`. Advanced-нода `Get Cached Vehicle Weapon UI Frame` доступна системам, которым намеренно нужен полный кадр произвольного размера. Адаптер двух оружий — только удобство и миграционный слой; он не ограничивает runtime основным орудием и спаренным пулемётом.
+- `Find Vehicle Weapon System(Vehicle)` используется, когда виджету нужен сам компонент или запрос именованного л…23 tokens truncated… уже имеющий ссылку на компонент, может вместо этого использовать Core-ноды `Get Cached Weapon Trace UI`, `Get Cached Weapon Ballistic UI`, `Get Cached Aim Source UI State` или `Get Cached Standard Aim Source UI State`. Advanced-нода `Get Cached Vehicle Weapon UI Frame` доступна системам, которым намеренно нужен полный кадр произвольного размера. Адаптер двух оружий — только удобство и миграционный слой; он не ограничивает runtime основным орудием и спаренным пулемётом.
 
 Пользовательская логика камеры или AI может продолжать использовать явные API каналов и кадров прицеливания. Виджет может запрашивать только один Weapon ID. Машина может объединять поставляемый решатель прицеливания со своим UI либо поставляемый UI-кэш со своими именованными источниками, не наследуя Blueprint Leopard и не копируя его переменные совместимости.
 
@@ -250,3 +249,4 @@ Tick компонента остаётся выключенным, когда о
 - стабилизация удерживает мировую точку при yaw и pitch корпуса без наложенной второй компенсации;
 - тесты с двумя игроками охватывают обоих владельцев, серверные копии, simulated proxies, стрельбу MainGun и MG, а также reconnect и relevancy;
 - отладочная отрисовка трассировок и траекторий выключена, если она намеренно не предоставляется как пользовательская опция.
+
