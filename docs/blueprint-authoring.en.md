@@ -2967,7 +2967,7 @@ Each function is explained in its BP_Tank_Master context: internal flow, affecte
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CalculateProjectileDirection Blueprint node"><div class="bp-auth-node__header"><span>CalculateProjectileDirection</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ProjetileDirection</span><span class="bp-auth-pin__type">Transform</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MeshForCalculatePD</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="machineguncoolingcalculation general logic|tankcomponent|machinegun function eventtick server_ammostate ">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="machineguncoolingcalculation general logic|tankcomponent|machinegun function eventtick server_ammostate server_ammostate">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MachineGun</span>
 <div class="bp-auth-card__title"><code>MachineGunCoolingCalculation</code></div>
@@ -2988,7 +2988,7 @@ Each function is explained in its BP_Tank_Master context: internal flow, affecte
 <dl class="bp-auth-footprint">
 <dt>Called from</dt><dd><code>EventTick</code></dd>
 <dt>Reads state</dt><dd><code>Server_AmmoState</code></dd>
-<dt>Writes state</dt><dd>—</dd>
+<dt>Writes state</dt><dd><code>Server_AmmoState</code></dd>
 </dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>8 nodes</span>
@@ -3383,7 +3383,7 @@ Each function is explained in its BP_Tank_Master context: internal flow, affecte
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructSimulativePoints Blueprint node"><div class="bp-auth-node__header"><span>ConstructSimulativePoints</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">PointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StaticMeshArray</span><span class="bp-auth-pin__type">StaticMeshComponent</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="createdynamicmi general logic|tankcomponent|micomponent function server_damage midynamics ">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="createdynamicmi general logic|tankcomponent|micomponent function server_damage midynamics midynamics">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MIComponent</span>
 <div class="bp-auth-card__title"><code>CreateDynamicMI</code></div>
@@ -3404,7 +3404,7 @@ Each function is explained in its BP_Tank_Master context: internal flow, affecte
 <dl class="bp-auth-footprint">
 <dt>Called from</dt><dd><code>Server_Damage</code></dd>
 <dt>Reads state</dt><dd><code>MIDynamics</code></dd>
-<dt>Writes state</dt><dd>—</dd>
+<dt>Writes state</dt><dd><code>MIDynamics</code></dd>
 </dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>9 nodes</span>
