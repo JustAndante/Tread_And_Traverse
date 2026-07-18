@@ -36,6 +36,7 @@ permalink: /ru/
     <div class="card-actions">
       <a class="card-link" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры и настройка</a>
       <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
     </div>
   </article>
 
@@ -52,6 +53,7 @@ permalink: /ru/
     <div class="card-actions">
       <a class="card-link" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Настройка системы</a>
       <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
     </div>
   </article>
 </div>
