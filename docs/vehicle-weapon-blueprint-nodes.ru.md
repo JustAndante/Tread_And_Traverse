@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
   <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Руководство</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
-  <a href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
+  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды плагина</a>
+  <a href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Blueprint проекта</a>
+  <a href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">English</a>
 </div>
 
@@ -270,5 +271,6 @@ page_kind: reference
 | `Calculate Camera FOV Zoom` | Безопасно ограничивает zoom index и интерполирует FOV. |
 | `Is Component Overlapping Named Object` | Проверяет overlap по имени объекта без небезопасного чтения пустого массива. |
 | `Safe Divide (Double)` | Делит конечные double-значения с fallback при нулевом/невалидном знаменателе. |
+
 
 
