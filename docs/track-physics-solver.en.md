@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a class="is-active" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Settings</a>
-  <a href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
-  <a href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
+  <a href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Plugin Blueprint nodes</a>
+  <a href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">Project Blueprint</a>
+  <a href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Русский</a>
 </div>
 
@@ -330,3 +331,4 @@ For a first setup, work through the component in this order:
 You do not need to tune every Advanced setting for a first pass. Start with a
 preset and open the additional controls only when you know which behavior needs
 to change.
+
