@@ -16,7 +16,6 @@ page_kind: reference
 
 # Track Spline Builder: reflected C++ API
 
-
 This page documents the supported reflected API that is intended for vehicle setup, Blueprint access, and C++ integration. Names and macro specifiers match the public headers. Internal, legacy-only, deprecated, and experimental members are intentionally omitted.
 
 <div class="api-reference-summary"><span>6 types</span><span>281 UPROPERTY</span><span>18 UFUNCTION</span></div>
