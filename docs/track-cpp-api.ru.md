@@ -16,7 +16,6 @@ page_kind: reference
 
 # Track Spline Builder: отражаемый C++ API
 
-
 Здесь собран поддерживаемый отражаемый API для настройки машины, работы из Blueprint и интеграции на C++. Названия и спецификаторы макросов точно соответствуют публичным заголовочным файлам. Внутренние, устаревшие, миграционные и экспериментальные элементы намеренно не включены.
 
 <div class="api-reference-summary"><span>6 types</span><span>281 UPROPERTY</span><span>18 UFUNCTION</span></div>
