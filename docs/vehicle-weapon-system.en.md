@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a class="is-active" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">Guide</a>
-  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
-  <a href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
+  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Plugin Blueprint nodes</a>
+  <a href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">Project Blueprint</a>
+  <a href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Русский</a>
 </div>
 
@@ -232,4 +233,5 @@ Before shipping a vehicle variant:
 - stabilization holds a world point under hull yaw and pitch without stacked compensation;
 - two-player tests cover both owners, server copies, simulated proxies, MainGun/MG firing, and reconnect/relevancy behavior;
 - debug trace/trajectory drawing is disabled unless intentionally exposed as a product option.
+
 
