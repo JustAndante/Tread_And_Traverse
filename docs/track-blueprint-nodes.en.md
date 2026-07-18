@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Settings</a>
-  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
-  <a href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
+  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Plugin Blueprint nodes</a>
+  <a href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">Project Blueprint</a>
+  <a href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Русский</a>
 </div>
 
@@ -132,5 +133,6 @@ The component API is preferred for vehicles because it retains settings, orienta
 - Do not combine automatic Tick with manual `Update Track Physics Spline` calls.
 - Reset physics or perform a snapped rebuild after changing control-point topology.
 - The builder must read the same target spline written by its paired solver.
+
 
 
