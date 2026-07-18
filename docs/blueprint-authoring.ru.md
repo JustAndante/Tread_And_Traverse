@@ -433,7 +433,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Camera|Main Camera|Base Parameters</span>
 <div class="bp-auth-card__title"><code>CameraRot</code></div>
-<p>Ссылка на `Rotator`, используемая как «Camera Rot».</p>
+<p>Ссылка на <code>Rotator</code>, используемая как «Camera Rot».</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Rotator</span>
 <span><b>По умолчанию</b>Pitch=+0, Yaw=+0, Roll=+0</span>
@@ -538,7 +538,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Components|Chaos</span>
 <div class="bp-auth-card__title"><code>As Chaos Wheeled Vehicle Movement Component</code></div>
-<p>Ссылка на `ChaosWheeledVehicleMovementComponent`, используемая как «As Chaos Wheeled Vehicle Movement Component».</p>
+<p>Ссылка на <code>ChaosWheeledVehicleMovementComponent</code>, используемая как «As Chaos Wheeled Vehicle Movement Component».</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>ChaosWheeledVehicleMovementComponent</span>
 <span><b>По умолчанию</b>None</span>
@@ -688,7 +688,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Preferences</span>
 <div class="bp-auth-card__title"><code>Server_AmmoState</code></div>
-<p>Рабочее значение «Server Ammo State» типа `ST_AmmoState`.</p>
+<p>Рабочее значение «Server Ammo State» типа <code>ST_AmmoState</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>ST_AmmoState</span>
 <span><b>По умолчанию</b>Empty</span>
@@ -1333,7 +1333,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Particle</span>
 <div class="bp-auth-card__title"><code>MachineGunFireNiagaraEffect</code></div>
-<p>Рабочее значение «Machine Gun Fire Niagara Effect» типа `NiagaraSystem`.</p>
+<p>Рабочее значение «Machine Gun Fire Niagara Effect» типа <code>NiagaraSystem</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>NiagaraSystem</span>
 <span><b>По умолчанию</b>-395</span>
@@ -1348,7 +1348,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Particle</span>
 <div class="bp-auth-card__title"><code>OverheatingNiagaraEffect</code></div>
-<p>Рабочее значение «Overheating Niagara Effect» типа `NiagaraSystem`.</p>
+<p>Рабочее значение «Overheating Niagara Effect» типа <code>NiagaraSystem</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>NiagaraSystem</span>
 <span><b>По умолчанию</b>-397</span>
@@ -1363,7 +1363,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Projectile</span>
 <div class="bp-auth-card__title"><code>MachineGunProjectile</code></div>
-<p>Рабочее значение «Machine Gun Projectile» типа `Class Class`.</p>
+<p>Рабочее значение «Machine Gun Projectile» типа <code>Class Class</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Class Class</span>
 <span><b>По умолчанию</b>-12</span>
@@ -1498,7 +1498,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Particle</span>
 <div class="bp-auth-card__title"><code>MainGun Fire Ground Effect</code></div>
-<p>Рабочее значение «Main Gun Fire Ground Effect» типа `NiagaraSystem`.</p>
+<p>Рабочее значение «Main Gun Fire Ground Effect» типа <code>NiagaraSystem</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>NiagaraSystem</span>
 <span><b>По умолчанию</b>-392</span>
@@ -1513,7 +1513,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Particle</span>
 <div class="bp-auth-card__title"><code>MainGunFireNiagaraEffect</code></div>
-<p>Рабочее значение «Main Gun Fire Niagara Effect» типа `NiagaraSystem`.</p>
+<p>Рабочее значение «Main Gun Fire Niagara Effect» типа <code>NiagaraSystem</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>NiagaraSystem</span>
 <span><b>По умолчанию</b>-396</span>
@@ -1528,7 +1528,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
 <div class="bp-auth-card__title"><code>EjectedCartridge</code></div>
-<p>Рабочее значение «Ejected Cartridge» типа `Class Class`.</p>
+<p>Рабочее значение «Ejected Cartridge» типа <code>Class Class</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Class Class</span>
 <span><b>По умолчанию</b>-10</span>
@@ -1543,7 +1543,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
 <div class="bp-auth-card__title"><code>MainGunProjectile</code></div>
-<p>Рабочее значение «Main Gun Projectile» типа `Class Class`.</p>
+<p>Рабочее значение «Main Gun Projectile» типа <code>Class Class</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Class Class</span>
 <span><b>По умолчанию</b>-13</span>
@@ -1558,7 +1558,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
 <div class="bp-auth-card__title"><code>MainGunShellProjectille</code></div>
-<p>Рабочее значение «Main Gun Shell Projectille» типа `Class Class`.</p>
+<p>Рабочее значение «Main Gun Shell Projectille» типа <code>Class Class</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Class Class</span>
 <span><b>По умолчанию</b>-14</span>
@@ -1723,7 +1723,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Projectile</span>
 <div class="bp-auth-card__title"><code>SmokeShellProjectile</code></div>
-<p>Рабочее значение «Smoke Shell Projectile» типа `Class Class`.</p>
+<p>Рабочее значение «Smoke Shell Projectile» типа <code>Class Class</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Class Class</span>
 <span><b>По умолчанию</b>-11</span>
@@ -1798,7 +1798,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|MaterialParameters</span>
 <div class="bp-auth-card__title"><code>ThermalMaterialParameter</code></div>
-<p>Ссылка на `MaterialParameterCollection`, используемая как «Thermal Material Parameter».</p>
+<p>Ссылка на <code>MaterialParameterCollection</code>, используемая как «Thermal Material Parameter».</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>MaterialParameterCollection</span>
 <span><b>По умолчанию</b>-389</span>
@@ -1828,7 +1828,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|PostProcessSettings</span>
 <div class="bp-auth-card__title"><code>ThermalPostProcessSettings_Default</code></div>
-<p>Рабочее значение «Thermal Post Process Settings Default» типа `PostProcessSettings`.</p>
+<p>Рабочее значение «Thermal Post Process Settings Default» типа <code>PostProcessSettings</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>PostProcessSettings</span>
 <span><b>По умолчанию</b>412 items</span>
@@ -1843,7 +1843,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|PostProcessSettings</span>
 <div class="bp-auth-card__title"><code>ThermalPost Process Settings_Mod</code></div>
-<p>Рабочее значение «Thermal Post Process Settings Mod» типа `PostProcessSettings`.</p>
+<p>Рабочее значение «Thermal Post Process Settings Mod» типа <code>PostProcessSettings</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>PostProcessSettings</span>
 <span><b>По умолчанию</b>412 items</span>
@@ -2563,7 +2563,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
 <div class="bp-auth-card__title"><code>SplineTrack_L</code></div>
-<p>Ссылка на `SplineComponent`, используемая как «Spline Track L».</p>
+<p>Ссылка на <code>SplineComponent</code>, используемая как «Spline Track L».</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>SplineComponent</span>
 <span><b>По умолчанию</b>None</span>
@@ -2758,7 +2758,7 @@ page_kind: reference
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">UI|Components</span>
 <div class="bp-auth-card__title"><code>UI</code></div>
-<p>Рабочее значение «UI» типа `Object`.</p>
+<p>Рабочее значение «UI» типа <code>Object</code>.</p>
 <div class="bp-auth-meta">
 <span><b>Тип</b>Object</span>
 <span><b>По умолчанию</b>None</span>
@@ -2773,535 +2773,1219 @@ page_kind: reference
 
 <section class="bp-auth-section" data-bp-section="functions">
 <h2>Функции</h2>
-Каждый визуальный блок построен по реальному `Function Entry` и `Function Result`; на нём показаны все публичные входы и выходы графа.
+Для каждой функции сначала разобрана её роль в BP_Tank_Master: внутренняя цепочка, изменяемое состояние и реальные места вызова. Визуальный блок ниже построен по настоящим `Function Entry` и `Function Result` и служит дополнением к объяснению, а не заменяет его.
 <div class="bp-auth-grid">
-<article class="bp-auth-card" data-bp-item data-search="userconstructionscript functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="userconstructionscript functions function   ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>UserConstructionScript</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Подготавливает компоненты и исходные значения экземпляра при создании или изменении Blueprint в редакторе.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>При перестроении экземпляра проверяет, допустима ли редакторская инициализация, и передаёт управление в <code>Construct Spline Track</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>В результате исходные сплайны, вспомогательные точки и инстансы звеньев подготавливаются ещё до начала игры; отдельный ручной вызов этой функции не требуется.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>Construction Script Unreal</dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>4 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>2</span>
 </div>
 <span class="bp-auth-badge">Construction</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UserConstructionScript Blueprint node"><div class="bp-auth-node__header"><span>UserConstructionScript</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="updatetrackslocation general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="updatetrackslocation general logic|track components|track maker function server_trackphysgraph trackpath uppersplinepointarray startsplinepoint physicssplinepointarray tracktraceheight physicssplinepointlocationarray absoluteendsplinepoint tension subtracecount stepdeg baseangledeg mesh relativelocation pawn worldlocation pawn worldrotation track path relative location trackhelpernames_r wheelsamount maxsplinesagging as chaos wheeled vehicle movement component isleftside? trackhelpernames_l useasimplesimulation? splinesubdivision simulateconstraintsphysics? enabletension spline element suspendedindexes splineparabolawidth attachsplinepointstowheels n customtangent deltasecond smoothedangle trackoffset targetlocal currentsplineangle midpointofsheafarray currentmidpointofsheafnormalized midpointofsheafsmoothed midpointofsheaflocal trackhitcountlocal tension spline element pawn worldlocation pawn worldrotation track path relative location n smoothedangle targetlocal midpointofsheafsmoothed midpointofsheaflocal trackhitcountlocal">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>UpdateTracksLocation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Обновляет положение элементов гусениц по состоянию подвески, колёс и рассчитанного сплайна.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Для каждой точки контура сопоставляет положение с сокетом или состоянием Chaos-колеса, выполняет трассировки поверхности, рассчитывает натяжение и провис, затем сглаживает переходы и обновляет позиции и тангенты сплайна. Внутри предусмотрены отдельные ветви для простой и constraint-физики, левой и правой стороны, верхней ветви и свободных участков.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Функция является основным runtime-решателем формы гусеницы: после её выполнения <code>TrackPath</code> содержит актуальный замкнутый контур, по которому следующая стадия размещает визуальные звенья.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_TrackPhysGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>TrackPath</code>, <code>UpperSplinePointArray</code>, <code>StartSplinePoint</code>, <code>PhysicsSplinePointArray</code>, <code>TrackTraceHeight</code>, <code>PhysicsSplinePointLocationArray</code> <span class="bp-auth-more">+36 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd><code>Tension</code>, <code>Spline Element</code>, <code>Pawn WorldLocation</code>, <code>Pawn WorldRotation</code>, <code>Track Path Relative Location</code>, <code>N</code> <span class="bp-auth-more">+5 ещё</span></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>238 нод</span>
 <span><b>Сигнатура</b>12 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>53</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateTracksLocation Blueprint node"><div class="bp-auth-node__header"><span>UpdateTracksLocation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UseASimpleSimulation?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EnableTension</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackOffset</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSecond</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentSplineAngle</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentMidPointOfSheafNormalized</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MidPointOfSheafArray</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="wheelmovcalculation general logic|tank component|track component function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="wheelmovcalculation general logic|tank component|track component function server_trackphysgraph rearwheelradius frontwheelradius topwheelradius wheeldistancel wheeldistancer wheeldeltadistancer wheeldeltadistancel as chaos wheeled vehicle movement component wheels splinetrack_l blockrightside blockleftside autosplinetrack_r frontwheelangularvelocity_l frontwheelangularvelocity_r middlewheelangularvelocity_l middlewheelangularvelocity_r rearwheelangularvelocity_l topwheelangularvelocity_r topwheelangularvelocity_l rearwheelangularvelocity_r wheeldistancel wheeldistancer wheeldeltadistancer wheeldeltadistancel">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
 <div class="bp-auth-card__title"><code>WheelMovCalculation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Вычисляет рабочие значения движения колёс, используемые системой гусениц.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Берёт среднюю угловую скорость групп колёс, их радиусы и длину сплайна, переводит вращение в пройденное расстояние и отдельно накапливает смещение левой и правой гусеницы. Полученные значения также передаются сетевым событиям колёсной дистанции и скорости.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Обновляет фазу движения звеньев и рабочие угловые скорости передней, средней, задней и верхней групп; блокировка стороны учитывается до выдачи нового смещения.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_TrackPhysGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>RearWheelRadius</code>, <code>FrontWheelRadius</code>, <code>TopWheelRadius</code>, <code>WheelDistanceL</code>, <code>WheelDistanceR</code>, <code>WheelDeltaDistanceR</code> <span class="bp-auth-more">+7 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd><code>FrontWheelAngularVelocity_L</code>, <code>FrontWheelAngularVelocity_R</code>, <code>MiddleWheelAngularVelocity_L</code>, <code>MiddleWheelAngularVelocity_R</code>, <code>RearWheelAngularVelocity_L</code>, <code>TopWheelAngularVelocity_R</code> <span class="bp-auth-more">+6 ещё</span></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>65 нод</span>
 <span><b>Сигнатура</b>2 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>8</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="WheelMovCalculation Blueprint node"><div class="bp-auth-node__header"><span>WheelMovCalculation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="camerazoom general logic|camera|zoom function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="camerazoom general logic|camera|zoom function eventtick springarm targetarmlength zoom step maincamfovmultiple isgunnercameraswitch? gunnercamera gunnercamfovstep gunnercamfovmultiple fieldofview comtowercamera comtowercamfovstep comtowercamfovmultiple iscomtowercameraswitch? zoom bounds relativelocation gunnercamfovbounds comtowercamfovbounds temp current zoom targetarmlength gunnercamfov comtowercamfov">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Camera|Zoom</span>
 <div class="bp-auth-card__title"><code>CameraZoom</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Обрабатывает изменение увеличения активной камеры с учётом заданных границ и шага.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Определяет активный режим обзора — внешний, наводчика или командира — и для него рассчитывает целевую длину Spring Arm либо FOV. Значение изменяется с заданным шагом, ограничивается соответствующим диапазоном и плавно применяется с учётом <code>Delta Seconds</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Меняет только параметры текущей камеры: внешний вид использует дистанцию Spring Arm, оптические каналы — поле зрения своих камер.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>EventTick</code></dd>
+<dt>Читает состояние</dt><dd><code>SpringArm</code>, <code>TargetArmLength</code>, <code>Zoom Step</code>, <code>MainCamFOVMultiple</code>, <code>IsGunnerCameraSwitch?</code>, <code>GunnerCamera</code> <span class="bp-auth-more">+11 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd><code>Temp Current Zoom</code>, <code>TargetArmLength</code>, <code>GunnerCamFOV</code>, <code>ComTowerCamFOV</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>49 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>9</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CameraZoom Blueprint node"><div class="bp-auth-node__header"><span>CameraZoom</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="updatetowerrotation general logic|tankcomponent|tower function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="updatetowerrotation general logic|tankcomponent|tower function server_towerrotationgraph weaponaimsystem towerrotation maingunpitch">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|Tower</span>
 <div class="bp-auth-card__title"><code>UpdateTowerRotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Обновляет наведение основной башни и орудия.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Запрашивает у <code>WeaponAimSystem</code> рассчитанные относительные повороты осей основной башни и орудия. Если включён новый профиль осей, сохраняет эти углы и отправляет их серверному событию; при legacy-режиме оставляет совместимый сетевой путь.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Подготавливает единое состояние yaw/pitch основной установки, которое затем серверная функция применяет к переданным компонентам башни и пушки.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_TowerRotationGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>WeaponAimSystem</code></dd>
+<dt>Изменяет состояние</dt><dd><code>TowerRotation</code>, <code>MainGunPitch</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>8 нод</span>
 <span><b>Сигнатура</b>3 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateTowerRotation Blueprint node"><div class="bp-auth-node__header"><span>UpdateTowerRotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MainGun</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="calculateprojectiledirection general logic|tankcomponent|firesystemcomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="calculateprojectiledirection general logic|tankcomponent|firesystemcomponent function server_firesystem maingunfiresys smokeshallfiresys  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|FireSystemComponent</span>
 <div class="bp-auth-card__title"><code>CalculateProjectileDirection</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Возвращает направление выстрела от выбранного сокета и меша с учётом текущего наведения.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Строит луч из выбранного сокета по его forward-направлению, выполняет трассировку и выбирает точку попадания либо конец луча. Из положения сокета и выбранной цели собирает итоговый transform выстрела.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращаемый <code>ProjetileDirection</code> используется и основной пушкой, и дымовыми гранатомётами, поэтому направление снаряда и визуальное наведение опираются на одну расчётную точку.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_FireSystem</code>, <code>MainGunFireSys</code>, <code>SmokeShallFireSys</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>14 нод</span>
 <span><b>Сигнатура</b>3 in · 2 out</span>
-<span><b>Внутренние вызовы</b>3</span>
+<span><b>Шаги-вызовы</b>8</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CalculateProjectileDirection Blueprint node"><div class="bp-auth-node__header"><span>CalculateProjectileDirection</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ProjetileDirection</span><span class="bp-auth-pin__type">Transform</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MeshForCalculatePD</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="machineguncoolingcalculation general logic|tankcomponent|machinegun function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="machineguncoolingcalculation general logic|tankcomponent|machinegun function eventtick server_ammostate ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MachineGun</span>
 <div class="bp-auth-card__title"><code>MachineGunCoolingCalculation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Рассчитывает охлаждение и состояние перегрева пулемёта.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Уменьшает поле нагрева пулемёта в <code>Server_AmmoState</code> пропорционально времени кадра и ограничивает результат диапазоном 0–1.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Даже когда пулемёт не стреляет, его серверное состояние постепенно возвращается к холодному; проверки перегрева в графе стрельбы читают уже это обновлённое значение.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>EventTick</code></dd>
+<dt>Читает состояние</dt><dd><code>Server_AmmoState</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>8 нод</span>
 <span><b>Сигнатура</b>2 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="MachineGunCoolingCalculation Blueprint node"><div class="bp-auth-node__header"><span>MachineGunCoolingCalculation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSeconds</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_firesystem server logic|tankcomponent|firesystemcomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_firesystem server logic|tankcomponent|firesystemcomponent function maingunfiresys machinegunfiresys projectille momentumvalue isapfsds? shellprojectille momentummesh ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic|TankComponent|FireSystemComponent</span>
 <div class="bp-auth-card__title"><code>Server_FireSystem</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Серверная точка входа для логики стрельбы и проверки доступности оружия.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>На серверной стороне получает transform направления из <code>CalculateProjectileDirection</code>, выбирает переданный класс снаряда и использует сокеты меша как точку появления. Отдельно преобразует направление отдачи и прикладывает к заданному компоненту угловой импульс с указанной величиной.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Создаёт авторитетный результат выстрела и физическую отдачу; локальные звук, вспышка и наземный эффект запускаются отдельно через <code>Client_FireSystem</code>.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>MainGunFireSys</code>, <code>MachineGunFireSys</code></dd>
+<dt>Читает состояние</dt><dd><code>Projectille</code>, <code>MomentumValue</code>, <code>IsAPFSDS?</code>, <code>ShellProjectille</code>, <code>MomentumMesh</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>42 нод</span>
 <span><b>Сигнатура</b>10 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>17</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_FireSystem Blueprint node"><div class="bp-auth-node__header"><span>Server_FireSystem</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TankMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumDirectionCalcSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumValue</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DirectionCalcMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsAPFSDS?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ShellProjectille</span><span class="bp-auth-pin__type">Actor</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Projectille</span><span class="bp-auth-pin__type">Actor</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="trace of weapon uiaim calculation general logic|camera|ui function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="trace of weapon uiaim calculation general logic|camera|ui function eventtick maincamera aimcube commanderaimcube globaltracelenght freecamswitch isgunnercameraswitch? iscomtowercameraswitch? isdoublefiresysenable? islocktargetenabled? isballisticcomputerenable? weaponaimsystem ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Camera|UI</span>
 <div class="bp-auth-card__title"><code>Trace Of Weapon UIAim Calculation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Выполняет трассировку прицела и получает точку, которую нужно показать в интерфейсе.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Выбирает источник прицеливания по активной камере и режимам свободного обзора, баллистического вычислителя, захвата цели и двойной установки. Затем обновляет источники наведения в <code>WeaponAimSystem</code> и передаёт новое состояние интерфейсу через <code>OnUIStateChanged</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Поддерживает экранную точку прицеливания и данные оружейной системы синхронными с тем каналом наблюдения, которым сейчас пользуется игрок.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>EventTick</code></dd>
+<dt>Читает состояние</dt><dd><code>MainCamera</code>, <code>AimCube</code>, <code>CommanderAimCube</code>, <code>GlobalTraceLenght</code>, <code>FreeCamSwitch</code>, <code>IsGunnerCameraSwitch?</code> <span class="bp-auth-more">+5 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>21 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Trace Of Weapon UIAim Calculation Blueprint node"><div class="bp-auth-node__header"><span>Trace Of Weapon UIAim Calculation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="rotatevectoraroundaxis global function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="rotatevectoraroundaxis global function updatetrackslocation  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Global</span>
 <div class="bp-auth-card__title"><code>RotateVectorAroundAxis</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Поворачивает вектор вокруг заданной оси и возвращает результат.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Переводит точку в локальное пространство относительно pivot, поворачивает полученный вектор заданным rotator и преобразует его обратно.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращает мировую позицию после вращения; в системе гусениц используется для геометрических смещений вокруг опорных точек без изменения исходного pivot.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>8 нод</span>
 <span><b>Сигнатура</b>4 in · 2 out</span>
-<span><b>Внутренние вызовы</b>4</span>
+<span><b>Шаги-вызовы</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="RotateVectorAroundAxis Blueprint node"><div class="bp-auth-node__header"><span>RotateVectorAroundAxis</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Pivot Vector</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Return Value</span><span class="bp-auth-pin__type">Vector</span><span class="bp-auth-pin__default">0, 0, 0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Vector to Rotate</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="updatecomtowerrotation general logic|tankcomponent|machinegun function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="updatecomtowerrotation general logic|tankcomponent|machinegun function server_comtowerrotationgraph weaponaimsystem machiegunpitch mgcomtowerrotation ctcomtowerrotation">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MachineGun</span>
 <div class="bp-auth-card__title"><code>UpdateComTowerRotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Обновляет поворот командирской башенки и связанного вооружения.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Получает из <code>WeaponAimSystem</code> относительные углы вспомогательной установки, разделяет yaw командирской башенки и pitch пулемёта и учитывает legacy-сетевой режим. Рассчитанные углы передаются серверному событию.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Подготавливает три согласованных значения — поворот пулемётной башни, наклон пулемёта и поворот командирской части — для последующего применения на сервере.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_ComTowerRotationGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>WeaponAimSystem</code></dd>
+<dt>Изменяет состояние</dt><dd><code>MachieGunPitch</code>, <code>MGComTowerRotation</code>, <code>CTComTowerRotation</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>10 нод</span>
 <span><b>Сигнатура</b>2 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateComTowerRotation Blueprint node"><div class="bp-auth-node__header"><span>UpdateComTowerRotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ComTower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="getuppersplinepointzposition general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getuppersplinepointzposition general logic|track components|track maker function construct spline track splinepointarray ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>GetUpperSplinePointZPosition</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Вычисляет высоту точки верхней ветви гусеницы.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Проходит по переданным индексам верхней ветви и читает их положения из <code>TrackPath</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Заполняет рабочий массив высот/позиций верхних точек, который далее нужен построению и восстановлению формы верхней ветви.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Читает состояние</dt><dd><code>SplinePointArray</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>17 нод</span>
 <span><b>Сигнатура</b>3 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetUpperSplinePointZPosition Blueprint node"><div class="bp-auth-node__header"><span>GetUpperSplinePointZPosition</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="splinemirrorcopy general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="splinemirrorcopy general logic|track components|track maker function construct spline track splinetocopy newsplinelocal currentpointindex startsplinepoint absoluteendsplinepoint newsplinelocal currentpointindex">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>SplineMirrorCopy</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Копирует форму сплайна на противоположную сторону с зеркальным преобразованием.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Создаёт во втором сплайне то же количество точек, что у источника, зеркалит их локальное положение и переносит rotation, тип точки и входящий/исходящий тангенты с разворотом порядка индексов.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращает готовый зеркальный контур противоположной стороны и замыкает его; исходный сплайн при этом остаётся эталоном.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Читает состояние</dt><dd><code>SplineToCopy</code>, <code>NewSplineLocal</code>, <code>CurrentPointIndex</code>, <code>StartSplinePoint</code>, <code>AbsoluteEndSplinePoint</code></dd>
+<dt>Изменяет состояние</dt><dd><code>NewSplineLocal</code>, <code>CurrentPointIndex</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>58 нод</span>
 <span><b>Сигнатура</b>2 in · 2 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>30</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SplineMirrorCopy Blueprint node"><div class="bp-auth-node__header"><span>SplineMirrorCopy</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SplineToCopy</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">NewSpline</span><span class="bp-auth-pin__type">SplineComponent</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="instancetrackscreation general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="instancetrackscreation general logic|track components|track maker function construct spline track trackpathtoattach trackstaticmeshes trackmeshesamount trackinstanceslocal trackonside currentinstance currentstaticmesh isleftside? trackmeshesamount currentinstance currentstaticmesh">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>InstanceTracksCreation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Создаёт и размещает инстансы звеньев гусеницы по рассчитанному контуру.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Создаёт и прикрепляет набор <code>InstancedStaticMeshComponent</code>, назначает каждому компоненту соответствующий меш башмака и добавляет нужное количество экземпляров. Сторона машины влияет на используемое смещение и ориентацию.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращает массив/компонент инстансов, который <code>SetTracksTransform</code> затем обновляет по сплайну без создания отдельных Actor для каждого звена.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Читает состояние</dt><dd><code>TrackPathToAttach</code>, <code>TrackStaticMeshes</code>, <code>TrackMeshesAmount</code>, <code>TrackInstancesLocal</code>, <code>TrackOnSide</code>, <code>CurrentInstance</code> <span class="bp-auth-more">+2 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd><code>TrackMeshesAmount</code>, <code>CurrentInstance</code>, <code>CurrentStaticMesh</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>37 нод</span>
 <span><b>Сигнатура</b>3 in · 2 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>10</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="InstanceTracksCreation Blueprint node"><div class="bp-auth-node__header"><span>InstanceTracksCreation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPathToAttach</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TracksInstances</span><span class="bp-auth-pin__type">InstancedStaticMeshComponent</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="settrackstransform general logic|tank component|track component function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="settrackstransform general logic|tank component|track component function server_trackphysgraph trackinstancecurrent intervalamongtracks chassiscurrentdistance trackpathlength trackonside tracksamountbeforesplineend trackmeshesamount trackinstances trackmeshoffset trackindex trackpath currenttrackdistance trackpathlength intervalamongtracks tracksamountbeforesplineend chassiscurrentdistance trackinstancecurrent currenttrackdistance trackmeshoffset">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
 <div class="bp-auth-card__title"><code>SetTracksTransform</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Применяет вычисленное преобразование к выбранному звену гусеницы.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Считает длину контура и равномерный интервал между звеньями, добавляет накопленную дистанцию движения шасси и циклически оборачивает её на конце сплайна. Для каждого экземпляра макрос <code>CalculateTruckTransform</code> получает позицию и ориентацию, после чего вызывается <code>Update Instance Transform</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Перемещает все визуальные башмаки вдоль уже рассчитанной формы гусеницы и сохраняет текущую фазу между кадрами.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_TrackPhysGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>TrackInstanceCurrent</code>, <code>IntervalAmongTracks</code>, <code>ChassisCurrentDistance</code>, <code>TrackPathLength</code>, <code>TrackOnSide</code>, <code>TracksAmountBeforeSplineEnd</code> <span class="bp-auth-more">+6 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd><code>TrackPathLength</code>, <code>IntervalAmongTracks</code>, <code>TracksAmountBeforeSplineEnd</code>, <code>ChassisCurrentDistance</code>, <code>TrackInstanceCurrent</code>, <code>CurrentTrackDistance</code> <span class="bp-auth-more">+1 ещё</span></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>65 нод</span>
 <span><b>Сигнатура</b>4 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>16</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetTracksTransform Blueprint node"><div class="bp-auth-node__header"><span>SetTracksTransform</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackInstances</span><span class="bp-auth-pin__type">InstancedStaticMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ChassisDistance</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="constructrear|frontsplinepoint general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="constructrear|frontsplinepoint general logic|track components|track maker function old mesh ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>ConstructRear|FrontSplinePoint</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Строит переходные точки сплайна у переднего или заднего колеса.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>От положения указанного сокета колеса и его радиуса вычисляет две переходные точки — нижнюю и верхнюю; <code>InvertDownAxis</code> меняет сторону нижнего смещения для переднего/заднего варианта.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Записывает обе позиции непосредственно в <code>TrackPath</code>, формируя соединение обвода концевого колеса с прямыми ветвями.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Old</code></dd>
+<dt>Читает состояние</dt><dd><code>Mesh</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>11 нод</span>
 <span><b>Сигнатура</b>7 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>6</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructRear|FrontSplinePoint Blueprint node"><div class="bp-auth-node__header"><span>ConstructRear|FrontSplinePoint</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DownRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UpRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InSocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WhellRadius</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InvertDownAxis</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="angularvelocity general logic|tank component|track component function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="angularvelocity general logic|tank component|track component function   ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
 <div class="bp-auth-card__title"><code>AngularVelocity</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Получает или преобразует угловую скорость для дальнейших расчётов движения.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Делит пройденную линейную дистанцию на радиус и переводит полученный угол через число π в используемую Blueprint величину вращения.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращает угол колеса для той же дистанции, благодаря чему визуальное вращение согласуется с перемещением гусеницы.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>в сохранённых графах прямых вызовов нет</dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>8 нод</span>
 <span><b>Сигнатура</b>3 in · 2 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="AngularVelocity Blueprint node"><div class="bp-auth-node__header"><span>AngularVelocity</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WheelDistance</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Angle</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Radius</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="uppersplinepointsagging general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="uppersplinepointsagging general logic|track components|track maker function updatetrackslocation vehiclemovementcomponent constraint instances_r relativelocation constraint instances_l ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>UpperSplinePointSagging</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Рассчитывает провис верхней ветви между опорными точками.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Для одной точки верхней ветви вычисляет прогиб между началом и концом участка. В расчёт входят натяжение, доля гусеницы на земле, скорость/направление машины, ограничения провиса и, при включённой constraint-физике, относительное движение физических помощников.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Записывает скорректированную высоту точки в сплайн; последовательный вызов для массива точек формирует плавную, реагирующую на движение верхнюю ветвь.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Читает состояние</dt><dd><code>VehicleMovementComponent</code>, <code>Constraint Instances_R</code>, <code>RelativeLocation</code>, <code>Constraint Instances_L</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>35 нод</span>
 <span><b>Сигнатура</b>13 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>14</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpperSplinePointSagging Blueprint node"><div class="bp-auth-node__header"><span>UpperSplinePointSagging</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Index</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AmountOfTrackOnTheGround</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackDownwards</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackUpwards</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DisableTension?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="constructsimulativepoints general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="constructsimulativepoints general logic|track components|track maker function construct spline track mesh ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>ConstructSimulativePoints</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Формирует дополнительные точки, используемые симуляцией гусеницы.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Создаёт скрытые Static Mesh-компоненты в выбранной точке сплайна, прикрепляет их к шасси и настраивает физическую симуляцию и constraint между соседними помощниками. Макрос <code>GameMode</code> отделяет редакторское построение от игрового режима.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращает физические точки-помощники, положение которых затем может участвовать в constraint-ветви расчёта гусеницы.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Читает состояние</dt><dd><code>Mesh</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>17 нод</span>
 <span><b>Сигнатура</b>3 in · 2 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>11</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructSimulativePoints Blueprint node"><div class="bp-auth-node__header"><span>ConstructSimulativePoints</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">PointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StaticMeshArray</span><span class="bp-auth-pin__type">StaticMeshComponent</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="createdynamicmi general logic|tankcomponent|micomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="createdynamicmi general logic|tankcomponent|micomponent function server_damage midynamics ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MIComponent</span>
 <div class="bp-auth-card__title"><code>CreateDynamicMI</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Создаёт динамические экземпляры материалов, которыми Blueprint управляет во время игры.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Проходит по всем слотам материала переданного <code>PrimitiveComponent</code>, создаёт для каждого Dynamic Material Instance и сохраняет полученные ссылки.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>После вызова Blueprint может менять параметры повреждения и другие runtime-эффекты, не затрагивая исходные Material Instance.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_Damage</code></dd>
+<dt>Читает состояние</dt><dd><code>MIDynamics</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>9 нод</span>
 <span><b>Сигнатура</b>2 in · 1 out</span>
-<span><b>Внутренние вызовы</b>3</span>
+<span><b>Шаги-вызовы</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CreateDynamicMI Blueprint node"><div class="bp-auth-node__header"><span>CreateDynamicMI</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MIMesh</span><span class="bp-auth-pin__type">PrimitiveComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="setdrivetorquebyside general logic|controls function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="setdrivetorquebyside general logic|controls function server_separatemovement dev wheelsamount as chaos wheeled vehicle movement component ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Controls</span>
 <div class="bp-auth-card__title"><code>SetDriveTorqueBySide</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Передаёт тяговый момент на выбранную сторону машины.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>По количеству колёс выбирает индексы левой либо правой стороны, умножает входной момент на заданные коэффициенты и вызывает <code>Set Drive Torque</code> для каждого колеса этой стороны.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Даёт раздельное управление тягой бортов, используемое экспериментальным графом танкового поворота.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_SeparateMovement DEV</code></dd>
+<dt>Читает состояние</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>13 нод</span>
 <span><b>Сигнатура</b>5 in · 1 out</span>
-<span><b>Внутренние вызовы</b>6</span>
+<span><b>Шаги-вызовы</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveTorqueBySide Blueprint node"><div class="bp-auth-node__header"><span>SetDriveTorqueBySide</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorqueMultiply</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="setdrivebrakebyside general logic|controls function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="setdrivebrakebyside general logic|controls function server_separatemovement dev wheelsamount as chaos wheeled vehicle movement component ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Controls</span>
 <div class="bp-auth-card__title"><code>SetDriveBrakeBySide</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Передаёт тормозное усилие на выбранную сторону машины.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Аналогично тяговой функции выбирает колёса одного борта, рассчитывает итоговый тормозной момент и применяет <code>Set Brake Torque</code> к каждому из них.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Позволяет замедлять левую и правую стороны независимо при раздельной схеме управления.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_SeparateMovement DEV</code></dd>
+<dt>Читает состояние</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>13 нод</span>
 <span><b>Сигнатура</b>5 in · 1 out</span>
-<span><b>Внутренние вызовы</b>8</span>
+<span><b>Шаги-вызовы</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveBrakeBySide Blueprint node"><div class="bp-auth-node__header"><span>SetDriveBrakeBySide</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TorqueMultiply</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="getwheelsdebug general logic|controls function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getwheelsdebug general logic|controls function  wheelsamount as chaos wheeled vehicle movement component wheels ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Controls</span>
 <div class="bp-auth-card__title"><code>GetWheelsDebug</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Собирает отладочные сведения по колёсам и их текущему состоянию.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Проходит по колёсам выбранного борта, запрашивает <code>Wheel State</code>, разбирает статус контакта и угловую скорость и выводит значения через <code>Print String</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Это ручной диагностический помощник: он ничего не меняет в движении машины и в сохранённых графах штатно не вызывается.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>в сохранённых графах прямых вызовов нет</dd>
+<dt>Читает состояние</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code>, <code>Wheels</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>21 нод</span>
 <span><b>Сигнатура</b>2 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>9</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetWheelsDebug Blueprint node"><div class="bp-auth-node__header"><span>GetWheelsDebug</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="getavgwheelsangularvelocity general logic|tankcomponent|trackcomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getavgwheelsangularvelocity general logic|tankcomponent|trackcomponent function wheelmovcalculation as chaos wheeled vehicle movement component wheels wheelsamount avgl avgr avgl avgr">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|TrackComponent</span>
 <div class="bp-auth-card__title"><code>GetAvgWheelsAngularVelocity</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Возвращает среднюю угловую скорость выбранной группы колёс.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Проверяет колёсные объекты, суммирует их угловые скорости отдельно для левой и правой группы, нормализует результат по количеству и применяет входной коэффициент.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Возвращает две усреднённые скорости и одновременно обновляет рабочие <code>AvgL</code>/<code>AvgR</code>; <code>WheelMovCalculation</code> использует их для движения гусениц.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>WheelMovCalculation</code></dd>
+<dt>Читает состояние</dt><dd><code>As Chaos Wheeled Vehicle Movement Component</code>, <code>Wheels</code>, <code>WheelsAmount</code>, <code>AvgL</code>, <code>AvgR</code></dd>
+<dt>Изменяет состояние</dt><dd><code>AvgL</code>, <code>AvgR</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>34 нод</span>
 <span><b>Сигнатура</b>2 in · 3 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>6</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetAvgWheelsAngularVelocity Blueprint node"><div class="bp-auth-node__header"><span>GetAvgWheelsAngularVelocity</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityL</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityR</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_update tower rotation server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_update tower rotation server logic function server_towerrotationgraph towerrotation maingunpitch ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_Update Tower Rotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Передаёт на сервер новое состояние наведения основной башни.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Получает подготовленные повороты основной башни и орудия и применяет их как relative rotation к переданным Scene Component.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Это серверная стадия наведения: она превращает сетевое состояние углов в фактический transform компонентов.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_TowerRotationGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>TowerRotation</code>, <code>MainGunPitch</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>5 нод</span>
 <span><b>Сигнатура</b>3 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>2</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_Update Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>Server_Update Tower Rotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MainGun</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_updatecomtowerrotation server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_updatecomtowerrotation server logic function server_comtowerrotationgraph mgcomtowerrotation ctcomtowerrotation mg_mesh_change ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_UpdateComTowerRotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Передаёт на сервер новое состояние командирской башенки.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Применяет серверный поворот командирской установки; дополнительный select учитывает конфигурацию сменного пулемётного меша.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Обновляет фактический relative rotation вспомогательной башни на авторитетной стороне.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Server_ComTowerRotationGraph</code></dd>
+<dt>Читает состояние</dt><dd><code>MGComTowerRotation</code>, <code>CTComTowerRotation</code>, <code>MG_Mesh_Change</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>2 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>2</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_UpdateComTowerRotation Blueprint node"><div class="bp-auth-node__header"><span>Server_UpdateComTowerRotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ComTower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_separatemovement dev server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_separatemovement dev server logic function client_inputgraph server_input maxtorque forwardaxis vehiclemovementcomponent separatemovement blockrightside blockleftside">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_SeparateMovement DEV</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Служебный серверный граф экспериментального раздельного управления движением.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Преобразует продольный ввод и yaw в независимые команды левого и правого борта. По знаку и величине ввода выбирает тягу либо торможение, вызывает <code>SetDriveTorqueBySide</code>/<code>SetDriveBrakeBySide</code> и выставляет блокировку стороны.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Это development-граф альтернативного танкового управления; штатная колёсная схема может обходить его полностью.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>Client_InputGraph</code>, <code>Server_Input</code></dd>
+<dt>Читает состояние</dt><dd><code>MaxTorque</code>, <code>ForwardAxis</code>, <code>VehicleMovementComponent</code>, <code>SeparateMovement</code></dd>
+<dt>Изменяет состояние</dt><dd><code>BlockRightSide</code>, <code>BlockLeftSide</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>56 нод</span>
 <span><b>Сигнатура</b>3 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>17</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_SeparateMovement DEV Blueprint node"><div class="bp-auth-node__header"><span>Server_SeparateMovement DEV</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ForwardAxis</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Yaw</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="construct spline track general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="construct spline track general logic|track components|track maker function userconstructionscript uppersplinepointarray splinetrack_l constraint instances_r constraint instances_l uppersplinepointzpositionarray_r uppersplinepointzpositionarray_l enable track constraints physics simulation absoluteendsplinepoint autosplinetrack_r splinetrack_l tracksinstances_l tracksinstances_r tracksplinelength customtangent">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>Construct Spline Track</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Собирает замкнутый контур гусеницы из колёс, переходов, верхней и нижней ветвей.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Собирает первоначальный контур левой гусеницы, вычисляет верхние точки и тангенты, создаёт зеркальный правый сплайн, инстансы звеньев и при необходимости физические точки-помощники.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Формирует все постоянные компоненты и массивы, которые runtime-графы затем только перемещают; запускается из Construction Script.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>UserConstructionScript</code></dd>
+<dt>Читает состояние</dt><dd><code>UpperSplinePointArray</code>, <code>SplineTrack_L</code>, <code>Constraint Instances_R</code>, <code>Constraint Instances_L</code>, <code>UpperSplinePointZPositionArray_R</code>, <code>UpperSplinePointZPositionArray_L</code> <span class="bp-auth-more">+3 ещё</span></dd>
+<dt>Изменяет состояние</dt><dd><code>SplineTrack_L</code>, <code>TracksInstances_L</code>, <code>TracksInstances_R</code>, <code>TrackSplineLength</code>, <code>CustomTangent</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>45 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>1</span>
+<span><b>Шаги-вызовы</b>11</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Construct Spline Track Blueprint node"><div class="bp-auth-node__header"><span>Construct Spline Track</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="client_firesystem general logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="client_firesystem general logic function maingunfiresys machinegunfiresys  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic</span>
 <div class="bp-auth-card__title"><code>Client_FireSystem</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Клиентская часть реакции на выстрел: визуальные и локальные эффекты после серверного решения.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>На клиенте прикрепляет Niagara-вспышку к указанному сокету, создаёт наземный эффект в рассчитанной точке и проигрывает переданный Audio Component.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Отделяет визуально-звуковую реакцию от авторитетного появления снаряда: сервер решает факт выстрела, клиент показывает его эффекты.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>MainGunFireSys</code>, <code>MachineGunFireSys</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>5 нод</span>
 <span><b>Сигнатура</b>8 in · 1 out</span>
-<span><b>Внутренние вызовы</b>2</span>
+<span><b>Шаги-вызовы</b>3</span>
 </div>
 <span class="bp-auth-badge">Client</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Client_FireSystem Blueprint node"><div class="bp-auth-node__header"><span>Client_FireSystem</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TankMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketEffect</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">FireSound</span><span class="bp-auth-pin__type">AudioComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">FireGroundEffect</span><span class="bp-auth-pin__type">NiagaraSystem</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketGroundEffect</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">FireNiagaraEffect</span><span class="bp-auth-pin__type">NiagaraSystem</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MeshForFireFX|Calc</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ammostate functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ammostate functions function   ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_AmmoState</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Обновляет локальное состояние и интерфейс после репликации боекомплекта.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Unreal вызывает функцию после получения нового реплицированного <code>Server_AmmoState</code>; граф передаёт изменение в общий <code>Server_HandleAmmoStateChanged</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Все подписчики боекомплекта и UI обновляются через одну точку, независимо от того, был ли расход, перезарядка или пополнение.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>2 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_AmmoState Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_AmmoState</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_ server_ismachinegunoverheatting? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_ server_ismachinegunoverheatting? functions function  server_ismachinegunoverheatting? client_ismachinegunoverheatting?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_ Server_IsMachineGunOverHeatting?</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Реагирует на репликацию состояния перегрева пулемёта.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Копирует реплицированный серверный флаг перегрева в клиентское состояние и вызывает <code>OnUIStateChanged</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Локальные эффекты и интерфейс видят актуальный перегрев сразу после сетевого обновления.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>Server_IsMachineGunOverHeatting?</code></dd>
+<dt>Изменяет состояние</dt><dd><code>Client_IsMachineGunOverHeatting?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_ Server_IsMachineGunOverHeatting? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_ Server_IsMachineGunOverHeatting?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ismaingunreloaded? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ismaingunreloaded? functions function  server_ismaingunreloaded? client_ismaingunreloaded?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_IsMainGunReloaded?</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Реагирует на репликацию готовности основного орудия.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Переносит серверную готовность главного орудия в клиентский флаг и уведомляет UI.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Кнопки, индикаторы и локальная логика получают единое состояние готовности после репликации.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>Server_IsMainGunReloaded?</code></dd>
+<dt>Изменяет состояние</dt><dd><code>Client_IsMainGunReloaded?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_IsMainGunReloaded? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_IsMainGunReloaded?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ejectionanimplay functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ejectionanimplay functions function  server_ejectionanimplay client_ejectionanimplay">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_EjectionAnimPlay</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Запускает локальную реакцию после репликации анимации выброса гильзы.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Копирует реплицированный триггер выброса гильзы в клиентскую переменную анимации.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Клиентская анимация запускается тем же состоянием, которое подтвердил серверный граф стрельбы.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>Server_EjectionAnimPlay</code></dd>
+<dt>Изменяет состояние</dt><dd><code>Client_EjectionAnimPlay</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>5 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>0</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_EjectionAnimPlay Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_EjectionAnimPlay</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ismachinegunreloaded? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ismachinegunreloaded? functions function  server_ismachinegunreloaded? client_ismachinegunreloaded?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_IsMachineGunReloaded?</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Реагирует на репликацию готовности пулемёта.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Копирует серверный флаг готовности пулемёта в клиентское состояние и вызывает <code>OnUIStateChanged</code>.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Интерфейс и локальные реакции используют подтверждённую сервером готовность, а не собственный таймер.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>Server_IsMachineGunReloaded?</code></dd>
+<dt>Изменяет состояние</dt><dd><code>Client_IsMachineGunReloaded?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_IsMachineGunReloaded? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_IsMachineGunReloaded?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_issmokeshellreloaded? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_issmokeshellreloaded? functions function  server_issmokeshellreloaded? client_issmokeshellreloaded?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_IsSmokeShellReloaded?</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Реагирует на репликацию готовности дымовых гранатомётов.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Копирует реплицированную готовность дымовых гранатомётов в клиентский флаг и уведомляет UI.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Состояние пуска дымовых гранат остаётся одинаковым у сервера и владельца машины.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>Server_IsSmokeShellReloaded?</code></dd>
+<dt>Изменяет состояние</dt><dd><code>Client_IsSmokeShellReloaded?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_IsSmokeShellReloaded? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_IsSmokeShellReloaded?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_startengineprocess functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_startengineprocess functions function  rstopengine stopengine crewsound rstartengine startengine server_startengineprocess ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_StartEngineProcess</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Синхронизирует локальную последовательность запуска двигателя с сервером.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>По реплицированному признаку старта выбирает набор обычных или внутренних звуков, назначает их Audio Component, запускает либо плавно вводит звук двигателя и голос экипажа.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Каждый клиент воспроизводит одну и ту же фазу запуска/остановки двигателя после изменения серверного состояния.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>RStopEngine</code>, <code>StopEngine</code>, <code>CrewSound</code>, <code>RStartEngine</code>, <code>StartEngine</code>, <code>Server_StartEngineProcess</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>15 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>6</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_StartEngineProcess Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_StartEngineProcess</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_engineondelay functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_engineondelay functions function  server_startengineprocess client_engineondelay">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_EngineOnDelay</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Реагирует на репликацию задержки включения двигателя.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>По текущей фазе <code>Server_StartEngineProcess</code> выставляет клиентский флаг задержки включения двигателя.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Разрешение локальных частиц и звуков двигателя переключается только после подтверждённой сервером задержки.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd>репликация Unreal (автоматически)</dd>
+<dt>Читает состояние</dt><dd><code>Server_StartEngineProcess</code></dd>
+<dt>Изменяет состояние</dt><dd><code>Client_EngineOnDelay</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>5 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>0</span>
+<span><b>Шаги-вызовы</b>0</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_EngineOnDelay Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_EngineOnDelay</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_handleammostatechanged server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_handleammostatechanged server logic function onrep_server_ammostate ammo machine gun replenish smoke shall replenish maingunfiresys machinegunfiresys smokeshallfiresys ammo main gun replenish server_ammostate ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_HandleAmmoStateChanged</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>На сервере обрабатывает изменение боекомплекта и рассылает новое состояние подписчикам.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Разбирает текущий <code>Server_AmmoState</code>, вызывает <code>OnAmmoChanged</code> с его значениями и проверяет, принадлежит ли Pawn локальному игроку.</p>
+</div>
+<div>
+<span>Что получается</span>
+<p>Сводит расход, перезарядку, пополнение и RepNotify к одному уведомлению, на которое могут подписаться HUD и другие Blueprint-системы.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Запускается из</dt><dd><code>OnRep_Server_AmmoState</code>, <code>Ammo Machine Gun Replenish</code>, <code>Smoke Shall Replenish</code>, <code>MainGunFireSys</code>, <code>MachineGunFireSys</code> <span class="bp-auth-more">+2 ещё</span></dd>
+<dt>Читает состояние</dt><dd><code>Server_AmmoState</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>1 in · 1 out</span>
-<span><b>Внутренние вызовы</b>16</span>
+<span><b>Шаги-вызовы</b>1</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
@@ -3311,101 +3995,263 @@ page_kind: reference
 
 <section class="bp-auth-section" data-bp-section="macros">
 <h2>Макросы</h2>
-Пины взяты из реальных туннелей `Inputs` и `Outputs`, поэтому визуал совпадает с интерфейсом экземпляра макроса.
+Описание показывает, зачем макрос существует в проекте и какую повторяющуюся Blueprint-логику он сворачивает. Пины взяты из реальных туннелей `Inputs` и `Outputs`.
 <div class="bp-auth-grid">
-<article class="bp-auth-card" data-bp-item data-search="value change tracker macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="value change tracker macro gun rotation sound tower rotation sound  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>Value Change Tracker</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Сравнивает текущее значение с предыдущим и сообщает, произошло ли изменение.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>При <code>Setup</code> запоминает исходное wildcard-значение. На входе <code>Check Change</code> ищет сохранённую пару, сравнивает новое значение с предыдущим и разводит выполнение по выходам <code>Value Changed</code>/<code>Value not Changed</code>, одновременно возвращая старое и новое значения.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>Используется звуками поворота башни и орудия, чтобы запускать или гасить моторный звук только при реальном изменении угла, а не каждый Tick.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>Gun Rotation Sound</code>, <code>Tower Rotation Sound</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>24 нод</span>
 <span><b>Сигнатура</b>4 in · 5 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="Value Change Tracker Blueprint node"><div class="bp-auth-node__header"><span>Value Change Tracker</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Value</span><span class="bp-auth-pin__type">None</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Check Value</span><span class="bp-auth-pin__type">None</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Old Value</span><span class="bp-auth-pin__type">None</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">New Value</span><span class="bp-auth-pin__type">None</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="calculatetrucktransform macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="calculatetrucktransform macro settrackstransform  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>CalculateTruckTransform</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Собирает преобразование звена гусеницы из положения и ориентации сплайна.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Читает location, rotation и right-vector на заданной дистанции вдоль сплайна, учитывает сторону/ориентацию башмака и собирает итоговые позицию и rotator экземпляра.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>Вызывается внутри <code>SetTracksTransform</code> для каждого звена и является единственным местом, где расстояние по сплайну превращается в transform визуального башмака.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>SetTracksTransform</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>9 нод</span>
 <span><b>Сигнатура</b>2 in · 2 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="CalculateTruckTransform Blueprint node"><div class="bp-auth-node__header"><span>CalculateTruckTransform</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentTrackDistance</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Locatioin</span><span class="bp-auth-pin__type">Vector</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rotation</span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="debugswitch macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="debugswitch macro updatetrackslocation debugon ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>DebugSwitch</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Выдаёт единый флаг, которым графы включают или отключают отладочную ветку.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Преобразует общий флаг <code>DebugOn</code> в значение <code>EDrawDebugTrace</code>: включённая диагностика возвращает режим отрисовки трасс, выключенная — отсутствие отрисовки.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>Позволяет всем трассировкам <code>UpdateTracksLocation</code> пользоваться одним переключателем без повторения ветвлений.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Читает состояние</dt><dd><code>DebugOn</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>4 нод</span>
 <span><b>Сигнатура</b>0 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="DebugSwitch Blueprint node"><div class="bp-auth-node__header"><span>DebugSwitch</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="byte"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">EDrawDebugTrace</span><span class="bp-auth-pin__default">None</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="safeclampinterp macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="safeclampinterp macro cameratickcomponent  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>SafeClampInterp</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Плавно интерполирует значение и удерживает результат внутри безопасного диапазона.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Находит look-at rotation от опорной оси к целевой точке, нормализует нужный угол, ограничивает его механическими Min/Max и плавно интерполирует от текущего поворота камеры.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>В <code>CameraTickComponent</code> создаёт мягкое, но физически ограниченное слежение оптических камер без скачка через границу ±180°.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>CameraTickComponent</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>22 нод</span>
 <span><b>Сигнатура</b>7 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="SafeClampInterp Blueprint node"><div class="bp-auth-node__header"><span>SafeClampInterp</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SpringArm</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Rotator</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AxisFrom</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Min</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Max</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InterpSpeed</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="parabolicmarco macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="parabolicmarco macro updatetrackslocation  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>ParabolicMarco</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Вычисляет точку или направление по параболической траектории.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Нормализует положение элемента внутри участка и подставляет его в параболическую формулу с заданными шириной, высотой и натяжением.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p><code>UpdateTracksLocation</code> использует результат как вертикальное смещение точки свободного или провисающего участка гусеницы.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>17 нод</span>
 <span><b>Сигнатура</b>6 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="ParabolicMarco Blueprint node"><div class="bp-auth-node__header"><span>ParabolicMarco</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tension</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Height</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Width</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="camerarotmacro macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="camerarotmacro macro cameratickcomponent  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>CameraRotMacro</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Подготавливает поворот камеры с учётом ограничений и текущего режима обзора.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Объединяет два вложенных графа: <code>CameraTurnInput</code> масштабирует ввод по активной оптике/FOV и передаёт движение в Player Controller и механический привод осей, а <code>AimCubeRotation</code> строит rotator прицельного куба из Control Rotation и camera offset.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>Возвращает согласованный <code>Rot</code>, который <code>CameraTickComponent</code> применяет к выбранной камере или Spring Arm.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>CameraTickComponent</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>5 нод</span>
 <span><b>Сигнатура</b>0 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="CameraRotMacro Blueprint node"><div class="bp-auth-node__header"><span>CameraRotMacro</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rot</span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="servermacro macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="servermacro macro eventtick maingunfiresys machinegunfiresys server_soundgraph server_damage  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>ServerMacro</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Объединяет повторяющуюся проверку сетевой роли перед серверной логикой.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Проверяет authority, локальное владение Pawn и роль proxy, после чего разводит один вход на <code>Server_PhysicsTick</code>, <code>Local_OwnerTick</code> и <code>Proxy_VisualTick</code>.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>Используется в Tick, стрельбе, звуках и повреждениях, чтобы авторитетная физика, локальный ввод и визуальная реплика не выполняли одну и ту же ветвь дважды.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>EventTick</code>, <code>MainGunFireSys</code>, <code>MachineGunFireSys</code>, <code>Server_SoundGraph</code>, <code>Server_Damage</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>10 нод</span>
 <span><b>Сигнатура</b>1 in · 3 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="ServerMacro Blueprint node"><div class="bp-auth-node__header"><span>ServerMacro</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="gamemode macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="gamemode macro userconstructionscript constructsimulativepoints eventtick  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>GameMode</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Получает и проверяет используемый Blueprint игрового режима.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Проверяет состояние ReplaySubsystem и standalone-режим и объединяет результаты в один Boolean.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>Construction Script, создание физических помощников и Tick используют его как общий признак контекста, где допустима игровая runtime-логика.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>UserConstructionScript</code>, <code>ConstructSimulativePoints</code>, <code>EventTick</code></dd>
+<dt>Читает состояние</dt><dd>—</dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>6 нод</span>
 <span><b>Сигнатура</b>0 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="GameMode Blueprint node"><div class="bp-auth-node__header"><span>GameMode</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="fovtox macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="fovtox macro beginplaymainparam fieldofview ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Пользовательский макрос</span>
 <div class="bp-auth-card__title"><code>FOVtoX</code></div>
+<div class="bp-auth-card-summary">
+<span>Что делает</span>
 <p>Преобразует угол обзора камеры в коэффициент, используемый дальнейшими расчётами.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>Как работает</span>
+<p>Через tan/atan переводит вертикальные границы поля зрения камеры в соответствующие горизонтальные угловые границы с учётом коэффициента проекции.</p>
+</div>
+<div>
+<span>Зачем в этом Blueprint</span>
+<p>В <code>BeginPlayMainParam</code> рассчитывает MinX/MaxX для оптических камер, чтобы их yaw-ограничения совпадали с реальным видимым сектором.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Используется в</dt><dd><code>BeginPlayMainParam</code></dd>
+<dt>Читает состояние</dt><dd><code>FieldOfView</code></dd>
+<dt>Изменяет состояние</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Граф</b>23 нод</span>
 <span><b>Сигнатура</b>4 in · 2 out</span>

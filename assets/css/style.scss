@@ -1943,7 +1943,7 @@ a:hover {
   width: 100%;
   min-height: 2.35rem;
   padding: .5rem .72rem;
-  color: var(--tt-text);
+  color: var(--tt-ink);
   background: color-mix(in srgb, var(--tt-surface) 78%, transparent);
   border: 1px solid var(--tt-line);
   border-radius: .5rem;
@@ -1975,7 +1975,7 @@ a:hover {
 }
 
 .bp-auth-tabs button:hover {
-  color: var(--tt-text);
+  color: var(--tt-ink);
   background: color-mix(in srgb, var(--tt-surface) 74%, transparent);
 }
 
@@ -2018,6 +2018,12 @@ a:hover {
   box-shadow: 0 .3rem 1.1rem rgba(0, 0, 0, .08);
 }
 
+.bp-auth-card--explained {
+  grid-template-columns: minmax(22rem, 1.22fr) minmax(18rem, .78fr);
+  align-items: start;
+  padding: 1rem;
+}
+
 .bp-auth-card[hidden] {
   display: none;
 }
@@ -2042,7 +2048,7 @@ a:hover {
 
 .bp-auth-card__title {
   margin: 0 0 .45rem;
-  color: var(--tt-text);
+  color: var(--tt-ink);
   font: 700 1rem/1.35 "Segoe UI", sans-serif;
   overflow-wrap: anywhere;
 }
@@ -2062,6 +2068,84 @@ a:hover {
   line-height: 1.55;
 }
 
+.bp-auth-card-summary {
+  margin-top: .25rem;
+  padding: .58rem .68rem;
+  background: color-mix(in srgb, var(--tt-accent) 7%, transparent);
+  border-left: 2px solid var(--tt-accent);
+}
+
+.bp-auth-card-summary > span,
+.bp-auth-behavior > div > span {
+  display: block;
+  margin-bottom: .22rem;
+  color: var(--tt-accent-strong);
+  font-size: .58rem;
+  font-weight: 800;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.bp-auth-card-summary p,
+.bp-auth-behavior p {
+  margin: 0;
+  color: var(--tt-ink);
+  font-size: .76rem;
+  line-height: 1.55;
+}
+
+.bp-auth-behavior {
+  display: grid;
+  gap: .42rem;
+  margin-top: .48rem;
+}
+
+.bp-auth-behavior > div {
+  padding: .56rem .68rem;
+  background: color-mix(in srgb, var(--tt-surface-soft) 74%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt-line) 76%, transparent);
+  border-radius: .38rem;
+}
+
+.bp-auth-footprint {
+  display: grid;
+  grid-template-columns: 7.3rem minmax(0, 1fr);
+  gap: .26rem .62rem;
+  margin: .58rem 0 0;
+  padding: .5rem .68rem;
+  background: color-mix(in srgb, var(--tt-bg) 42%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt-line) 68%, transparent);
+  border-radius: .38rem;
+}
+
+.bp-auth-footprint dt,
+.bp-auth-footprint dd {
+  margin: 0;
+  font-size: .66rem;
+  line-height: 1.45;
+}
+
+.bp-auth-footprint dt {
+  color: var(--tt-muted);
+  font-weight: 700;
+}
+
+.bp-auth-footprint dd {
+  min-width: 0;
+  color: var(--tt-ink);
+  overflow-wrap: anywhere;
+}
+
+.bp-auth-footprint code {
+  padding: .02rem .2rem;
+  font-size: .62rem;
+}
+
+.bp-auth-more {
+  color: var(--tt-muted);
+  white-space: nowrap;
+}
+
 .bp-auth-meta {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2071,7 +2155,7 @@ a:hover {
 
 .bp-auth-meta span {
   min-width: 0;
-  color: var(--tt-text);
+  color: var(--tt-ink);
   font-size: .68rem;
   line-height: 1.38;
   overflow-wrap: anywhere;
@@ -2312,6 +2396,15 @@ a:hover {
 
   .bp-auth-card {
     padding: .72rem;
+  }
+
+  .bp-auth-footprint {
+    grid-template-columns: 1fr;
+    gap: .08rem;
+  }
+
+  .bp-auth-footprint dd + dt {
+    margin-top: .34rem;
   }
 
   .bp-auth-meta {

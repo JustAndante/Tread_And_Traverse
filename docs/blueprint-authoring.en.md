@@ -433,7 +433,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Camera|Main Camera|Base Parameters</span>
 <div class="bp-auth-card__title"><code>CameraRot</code></div>
-<p>Reference to `Rotator` used as “Camera Rot”.</p>
+<p>Reference to <code>Rotator</code> used as “Camera Rot”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Rotator</span>
 <span><b>Default</b>Pitch=+0, Yaw=+0, Roll=+0</span>
@@ -538,7 +538,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Components|Chaos</span>
 <div class="bp-auth-card__title"><code>As Chaos Wheeled Vehicle Movement Component</code></div>
-<p>Reference to `ChaosWheeledVehicleMovementComponent` used as “As Chaos Wheeled Vehicle Movement Component”.</p>
+<p>Reference to <code>ChaosWheeledVehicleMovementComponent</code> used as “As Chaos Wheeled Vehicle Movement Component”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>ChaosWheeledVehicleMovementComponent</span>
 <span><b>Default</b>None</span>
@@ -688,7 +688,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Preferences</span>
 <div class="bp-auth-card__title"><code>Server_AmmoState</code></div>
-<p>Working `ST_AmmoState` value for “Server Ammo State”.</p>
+<p>Working <code>ST_AmmoState</code> value for “Server Ammo State”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>ST_AmmoState</span>
 <span><b>Default</b>Empty</span>
@@ -1333,7 +1333,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Particle</span>
 <div class="bp-auth-card__title"><code>MachineGunFireNiagaraEffect</code></div>
-<p>Working `NiagaraSystem` value for “Machine Gun Fire Niagara Effect”.</p>
+<p>Working <code>NiagaraSystem</code> value for “Machine Gun Fire Niagara Effect”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>NiagaraSystem</span>
 <span><b>Default</b>-395</span>
@@ -1348,7 +1348,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Particle</span>
 <div class="bp-auth-card__title"><code>OverheatingNiagaraEffect</code></div>
-<p>Working `NiagaraSystem` value for “Overheating Niagara Effect”.</p>
+<p>Working <code>NiagaraSystem</code> value for “Overheating Niagara Effect”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>NiagaraSystem</span>
 <span><b>Default</b>-397</span>
@@ -1363,7 +1363,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Projectile</span>
 <div class="bp-auth-card__title"><code>MachineGunProjectile</code></div>
-<p>Working `Class Class` value for “Machine Gun Projectile”.</p>
+<p>Working <code>Class Class</code> value for “Machine Gun Projectile”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Class Class</span>
 <span><b>Default</b>-12</span>
@@ -1498,7 +1498,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Particle</span>
 <div class="bp-auth-card__title"><code>MainGun Fire Ground Effect</code></div>
-<p>Working `NiagaraSystem` value for “Main Gun Fire Ground Effect”.</p>
+<p>Working <code>NiagaraSystem</code> value for “Main Gun Fire Ground Effect”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>NiagaraSystem</span>
 <span><b>Default</b>-392</span>
@@ -1513,7 +1513,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Particle</span>
 <div class="bp-auth-card__title"><code>MainGunFireNiagaraEffect</code></div>
-<p>Working `NiagaraSystem` value for “Main Gun Fire Niagara Effect”.</p>
+<p>Working <code>NiagaraSystem</code> value for “Main Gun Fire Niagara Effect”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>NiagaraSystem</span>
 <span><b>Default</b>-396</span>
@@ -1528,7 +1528,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
 <div class="bp-auth-card__title"><code>EjectedCartridge</code></div>
-<p>Working `Class Class` value for “Ejected Cartridge”.</p>
+<p>Working <code>Class Class</code> value for “Ejected Cartridge”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Class Class</span>
 <span><b>Default</b>-10</span>
@@ -1543,7 +1543,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
 <div class="bp-auth-card__title"><code>MainGunProjectile</code></div>
-<p>Working `Class Class` value for “Main Gun Projectile”.</p>
+<p>Working <code>Class Class</code> value for “Main Gun Projectile”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Class Class</span>
 <span><b>Default</b>-13</span>
@@ -1558,7 +1558,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
 <div class="bp-auth-card__title"><code>MainGunShellProjectille</code></div>
-<p>Working `Class Class` value for “Main Gun Shell Projectille”.</p>
+<p>Working <code>Class Class</code> value for “Main Gun Shell Projectille”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Class Class</span>
 <span><b>Default</b>-14</span>
@@ -1723,7 +1723,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Projectile</span>
 <div class="bp-auth-card__title"><code>SmokeShellProjectile</code></div>
-<p>Working `Class Class` value for “Smoke Shell Projectile”.</p>
+<p>Working <code>Class Class</code> value for “Smoke Shell Projectile”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Class Class</span>
 <span><b>Default</b>-11</span>
@@ -1798,7 +1798,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|MaterialParameters</span>
 <div class="bp-auth-card__title"><code>ThermalMaterialParameter</code></div>
-<p>Reference to `MaterialParameterCollection` used as “Thermal Material Parameter”.</p>
+<p>Reference to <code>MaterialParameterCollection</code> used as “Thermal Material Parameter”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>MaterialParameterCollection</span>
 <span><b>Default</b>-389</span>
@@ -1828,7 +1828,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|PostProcessSettings</span>
 <div class="bp-auth-card__title"><code>ThermalPostProcessSettings_Default</code></div>
-<p>Working `PostProcessSettings` value for “Thermal Post Process Settings Default”.</p>
+<p>Working <code>PostProcessSettings</code> value for “Thermal Post Process Settings Default”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>PostProcessSettings</span>
 <span><b>Default</b>412 items</span>
@@ -1843,7 +1843,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|PostProcessSettings</span>
 <div class="bp-auth-card__title"><code>ThermalPost Process Settings_Mod</code></div>
-<p>Working `PostProcessSettings` value for “Thermal Post Process Settings Mod”.</p>
+<p>Working <code>PostProcessSettings</code> value for “Thermal Post Process Settings Mod”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>PostProcessSettings</span>
 <span><b>Default</b>412 items</span>
@@ -2563,7 +2563,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
 <div class="bp-auth-card__title"><code>SplineTrack_L</code></div>
-<p>Reference to `SplineComponent` used as “Spline Track L”.</p>
+<p>Reference to <code>SplineComponent</code> used as “Spline Track L”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>SplineComponent</span>
 <span><b>Default</b>None</span>
@@ -2758,7 +2758,7 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">UI|Components</span>
 <div class="bp-auth-card__title"><code>UI</code></div>
-<p>Working `Object` value for “UI”.</p>
+<p>Working <code>Object</code> value for “UI”.</p>
 <div class="bp-auth-meta">
 <span><b>Type</b>Object</span>
 <span><b>Default</b>None</span>
@@ -2773,535 +2773,1219 @@ Only authored variables that are actually read or written by the graphs are show
 
 <section class="bp-auth-section" data-bp-section="functions">
 <h2>Functions</h2>
-Each visual is built from the real `Function Entry` and `Function Result`, including every public graph input and output.
+Each function is explained in its BP_Tank_Master context: internal flow, affected state, and real call sites. The visual below comes from the actual `Function Entry` and `Function Result`; it supplements the explanation instead of replacing it.
 <div class="bp-auth-grid">
-<article class="bp-auth-card" data-bp-item data-search="userconstructionscript functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="userconstructionscript functions function   ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>UserConstructionScript</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Prepares components and initial instance values when the Blueprint is created or edited.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Checks whether editor-side initialization is appropriate and forwards construction to <code>Construct Spline Track</code> whenever the instance is rebuilt.</p>
+</div>
+<div>
+<span>Result</span>
+<p>The source splines, helper points, and link instances are therefore prepared before play; this function is not called manually.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal Construction Script</dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>4 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>2</span>
 </div>
 <span class="bp-auth-badge">Construction</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UserConstructionScript Blueprint node"><div class="bp-auth-node__header"><span>UserConstructionScript</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="updatetrackslocation general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="updatetrackslocation general logic|track components|track maker function server_trackphysgraph trackpath uppersplinepointarray startsplinepoint physicssplinepointarray tracktraceheight physicssplinepointlocationarray absoluteendsplinepoint tension subtracecount stepdeg baseangledeg mesh relativelocation pawn worldlocation pawn worldrotation track path relative location trackhelpernames_r wheelsamount maxsplinesagging as chaos wheeled vehicle movement component isleftside? trackhelpernames_l useasimplesimulation? splinesubdivision simulateconstraintsphysics? enabletension spline element suspendedindexes splineparabolawidth attachsplinepointstowheels n customtangent deltasecond smoothedangle trackoffset targetlocal currentsplineangle midpointofsheafarray currentmidpointofsheafnormalized midpointofsheafsmoothed midpointofsheaflocal trackhitcountlocal tension spline element pawn worldlocation pawn worldrotation track path relative location n smoothedangle targetlocal midpointofsheafsmoothed midpointofsheaflocal trackhitcountlocal">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>UpdateTracksLocation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Updates track elements from suspension, wheel, and solved-spline state.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Matches each loop point to a wheel socket or Chaos wheel state, traces the surface, solves tension and sag, smooths transitions, and writes spline positions and tangents. Separate branches handle simple versus constraint physics, each side, the upper run, and free spans.</p>
+</div>
+<div>
+<span>Result</span>
+<p>This is the main runtime track-shape solver: after it runs, <code>TrackPath</code> is the current closed loop consumed by visual-link placement.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_TrackPhysGraph</code></dd>
+<dt>Reads state</dt><dd><code>TrackPath</code>, <code>UpperSplinePointArray</code>, <code>StartSplinePoint</code>, <code>PhysicsSplinePointArray</code>, <code>TrackTraceHeight</code>, <code>PhysicsSplinePointLocationArray</code> <span class="bp-auth-more">+36 more</span></dd>
+<dt>Writes state</dt><dd><code>Tension</code>, <code>Spline Element</code>, <code>Pawn WorldLocation</code>, <code>Pawn WorldRotation</code>, <code>Track Path Relative Location</code>, <code>N</code> <span class="bp-auth-more">+5 more</span></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>238 nodes</span>
 <span><b>Signature</b>12 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>53</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateTracksLocation Blueprint node"><div class="bp-auth-node__header"><span>UpdateTracksLocation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UseASimpleSimulation?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EnableTension</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackOffset</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSecond</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentSplineAngle</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentMidPointOfSheafNormalized</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MidPointOfSheafArray</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="wheelmovcalculation general logic|tank component|track component function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="wheelmovcalculation general logic|tank component|track component function server_trackphysgraph rearwheelradius frontwheelradius topwheelradius wheeldistancel wheeldistancer wheeldeltadistancer wheeldeltadistancel as chaos wheeled vehicle movement component wheels splinetrack_l blockrightside blockleftside autosplinetrack_r frontwheelangularvelocity_l frontwheelangularvelocity_r middlewheelangularvelocity_l middlewheelangularvelocity_r rearwheelangularvelocity_l topwheelangularvelocity_r topwheelangularvelocity_l rearwheelangularvelocity_r wheeldistancel wheeldistancer wheeldeltadistancer wheeldeltadistancel">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
 <div class="bp-auth-card__title"><code>WheelMovCalculation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Calculates wheel-motion values used by the track system.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Reads average wheel angular speeds, wheel radii, and spline length, converts rotation into travelled distance, and accumulates left/right track phase. The resulting distance and speed are also sent through the wheel network events.</p>
+</div>
+<div>
+<span>Result</span>
+<p>It updates visual link motion plus the front, middle, rear, and top wheel-speed values while respecting a blocked side.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_TrackPhysGraph</code></dd>
+<dt>Reads state</dt><dd><code>RearWheelRadius</code>, <code>FrontWheelRadius</code>, <code>TopWheelRadius</code>, <code>WheelDistanceL</code>, <code>WheelDistanceR</code>, <code>WheelDeltaDistanceR</code> <span class="bp-auth-more">+7 more</span></dd>
+<dt>Writes state</dt><dd><code>FrontWheelAngularVelocity_L</code>, <code>FrontWheelAngularVelocity_R</code>, <code>MiddleWheelAngularVelocity_L</code>, <code>MiddleWheelAngularVelocity_R</code>, <code>RearWheelAngularVelocity_L</code>, <code>TopWheelAngularVelocity_R</code> <span class="bp-auth-more">+6 more</span></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>65 nodes</span>
 <span><b>Signature</b>2 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>8</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="WheelMovCalculation Blueprint node"><div class="bp-auth-node__header"><span>WheelMovCalculation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="camerazoom general logic|camera|zoom function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="camerazoom general logic|camera|zoom function eventtick springarm targetarmlength zoom step maincamfovmultiple isgunnercameraswitch? gunnercamera gunnercamfovstep gunnercamfovmultiple fieldofview comtowercamera comtowercamfovstep comtowercamfovmultiple iscomtowercameraswitch? zoom bounds relativelocation gunnercamfovbounds comtowercamfovbounds temp current zoom targetarmlength gunnercamfov comtowercamfov">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Camera|Zoom</span>
 <div class="bp-auth-card__title"><code>CameraZoom</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Applies camera zoom input within the configured bounds and step.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Selects the external, gunner, or commander view and computes either a Spring Arm target or a camera FOV target. The active value is stepped, clamped to its own range, and smoothly applied using frame time.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Only the active view is changed: third person uses arm length, while optic views use their camera field of view.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>EventTick</code></dd>
+<dt>Reads state</dt><dd><code>SpringArm</code>, <code>TargetArmLength</code>, <code>Zoom Step</code>, <code>MainCamFOVMultiple</code>, <code>IsGunnerCameraSwitch?</code>, <code>GunnerCamera</code> <span class="bp-auth-more">+11 more</span></dd>
+<dt>Writes state</dt><dd><code>Temp Current Zoom</code>, <code>TargetArmLength</code>, <code>GunnerCamFOV</code>, <code>ComTowerCamFOV</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>49 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>9</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CameraZoom Blueprint node"><div class="bp-auth-node__header"><span>CameraZoom</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="updatetowerrotation general logic|tankcomponent|tower function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="updatetowerrotation general logic|tankcomponent|tower function server_towerrotationgraph weaponaimsystem towerrotation maingunpitch">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|Tower</span>
 <div class="bp-auth-card__title"><code>UpdateTowerRotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Updates main-turret and gun aiming.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Requests the solved main-turret and gun axis rotations from <code>WeaponAimSystem</code>. The configured-axis path stores the rotations and sends them to the server event, while legacy axis networking remains available for compatibility.</p>
+</div>
+<div>
+<span>Result</span>
+<p>It prepares the shared main-mount yaw/pitch state later applied to the turret and gun components on the server.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_TowerRotationGraph</code></dd>
+<dt>Reads state</dt><dd><code>WeaponAimSystem</code></dd>
+<dt>Writes state</dt><dd><code>TowerRotation</code>, <code>MainGunPitch</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>8 nodes</span>
 <span><b>Signature</b>3 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateTowerRotation Blueprint node"><div class="bp-auth-node__header"><span>UpdateTowerRotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MainGun</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="calculateprojectiledirection general logic|tankcomponent|firesystemcomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="calculateprojectiledirection general logic|tankcomponent|firesystemcomponent function server_firesystem maingunfiresys smokeshallfiresys  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|FireSystemComponent</span>
 <div class="bp-auth-card__title"><code>CalculateProjectileDirection</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Returns the firing direction from the selected socket and mesh using the current aim.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Traces forward from the selected socket, chooses the impact point or trace end, and builds a firing transform from the socket position toward that target.</p>
+</div>
+<div>
+<span>Result</span>
+<p>The returned <code>ProjetileDirection</code> is shared by the main gun and smoke launchers so projectile and aiming logic use the same solved point.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_FireSystem</code>, <code>MainGunFireSys</code>, <code>SmokeShallFireSys</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>14 nodes</span>
 <span><b>Signature</b>3 in · 2 out</span>
-<span><b>Internal calls</b>3</span>
+<span><b>Call steps</b>8</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CalculateProjectileDirection Blueprint node"><div class="bp-auth-node__header"><span>CalculateProjectileDirection</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ProjetileDirection</span><span class="bp-auth-pin__type">Transform</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MeshForCalculatePD</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="machineguncoolingcalculation general logic|tankcomponent|machinegun function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="machineguncoolingcalculation general logic|tankcomponent|machinegun function eventtick server_ammostate ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MachineGun</span>
 <div class="bp-auth-card__title"><code>MachineGunCoolingCalculation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Updates machine-gun cooling and overheat state.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Reduces machine-gun heat inside <code>Server_AmmoState</code> by a frame-time-scaled amount and clamps the field to 0–1.</p>
+</div>
+<div>
+<span>Result</span>
+<p>The server heat state cools continuously between shots and the firing graph reads this updated value for overheat decisions.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>EventTick</code></dd>
+<dt>Reads state</dt><dd><code>Server_AmmoState</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>8 nodes</span>
 <span><b>Signature</b>2 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>1</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="MachineGunCoolingCalculation Blueprint node"><div class="bp-auth-node__header"><span>MachineGunCoolingCalculation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSeconds</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_firesystem server logic|tankcomponent|firesystemcomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_firesystem server logic|tankcomponent|firesystemcomponent function maingunfiresys machinegunfiresys projectille momentumvalue isapfsds? shellprojectille momentummesh ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic|TankComponent|FireSystemComponent</span>
 <div class="bp-auth-card__title"><code>Server_FireSystem</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Server entry point for firing logic and weapon-availability checks.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Uses <code>CalculateProjectileDirection</code> to obtain the authoritative firing transform, spawns the supplied projectile class from the mesh socket, and transforms the recoil direction before applying angular impulse to the supplied component.</p>
+</div>
+<div>
+<span>Result</span>
+<p>It creates the authoritative projectile and recoil; sound, muzzle flash, and ground FX are handled separately by <code>Client_FireSystem</code>.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>MainGunFireSys</code>, <code>MachineGunFireSys</code></dd>
+<dt>Reads state</dt><dd><code>Projectille</code>, <code>MomentumValue</code>, <code>IsAPFSDS?</code>, <code>ShellProjectille</code>, <code>MomentumMesh</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>42 nodes</span>
 <span><b>Signature</b>10 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>17</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_FireSystem Blueprint node"><div class="bp-auth-node__header"><span>Server_FireSystem</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TankMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumDirectionCalcSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumValue</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DirectionCalcMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsAPFSDS?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ShellProjectille</span><span class="bp-auth-pin__type">Actor</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Projectille</span><span class="bp-auth-pin__type">Actor</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="trace of weapon uiaim calculation general logic|camera|ui function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="trace of weapon uiaim calculation general logic|camera|ui function eventtick maincamera aimcube commanderaimcube globaltracelenght freecamswitch isgunnercameraswitch? iscomtowercameraswitch? isdoublefiresysenable? islocktargetenabled? isballisticcomputerenable? weaponaimsystem ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Camera|UI</span>
 <div class="bp-auth-card__title"><code>Trace Of Weapon UIAim Calculation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Traces the weapon aim and produces the point shown by the UI.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Chooses an aim source from the active camera plus free-look, ballistic-computer, target-lock, and dual-mount state. It updates <code>WeaponAimSystem</code> aim sources and dispatches the resulting UI state.</p>
+</div>
+<div>
+<span>Result</span>
+<p>The on-screen aim point and weapon runtime stay aligned with the observation channel currently used by the player.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>EventTick</code></dd>
+<dt>Reads state</dt><dd><code>MainCamera</code>, <code>AimCube</code>, <code>CommanderAimCube</code>, <code>GlobalTraceLenght</code>, <code>FreeCamSwitch</code>, <code>IsGunnerCameraSwitch?</code> <span class="bp-auth-more">+5 more</span></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>21 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Trace Of Weapon UIAim Calculation Blueprint node"><div class="bp-auth-node__header"><span>Trace Of Weapon UIAim Calculation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="rotatevectoraroundaxis global function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="rotatevectoraroundaxis global function updatetrackslocation  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Global</span>
 <div class="bp-auth-card__title"><code>RotateVectorAroundAxis</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Rotates a vector around the supplied axis and returns the result.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Moves the point into pivot-local space, applies the supplied rotator, and transforms it back.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Returns the rotated world position used by track geometry without moving the pivot itself.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>8 nodes</span>
 <span><b>Signature</b>4 in · 2 out</span>
-<span><b>Internal calls</b>4</span>
+<span><b>Call steps</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="RotateVectorAroundAxis Blueprint node"><div class="bp-auth-node__header"><span>RotateVectorAroundAxis</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Pivot Vector</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Return Value</span><span class="bp-auth-pin__type">Vector</span><span class="bp-auth-pin__default">0, 0, 0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Vector to Rotate</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="updatecomtowerrotation general logic|tankcomponent|machinegun function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="updatecomtowerrotation general logic|tankcomponent|machinegun function server_comtowerrotationgraph weaponaimsystem machiegunpitch mgcomtowerrotation ctcomtowerrotation">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MachineGun</span>
 <div class="bp-auth-card__title"><code>UpdateComTowerRotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Updates commander-cupola and attached-weapon rotation.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Reads the auxiliary mount rotations from <code>WeaponAimSystem</code>, separates cupola yaw from weapon pitch, preserves the legacy networking path, and sends the solved angles to the server event.</p>
+</div>
+<div>
+<span>Result</span>
+<p>It prepares the machine-gun mount yaw, gun pitch, and commander-cupola yaw as one coherent state.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_ComTowerRotationGraph</code></dd>
+<dt>Reads state</dt><dd><code>WeaponAimSystem</code></dd>
+<dt>Writes state</dt><dd><code>MachieGunPitch</code>, <code>MGComTowerRotation</code>, <code>CTComTowerRotation</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>10 nodes</span>
 <span><b>Signature</b>2 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateComTowerRotation Blueprint node"><div class="bp-auth-node__header"><span>UpdateComTowerRotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ComTower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="getuppersplinepointzposition general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getuppersplinepointzposition general logic|track components|track maker function construct spline track splinepointarray ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>GetUpperSplinePointZPosition</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Calculates the height of an upper-run spline point.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Iterates the supplied upper-run indices and reads their locations from <code>TrackPath</code>.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Fills the working upper-point position/height array used when constructing and restoring the upper run.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Reads state</dt><dd><code>SplinePointArray</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>17 nodes</span>
 <span><b>Signature</b>3 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetUpperSplinePointZPosition Blueprint node"><div class="bp-auth-node__header"><span>GetUpperSplinePointZPosition</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="splinemirrorcopy general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="splinemirrorcopy general logic|track components|track maker function construct spline track splinetocopy newsplinelocal currentpointindex startsplinepoint absoluteendsplinepoint newsplinelocal currentpointindex">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>SplineMirrorCopy</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Copies a spline shape to the opposite side using a mirrored transform.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Creates the same number of points in the destination spline, mirrors local positions, reverses point order, and transfers rotation, point type, and arrive/leave tangents.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Returns a closed mirrored loop for the opposite vehicle side without modifying the source spline.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Reads state</dt><dd><code>SplineToCopy</code>, <code>NewSplineLocal</code>, <code>CurrentPointIndex</code>, <code>StartSplinePoint</code>, <code>AbsoluteEndSplinePoint</code></dd>
+<dt>Writes state</dt><dd><code>NewSplineLocal</code>, <code>CurrentPointIndex</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>58 nodes</span>
 <span><b>Signature</b>2 in · 2 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>30</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SplineMirrorCopy Blueprint node"><div class="bp-auth-node__header"><span>SplineMirrorCopy</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SplineToCopy</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">NewSpline</span><span class="bp-auth-pin__type">SplineComponent</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="instancetrackscreation general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="instancetrackscreation general logic|track components|track maker function construct spline track trackpathtoattach trackstaticmeshes trackmeshesamount trackinstanceslocal trackonside currentinstance currentstaticmesh isleftside? trackmeshesamount currentinstance currentstaticmesh">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>InstanceTracksCreation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Creates and places track-link instances along the solved loop.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Creates and attaches the required Instanced Static Mesh components, assigns each track-link mesh, and adds the configured instance count with side-aware offsets.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Returns the instance components later moved by <code>SetTracksTransform</code>, avoiding one Actor per link.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Reads state</dt><dd><code>TrackPathToAttach</code>, <code>TrackStaticMeshes</code>, <code>TrackMeshesAmount</code>, <code>TrackInstancesLocal</code>, <code>TrackOnSide</code>, <code>CurrentInstance</code> <span class="bp-auth-more">+2 more</span></dd>
+<dt>Writes state</dt><dd><code>TrackMeshesAmount</code>, <code>CurrentInstance</code>, <code>CurrentStaticMesh</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>37 nodes</span>
 <span><b>Signature</b>3 in · 2 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>10</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="InstanceTracksCreation Blueprint node"><div class="bp-auth-node__header"><span>InstanceTracksCreation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPathToAttach</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TracksInstances</span><span class="bp-auth-pin__type">InstancedStaticMeshComponent</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="settrackstransform general logic|tank component|track component function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="settrackstransform general logic|tank component|track component function server_trackphysgraph trackinstancecurrent intervalamongtracks chassiscurrentdistance trackpathlength trackonside tracksamountbeforesplineend trackmeshesamount trackinstances trackmeshoffset trackindex trackpath currenttrackdistance trackpathlength intervalamongtracks tracksamountbeforesplineend chassiscurrentdistance trackinstancecurrent currenttrackdistance trackmeshoffset">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
 <div class="bp-auth-card__title"><code>SetTracksTransform</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Applies a calculated transform to a selected track link.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Measures loop length, derives even link spacing, adds accumulated chassis travel, wraps distance at the spline end, and uses <code>CalculateTruckTransform</code> before updating every instance transform.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Moves all visual track shoes along the solved loop while preserving phase from frame to frame.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_TrackPhysGraph</code></dd>
+<dt>Reads state</dt><dd><code>TrackInstanceCurrent</code>, <code>IntervalAmongTracks</code>, <code>ChassisCurrentDistance</code>, <code>TrackPathLength</code>, <code>TrackOnSide</code>, <code>TracksAmountBeforeSplineEnd</code> <span class="bp-auth-more">+6 more</span></dd>
+<dt>Writes state</dt><dd><code>TrackPathLength</code>, <code>IntervalAmongTracks</code>, <code>TracksAmountBeforeSplineEnd</code>, <code>ChassisCurrentDistance</code>, <code>TrackInstanceCurrent</code>, <code>CurrentTrackDistance</code> <span class="bp-auth-more">+1 more</span></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>65 nodes</span>
 <span><b>Signature</b>4 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>16</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetTracksTransform Blueprint node"><div class="bp-auth-node__header"><span>SetTracksTransform</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackInstances</span><span class="bp-auth-pin__type">InstancedStaticMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ChassisDistance</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="constructrear|frontsplinepoint general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="constructrear|frontsplinepoint general logic|track components|track maker function old mesh ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>ConstructRear|FrontSplinePoint</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Builds transition points near the front or rear end wheel.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Uses a wheel socket and radius to compute the lower and upper transition points; <code>InvertDownAxis</code> selects the front/rear lower-offset direction.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Writes both positions into <code>TrackPath</code>, joining the end-wheel wrap to the straight runs.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Old</code></dd>
+<dt>Reads state</dt><dd><code>Mesh</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>11 nodes</span>
 <span><b>Signature</b>7 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>6</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructRear|FrontSplinePoint Blueprint node"><div class="bp-auth-node__header"><span>ConstructRear|FrontSplinePoint</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DownRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UpRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InSocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WhellRadius</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InvertDownAxis</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="angularvelocity general logic|tank component|track component function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="angularvelocity general logic|tank component|track component function   ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
 <div class="bp-auth-card__title"><code>AngularVelocity</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Reads or converts angular velocity for movement calculations.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Divides travelled linear distance by radius and converts the result through π into the Blueprint wheel-rotation value.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Returns the wheel angle corresponding to the same distance travelled by the track.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Not called by stored graphs</dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>8 nodes</span>
 <span><b>Signature</b>3 in · 2 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>1</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="AngularVelocity Blueprint node"><div class="bp-auth-node__header"><span>AngularVelocity</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WheelDistance</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Angle</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Radius</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="uppersplinepointsagging general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="uppersplinepointsagging general logic|track components|track maker function updatetrackslocation vehiclemovementcomponent constraint instances_r relativelocation constraint instances_l ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>UpperSplinePointSagging</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Calculates upper-run sag between supports.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Solves one upper-run point between span endpoints using tension, grounded-track amount, vehicle speed/direction, sag limits, and—when enabled—relative constraint-helper motion.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Writes the corrected point height to the spline; repeated calls form a smooth upper run that reacts to motion.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Reads state</dt><dd><code>VehicleMovementComponent</code>, <code>Constraint Instances_R</code>, <code>RelativeLocation</code>, <code>Constraint Instances_L</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>35 nodes</span>
 <span><b>Signature</b>13 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>14</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpperSplinePointSagging Blueprint node"><div class="bp-auth-node__header"><span>UpperSplinePointSagging</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Index</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AmountOfTrackOnTheGround</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackDownwards</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackUpwards</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DisableTension?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="constructsimulativepoints general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="constructsimulativepoints general logic|track components|track maker function construct spline track mesh ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>ConstructSimulativePoints</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Builds the additional points consumed by track simulation.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Creates hidden Static Mesh helpers at spline points, attaches them to the chassis, enables physics as required, and constrains adjacent helpers. <code>GameMode</code> separates editor construction from play behavior.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Returns physical helper points consumed by the constraint-physics track branch.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Construct Spline Track</code></dd>
+<dt>Reads state</dt><dd><code>Mesh</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>17 nodes</span>
 <span><b>Signature</b>3 in · 2 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>11</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructSimulativePoints Blueprint node"><div class="bp-auth-node__header"><span>ConstructSimulativePoints</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">PointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StaticMeshArray</span><span class="bp-auth-pin__type">StaticMeshComponent</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="createdynamicmi general logic|tankcomponent|micomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="createdynamicmi general logic|tankcomponent|micomponent function server_damage midynamics ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|MIComponent</span>
 <div class="bp-auth-card__title"><code>CreateDynamicMI</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Creates dynamic material instances controlled by the Blueprint at runtime.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Iterates every material slot on the supplied primitive, creates a Dynamic Material Instance, and stores the resulting references.</p>
+</div>
+<div>
+<span>Result</span>
+<p>The Blueprint can then drive damage and other runtime parameters without modifying source materials.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_Damage</code></dd>
+<dt>Reads state</dt><dd><code>MIDynamics</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>9 nodes</span>
 <span><b>Signature</b>2 in · 1 out</span>
-<span><b>Internal calls</b>3</span>
+<span><b>Call steps</b>4</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="CreateDynamicMI Blueprint node"><div class="bp-auth-node__header"><span>CreateDynamicMI</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MIMesh</span><span class="bp-auth-pin__type">PrimitiveComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="setdrivetorquebyside general logic|controls function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="setdrivetorquebyside general logic|controls function server_separatemovement dev wheelsamount as chaos wheeled vehicle movement component ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Controls</span>
 <div class="bp-auth-card__title"><code>SetDriveTorqueBySide</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Applies drive torque to the selected vehicle side.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Selects wheel indices for one side, scales the requested torque, and calls <code>Set Drive Torque</code> on each selected Chaos wheel.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Provides independent left/right propulsion for the experimental separated-movement graph.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_SeparateMovement DEV</code></dd>
+<dt>Reads state</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>13 nodes</span>
 <span><b>Signature</b>5 in · 1 out</span>
-<span><b>Internal calls</b>6</span>
+<span><b>Call steps</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveTorqueBySide Blueprint node"><div class="bp-auth-node__header"><span>SetDriveTorqueBySide</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorqueMultiply</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="setdrivebrakebyside general logic|controls function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="setdrivebrakebyside general logic|controls function server_separatemovement dev wheelsamount as chaos wheeled vehicle movement component ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Controls</span>
 <div class="bp-auth-card__title"><code>SetDriveBrakeBySide</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Applies braking input to the selected vehicle side.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Selects one side&#x27;s wheel indices, calculates the final brake torque, and calls <code>Set Brake Torque</code> for each wheel.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Provides independent left/right braking for separated movement.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_SeparateMovement DEV</code></dd>
+<dt>Reads state</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>13 nodes</span>
 <span><b>Signature</b>5 in · 1 out</span>
-<span><b>Internal calls</b>8</span>
+<span><b>Call steps</b>3</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveBrakeBySide Blueprint node"><div class="bp-auth-node__header"><span>SetDriveBrakeBySide</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TorqueMultiply</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="getwheelsdebug general logic|controls function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getwheelsdebug general logic|controls function  wheelsamount as chaos wheeled vehicle movement component wheels ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Controls</span>
 <div class="bp-auth-card__title"><code>GetWheelsDebug</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Collects wheel-state information for diagnostics.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Iterates the selected side, reads wheel state, contact data, and angular velocity, then prints the values.</p>
+</div>
+<div>
+<span>Result</span>
+<p>This is a manual read-only diagnostic helper and is not called by the stored release graphs.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Not called by stored graphs</dd>
+<dt>Reads state</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code>, <code>Wheels</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>21 nodes</span>
 <span><b>Signature</b>2 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>9</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetWheelsDebug Blueprint node"><div class="bp-auth-node__header"><span>GetWheelsDebug</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="getavgwheelsangularvelocity general logic|tankcomponent|trackcomponent function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getavgwheelsangularvelocity general logic|tankcomponent|trackcomponent function wheelmovcalculation as chaos wheeled vehicle movement component wheels wheelsamount avgl avgr avgl avgr">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|TankComponent|TrackComponent</span>
 <div class="bp-auth-card__title"><code>GetAvgWheelsAngularVelocity</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Returns the average angular velocity of a wheel group.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Validates wheel objects, accumulates angular velocity separately for left and right groups, normalizes by wheel count, and applies the input coefficient.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Returns both averages, updates working <code>AvgL</code>/<code>AvgR</code>, and feeds <code>WheelMovCalculation</code>.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>WheelMovCalculation</code></dd>
+<dt>Reads state</dt><dd><code>As Chaos Wheeled Vehicle Movement Component</code>, <code>Wheels</code>, <code>WheelsAmount</code>, <code>AvgL</code>, <code>AvgR</code></dd>
+<dt>Writes state</dt><dd><code>AvgL</code>, <code>AvgR</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>34 nodes</span>
 <span><b>Signature</b>2 in · 3 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>6</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetAvgWheelsAngularVelocity Blueprint node"><div class="bp-auth-node__header"><span>GetAvgWheelsAngularVelocity</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityL</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityR</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_update tower rotation server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_update tower rotation server logic function server_towerrotationgraph towerrotation maingunpitch ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_Update Tower Rotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Sends the new main-turret aim state to the server.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Receives the prepared turret and gun rotations and applies them as relative rotations to the supplied scene components.</p>
+</div>
+<div>
+<span>Result</span>
+<p>This is the authoritative stage that turns replicated aim state into component transforms.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_TowerRotationGraph</code></dd>
+<dt>Reads state</dt><dd><code>TowerRotation</code>, <code>MainGunPitch</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>5 nodes</span>
 <span><b>Signature</b>3 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>2</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_Update Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>Server_Update Tower Rotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MainGun</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_updatecomtowerrotation server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_updatecomtowerrotation server logic function server_comtowerrotationgraph mgcomtowerrotation ctcomtowerrotation mg_mesh_change ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_UpdateComTowerRotation</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Sends the new commander-cupola state to the server.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Applies the commander-mount rotation on the server, with a select path for the alternate machine-gun mesh configuration.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Updates the auxiliary turret&#x27;s authoritative relative rotation.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Server_ComTowerRotationGraph</code></dd>
+<dt>Reads state</dt><dd><code>MGComTowerRotation</code>, <code>CTComTowerRotation</code>, <code>MG_Mesh_Change</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>2 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>2</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_UpdateComTowerRotation Blueprint node"><div class="bp-auth-node__header"><span>Server_UpdateComTowerRotation</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ComTower</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_separatemovement dev server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_separatemovement dev server logic function client_inputgraph server_input maxtorque forwardaxis vehiclemovementcomponent separatemovement blockrightside blockleftside">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_SeparateMovement DEV</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Development-only server graph for experimental split movement control.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Converts forward and yaw input into independent left/right commands, chooses propulsion or braking for each side, invokes the side helpers, and updates side-block flags.</p>
+</div>
+<div>
+<span>Result</span>
+<p>This is a development alternative to standard vehicle input and may be bypassed by the regular wheel setup.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>Client_InputGraph</code>, <code>Server_Input</code></dd>
+<dt>Reads state</dt><dd><code>MaxTorque</code>, <code>ForwardAxis</code>, <code>VehicleMovementComponent</code>, <code>SeparateMovement</code></dd>
+<dt>Writes state</dt><dd><code>BlockRightSide</code>, <code>BlockLeftSide</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>56 nodes</span>
 <span><b>Signature</b>3 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>17</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_SeparateMovement DEV Blueprint node"><div class="bp-auth-node__header"><span>Server_SeparateMovement DEV</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ForwardAxis</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Yaw</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="construct spline track general logic|track components|track maker function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="construct spline track general logic|track components|track maker function userconstructionscript uppersplinepointarray splinetrack_l constraint instances_r constraint instances_l uppersplinepointzpositionarray_r uppersplinepointzpositionarray_l enable track constraints physics simulation absoluteendsplinepoint autosplinetrack_r splinetrack_l tracksinstances_l tracksinstances_r tracksplinelength customtangent">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
 <div class="bp-auth-card__title"><code>Construct Spline Track</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Builds the closed track loop from wheels, transitions, and upper and lower runs.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Builds the initial left loop, upper-point data, and tangents, mirrors the right spline, creates link instances, and optionally creates physics helpers.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Creates the persistent components and arrays consumed by runtime graphs and is launched by the Construction Script.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>UserConstructionScript</code></dd>
+<dt>Reads state</dt><dd><code>UpperSplinePointArray</code>, <code>SplineTrack_L</code>, <code>Constraint Instances_R</code>, <code>Constraint Instances_L</code>, <code>UpperSplinePointZPositionArray_R</code>, <code>UpperSplinePointZPositionArray_L</code> <span class="bp-auth-more">+3 more</span></dd>
+<dt>Writes state</dt><dd><code>SplineTrack_L</code>, <code>TracksInstances_L</code>, <code>TracksInstances_R</code>, <code>TrackSplineLength</code>, <code>CustomTangent</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>45 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>1</span>
+<span><b>Call steps</b>11</span>
 </div>
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Construct Spline Track Blueprint node"><div class="bp-auth-node__header"><span>Construct Spline Track</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="client_firesystem general logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="client_firesystem general logic function maingunfiresys machinegunfiresys  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic</span>
 <div class="bp-auth-card__title"><code>Client_FireSystem</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Runs client-side visual and local firing reactions after the server decision.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Attaches muzzle Niagara FX to the selected socket, creates the ground effect at the solved point, and plays the supplied audio component on the client.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Keeps audiovisual feedback separate from authoritative projectile spawning: the server validates the shot and the client presents it.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>MainGunFireSys</code>, <code>MachineGunFireSys</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>5 nodes</span>
 <span><b>Signature</b>8 in · 1 out</span>
-<span><b>Internal calls</b>2</span>
+<span><b>Call steps</b>3</span>
 </div>
 <span class="bp-auth-badge">Client</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Client_FireSystem Blueprint node"><div class="bp-auth-node__header"><span>Client_FireSystem</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TankMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketEffect</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">FireSound</span><span class="bp-auth-pin__type">AudioComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">FireGroundEffect</span><span class="bp-auth-pin__type">NiagaraSystem</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SocketGroundEffect</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">FireNiagaraEffect</span><span class="bp-auth-pin__type">NiagaraSystem</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MeshForFireFX|Calc</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ammostate functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ammostate functions function   ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_AmmoState</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Refreshes local state and UI after ammunition replication.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Unreal invokes this after replicated <code>Server_AmmoState</code> changes; it forwards the new state to <code>Server_HandleAmmoStateChanged</code>.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Spending, reload, replenishment, and replication all reach ammo/UI subscribers through one path.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>2 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_AmmoState Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_AmmoState</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_ server_ismachinegunoverheatting? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_ server_ismachinegunoverheatting? functions function  server_ismachinegunoverheatting? client_ismachinegunoverheatting?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_ Server_IsMachineGunOverHeatting?</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Handles replicated machine-gun overheat state.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Copies the replicated server overheat flag into client state and dispatches <code>OnUIStateChanged</code>.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Local effects and UI receive the authoritative overheat value after replication.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>Server_IsMachineGunOverHeatting?</code></dd>
+<dt>Writes state</dt><dd><code>Client_IsMachineGunOverHeatting?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_ Server_IsMachineGunOverHeatting? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_ Server_IsMachineGunOverHeatting?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ismaingunreloaded? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ismaingunreloaded? functions function  server_ismaingunreloaded? client_ismaingunreloaded?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_IsMainGunReloaded?</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Handles replicated main-gun readiness.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Copies server main-gun readiness into the client flag and notifies the UI.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Indicators and local input logic share the authoritative readiness state.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>Server_IsMainGunReloaded?</code></dd>
+<dt>Writes state</dt><dd><code>Client_IsMainGunReloaded?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_IsMainGunReloaded? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_IsMainGunReloaded?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ejectionanimplay functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ejectionanimplay functions function  server_ejectionanimplay client_ejectionanimplay">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_EjectionAnimPlay</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Starts the local casing-ejection reaction after replication.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Copies the replicated casing-ejection trigger into the client animation variable.</p>
+</div>
+<div>
+<span>Result</span>
+<p>The local ejection animation follows the state confirmed by the server firing graph.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>Server_EjectionAnimPlay</code></dd>
+<dt>Writes state</dt><dd><code>Client_EjectionAnimPlay</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>5 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>0</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_EjectionAnimPlay Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_EjectionAnimPlay</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_ismachinegunreloaded? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_ismachinegunreloaded? functions function  server_ismachinegunreloaded? client_ismachinegunreloaded?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_IsMachineGunReloaded?</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Handles replicated machine-gun readiness.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Copies replicated machine-gun readiness into client state and dispatches <code>OnUIStateChanged</code>.</p>
+</div>
+<div>
+<span>Result</span>
+<p>UI and local reactions use server-confirmed readiness rather than a private timer.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>Server_IsMachineGunReloaded?</code></dd>
+<dt>Writes state</dt><dd><code>Client_IsMachineGunReloaded?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_IsMachineGunReloaded? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_IsMachineGunReloaded?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_issmokeshellreloaded? functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_issmokeshellreloaded? functions function  server_issmokeshellreloaded? client_issmokeshellreloaded?">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_IsSmokeShellReloaded?</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Handles replicated smoke-launcher readiness.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Copies replicated smoke-launcher readiness into the client flag and notifies the UI.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Smoke-launch availability remains consistent between server and owning client.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>Server_IsSmokeShellReloaded?</code></dd>
+<dt>Writes state</dt><dd><code>Client_IsSmokeShellReloaded?</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>1</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_IsSmokeShellReloaded? Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_IsSmokeShellReloaded?</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_startengineprocess functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_startengineprocess functions function  rstopengine stopengine crewsound rstartengine startengine server_startengineprocess ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_StartEngineProcess</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Synchronizes the local engine-start sequence with the server.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Selects normal or interior start/stop assets from replicated engine state, assigns them to audio components, and plays or fades engine and crew audio.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Each client presents the same engine-start phase after the server state changes.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>RStopEngine</code>, <code>StopEngine</code>, <code>CrewSound</code>, <code>RStartEngine</code>, <code>StartEngine</code>, <code>Server_StartEngineProcess</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>15 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>6</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_StartEngineProcess Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_StartEngineProcess</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="onrep_server_engineondelay functions function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="onrep_server_engineondelay functions function  server_startengineprocess client_engineondelay">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Functions</span>
 <div class="bp-auth-card__title"><code>OnRep_Server_EngineOnDelay</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Handles the replicated engine-start delay.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Sets the client engine-delay flag from the current <code>Server_StartEngineProcess</code> phase.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Local engine particles and audio are enabled only after the replicated delay is confirmed.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd>Unreal replication (automatic)</dd>
+<dt>Reads state</dt><dd><code>Server_StartEngineProcess</code></dd>
+<dt>Writes state</dt><dd><code>Client_EngineOnDelay</code></dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>5 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>0</span>
+<span><b>Call steps</b>0</span>
 </div>
 <span class="bp-auth-badge">RepNotify</span>
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="OnRep_Server_EngineOnDelay Blueprint node"><div class="bp-auth-node__header"><span>OnRep_Server_EngineOnDelay</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="server_handleammostatechanged server logic function">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_handleammostatechanged server logic function onrep_server_ammostate ammo machine gun replenish smoke shall replenish maingunfiresys machinegunfiresys smokeshallfiresys ammo main gun replenish server_ammostate ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Server Logic</span>
 <div class="bp-auth-card__title"><code>Server_HandleAmmoStateChanged</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Processes ammunition changes on the server and broadcasts the new state.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Breaks the current <code>Server_AmmoState</code>, broadcasts its values through <code>OnAmmoChanged</code>, and checks whether the Pawn is locally controlled.</p>
+</div>
+<div>
+<span>Result</span>
+<p>Spending, reload, replenishment, and RepNotify converge on one notification point for HUD and other Blueprint subscribers.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Called from</dt><dd><code>OnRep_Server_AmmoState</code>, <code>Ammo Machine Gun Replenish</code>, <code>Smoke Shall Replenish</code>, <code>MainGunFireSys</code>, <code>MachineGunFireSys</code> <span class="bp-auth-more">+2 more</span></dd>
+<dt>Reads state</dt><dd><code>Server_AmmoState</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>1 in · 1 out</span>
-<span><b>Internal calls</b>16</span>
+<span><b>Call steps</b>1</span>
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
@@ -3311,101 +3995,263 @@ Each visual is built from the real `Function Entry` and `Function Result`, inclu
 
 <section class="bp-auth-section" data-bp-section="macros">
 <h2>Macros</h2>
-Pins come from the real `Inputs` and `Outputs` tunnels, so the visual matches the macro-instance interface.
+The description explains why the macro exists and which repeated Blueprint logic it encapsulates. Pins come from the real `Inputs` and `Outputs` tunnels.
 <div class="bp-auth-grid">
-<article class="bp-auth-card" data-bp-item data-search="value change tracker macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="value change tracker macro gun rotation sound tower rotation sound  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>Value Change Tracker</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Compares the current value with the previous one and reports whether it changed.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p><code>Setup</code> stores the initial wildcard value. <code>Check Change</code> finds the stored pair, compares the new value with the previous one, routes execution to <code>Value Changed</code> or <code>Value not Changed</code>, and returns both values.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p>Turret and gun rotation audio use it so motor sounds start or fade only when the angle actually changes, not on every Tick.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>Gun Rotation Sound</code>, <code>Tower Rotation Sound</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>24 nodes</span>
 <span><b>Signature</b>4 in · 5 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="Value Change Tracker Blueprint node"><div class="bp-auth-node__header"><span>Value Change Tracker</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Value</span><span class="bp-auth-pin__type">None</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Check Value</span><span class="bp-auth-pin__type">None</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Old Value</span><span class="bp-auth-pin__type">None</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="wildcard"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">New Value</span><span class="bp-auth-pin__type">None</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="calculatetrucktransform macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="calculatetrucktransform macro settrackstransform  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>CalculateTruckTransform</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Builds a track-link transform from spline position and orientation.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Reads spline location, rotation, and right vector at the requested distance, accounts for side/link orientation, and builds the final instance position and rotator.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p><code>SetTracksTransform</code> calls it once per link; it is the conversion point from spline distance to visual shoe transform.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>SetTracksTransform</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>9 nodes</span>
 <span><b>Signature</b>2 in · 2 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="CalculateTruckTransform Blueprint node"><div class="bp-auth-node__header"><span>CalculateTruckTransform</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentTrackDistance</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Locatioin</span><span class="bp-auth-pin__type">Vector</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rotation</span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="debugswitch macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="debugswitch macro updatetrackslocation debugon ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>DebugSwitch</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Produces the shared flag used to enable or bypass diagnostic graph branches.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Converts the shared <code>DebugOn</code> flag into <code>EDrawDebugTrace</code>, returning a drawn-trace mode when enabled and no drawing when disabled.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p>All traces inside <code>UpdateTracksLocation</code> can share one switch without duplicating branches.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Reads state</dt><dd><code>DebugOn</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>4 nodes</span>
 <span><b>Signature</b>0 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="DebugSwitch Blueprint node"><div class="bp-auth-node__header"><span>DebugSwitch</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="byte"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">EDrawDebugTrace</span><span class="bp-auth-pin__default">None</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="safeclampinterp macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="safeclampinterp macro cameratickcomponent  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>SafeClampInterp</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Interpolates a value smoothly while keeping the result inside a safe range.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Finds a look-at rotation from the reference axis to the endpoint, normalizes the controlled angle, clamps it to mechanical limits, and interpolates from the current camera rotation.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p><code>CameraTickComponent</code> uses it for soft but mechanically limited optic tracking without ±180° wrap jumps.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>CameraTickComponent</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>22 nodes</span>
 <span><b>Signature</b>7 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="SafeClampInterp Blueprint node"><div class="bp-auth-node__header"><span>SafeClampInterp</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SpringArm</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Rotator</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AxisFrom</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Min</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Max</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InterpSpeed</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="parabolicmarco macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="parabolicmarco macro updatetrackslocation  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>ParabolicMarco</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Calculates a point or direction along a parabolic trajectory.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Normalizes an element position within the span and evaluates a parabola using width, height, and tension.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p><code>UpdateTracksLocation</code> consumes the result as the vertical offset of a free or sagging track span.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>UpdateTracksLocation</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>17 nodes</span>
 <span><b>Signature</b>6 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="ParabolicMarco Blueprint node"><div class="bp-auth-node__header"><span>ParabolicMarco</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tension</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Height</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Width</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="camerarotmacro macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="camerarotmacro macro cameratickcomponent  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>CameraRotMacro</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Prepares camera rotation for the active view mode and its limits.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Combines two collapsed graphs: <code>CameraTurnInput</code> scales input by the active optic/FOV and drives both Player Controller and mechanical weapon axes, while <code>AimCubeRotation</code> builds aim-cube rotation from Control Rotation and camera offset.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p>Returns the coherent <code>Rot</code> applied by <code>CameraTickComponent</code> to the selected camera or Spring Arm.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>CameraTickComponent</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>5 nodes</span>
 <span><b>Signature</b>0 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="CameraRotMacro Blueprint node"><div class="bp-auth-node__header"><span>CameraRotMacro</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rot</span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="servermacro macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="servermacro macro eventtick maingunfiresys machinegunfiresys server_soundgraph server_damage  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>ServerMacro</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Encapsulates the repeated network-role check used before server logic.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Checks authority, local Pawn ownership, and proxy role, then routes one input into <code>Server_PhysicsTick</code>, <code>Local_OwnerTick</code>, or <code>Proxy_VisualTick</code>.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p>Tick, firing, sound, and damage graphs use it to keep authoritative physics, owner input, and proxy visuals from running the same branch twice.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>EventTick</code>, <code>MainGunFireSys</code>, <code>MachineGunFireSys</code>, <code>Server_SoundGraph</code>, <code>Server_Damage</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>10 nodes</span>
 <span><b>Signature</b>1 in · 3 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="ServerMacro Blueprint node"><div class="bp-auth-node__header"><span>ServerMacro</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="gamemode macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="gamemode macro userconstructionscript constructsimulativepoints eventtick  ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>GameMode</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Gets and validates the project game-mode Blueprint.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Checks ReplaySubsystem play state and standalone mode and combines them into one Boolean.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p>Construction, physics-helper creation, and Tick use it as the shared indication that runtime game logic is appropriate.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>UserConstructionScript</code>, <code>ConstructSimulativePoints</code>, <code>EventTick</code></dd>
+<dt>Reads state</dt><dd>—</dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>6 nodes</span>
 <span><b>Signature</b>0 in · 1 out</span>
 </div></div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="GameMode Blueprint node"><div class="bp-auth-node__header"><span>GameMode</span><small>MACRO</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div>
 </article>
-<article class="bp-auth-card" data-bp-item data-search="fovtox macro">
+<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="fovtox macro beginplaymainparam fieldofview ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">Authored macro</span>
 <div class="bp-auth-card__title"><code>FOVtoX</code></div>
+<div class="bp-auth-card-summary">
+<span>Purpose</span>
 <p>Converts camera field of view into a coefficient used by later calculations.</p>
+</div>
+<div class="bp-auth-behavior">
+<div>
+<span>How it works</span>
+<p>Uses tan/atan projection math to convert vertical camera FOV limits into matching horizontal angular limits with the supplied coefficient.</p>
+</div>
+<div>
+<span>Why this Blueprint uses it</span>
+<p><code>BeginPlayMainParam</code> uses MinX/MaxX so optic-camera yaw limits match the actually visible sector.</p>
+</div>
+</div>
+<dl class="bp-auth-footprint">
+<dt>Used by</dt><dd><code>BeginPlayMainParam</code></dd>
+<dt>Reads state</dt><dd><code>FieldOfView</code></dd>
+<dt>Writes state</dt><dd>—</dd>
+</dl>
 <div class="bp-auth-meta">
 <span><b>Graph</b>23 nodes</span>
 <span><b>Signature</b>4 in · 2 out</span>
