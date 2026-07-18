@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">Guide</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
-  <a href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
+  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Plugin Blueprint nodes</a>
+  <a href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">Project Blueprint</a>
+  <a href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Русский</a>
 </div>
 
@@ -266,5 +267,6 @@ These adapters support gradual conversion of an older Blueprint graph. Avoid the
 | `Calculate Camera FOV Zoom` | Safely clamps the zoom index and interpolates FOV. |
 | `Is Component Overlapping Named Object` | Checks a named overlap without unsafe empty-array reads. |
 | `Safe Divide (Double)` | Divides finite doubles with a fallback for zero/invalid denominators. |
+
 
 
