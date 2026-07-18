@@ -10,6 +10,7 @@ page_kind: reference
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Settings</a>
   <a class="is-active" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
+  <a href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
   <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Русский</a>
 </div>
 
