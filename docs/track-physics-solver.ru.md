@@ -9,8 +9,9 @@ page_kind: reference
 <div class="doc-breadcrumbs">
   <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
   <a class="is-active" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры</a>
-  <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
-  <a href="{{ '/docs/track-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
+  <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды плагина</a>
+  <a href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Blueprint проекта</a>
+  <a href="{{ '/docs/track-cpp-api.ru.html' | relative_url }}">C++ API</a>
   <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">English</a>
 </div>
 
@@ -156,41 +157,7 @@ page_kind: reference
 ## Статус решателя (только чтение)
 
 Поля статуса показывают результат последней генерации или итерации решателя и
-не меняют гусеницу. Начинайте диагностику с трёх текстовых полей. Раскрывайте
-расширенные категории только для поиска конкретной проблемы.
-
-### Основной статус
-
-| Поле | Что означает |
-| --- | --- |
-| `Last Solver Status` | Читаемая сводка последней генерации, расчёта, контактов, физического режима, обновления Builder и ключевых диагностических значений. |
-| `Last Validation Status` | Результат последней проверки настройки: отсутствующий сплайн, источник, Builder или ошибки геометрии. |
-| `Last Debug Snapshot` | Последний подробный снимок диагностики. Точная атрибуция пиков требует включённого `Detailed Runtime Diagnostics`. |
-| `Last Desired Point Count` | Количество точек, созданных стадией желаемой формы. |
-| `Last Solved Point Count` | Количество точек в окончательном расчёте. Обычно должно совпадать с желаемым количеством. |
-| `Last Missing Source Count` | Количество контролов, для которых не удалось найти компонент, кость или socket. В норме — 0. |
-| `Last Ground Contact Count` | Количество желаемых точек, которые сейчас приняты как контакты с поверхностью. |
-| `Last Matched Wheel Points` | Количество созданных точек, успешно сопоставленных с костями и guide-окружностями колёс. |
-| `Last Generated Control Point Count` | Количество основных контролов после последней генерации. |
-| `Last Skipped Endpoint Wheels` | Концевые кости, намеренно исключённые из ряда опорных катков, поскольку ими управляет генератор концевых колёс. |
-| `Last Desired Extent` | Примерный пространственный размер созданного контура, используемый проверкой и диагностикой. |
-| `Last Bad Segment Count` | Количество сегментов, отклонённых защитой от плохой геометрии. В норме — 0. |
-| `Last Max Segment Length` | Самый длинный сегмент последнего рассчитанного контура. Неожиданный пик указывает на сломанную топологию или скачок точки. |
-
-### Контакты и процедурная форма (Advanced)
-
-| Поле | Что означает |
-| --- | --- |
-| `Last Fixed Support Count` | Количество желаемых точек, считающихся фиксированными или исходными опорами. |
-| `Last Suspended Support Count` | Опоры, ограничивающие неподдерживаемые участки провиса. |
-| `Last Suspended Span Count` | Неподдерживаемые участки, получившие процедурный провис. |
-| `Last Trace Penetration Recoveries` | Начальные пересечения, восстановленные специальной веткой penetration recovery. |
-| `Last Trace Rejected Initial Penetration Count` | Небезопасные trace-результаты с начальным пересечением, которые были отклонены. |
-| `Last Trace Rejected Far Drop Count` | Попадания, отклонённые параметром `Maximum Ground Search Drop`. |
-| `Last Trace Rejected Max Snap Distance Count` | Попадания, отклонённые параметром `Maximum Ground Snap Distance`. |
-| `Last Ground Contact Hysteresis Hold Count` | Существующие контакты, временно удержанные гистерезисом, чтобы не допустить дребезга опор. |
-| `Last Merged Generated Duplicate Count` | Дублирующиеся точки, удалённые при генерации по костям. |
-| `Last Merged Runtime Point Count` | Близкие промежуточные точки, объединённые при построении желаемой формы во время игры. |
+не меня…1155 tokens truncated…oint Count` | Близкие промежуточные точки, объединённые при построении желаемой формы во время игры. |
 | `Last Effective Detail Scale` | Фактический множитель шага детализации; обычно 1 в режиме Full Physical. |
 | `Last Effective Trace Fan Count` | Фактическое число боковых probes после применения выбранного режима качества. |
 | `Last Trace Fallback Hit Count` | Контакты, принятые от запасного probe вместо основного. |
@@ -332,3 +299,4 @@ page_kind: reference
 Для первого запуска не требуется менять все параметры категории Advanced.
 Начните с пресета и открывайте дополнительные настройки только тогда, когда
 понятно, какое поведение нужно изменить.
+
