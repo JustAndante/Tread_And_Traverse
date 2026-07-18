@@ -35,8 +35,9 @@ permalink: /en/
     </div>
     <div class="card-actions">
       <a class="card-link" href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">Settings and setup</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Plugin Blueprint nodes</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">Project Blueprint</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-cpp-api.en.html' | relative_url }}">C++ API</a>
     </div>
   </article>
 
@@ -52,8 +53,9 @@ permalink: /en/
     </div>
     <div class="card-actions">
       <a class="card-link" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">System setup</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Plugin Blueprint nodes</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">Project Blueprint</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">C++ API</a>
     </div>
   </article>
 </div>
@@ -78,3 +80,4 @@ permalink: /en/
 <div class="notice-panel">
   The guides cover settings intended for normal project use. Experimental and legacy-only controls are not included.
 </div>
+
