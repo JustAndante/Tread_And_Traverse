@@ -10,6 +10,7 @@ page_kind: reference
   <a href="{{ '/en/' | relative_url }}">← English documentation</a>
   <a class="is-active" href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">Guide</a>
   <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Blueprint nodes</a>
+  <a href="{{ '/docs/vehicle-weapon-cpp-api.en.html' | relative_url }}">Properties & C++ API</a>
   <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Русский</a>
 </div>
 
