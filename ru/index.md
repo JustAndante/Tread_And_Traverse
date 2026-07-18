@@ -35,8 +35,9 @@ permalink: /ru/
     </div>
     <div class="card-actions">
       <a class="card-link" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры и настройка</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/track-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды плагина</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Blueprint проекта</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-cpp-api.ru.html' | relative_url }}">C++ API</a>
     </div>
   </article>
 
@@ -52,8 +53,9 @@ permalink: /ru/
     </div>
     <div class="card-actions">
       <a class="card-link" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Настройка системы</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">Свойства и C++ API</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды плагина</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Blueprint проекта</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-cpp-api.ru.html' | relative_url }}">C++ API</a>
     </div>
   </article>
 </div>
@@ -78,3 +80,4 @@ permalink: /ru/
 <div class="notice-panel">
   В руководствах описаны настройки, предназначенные для обычного использования в проекте. Экспериментальные и устаревшие параметры сюда не включены.
 </div>
+
