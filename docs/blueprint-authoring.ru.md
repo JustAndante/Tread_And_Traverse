@@ -41,2737 +41,733 @@ page_kind: reference
 <h2>Переменные</h2>
 Показаны только пользовательские переменные, которые реально читаются или изменяются графами. Компоненты, локальные переменные функций и неиспользуемые заготовки сюда не попадают.
 <aside class="bp-auth-note"><strong>Важно о значениях.</strong> Поле «В BP_Tank_Master» показывает конфигурацию, сохранённую для этой машины. Это не универсальный дефолт и не рекомендуемое значение для другого танка: геометрия, углы, скорости, FOV и пределы подбираются под конкретную модель.</aside>
+<div class="bp-auth-group-list" data-bp-group-list>
+<details class="bp-auth-group" data-bp-group data-bp-total="33" open>
+<summary>
+<span class="bp-auth-group__title">Camera</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>33</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1" open>
+<summary>
+<span>Aim Cube</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
 <div class="bp-auth-grid bp-auth-grid--variables">
-<article class="bp-auth-card" data-bp-item data-search="globaltracelenght global trace lenght camera|aim cube integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Aim Cube</span>
-<div class="bp-auth-card__title"><code>GlobalTraceLenght</code></div>
-<p>Числовой параметр «Global Trace Lenght».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>25000000</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Trace Of Weapon UIAim Calculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Global Trace Lenght Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Global Trace Lenght</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="enablesoftnesscamera enable softness camera camera|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Boolean</span>
-<div class="bp-auth-card__title"><code>EnableSoftnessCamera</code></div>
-<p>Флаг состояния «Enable Softness Camera».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Enable Softness Camera Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Enable Softness Camera</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="freecamswitch free cam switch camera|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Boolean</span>
-<div class="bp-auth-card__title"><code>FreeCamSwitch</code></div>
-<p>Флаг состояния «Free Cam Switch».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>EventGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Free Cam Switch Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Free Cam Switch</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Free Cam Switch Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Free Cam Switch</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isbacklightsightenabled? is backlight sight enabled? camera|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Boolean</span>
-<div class="bp-auth-card__title"><code>IsBacklightSightEnabled?</code></div>
-<p>Флаг состояния «Is Backlight Sight Enabled?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Backlight Sight Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Backlight Sight Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Backlight Sight Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Backlight Sight Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isballisticcomputerenable? is ballistic computer enable? camera|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Boolean</span>
-<div class="bp-auth-card__title"><code>IsBallisticComputerEnable?</code></div>
-<p>Флаг состояния «Is Ballistic Computer Enable?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Ballistic Computer Enable? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Ballistic Computer Enable?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Ballistic Computer Enable? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Ballistic Computer Enable?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isgunnercameraswitch? is gunner camera switch? camera|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Boolean</span>
-<div class="bp-auth-card__title"><code>IsGunnerCameraSwitch?</code></div>
-<p>Флаг состояния «Is Gunner Camera Switch?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 18 · запись: 3</span>
-<span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code> +3</span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Gunner Camera Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Gunner Camera Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Gunner Camera Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Gunner Camera Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="islocktargetenabled? is lock target enabled? camera|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Boolean</span>
-<div class="bp-auth-card__title"><code>IsLockTargetEnabled?</code></div>
-<p>Флаг состояния «Is Lock Target Enabled?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Lock Target Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Lock Target Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Lock Target Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Lock Target Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="commandercamerayawmaxvalue commander camera yaw max value camera|com tower camera|base parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Com Tower Camera|Base Parameters</span>
-<div class="bp-auth-card__title"><code>CommanderCameraYawMaxValue</code></div>
-<p>Числовой параметр «Commander Camera Yaw Max Value».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>10.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Commander Camera Yaw Max Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Commander Camera Yaw Max Value</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="commandercamerayawminvalue commander camera yaw min value camera|com tower camera|base parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Com Tower Camera|Base Parameters</span>
-<div class="bp-auth-card__title"><code>CommanderCameraYawMinValue</code></div>
-<p>Числовой параметр «Commander Camera Yaw Min Value».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>-10.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Commander Camera Yaw Min Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Commander Camera Yaw Min Value</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="bp comtower field of view bp com tower field of view camera|comtowercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>BP ComTower Field Of View</code></div>
-<p>Числовой параметр «BP Com Tower Field Of View».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 1</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="float" role="img" aria-label="Get BP Com Tower Field Of View Blueprint variable" title="Float"><span class="bp-auth-var-node__name">BP Com Tower Field Of View</span><span class="bp-auth-pin__dot" data-pin-type="float"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="float" role="img" aria-label="Set BP Com Tower Field Of View Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">BP Com Tower Field Of View</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="comtowercamfov com tower cam fov camera|comtowercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ComTowerCamFOV</code></div>
-<p>Числовой параметр «Com Tower Cam FOV».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Com Tower Cam FOV Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam FOV</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Com Tower Cam FOV Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Com Tower Cam FOV</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="comtowercamfovbounds com tower cam fovbounds camera|comtowercamera|baseparameters vector2d">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ComTowerCamFOVBounds</code></div>
-<p>Допустимый диапазон «Com Tower Cam FOVBounds».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Vector2D</span>
-<span><b>В BP_Tank_Master</b>X=2.0, Y=30.0</span>
-<span><b>Использование</b>Чтение: 3 · запись: 1</span>
-<span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Com Tower Cam FOVBounds Blueprint variable" title="Vector2D"><span class="bp-auth-var-node__name">Com Tower Cam FOVBounds</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="vector" role="img" aria-label="Set Com Tower Cam FOVBounds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Com Tower Cam FOVBounds</span><span class="bp-auth-pin__type">Vector2D</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="vector" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Vector2D</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="comtowercamfovmultiple com tower cam fovmultiple camera|comtowercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ComTowerCamFOVMultiple</code></div>
-<p>Числовой параметр «Com Tower Cam FOVMultiple».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>10.0</span>
-<span><b>Использование</b>Чтение: 4 · запись: 4</span>
-<span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Com Tower Cam FOVMultiple Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam FOVMultiple</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Com Tower Cam FOVMultiple Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Com Tower Cam FOVMultiple</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="comtowercamfovstep com tower cam fovstep camera|comtowercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ComTowerCamFOVStep</code></div>
-<p>Числовой параметр «Com Tower Cam FOVStep».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>1.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>CameraZoom</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Com Tower Cam FOVStep Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam FOVStep</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="comtowercammagnificationmax com tower cam magnification max camera|comtowercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ComTowerCamMagnificationMax</code></div>
-<p>Числовой параметр «Com Tower Cam Magnification Max».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>12.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Com Tower Cam Magnification Max Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam Magnification Max</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="comtowercammagnificationmin com tower cam magnification min camera|comtowercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ComTowerCamMagnificationMin</code></div>
-<p>Числовой параметр «Com Tower Cam Magnification Min».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>2.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Com Tower Cam Magnification Min Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam Magnification Min</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="iscomtowercameraswitch? is com tower camera switch? camera|comtowercamera|boolern boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|Boolern</span>
-<div class="bp-auth-card__title"><code>IsComTowerCameraSwitch?</code></div>
-<p>Флаг состояния «Is Com Tower Camera Switch?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 14 · запись: 3</span>
-<span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code> +2</span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Com Tower Camera Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Com Tower Camera Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Com Tower Camera Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Com Tower Camera Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isdoublefiresysenable? is double fire sys enable? camera|comtowercamera|boolern boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|ComTowerCamera|Boolern</span>
-<div class="bp-auth-card__title"><code>IsDoubleFireSysEnable?</code></div>
-<p>Флаг состояния «Is Double Fire Sys Enable?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Double Fire Sys Enable? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Double Fire Sys Enable?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Double Fire Sys Enable? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Double Fire Sys Enable?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="bp gunner field of view bp gunner field of view camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>BP Gunner Field Of View</code></div>
-<p>Числовой параметр «BP Gunner Field Of View».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 1</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="float" role="img" aria-label="Get BP Gunner Field Of View Blueprint variable" title="Float"><span class="bp-auth-var-node__name">BP Gunner Field Of View</span><span class="bp-auth-pin__dot" data-pin-type="float"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="float" role="img" aria-label="Set BP Gunner Field Of View Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">BP Gunner Field Of View</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnercamfov gunner cam fov camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnerCamFOV</code></div>
-<p>Числовой параметр «Gunner Cam FOV».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>90.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunner Cam FOV Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Cam FOV</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Gunner Cam FOV Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Gunner Cam FOV</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnercamfovbounds gunner cam fovbounds camera|gunnercamera|baseparameters vector2d">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnerCamFOVBounds</code></div>
-<p>Допустимый диапазон «Gunner Cam FOVBounds».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Vector2D</span>
-<span><b>В BP_Tank_Master</b>X=2.0, Y=30.0</span>
-<span><b>Использование</b>Чтение: 3 · запись: 1</span>
-<span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Gunner Cam FOVBounds Blueprint variable" title="Vector2D"><span class="bp-auth-var-node__name">Gunner Cam FOVBounds</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="vector" role="img" aria-label="Set Gunner Cam FOVBounds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Gunner Cam FOVBounds</span><span class="bp-auth-pin__type">Vector2D</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="vector" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Vector2D</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnercamfovmultiple gunner cam fovmultiple camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnerCamFOVMultiple</code></div>
-<p>Числовой параметр «Gunner Cam FOVMultiple».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>10.0</span>
-<span><b>Использование</b>Чтение: 4 · запись: 4</span>
-<span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunner Cam FOVMultiple Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Cam FOVMultiple</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Gunner Cam FOVMultiple Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Gunner Cam FOVMultiple</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnercamfovstep gunner cam fovstep camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnerCamFOVStep</code></div>
-<p>Числовой параметр «Gunner Cam FOVStep».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>1.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>CameraZoom</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunner Cam FOVStep Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Cam FOVStep</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnercamerayawmaxvalue gunner camera yaw max value camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnerCameraYawMaxValue</code></div>
-<p>Числовой параметр «Gunner Camera Yaw Max Value».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>10.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunner Camera Yaw Max Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Camera Yaw Max Value</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnesrmagnificationmax gunnesr magnification max camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnesrMagnificationMax</code></div>
-<p>Числовой параметр «Gunnesr Magnification Max».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>12.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunnesr Magnification Max Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunnesr Magnification Max</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnesrmagnificationmin gunnesr magnification min camera|gunnercamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|GunnerCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnesrMagnificationMin</code></div>
-<p>Числовой параметр «Gunnesr Magnification Min».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>4.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunnesr Magnification Min Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunnesr Magnification Min</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="camerarot camera rot camera|main camera|base parameters rotator">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|Main Camera|Base Parameters</span>
-<div class="bp-auth-card__title"><code>CameraRot</code></div>
-<p>Ссылка на <code>Rotator</code>, используемая как «Camera Rot».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Rotator</span>
-<span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 1</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Camera Rot Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Camera Rot</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Camera Rot Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera Rot</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="camera yoffset camera yoffset camera|maincamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|MainCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>Camera YOffset</code></div>
-<p>Смещение «Camera YOffset».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>5.0</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>CameraRotMacro</code>, <code>Client_InputGraph</code>, <code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Camera YOffset Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Camera YOffset</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="gunnercamerayawminvalue gunner camera yaw min value camera|maincamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|MainCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>GunnerCameraYawMinValue</code></div>
-<p>Числовой параметр «Gunner Camera Yaw Min Value».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>-10.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Gunner Camera Yaw Min Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Camera Yaw Min Value</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maincamfovmultiple main cam fovmultiple camera|maincamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|MainCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MainCamFOVMultiple</code></div>
-<p>Числовой параметр «Main Cam FOVMultiple».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>2.0</span>
-<span><b>Использование</b>Чтение: 4 · запись: 4</span>
-<span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Main Cam FOVMultiple Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Cam FOVMultiple</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Main Cam FOVMultiple Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Cam FOVMultiple</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="temp current zoom temp current zoom camera|maincamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|MainCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>Temp Current Zoom</code></div>
-<p>Числовой параметр «Temp Current Zoom».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 1</span>
-<span><b>Графы</b><code>CameraZoom</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Temp Current Zoom Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Temp Current Zoom</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Temp Current Zoom Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Temp Current Zoom</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="zoom bounds zoom bounds camera|maincamera|baseparameters vector2d">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|MainCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>Zoom Bounds</code></div>
-<p>Допустимый диапазон «Zoom Bounds».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Vector2D</span>
-<span><b>В BP_Tank_Master</b>X=+0, Y=10.0</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Zoom Bounds Blueprint variable" title="Vector2D"><span class="bp-auth-var-node__name">Zoom Bounds</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="zoom step zoom step camera|maincamera|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Camera|MainCamera|BaseParameters</span>
-<div class="bp-auth-card__title"><code>Zoom Step</code></div>
-<p>Числовой параметр «Zoom Step».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>120.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>CameraZoom</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Zoom Step Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Zoom Step</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="as chaos wheeled vehicle movement component as chaos wheeled vehicle movement component components|chaos chaoswheeledvehiclemovementcomponent">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Components|Chaos</span>
-<div class="bp-auth-card__title"><code>As Chaos Wheeled Vehicle Movement Component</code></div>
-<p>Ссылка на <code>ChaosWheeledVehicleMovementComponent</code>, используемая как «As Chaos Wheeled Vehicle Movement Component».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>ChaosWheeledVehicleMovementComponent</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 7 · запись: 1</span>
-<span><b>Графы</b><code>EventGraph</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>Server_SoundGraph</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code> +2</span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get As Chaos Wheeled Vehicle Movement Component Blueprint variable" title="ChaosWheeledVehicleMovementComponent"><span class="bp-auth-var-node__name">As Chaos Wheeled Vehicle Movement Component</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set As Chaos Wheeled Vehicle Movement Component Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="ChaosWheeledVehicleMovementComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">As Chaos Wheeled Vehicle Movement Component</span><span class="bp-auth-pin__type">ChaosWheeledVehicleMovementComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" title="ChaosWheeledVehicleMovementComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">ChaosWheeledVehicleMovementComponent</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackarray track array components|miarrays array&lt;instancedstaticmeshcomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Components|MIArrays</span>
-<div class="bp-auth-card__title"><code>TrackArray</code></div>
-<p>Рабочий список «Track Array».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;InstancedStaticMeshComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_Damage</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Track Array Blueprint variable" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Track Array</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="blockleftside block left side controls|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Boolean</span>
-<div class="bp-auth-card__title"><code>BlockLeftSide</code></div>
-<p>Флаг состояния «Block Left Side».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 4</span>
-<span><b>Графы</b><code>Server_SeparateMovement DEV</code>, <code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Block Left Side Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Block Left Side</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Block Left Side Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Block Left Side</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="blockrightside block right side controls|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Boolean</span>
-<div class="bp-auth-card__title"><code>BlockRightSide</code></div>
-<p>Флаг состояния «Block Right Side».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 4</span>
-<span><b>Графы</b><code>Server_SeparateMovement DEV</code>, <code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Block Right Side Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Block Right Side</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Block Right Side Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Block Right Side</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="separatemovement separate movement controls|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Boolean</span>
-<div class="bp-auth-card__title"><code>SeparateMovement</code></div>
-<p>Флаг состояния «Separate Movement».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_SeparateMovement DEV</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Separate Movement Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Separate Movement</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="forwardspeed forward speed controls|float float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Float</span>
-<div class="bp-auth-card__title"><code>ForwardSpeed</code></div>
-<p>Скорость или темп для «Forward Speed».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 4 · запись: 1</span>
-<span><b>Графы</b><code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="float" role="img" aria-label="Get Forward Speed Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Forward Speed</span><span class="bp-auth-pin__dot" data-pin-type="float"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="float" role="img" aria-label="Set Forward Speed Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Forward Speed</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maxtorque max torque controls|float float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Float</span>
-<div class="bp-auth-card__title"><code>MaxTorque</code></div>
-<p>Числовой параметр «Max Torque».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>2000.0</span>
-<span><b>Использование</b>Чтение: 8 · запись: 0</span>
-<span><b>Графы</b><code>Server_SeparateMovement DEV</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Max Torque Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Max Torque</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="moverighttriggeredseconds move right triggered seconds controls|float float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Float</span>
-<div class="bp-auth-card__title"><code>MoveRightTriggeredSeconds</code></div>
-<p>Числовой параметр «Move Right Triggered Seconds».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Move Right Triggered Seconds Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Move Right Triggered Seconds</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Move Right Triggered Seconds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Move Right Triggered Seconds</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="throttleinput throttle input controls|float float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Float</span>
-<div class="bp-auth-card__title"><code>ThrottleInput</code></div>
-<p>Числовой параметр «Throttle Input».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 4 · запись: 1</span>
-<span><b>Графы</b><code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="float" role="img" aria-label="Get Throttle Input Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Throttle Input</span><span class="bp-auth-pin__dot" data-pin-type="float"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="float" role="img" aria-label="Set Throttle Input Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Throttle Input</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="throttletriggeredseconds throttle triggered seconds controls|float float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Controls|Float</span>
-<div class="bp-auth-card__title"><code>ThrottleTriggeredSeconds</code></div>
-<p>Числовой параметр «Throttle Triggered Seconds».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Throttle Triggered Seconds Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Throttle Triggered Seconds</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Throttle Triggered Seconds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Throttle Triggered Seconds</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_ammostate server ammo state preferences st_ammostate">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences</span>
-<div class="bp-auth-card__title"><code>Server_AmmoState</code></div>
-<p>Рабочее значение «Server Ammo State» типа <code>ST_AmmoState</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>ST_AmmoState</span>
-<span><b>В BP_Tank_Master</b>Empty</span>
-<span><b>Использование</b>Чтение: 30 · запись: 0</span>
-<span><b>Графы</b><code>MachineGunCoolingCalculation</code>, <code>Server_FiringGraph</code>, <code>Server_HandleAmmoStateChanged</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_AmmoState</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Server Ammo State Blueprint variable" title="ST_AmmoState"><span class="bp-auth-var-node__name">Server Ammo State</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="client_engineondelay client engine on delay preferences|client boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Client</span>
-<div class="bp-auth-card__title"><code>Client_EngineOnDelay</code></div>
-<p>Флаг состояния «Client Engine on Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_Server_EngineOnDelay</code>, <code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Engine on Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Engine on Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Engine on Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Engine on Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="crewvoicesenable crew voices enable preferences|client boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Client</span>
-<div class="bp-auth-card__title"><code>CrewVoicesEnable</code></div>
-<p>Флаг состояния «Crew Voices Enable».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 4 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code>, <code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Crew Voices Enable Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Crew Voices Enable</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="debugon debug on preferences|debug boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Debug</span>
-<div class="bp-auth-card__title"><code>DebugOn</code></div>
-<p>Флаг состояния «Debug On».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>DebugSwitch</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Debug On Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Debug On</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Debug On Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Debug On</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="enginestartingtime engine starting time preferences|server float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Server</span>
-<div class="bp-auth-card__title"><code>EngineStartingTime</code></div>
-<p>Числовой параметр «Engine Starting Time».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>0.699999988079071</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_Input</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="float" role="img" aria-label="Get Engine Starting Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Engine Starting Time</span><span class="bp-auth-pin__dot" data-pin-type="float"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_engineison server engine is on preferences|server boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Server</span>
-<div class="bp-auth-card__title"><code>Server_EngineIsOn</code></div>
-<p>Флаг состояния «Server Engine Is On».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 4 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_Input</code>, <code>Server_SoundGraph</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Engine Is On Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Engine Is On</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Engine Is On Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Engine Is On</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_engineondelay server engine on delay preferences|server boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Server</span>
-<div class="bp-auth-card__title"><code>Server_EngineOnDelay</code></div>
-<p>Флаг состояния «Server Engine on Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_Input</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_EngineOnDelay</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Engine on Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Engine on Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Engine on Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Engine on Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_healthpoint server health point preferences|server float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Server</span>
-<div class="bp-auth-card__title"><code>Server_HealthPoint</code></div>
-<p>Числовой параметр «Server Health Point».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>100.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Server_Damage</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Server Health Point Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Server Health Point</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Server Health Point Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Health Point</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_startengineprocess server start engine process preferences|server boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Server</span>
-<div class="bp-auth-card__title"><code>Server_StartEngineProcess</code></div>
-<p>Флаг состояния «Server Start Engine Process».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_Server_EngineOnDelay</code>, <code>OnRep_Server_StartEngineProcess</code>, <code>Server_Input</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_StartEngineProcess</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Start Engine Process Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Start Engine Process</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Start Engine Process Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Start Engine Process</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="attachsplinepointstowheels attach spline points to wheels preferences|spline condition boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>AttachSplinePointsToWheels</code></div>
-<p>Флаг состояния «Attach Spline Points to Wheels».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Attach Spline Points to Wheels Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Attach Spline Points to Wheels</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="enable track constraints physics simulation enable track constraints physics simulation preferences|spline condition boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>Enable Track Constraints Physics Simulation</code></div>
-<p>Флаг состояния «Enable Track Constraints Physics Simulation».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Enable Track Constraints Physics Simulation Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Enable Track Constraints Physics Simulation</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maxsplinesagging max spline sagging preferences|spline condition float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>MaxSplineSagging</code></div>
-<p>Числовой параметр «Max Spline Sagging».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>30.0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Max Spline Sagging Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Max Spline Sagging</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="splineparabolawidth spline parabola width preferences|spline condition float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>SplineParabolaWidth</code></div>
-<p>Числовой параметр «Spline Parabola Width».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>1.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Spline Parabola Width Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Spline Parabola Width</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="stepdeg step deg preferences|spline condition float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>StepDeg</code></div>
-<p>Числовой параметр «Step Deg».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>15.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Step Deg Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Step Deg</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="subtracecount sub trace count preferences|spline condition integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>SubTraceCount</code></div>
-<p>Числовой параметр «Sub Trace Count».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>6</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Sub Trace Count Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Sub Trace Count</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="suggingexp sugging exp preferences|spline condition float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|Spline Condition</span>
-<div class="bp-auth-card__title"><code>SuggingExp</code></div>
-<p>Числовой параметр «Sugging Exp».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>0.5</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Sugging Exp Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Sugging Exp</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="splinesubdivision spline subdivision preferences|splinecondition integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|SplineCondition</span>
-<div class="bp-auth-card__title"><code>SplineSubdivision</code></div>
-<p>Числовой параметр «Spline Subdivision».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>1</span>
-<span><b>Использование</b>Чтение: 7 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Spline Subdivision Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Spline Subdivision</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isshowcontrolsenabled? is show controls enabled? preferences|ui boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Preferences|UI</span>
-<div class="bp-auth-card__title"><code>IsShowControlsEnabled?</code></div>
-<p>Флаг состояния «Is Show Controls Enabled?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Show Controls Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Show Controls Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Show Controls Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Show Controls Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="client_ismachinegunoverheatting? client is machine gun over heatting? tank component|fire system component|machine gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Machine Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>Client_IsMachineGunOverHeatting?</code></div>
-<p>Флаг состояния «Client Is Machine Gun Over Heatting?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_ Server_IsMachineGunOverHeatting?</code>, <code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Machine Gun Over Heatting? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Machine Gun Over Heatting? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="client_ismachinegunreloaded? client is machine gun reloaded? tank component|fire system component|machine gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Machine Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>Client_IsMachineGunReloaded?</code></div>
-<p>Флаг состояния «Client Is Machine Gun Reloaded?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_Server_IsMachineGunReloaded?</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Machine Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Machine Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Machine Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Machine Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="mg_mesh_change mg mesh change tank component|fire system component|machine gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Machine Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>MG_Mesh_Change</code></div>
-<p>Флаг состояния «MG Mesh Change».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>EventGraph</code>, <code>Server_UpdateComTowerRotation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get MG Mesh Change Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">MG Mesh Change</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="mgtype mgtype tank component|fire system component|machine gun|integer integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Machine Gun|Integer</span>
-<div class="bp-auth-card__title"><code>MGType</code></div>
-<p>Числовой параметр «MGType».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>2</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get MGType Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">MGType</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="client_ejectionanimplay client ejection anim play tank component|fire system component|main gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Main Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>Client_EjectionAnimPlay</code></div>
-<p>Флаг состояния «Client Ejection Anim Play».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_Server_EjectionAnimPlay</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Ejection Anim Play Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Ejection Anim Play</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Ejection Anim Play Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Ejection Anim Play</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="client_ismaingunreloaded? client is main gun reloaded? tank component|fire system component|main gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Main Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>Client_IsMainGunReloaded?</code></div>
-<p>Флаг состояния «Client Is Main Gun Reloaded?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_Server_IsMainGunReloaded?</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Main Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Main Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Main Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Main Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ejectionanimenable ejection anim enable tank component|fire system component|main gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Main Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>EjectionAnimEnable</code></div>
-<p>Флаг состояния «Ejection Anim Enable».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Ejection Anim Enable Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Ejection Anim Enable</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_ejectionanimplay server ejection anim play tank component|fire system component|main gun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Main Gun|Boolean</span>
-<div class="bp-auth-card__title"><code>Server_EjectionAnimPlay</code></div>
-<p>Флаг состояния «Server Ejection Anim Play».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_Server_EjectionAnimPlay</code>, <code>Server_FiringGraph</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_EjectionAnimPlay</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Ejection Anim Play Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Ejection Anim Play</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Ejection Anim Play Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Ejection Anim Play</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="client_issmokeshellreloaded? client is smoke shell reloaded? tank component|fire system component|smoke shall|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Smoke Shall|Boolean</span>
-<div class="bp-auth-card__title"><code>Client_IsSmokeShellReloaded?</code></div>
-<p>Флаг состояния «Client Is Smoke Shell Reloaded?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_Server_IsSmokeShellReloaded?</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Smoke Shell Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Smoke Shell Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="issmokeshellfiredelay is smoke shell fire delay tank component|fire system component|smoke shall|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Fire System Component|Smoke Shall|Boolean</span>
-<div class="bp-auth-card__title"><code>IsSmokeShellFireDelay</code></div>
-<p>Флаг состояния «Is Smoke Shell Fire Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Smoke Shell Fire Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Smoke Shell Fire Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Smoke Shell Fire Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Smoke Shell Fire Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="crewvoicedelay crew voice delay tank component|sound|crew boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Tank Component|Sound|Crew</span>
-<div class="bp-auth-card__title"><code>CrewVoiceDelay</code></div>
-<p>Флаг состояния «Crew Voice Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code>, <code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Crew Voice Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Crew Voice Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Crew Voice Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Crew Voice Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="destroyed destroyed tankcomponent|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Boolean</span>
-<div class="bp-auth-card__title"><code>Destroyed</code></div>
-<p>Флаг состояния «Destroyed».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 11 · запись: 3</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>EventGraph</code>, <code>Server_Damage</code>, <code>Server_FiringGraph</code>, <code>Server_Input</code> +1</span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Destroyed Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Destroyed</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Destroyed Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Destroyed</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isaimtypeswitch? is aim type switch? tankcomponent|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Boolean</span>
-<div class="bp-auth-card__title"><code>IsAimTypeSwitch?</code></div>
-<p>Флаг состояния «Is Aim Type Switch?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Aim Type Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Aim Type Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Aim Type Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Aim Type Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isthermalvisswitch? is thermal vis switch? tankcomponent|firesystemcomponent|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|Boolean</span>
-<div class="bp-auth-card__title"><code>IsThermalVisSwitch?</code></div>
-<p>Флаг состояния «Is Thermal Vis Switch?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Thermal Vis Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Thermal Vis Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Thermal Vis Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Thermal Vis Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machiegunpitch machie gun pitch tankcomponent|firesystemcomponent|machinegun|baseparameters rotator">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MachieGunPitch</code></div>
-<p>Поворот, используемый системой «Machie Gun Pitch».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Rotator</span>
-<span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_ComTowerRotationGraph</code>, <code>UpdateComTowerRotation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Machie Gun Pitch Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Machie Gun Pitch</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Machie Gun Pitch Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Machie Gun Pitch</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunfirerate machine gun fire rate tankcomponent|firesystemcomponent|machinegun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MachineGunFireRate</code></div>
-<p>Скорость или темп для «Machine Gun Fire Rate».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>0.1</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Machine Gun Fire Rate Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Fire Rate</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunheat machine gun heat tankcomponent|firesystemcomponent|machinegun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MachineGunHeat</code></div>
-<p>Числовой параметр «Machine Gun Heat».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Machine Gun Heat Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Heat</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunmomentumvalue machine gun momentum value tankcomponent|firesystemcomponent|machinegun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MachineGunMomentumValue</code></div>
-<p>Числовой параметр «Machine Gun Momentum Value».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>0.2</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Machine Gun Momentum Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Momentum Value</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunreloaddelay machine gun reload delay tankcomponent|firesystemcomponent|machinegun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MachineGunReloadDelay</code></div>
-<p>Числовой параметр «Machine Gun Reload Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Machine Gun Reload Delay Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Reload Delay</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Machine Gun Reload Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Machine Gun Reload Delay</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunreloadtime machine gun reload time tankcomponent|firesystemcomponent|machinegun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MachineGunReloadTime</code></div>
-<p>Числовой параметр «Machine Gun Reload Time».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>5.0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Machine Gun Reload Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Reload Time</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search=" server_ismachinegunoverheatting?  server is machine gun over heatting? tankcomponent|firesystemcomponent|machinegun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Boolean</span>
-<div class="bp-auth-card__title"><code> Server_IsMachineGunOverHeatting?</code></div>
-<p>Флаг состояния « Server Is Machine Gun Over Heatting?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_ Server_IsMachineGunOverHeatting?</code>, <code>Server_FiringGraph</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_ Server_IsMachineGunOverHeatting?</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get  Server Is Machine Gun Over Heatting? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name"> Server Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set  Server Is Machine Gun Over Heatting? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"> Server Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ismachinegunfiredelay is machine gun fire delay tankcomponent|firesystemcomponent|machinegun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Boolean</span>
-<div class="bp-auth-card__title"><code>IsMachineGunFireDelay</code></div>
-<p>Флаг состояния «Is Machine Gun Fire Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Machine Gun Fire Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Machine Gun Fire Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Machine Gun Fire Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Machine Gun Fire Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ismachinegunfire? is machine gun fire? tankcomponent|firesystemcomponent|machinegun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Boolean</span>
-<div class="bp-auth-card__title"><code>IsMachineGunFire?</code></div>
-<p>Флаг состояния «Is Machine Gun Fire?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Machine Gun Fire? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Machine Gun Fire?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Machine Gun Fire? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Machine Gun Fire?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_ismachinegunreloaded? server is machine gun reloaded? tankcomponent|firesystemcomponent|machinegun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Boolean</span>
-<div class="bp-auth-card__title"><code>Server_IsMachineGunReloaded?</code></div>
-<p>Флаг состояния «Server Is Machine Gun Reloaded?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_Server_IsMachineGunReloaded?</code>, <code>Server_FiringGraph</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_IsMachineGunReloaded?</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Is Machine Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Is Machine Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Is Machine Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Is Machine Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunmuzzlesocket machine gun muzzle socket tankcomponent|firesystemcomponent|machinegun|muzzlesocket name">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|MuzzleSocket</span>
-<div class="bp-auth-card__title"><code>MachineGunMuzzleSocket</code></div>
-<p>Текстовый идентификатор «Machine Gun Muzzle Socket».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Name</span>
-<span><b>В BP_Tank_Master</b>MachineGunMuzzleSocket</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Machine Gun Muzzle Socket Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Machine Gun Muzzle Socket</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunfireniagaraeffect machine gun fire niagara effect tankcomponent|firesystemcomponent|machinegun|particle niagarasystem">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Particle</span>
-<div class="bp-auth-card__title"><code>MachineGunFireNiagaraEffect</code></div>
-<p>Рабочее значение «Machine Gun Fire Niagara Effect» типа <code>NiagaraSystem</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>NiagaraSystem</span>
-<span><b>В BP_Tank_Master</b>-395</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Machine Gun Fire Niagara Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Machine Gun Fire Niagara Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="overheatingniagaraeffect overheating niagara effect tankcomponent|firesystemcomponent|machinegun|particle niagarasystem">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Particle</span>
-<div class="bp-auth-card__title"><code>OverheatingNiagaraEffect</code></div>
-<p>Рабочее значение «Overheating Niagara Effect» типа <code>NiagaraSystem</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>NiagaraSystem</span>
-<span><b>В BP_Tank_Master</b>-397</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Overheating Niagara Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Overheating Niagara Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunprojectile machine gun projectile tankcomponent|firesystemcomponent|machinegun|projectile class class">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Projectile</span>
-<div class="bp-auth-card__title"><code>MachineGunProjectile</code></div>
-<p>Рабочее значение «Machine Gun Projectile» типа <code>Class Class</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Class Class</span>
-<span><b>В BP_Tank_Master</b>-12</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Machine Gun Projectile Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Machine Gun Projectile</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="machinegunfiretimer machine gun fire timer tankcomponent|firesystemcomponent|machinegun|timer timerhandle">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MachineGun|Timer</span>
-<div class="bp-auth-card__title"><code>MachineGunFireTimer</code></div>
-<p>Дескриптор таймера «Machine Gun Fire Timer».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>TimerHandle</span>
-<span><b>В BP_Tank_Master</b>0</span>
-<span><b>Использование</b>Чтение: 3 · запись: 1</span>
-<span><b>Графы</b><code>Server_Damage</code>, <code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Machine Gun Fire Timer Blueprint variable" title="TimerHandle"><span class="bp-auth-var-node__name">Machine Gun Fire Timer</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Machine Gun Fire Timer Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Machine Gun Fire Timer</span><span class="bp-auth-pin__type">TimerHandle</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">TimerHandle</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunmomentumvalue main gun momentum value tankcomponent|firesystemcomponent|maingun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MainGunMomentumValue</code></div>
-<p>Числовой параметр «Main Gun Momentum Value».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>20.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Main Gun Momentum Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Momentum Value</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunphysfloat main gun phys float tankcomponent|firesystemcomponent|maingun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MainGunPhysFloat</code></div>
-<p>Числовой параметр «Main Gun Phys Float».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 1</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Main Gun Phys Float Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Phys Float</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Main Gun Phys Float Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Phys Float</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunreloaddelay main gun reload delay tankcomponent|firesystemcomponent|maingun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MainGunReloadDelay</code></div>
-<p>Числовой параметр «Main Gun Reload Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Main Gun Reload Delay Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Reload Delay</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Main Gun Reload Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Reload Delay</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunreloadtime main gun reload time tankcomponent|firesystemcomponent|maingun|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|BaseParameters</span>
-<div class="bp-auth-card__title"><code>MainGunReloadTime</code></div>
-<p>Числовой параметр «Main Gun Reload Time».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>0.016</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Main Gun Reload Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Reload Time</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ismaingunfiredelay? is main gun fire delay? tankcomponent|firesystemcomponent|maingun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Boolean</span>
-<div class="bp-auth-card__title"><code>IsMainGunFireDelay?</code></div>
-<p>Флаг состояния «Is Main Gun Fire Delay?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Main Gun Fire Delay? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Main Gun Fire Delay?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Main Gun Fire Delay? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Main Gun Fire Delay?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_ismaingunreloaded? server is main gun reloaded? tankcomponent|firesystemcomponent|maingun|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Boolean</span>
-<div class="bp-auth-card__title"><code>Server_IsMainGunReloaded?</code></div>
-<p>Флаг состояния «Server Is Main Gun Reloaded?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>OnRep_Server_IsMainGunReloaded?</code>, <code>Server_FiringGraph</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_IsMainGunReloaded?</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Is Main Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Is Main Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Is Main Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Is Main Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunfiretimer main gun fire timer tankcomponent|firesystemcomponent|maingun|integer timerhandle">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Integer</span>
-<div class="bp-auth-card__title"><code>MainGunFireTimer</code></div>
-<p>Дескриптор таймера «Main Gun Fire Timer».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>TimerHandle</span>
-<span><b>В BP_Tank_Master</b>0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 1</span>
-<span><b>Графы</b><code>Server_Damage</code>, <code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Main Gun Fire Timer Blueprint variable" title="TimerHandle"><span class="bp-auth-var-node__name">Main Gun Fire Timer</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Main Gun Fire Timer Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Fire Timer</span><span class="bp-auth-pin__type">TimerHandle</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">TimerHandle</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingun fire ground effect main gun fire ground effect tankcomponent|firesystemcomponent|maingun|particle niagarasystem">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Particle</span>
-<div class="bp-auth-card__title"><code>MainGun Fire Ground Effect</code></div>
-<p>Рабочее значение «Main Gun Fire Ground Effect» типа <code>NiagaraSystem</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>NiagaraSystem</span>
-<span><b>В BP_Tank_Master</b>-392</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Main Gun Fire Ground Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Main Gun Fire Ground Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunfireniagaraeffect main gun fire niagara effect tankcomponent|firesystemcomponent|maingun|particle niagarasystem">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Particle</span>
-<div class="bp-auth-card__title"><code>MainGunFireNiagaraEffect</code></div>
-<p>Рабочее значение «Main Gun Fire Niagara Effect» типа <code>NiagaraSystem</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>NiagaraSystem</span>
-<span><b>В BP_Tank_Master</b>-396</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Main Gun Fire Niagara Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Main Gun Fire Niagara Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ejectedcartridge ejected cartridge tankcomponent|firesystemcomponent|maingun|projectile class class">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
-<div class="bp-auth-card__title"><code>EjectedCartridge</code></div>
-<p>Рабочее значение «Ejected Cartridge» типа <code>Class Class</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Class Class</span>
-<span><b>В BP_Tank_Master</b>-10</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Ejected Cartridge Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Ejected Cartridge</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunprojectile main gun projectile tankcomponent|firesystemcomponent|maingun|projectile class class">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
-<div class="bp-auth-card__title"><code>MainGunProjectile</code></div>
-<p>Рабочее значение «Main Gun Projectile» типа <code>Class Class</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Class Class</span>
-<span><b>В BP_Tank_Master</b>-13</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Main Gun Projectile Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Main Gun Projectile</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunshellprojectille main gun shell projectille tankcomponent|firesystemcomponent|maingun|projectile class class">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Projectile</span>
-<div class="bp-auth-card__title"><code>MainGunShellProjectille</code></div>
-<p>Рабочее значение «Main Gun Shell Projectille» типа <code>Class Class</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Class Class</span>
-<span><b>В BP_Tank_Master</b>-14</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Main Gun Shell Projectille Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Main Gun Shell Projectille</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunpitch main gun pitch tankcomponent|firesystemcomponent|maingun|rotator rotator">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|MainGun|Rotator</span>
-<div class="bp-auth-card__title"><code>MainGunPitch</code></div>
-<p>Поворот, используемый системой «Main Gun Pitch».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Rotator</span>
-<span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>Server_SoundGraph</code>, <code>Server_TowerRotationGraph</code>, <code>Server_Update Tower Rotation</code>, <code>UpdateTowerRotation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Main Gun Pitch Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Main Gun Pitch</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Main Gun Pitch Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Pitch</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="canitbereplenishing? can it be replenishing? tankcomponent|firesystemcomponent|replenishsys|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|ReplenishSys|Boolean</span>
-<div class="bp-auth-card__title"><code>CanItBeReplenishing?</code></div>
-<p>Флаг состояния «Can It be Replenishing?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 1</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Can It be Replenishing? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Can It be Replenishing?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Can It be Replenishing? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Can It be Replenishing?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="maingunammochangetracker main gun ammo change tracker tankcomponent|firesystemcomponent|replenishsys|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|ReplenishSys|Boolean</span>
-<div class="bp-auth-card__title"><code>MainGunAmmoChangeTracker</code></div>
-<p>Флаг состояния «Main Gun Ammo Change Tracker».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 0 · запись: 1</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Main Gun Ammo Change Tracker Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Main Gun Ammo Change Tracker</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Main Gun Ammo Change Tracker Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Ammo Change Tracker</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="subreplanishboolreturn sub replanish bool return tankcomponent|firesystemcomponent|replenishsys|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|ReplenishSys|Boolean</span>
-<div class="bp-auth-card__title"><code>SubReplanishBoolReturn</code></div>
-<p>Флаг состояния «Sub Replanish Bool Return».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Sub Replanish Bool Return Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Sub Replanish Bool Return</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Sub Replanish Bool Return Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Sub Replanish Bool Return</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellrate smoke shell rate tankcomponent|firesystemcomponent|smokeshall|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|BaseParameters</span>
-<div class="bp-auth-card__title"><code>SmokeShellRate</code></div>
-<p>Скорость или темп для «Smoke Shell Rate».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>0.5</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Smoke Shell Rate Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Smoke Shell Rate</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellreloaddelay smoke shell reload delay tankcomponent|firesystemcomponent|smokeshall|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|BaseParameters</span>
-<div class="bp-auth-card__title"><code>SmokeShellReloadDelay</code></div>
-<p>Числовой параметр «Smoke Shell Reload Delay».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Smoke Shell Reload Delay Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Smoke Shell Reload Delay</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Smoke Shell Reload Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Smoke Shell Reload Delay</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellreloadtime smoke shell reload time tankcomponent|firesystemcomponent|smokeshall|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|BaseParameters</span>
-<div class="bp-auth-card__title"><code>SmokeShellReloadTime</code></div>
-<p>Числовой параметр «Smoke Shell Reload Time».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>1.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Smoke Shell Reload Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Smoke Shell Reload Time</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="issmokeshellfire? is smoke shell fire? tankcomponent|firesystemcomponent|smokeshall|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Boolean</span>
-<div class="bp-auth-card__title"><code>IsSmokeShellFire?</code></div>
-<p>Флаг состояния «Is Smoke Shell Fire?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Smoke Shell Fire? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Smoke Shell Fire?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Smoke Shell Fire? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Smoke Shell Fire?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="server_issmokeshellreloaded? server is smoke shell reloaded? tankcomponent|firesystemcomponent|smokeshall|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Boolean</span>
-<div class="bp-auth-card__title"><code>Server_IsSmokeShellReloaded?</code></div>
-<p>Флаг состояния «Server Is Smoke Shell Reloaded?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 2 · запись: 3</span>
-<span><b>Графы</b><code>OnRep_Server_IsSmokeShellReloaded?</code>, <code>Server_FiringGraph</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_IsSmokeShellReloaded?</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Is Smoke Shell Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Is Smoke Shell Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshelltimer smoke shell timer tankcomponent|firesystemcomponent|smokeshall|integer timerhandle">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Integer</span>
-<div class="bp-auth-card__title"><code>SmokeShellTimer</code></div>
-<p>Дескриптор таймера «Smoke Shell Timer».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>TimerHandle</span>
-<span><b>В BP_Tank_Master</b>0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 1</span>
-<span><b>Графы</b><code>Server_Damage</code>, <code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Smoke Shell Timer Blueprint variable" title="TimerHandle"><span class="bp-auth-var-node__name">Smoke Shell Timer</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Smoke Shell Timer Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Smoke Shell Timer</span><span class="bp-auth-pin__type">TimerHandle</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">TimerHandle</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellprojectile smoke shell projectile tankcomponent|firesystemcomponent|smokeshall|projectile class class">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Projectile</span>
-<div class="bp-auth-card__title"><code>SmokeShellProjectile</code></div>
-<p>Рабочее значение «Smoke Shell Projectile» типа <code>Class Class</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Class Class</span>
-<span><b>В BP_Tank_Master</b>-11</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Smoke Shell Projectile Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Smoke Shell Projectile</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket01 smoke shell socket 01 tankcomponent|firesystemcomponent|smokeshall|sockets array&lt;name&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Sockets</span>
-<div class="bp-auth-card__title"><code>SmokeShellSocket01</code></div>
-<p>Рабочий список «Smoke Shell Socket 01».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Name&gt;</span>
-<span><b>В BP_Tank_Master</b>SmokeShellSocket_L01, SmokeShellSocket_L02, SmokeShellSocket_R01, SmokeShellSocket_R02</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 01 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 01</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket02 smoke shell socket 02 tankcomponent|firesystemcomponent|smokeshall|sockets array&lt;name&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Sockets</span>
-<div class="bp-auth-card__title"><code>SmokeShellSocket02</code></div>
-<p>Рабочий список «Smoke Shell Socket 02».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Name&gt;</span>
-<span><b>В BP_Tank_Master</b>SmokeShellSocket_L03, SmokeShellSocket_L04, SmokeShellSocket_R03, SmokeShellSocket_R04</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 02 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 02</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket03 smoke shell socket 03 tankcomponent|firesystemcomponent|smokeshall|sockets array&lt;name&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Sockets</span>
-<div class="bp-auth-card__title"><code>SmokeShellSocket03</code></div>
-<p>Рабочий список «Smoke Shell Socket 03».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Name&gt;</span>
-<span><b>В BP_Tank_Master</b>SmokeShellSocket_L05, SmokeShellSocket_L06, SmokeShellSocket_R05, SmokeShellSocket_R06</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 03 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 03</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket04 smoke shell socket 04 tankcomponent|firesystemcomponent|smokeshall|sockets array&lt;name&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|SmokeShall|Sockets</span>
-<div class="bp-auth-card__title"><code>SmokeShellSocket04</code></div>
-<p>Рабочий список «Smoke Shell Socket 04».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Name&gt;</span>
-<span><b>В BP_Tank_Master</b>SmokeShellSocket_L07, SmokeShellSocket_L08, SmokeShellSocket_R07, SmokeShellSocket_R08</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 04 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 04</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="thermalmaterialparameter thermal material parameter tankcomponent|firesystemcomponent|thermal|materialparameters materialparametercollection">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|MaterialParameters</span>
-<div class="bp-auth-card__title"><code>ThermalMaterialParameter</code></div>
-<p>Ссылка на <code>MaterialParameterCollection</code>, используемая как «Thermal Material Parameter».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>MaterialParameterCollection</span>
-<span><b>В BP_Tank_Master</b>-389</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Thermal Material Parameter Blueprint variable" title="MaterialParameterCollection"><span class="bp-auth-var-node__name">Thermal Material Parameter</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="thermalparametername thermal parameter name tankcomponent|firesystemcomponent|thermal|materialparameters name">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|MaterialParameters</span>
-<div class="bp-auth-card__title"><code>ThermalParameterName</code></div>
-<p>Текстовый идентификатор «Thermal Parameter Name».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Name</span>
-<span><b>В BP_Tank_Master</b>ThermalEffect</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Thermal Parameter Name Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Thermal Parameter Name</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="thermalpostprocesssettings_default thermal post process settings default tankcomponent|firesystemcomponent|thermal|postprocesssettings postprocesssettings">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|PostProcessSettings</span>
-<div class="bp-auth-card__title"><code>ThermalPostProcessSettings_Default</code></div>
-<p>Рабочее значение «Thermal Post Process Settings Default» типа <code>PostProcessSettings</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>PostProcessSettings</span>
-<span><b>В BP_Tank_Master</b>412 items</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Thermal Post Process Settings Default Blueprint variable" title="PostProcessSettings"><span class="bp-auth-var-node__name">Thermal Post Process Settings Default</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="thermalpost process settings_mod thermal post process settings mod tankcomponent|firesystemcomponent|thermal|postprocesssettings postprocesssettings">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|FireSystemComponent|Thermal|PostProcessSettings</span>
-<div class="bp-auth-card__title"><code>ThermalPost Process Settings_Mod</code></div>
-<p>Рабочее значение «Thermal Post Process Settings Mod» типа <code>PostProcessSettings</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>PostProcessSettings</span>
-<span><b>В BP_Tank_Master</b>412 items</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Client_InputGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Thermal Post Process Settings Mod Blueprint variable" title="PostProcessSettings"><span class="bp-auth-var-node__name">Thermal Post Process Settings Mod</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="midynamics midynamics tankcomponent|mi array&lt;materialinstancedynamic&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|MI</span>
-<div class="bp-auth-card__title"><code>MIDynamics</code></div>
-<p>Рабочий список «MIDynamics».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;MaterialInstanceDynamic&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>CreateDynamicMI</code>, <code>Server_Damage</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get MIDynamics Blueprint variable" title="Array&lt;MaterialInstanceDynamic&gt;"><span class="bp-auth-var-node__name">MIDynamics</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="curentrpmratio curent rpmratio tankcomponent|movements|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Movements|BaseParameters</span>
-<div class="bp-auth-card__title"><code>CurentRPMRatio</code></div>
-<p>Числовой параметр «Curent RPMRatio».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Curent RPMRatio Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Curent RPMRatio</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Curent RPMRatio Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Curent RPMRatio</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="forwardaxis  forward axis  tankcomponent|movements|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Movements|BaseParameters</span>
-<div class="bp-auth-card__title"><code>ForwardAxis </code></div>
-<p>Числовой параметр «Forward Axis ».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 4 · запись: 6</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_Damage</code>, <code>Server_Input</code>, <code>Server_SeparateMovement DEV</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Forward Axis  Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Forward Axis </span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Forward Axis  Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Forward Axis </span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="yaw yaw tankcomponent|movements|baseparameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Movements|BaseParameters</span>
-<div class="bp-auth-card__title"><code>Yaw</code></div>
-<p>Числовой параметр «Yaw».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 6</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_Damage</code>, <code>Server_Input</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Yaw Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Yaw</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Yaw Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Yaw</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="nrsound nrsound tankcomponent|sound|noreverb array&lt;audiocomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Sound|Noreverb</span>
-<div class="bp-auth-card__title"><code>NRSound</code></div>
-<p>Рабочий список «NRSound».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;AudioComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 1</span>
-<span><b>Графы</b><code>Server_Damage</code>, <code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get NRSound Blueprint variable" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-var-node__name">NRSound</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set NRSound Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">NRSound</span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="rsound rsound tankcomponent|sound|reverb array&lt;audiocomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Sound|Reverb</span>
-<div class="bp-auth-card__title"><code>RSound</code></div>
-<p>Рабочий список «RSound».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;AudioComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 1</span>
-<span><b>Графы</b><code>Server_Damage</code>, <code>Server_SoundGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get RSound Blueprint variable" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-var-node__name">RSound</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set RSound Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">RSound</span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="isstabilizationenabled? is stabilization enabled? tankcomponent|stabilization|boolean boolean">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Stabilization|Boolean</span>
-<div class="bp-auth-card__title"><code>IsStabilizationEnabled?</code></div>
-<p>Флаг состояния «Is Stabilization Enabled?».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Boolean</span>
-<span><b>В BP_Tank_Master</b>True</span>
-<span><b>Использование</b>Чтение: 3 · запись: 1</span>
-<span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Stabilization Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Stabilization Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Stabilization Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Stabilization Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ctcomtowerrotation ctcom tower rotation tankcomponent|tower|comtower|rotator rotator">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Tower|ComTower|Rotator</span>
-<div class="bp-auth-card__title"><code>CTComTowerRotation</code></div>
-<p>Поворот, используемый системой «CTCom Tower Rotation».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Rotator</span>
-<span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_ComTowerRotationGraph</code>, <code>Server_UpdateComTowerRotation</code>, <code>UpdateComTowerRotation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get CTCom Tower Rotation Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">CTCom Tower Rotation</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set CTCom Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CTCom Tower Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="mgcomtowerrotation mgcom tower rotation tankcomponent|tower|comtower|rotator rotator">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Tower|ComTower|Rotator</span>
-<div class="bp-auth-card__title"><code>MGComTowerRotation</code></div>
-<p>Поворот, используемый системой «MGCom Tower Rotation».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Rotator</span>
-<span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 2</span>
-<span><b>Графы</b><code>Server_ComTowerRotationGraph</code>, <code>Server_UpdateComTowerRotation</code>, <code>UpdateComTowerRotation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get MGCom Tower Rotation Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">MGCom Tower Rotation</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set MGCom Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MGCom Tower Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ejectingsocket ejecting socket tankcomponent|tower|maintower|bonenames name">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Tower|MainTower|BoneNames</span>
-<div class="bp-auth-card__title"><code>EjectingSocket</code></div>
-<p>Текстовый идентификатор «Ejecting Socket».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Name</span>
-<span><b>В BP_Tank_Master</b>EjectingSocket</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Server_FiringGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Ejecting Socket Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Ejecting Socket</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="towerrotation tower rotation tankcomponent|tower|maintower|rotator rotator">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TankComponent|Tower|MainTower|Rotator</span>
-<div class="bp-auth-card__title"><code>TowerRotation</code></div>
-<p>Поворот, используемый системой «Tower Rotation».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Rotator</span>
-<span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>Server_SoundGraph</code>, <code>Server_TowerRotationGraph</code>, <code>Server_Update Tower Rotation</code>, <code>UpdateTowerRotation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Tower Rotation Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Tower Rotation</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tower Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="down front spline point index down front spline point index track components|track maker|roller preferences|roller indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Indexes</span>
-<div class="bp-auth-card__title"><code>Down Front Spline Point Index</code></div>
-<p>Числовой параметр «Down Front Spline Point Index».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>1</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Down Front Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Down Front Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="downrearsplinepointindex down rear spline point index track components|track maker|roller preferences|roller indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Indexes</span>
-<div class="bp-auth-card__title"><code>DownRearSplinePointIndex</code></div>
-<p>Числовой параметр «Down Rear Spline Point Index».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>11</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Down Rear Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Down Rear Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="up front spline point index up front spline point index track components|track maker|roller preferences|roller indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Indexes</span>
-<div class="bp-auth-card__title"><code>Up Front Spline Point Index</code></div>
-<p>Числовой параметр «Up Front Spline Point Index».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>2</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Up Front Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Up Front Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="uprearsplinepointindex up rear spline point index track components|track maker|roller preferences|roller indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Indexes</span>
-<div class="bp-auth-card__title"><code>UpRearSplinePointIndex</code></div>
-<p>Числовой параметр «Up Rear Spline Point Index».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>10</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Up Rear Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Up Rear Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="frontwheelbonename front wheel bone name track components|track maker|roller preferences|roller parameters name">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Parameters</span>
-<div class="bp-auth-card__title"><code>FrontWheelBoneName</code></div>
-<p>Текстовый идентификатор «Front Wheel Bone Name».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Name</span>
-<span><b>В BP_Tank_Master</b>RF_Wheel_00</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Front Wheel Bone Name Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Front Wheel Bone Name</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="frontwheelradius front wheel radius track components|track maker|roller preferences|roller parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Parameters</span>
-<div class="bp-auth-card__title"><code>FrontWheelRadius</code></div>
-<p>Числовой параметр «Front Wheel Radius».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>26.1031</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Front Wheel Radius Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Front Wheel Radius</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="rearwheelbonename rear wheel bone name track components|track maker|roller preferences|roller parameters name">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Parameters</span>
-<div class="bp-auth-card__title"><code>RearWheelBoneName</code></div>
-<p>Текстовый идентификатор «Rear Wheel Bone Name».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Name</span>
-<span><b>В BP_Tank_Master</b>RB_Wheel_07</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Rear Wheel Bone Name Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Rear Wheel Bone Name</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="rearwheelradius rear wheel radius track components|track maker|roller preferences|roller parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Parameters</span>
-<div class="bp-auth-card__title"><code>RearWheelRadius</code></div>
-<p>Числовой параметр «Rear Wheel Radius».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>28.8204</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Rear Wheel Radius Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Rear Wheel Radius</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="topwheelradius top wheel radius track components|track maker|roller preferences|roller parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Roller Parameters</span>
-<div class="bp-auth-card__title"><code>TopWheelRadius</code></div>
-<p>Числовой параметр «Top Wheel Radius».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>10.0361</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Top Wheel Radius Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Top Wheel Radius</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="frontwheelangularvelocity_l front wheel angular velocity l track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>FrontWheelAngularVelocity_L</code></div>
-<p>Числовой параметр «Front Wheel Angular Velocity L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Front Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Front Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Front Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Front Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="frontwheelangularvelocity_r front wheel angular velocity r track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>FrontWheelAngularVelocity_R</code></div>
-<p>Числовой параметр «Front Wheel Angular Velocity R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Front Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Front Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Front Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Front Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="middlewheelangularvelocity_r middle wheel angular velocity r track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>MiddleWheelAngularVelocity_R</code></div>
-<p>Числовой параметр «Middle Wheel Angular Velocity R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Middle Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Middle Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Middle Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Middle Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="rearwheelangularvelocity_l rear wheel angular velocity l track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>RearWheelAngularVelocity_L</code></div>
-<p>Числовой параметр «Rear Wheel Angular Velocity L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Rear Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Rear Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Rear Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rear Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="rearwheelangularvelocity_r rear wheel angular velocity r track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>RearWheelAngularVelocity_R</code></div>
-<p>Числовой параметр «Rear Wheel Angular Velocity R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Rear Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Rear Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Rear Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rear Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="topwheelangularvelocity_l top wheel angular velocity l track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>TopWheelAngularVelocity_L</code></div>
-<p>Числовой параметр «Top Wheel Angular Velocity L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Top Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Top Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Top Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Top Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="topwheelangularvelocity_r top wheel angular velocity r track components|track maker|roller preferences|rollers velocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Roller Preferences|Rollers Velocity</span>
-<div class="bp-auth-card__title"><code>TopWheelAngularVelocity_R</code></div>
-<p>Числовой параметр «Top Wheel Angular Velocity R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Top Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Top Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Top Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Top Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="uppersplinepointzpositionarray_l upper spline point zposition array l track components|track maker|sagging preferences|spline parameters array&lt;vector&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Sagging Preferences|Spline Parameters</span>
-<div class="bp-auth-card__title"><code>UpperSplinePointZPositionArray_L</code></div>
-<p>Рабочий список «Upper Spline Point ZPosition Array L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Vector&gt;</span>
-<span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Upper Spline Point ZPosition Array L Blueprint variable" title="Array&lt;Vector&gt;"><span class="bp-auth-var-node__name">Upper Spline Point ZPosition Array L</span><span class="bp-auth-pin__dot" data-pin-type="vector" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="uppersplinepointzpositionarray_r upper spline point zposition array r track components|track maker|sagging preferences|spline parameters array&lt;vector&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Sagging Preferences|Spline Parameters</span>
-<div class="bp-auth-card__title"><code>UpperSplinePointZPositionArray_R</code></div>
-<p>Рабочий список «Upper Spline Point ZPosition Array R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Vector&gt;</span>
-<span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Upper Spline Point ZPosition Array R Blueprint variable" title="Array&lt;Vector&gt;"><span class="bp-auth-var-node__name">Upper Spline Point ZPosition Array R</span><span class="bp-auth-pin__dot" data-pin-type="vector" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="baseangledeg base angle deg track components|track maker|spline preferences|spline floats float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Floats</span>
-<div class="bp-auth-card__title"><code>BaseAngleDeg</code></div>
-<p>Числовой параметр «Base Angle Deg».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>90.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Base Angle Deg Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Base Angle Deg</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="tracktraceheight track trace height track components|track maker|spline preferences|spline floats float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Floats</span>
-<div class="bp-auth-card__title"><code>TrackTraceHeight</code></div>
-<p>Числовой параметр «Track Trace Height».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>40.0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Track Trace Height Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Track Trace Height</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="absoluteendsplinepoint absolute end spline point track components|track maker|spline preferences|spline indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>AbsoluteEndSplinePoint</code></div>
-<p>Числовой параметр «Absolute End Spline Point».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>16</span>
-<span><b>Использование</b>Чтение: 10 · запись: 2</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>SplineMirrorCopy</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Absolute End Spline Point Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Absolute End Spline Point</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="int" role="img" aria-label="Set Absolute End Spline Point Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Absolute End Spline Point</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Integer</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="endsplinepoint end spline point track components|track maker|spline preferences|spline indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>EndSplinePoint</code></div>
-<p>Числовой параметр «End Spline Point».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>16</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get End Spline Point Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">End Spline Point</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="int" role="img" aria-label="Set End Spline Point Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">End Spline Point</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Integer</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="physicssplinepointarray physics spline point array track components|track maker|spline preferences|spline indexes array&lt;integer&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>PhysicsSplinePointArray</code></div>
-<p>Рабочий список «Physics Spline Point Array».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Integer&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Physics Spline Point Array Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Physics Spline Point Array</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="startsplinepoint start spline point track components|track maker|spline preferences|spline indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>StartSplinePoint</code></div>
-<p>Числовой параметр «Start Spline Point».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>15</span>
-<span><b>Использование</b>Чтение: 13 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>SplineMirrorCopy</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Start Spline Point Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Start Spline Point</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="supportindixesarray support indixes array track components|track maker|spline preferences|spline indexes array&lt;integer&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>SupportIndixesArray</code></div>
-<p>Рабочий список «Support Indixes Array».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Integer&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Support Indixes Array Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Support Indixes Array</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="suspendedindexes suspended indexes track components|track maker|spline preferences|spline indexes array&lt;integer&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>SuspendedIndexes</code></div>
-<p>Рабочий список «Suspended Indexes».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Integer&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Suspended Indexes Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Suspended Indexes</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="wheelsamount wheels amount track components|track maker|spline preferences|spline indexes integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Indexes</span>
-<div class="bp-auth-card__title"><code>WheelsAmount</code></div>
-<p>Числовой параметр «Wheels Amount».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>7</span>
-<span><b>Использование</b>Чтение: 15 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Wheels Amount Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Wheels Amount</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackhelpernames_l track helper names l track components|track maker|spline preferences|spline names array&lt;name&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Names</span>
-<div class="bp-auth-card__title"><code>TrackHelperNames_L</code></div>
-<p>Рабочий список «Track Helper Names L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Name&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Track Helper Names L Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Track Helper Names L</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackhelpernames_r track helper names r track components|track maker|spline preferences|spline names array&lt;name&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Names</span>
-<div class="bp-auth-card__title"><code>TrackHelperNames_R</code></div>
-<p>Рабочий список «Track Helper Names R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Name&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 5 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Track Helper Names R Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Track Helper Names R</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="customtangent custom tangent track components|track maker|spline preferences|spline vectors vector">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Vectors</span>
-<div class="bp-auth-card__title"><code>CustomTangent</code></div>
-<p>Положение или координатное значение «Custom Tangent».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Vector</span>
-<span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=+0</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Custom Tangent Blueprint variable" title="Vector"><span class="bp-auth-var-node__name">Custom Tangent</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="vector" role="img" aria-label="Set Custom Tangent Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Custom Tangent</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Vector</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="physicssplinepointlocationarray physics spline point location array track components|track maker|spline preferences|spline vectors array&lt;vector&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Vectors</span>
-<div class="bp-auth-card__title"><code>PhysicsSplinePointLocationArray</code></div>
-<p>Рабочий список «Physics Spline Point Location Array».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Vector&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Physics Spline Point Location Array Blueprint variable" title="Array&lt;Vector&gt;"><span class="bp-auth-var-node__name">Physics Spline Point Location Array</span><span class="bp-auth-pin__dot" data-pin-type="vector" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackoffset track offset track components|track maker|spline preferences|spline vectors vector">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Spline Preferences|Spline Vectors</span>
-<div class="bp-auth-card__title"><code>TrackOffset</code></div>
-<p>Смещение «Track Offset».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Vector</span>
-<span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=7.0</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Track Offset Blueprint variable" title="Vector"><span class="bp-auth-var-node__name">Track Offset</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackmeshoffset track mesh offset track components|track maker|track preferences|base parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Base Parameters</span>
-<div class="bp-auth-card__title"><code>TrackMeshOffset</code></div>
-<p>Смещение «Track Mesh Offset».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>SetTracksTransform</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Track Mesh Offset Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Track Mesh Offset</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Track Mesh Offset Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Track Mesh Offset</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="tracksplinelength track spline length track components|track maker|track preferences|base parameters float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Base Parameters</span>
-<div class="bp-auth-card__title"><code>TrackSplineLength</code></div>
-<p>Числовой параметр «Track Spline Length».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>1400.0</span>
-<span><b>Использование</b>Чтение: 0 · запись: 1</span>
-<span><b>Графы</b><code>Construct Spline Track</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="float" role="img" aria-label="Get Track Spline Length Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Track Spline Length</span><span class="bp-auth-pin__dot" data-pin-type="float"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="float" role="img" aria-label="Set Track Spline Length Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Track Spline Length</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="constraint instances_l constraint instances l track components|track maker|track preferences|components array&lt;staticmeshcomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
-<div class="bp-auth-card__title"><code>Constraint Instances_L</code></div>
-<p>Рабочий список «Constraint Instances L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;StaticMeshComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpperSplinePointSagging</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Constraint Instances L Blueprint variable" title="Array&lt;StaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Constraint Instances L</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="constraint instances_r constraint instances r track components|track maker|track preferences|components array&lt;staticmeshcomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
-<div class="bp-auth-card__title"><code>Constraint Instances_R</code></div>
-<p>Рабочий список «Constraint Instances R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;StaticMeshComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpperSplinePointSagging</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Constraint Instances R Blueprint variable" title="Array&lt;StaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Constraint Instances R</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="splinetrack_l spline track l track components|track maker|track preferences|components splinecomponent">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
-<div class="bp-auth-card__title"><code>SplineTrack_L</code></div>
-<p>Ссылка на <code>SplineComponent</code>, используемая как «Spline Track L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>SplineComponent</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 5 · запись: 1</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Spline Track L Blueprint variable" title="SplineComponent"><span class="bp-auth-var-node__name">Spline Track L</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set Spline Track L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Spline Track L</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">SplineComponent</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="tracksinstances_l tracks instances l track components|track maker|track preferences|components array&lt;instancedstaticmeshcomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
-<div class="bp-auth-card__title"><code>TracksInstances_L</code></div>
-<p>Рабочий список «Tracks Instances L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;InstancedStaticMeshComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Tracks Instances L Blueprint variable" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Tracks Instances L</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set Tracks Instances L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tracks Instances L</span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="tracksinstances_r tracks instances r track components|track maker|track preferences|components array&lt;instancedstaticmeshcomponent&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Components</span>
-<div class="bp-auth-card__title"><code>TracksInstances_R</code></div>
-<p>Рабочий список «Tracks Instances R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;InstancedStaticMeshComponent&gt;</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Tracks Instances R Blueprint variable" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Tracks Instances R</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set Tracks Instances R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tracks Instances R</span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackmeshesamount track meshes amount track components|track maker|track preferences|index integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Index</span>
-<div class="bp-auth-card__title"><code>TrackMeshesAmount</code></div>
-<p>Числовой параметр «Track Meshes Amount».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 1</span>
-<span><b>Графы</b><code>InstanceTracksCreation</code>, <code>SetTracksTransform</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Track Meshes Amount Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Track Meshes Amount</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="int" role="img" aria-label="Set Track Meshes Amount Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Track Meshes Amount</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Integer</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackonside track on side track components|track maker|track preferences|index integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">Track Components|Track Maker|Track Preferences|Index</span>
-<div class="bp-auth-card__title"><code>TrackOnSide</code></div>
-<p>Числовой параметр «Track on Side».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>158</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>InstanceTracksCreation</code>, <code>SetTracksTransform</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Track on Side Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Track on Side</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="wheeldeltadistancel wheel delta distance l trackcomponents|trackmaker|chassiscalculation float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|ChassisCalculation</span>
-<div class="bp-auth-card__title"><code>WheelDeltaDistanceL</code></div>
-<p>Числовой параметр «Wheel Delta Distance L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Wheel Delta Distance L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Delta Distance L</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Wheel Delta Distance L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Delta Distance L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="wheeldeltadistancer wheel delta distance r trackcomponents|trackmaker|chassiscalculation float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|ChassisCalculation</span>
-<div class="bp-auth-card__title"><code>WheelDeltaDistanceR</code></div>
-<p>Числовой параметр «Wheel Delta Distance R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 2 · запись: 2</span>
-<span><b>Графы</b><code>WheelMovCalculation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Wheel Delta Distance R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Delta Distance R</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Wheel Delta Distance R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Delta Distance R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="wheeldistancel wheel distance l trackcomponents|trackmaker|chassiscalculation float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|ChassisCalculation</span>
-<div class="bp-auth-card__title"><code>WheelDistanceL</code></div>
-<p>Числовой параметр «Wheel Distance L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>10.0</span>
-<span><b>Использование</b>Чтение: 3 · запись: 3</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Wheel Distance L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Distance L</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Wheel Distance L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Distance L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="wheeldistancer wheel distance r trackcomponents|trackmaker|chassiscalculation float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|ChassisCalculation</span>
-<div class="bp-auth-card__title"><code>WheelDistanceR</code></div>
-<p>Числовой параметр «Wheel Distance R».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 3 · запись: 3</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Wheel Distance R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Distance R</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Wheel Distance R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Distance R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="middlewheelangularvelocity_l middle wheel angular velocity l trackcomponents|trackmaker|roller preferences|rollersvelocity float">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|Roller Preferences|RollersVelocity</span>
-<div class="bp-auth-card__title"><code>MiddleWheelAngularVelocity_L</code></div>
-<p>Числовой параметр «Middle Wheel Angular Velocity L».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Float</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 0 · запись: 2</span>
-<span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span>
-</div>
-<span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span>
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="double" role="img" aria-label="Get Middle Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Middle Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="double"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="double" role="img" aria-label="Set Middle Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Middle Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="uppersplinepointarray upper spline point array trackcomponents|trackmaker|sagging preferences|spline parameters array&lt;integer&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|Sagging Preferences|Spline Parameters</span>
-<div class="bp-auth-card__title"><code>UpperSplinePointArray</code></div>
-<p>Рабочий список «Upper Spline Point Array».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;Integer&gt;</span>
-<span><b>В BP_Tank_Master</b>0, 3, 5, 7, 9, 11, 14</span>
-<span><b>Использование</b>Чтение: 3 · запись: 0</span>
-<span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Upper Spline Point Array Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Upper Spline Point Array</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackstaticmeshes track static meshes trackcomponents|trackmaker|track preferences|components array&lt;staticmesh&gt;">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|Track Preferences|Components</span>
-<div class="bp-auth-card__title"><code>TrackStaticMeshes</code></div>
-<p>Рабочий список «Track Static Meshes».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Array&lt;StaticMesh&gt;</span>
-<span><b>В BP_Tank_Master</b>-583, -584</span>
-<span><b>Использование</b>Чтение: 2 · запись: 0</span>
-<span><b>Графы</b><code>InstanceTracksCreation</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Track Static Meshes Blueprint variable" title="Array&lt;StaticMesh&gt;"><span class="bp-auth-var-node__name">Track Static Meshes</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="trackindex track index trackcomponents|trackmaker|track preferences||index integer">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">TrackComponents|TrackMaker|Track Preferences||Index</span>
-<div class="bp-auth-card__title"><code>TrackIndex</code></div>
-<p>Числовой параметр «Track Index».</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Integer</span>
-<span><b>В BP_Tank_Master</b>101</span>
-<span><b>Использование</b>Чтение: 1 · запись: 0</span>
-<span><b>Графы</b><code>SetTracksTransform</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Track Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Track Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div>
-</article>
-<article class="bp-auth-card" data-bp-item data-search="ui ui ui|components object">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">UI|Components</span>
-<div class="bp-auth-card__title"><code>UI</code></div>
-<p>Рабочее значение «UI» типа <code>Object</code>.</p>
-<div class="bp-auth-meta">
-<span><b>Тип</b>Object</span>
-<span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span>
-<span><b>Использование</b>Чтение: 1 · запись: 1</span>
-<span><b>Графы</b><code>EventGraph</code></span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get UI Blueprint variable" title="Object"><span class="bp-auth-var-node__name">UI</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set UI Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="Object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UI</span><span class="bp-auth-pin__type">Object</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" title="Object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Object</span></div></div></div></div></div></div>
-</article>
+<article class="bp-auth-card" data-bp-item data-search="globaltracelenght global trace lenght camera|aim cube camera › aim cube integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Aim Cube</span><div class="bp-auth-card__title"><code>GlobalTraceLenght</code></div><p>Числовой параметр «Global Trace Lenght».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>25000000</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Trace Of Weapon UIAim Calculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Global Trace Lenght Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Global Trace Lenght</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="6">
+<summary>
+<span>Boolean</span>
+<b data-bp-subgroup-count>6</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="enablesoftnesscamera enable softness camera camera|boolean camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Boolean</span><div class="bp-auth-card__title"><code>EnableSoftnessCamera</code></div><p>Флаг состояния «Enable Softness Camera».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Enable Softness Camera Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Enable Softness Camera</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="freecamswitch free cam switch camera|boolean camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Boolean</span><div class="bp-auth-card__title"><code>FreeCamSwitch</code></div><p>Флаг состояния «Free Cam Switch».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>EventGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Free Cam Switch Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Free Cam Switch</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Free Cam Switch Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Free Cam Switch</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="isbacklightsightenabled? is backlight sight enabled? camera|boolean camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Boolean</span><div class="bp-auth-card__title"><code>IsBacklightSightEnabled?</code></div><p>Флаг состояния «Is Backlight Sight Enabled?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Backlight Sight Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Backlight Sight Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Backlight Sight Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Backlight Sight Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="isballisticcomputerenable? is ballistic computer enable? camera|boolean camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Boolean</span><div class="bp-auth-card__title"><code>IsBallisticComputerEnable?</code></div><p>Флаг состояния «Is Ballistic Computer Enable?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Ballistic Computer Enable? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Ballistic Computer Enable?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Ballistic Computer Enable? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Ballistic Computer Enable?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="isgunnercameraswitch? is gunner camera switch? camera|boolean camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Boolean</span><div class="bp-auth-card__title"><code>IsGunnerCameraSwitch?</code></div><p>Флаг состояния «Is Gunner Camera Switch?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 18 · запись: 3</span><span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code> +3</span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Gunner Camera Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Gunner Camera Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Gunner Camera Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Gunner Camera Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="islocktargetenabled? is lock target enabled? camera|boolean camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Boolean</span><div class="bp-auth-card__title"><code>IsLockTargetEnabled?</code></div><p>Флаг состояния «Is Lock Target Enabled?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Lock Target Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Lock Target Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Lock Target Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Lock Target Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="9">
+<summary>
+<span>Commander Camera › Base Parameters</span>
+<b data-bp-subgroup-count>9</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="bp comtower field of view bp com tower field of view camera|comtowercamera|baseparameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>BP ComTower Field Of View</code></div><p>Числовой параметр «BP Com Tower Field Of View».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 1</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get BP Com Tower Field Of View Blueprint variable" title="Float"><span class="bp-auth-var-node__name">BP Com Tower Field Of View</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set BP Com Tower Field Of View Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">BP Com Tower Field Of View</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="comtowercamfov com tower cam fov camera|comtowercamera|baseparameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>ComTowerCamFOV</code></div><p>Числовой параметр «Com Tower Cam FOV».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Com Tower Cam FOV Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam FOV</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Com Tower Cam FOV Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Com Tower Cam FOV</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="comtowercamfovbounds com tower cam fovbounds camera|comtowercamera|baseparameters camera › commander camera › base parameters vector2d"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>ComTowerCamFOVBounds</code></div><p>Допустимый диапазон «Com Tower Cam FOVBounds».</p><div class="bp-auth-meta"><span><b>Тип</b>Vector2D</span><span><b>В BP_Tank_Master</b>X=2.0, Y=30.0</span><span><b>Использование</b>Чтение: 3 · запись: 1</span><span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Com Tower Cam FOVBounds Blueprint variable" title="Vector2D"><span class="bp-auth-var-node__name">Com Tower Cam FOVBounds</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Com Tower Cam FOVBounds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Com Tower Cam FOVBounds</span><span class="bp-auth-pin__type">Vector2D</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Vector2D</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="comtowercamfovmultiple com tower cam fovmultiple camera|comtowercamera|baseparameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>ComTowerCamFOVMultiple</code></div><p>Числовой параметр «Com Tower Cam FOVMultiple».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>10.0</span><span><b>Использование</b>Чтение: 4 · запись: 4</span><span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Com Tower Cam FOVMultiple Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam FOVMultiple</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Com Tower Cam FOVMultiple Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Com Tower Cam FOVMultiple</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="comtowercamfovstep com tower cam fovstep camera|comtowercamera|baseparameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>ComTowerCamFOVStep</code></div><p>Числовой параметр «Com Tower Cam FOVStep».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>1.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>CameraZoom</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Com Tower Cam FOVStep Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam FOVStep</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="comtowercammagnificationmax com tower cam magnification max camera|comtowercamera|baseparameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>ComTowerCamMagnificationMax</code></div><p>Числовой параметр «Com Tower Cam Magnification Max».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>12.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Com Tower Cam Magnification Max Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam Magnification Max</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="comtowercammagnificationmin com tower cam magnification min camera|comtowercamera|baseparameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>ComTowerCamMagnificationMin</code></div><p>Числовой параметр «Com Tower Cam Magnification Min».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>2.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Com Tower Cam Magnification Min Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Com Tower Cam Magnification Min</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="commandercamerayawmaxvalue commander camera yaw max value camera|com tower camera|base parameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>CommanderCameraYawMaxValue</code></div><p>Числовой параметр «Commander Camera Yaw Max Value».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>10.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Commander Camera Yaw Max Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Commander Camera Yaw Max Value</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="commandercamerayawminvalue commander camera yaw min value camera|com tower camera|base parameters camera › commander camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Base Parameters</span><div class="bp-auth-card__title"><code>CommanderCameraYawMinValue</code></div><p>Числовой параметр «Commander Camera Yaw Min Value».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>-10.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Commander Camera Yaw Min Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Commander Camera Yaw Min Value</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Commander Camera › Boolean</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="iscomtowercameraswitch? is com tower camera switch? camera|comtowercamera|boolern camera › commander camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Boolean</span><div class="bp-auth-card__title"><code>IsComTowerCameraSwitch?</code></div><p>Флаг состояния «Is Com Tower Camera Switch?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 14 · запись: 3</span><span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code> +2</span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Com Tower Camera Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Com Tower Camera Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Com Tower Camera Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Com Tower Camera Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="isdoublefiresysenable? is double fire sys enable? camera|comtowercamera|boolern camera › commander camera › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Commander Camera › Boolean</span><div class="bp-auth-card__title"><code>IsDoubleFireSysEnable?</code></div><p>Флаг состояния «Is Double Fire Sys Enable?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code>, <code>Trace Of Weapon UIAim Calculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Double Fire Sys Enable? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Double Fire Sys Enable?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Double Fire Sys Enable? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Double Fire Sys Enable?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="8">
+<summary>
+<span>Gunner Camera › Base Parameters</span>
+<b data-bp-subgroup-count>8</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="bp gunner field of view bp gunner field of view camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>BP Gunner Field Of View</code></div><p>Числовой параметр «BP Gunner Field Of View».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 1</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get BP Gunner Field Of View Blueprint variable" title="Float"><span class="bp-auth-var-node__name">BP Gunner Field Of View</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set BP Gunner Field Of View Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">BP Gunner Field Of View</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnercamfov gunner cam fov camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnerCamFOV</code></div><p>Числовой параметр «Gunner Cam FOV».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>90.0</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>CameraRotMacro</code>, <code>CameraZoom</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunner Cam FOV Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Cam FOV</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Gunner Cam FOV Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Gunner Cam FOV</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnercamfovbounds gunner cam fovbounds camera|gunnercamera|baseparameters camera › gunner camera › base parameters vector2d"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnerCamFOVBounds</code></div><p>Допустимый диапазон «Gunner Cam FOVBounds».</p><div class="bp-auth-meta"><span><b>Тип</b>Vector2D</span><span><b>В BP_Tank_Master</b>X=2.0, Y=30.0</span><span><b>Использование</b>Чтение: 3 · запись: 1</span><span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code>, <code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Gunner Cam FOVBounds Blueprint variable" title="Vector2D"><span class="bp-auth-var-node__name">Gunner Cam FOVBounds</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Gunner Cam FOVBounds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Gunner Cam FOVBounds</span><span class="bp-auth-pin__type">Vector2D</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="Vector2D"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Vector2D</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnercamfovmultiple gunner cam fovmultiple camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnerCamFOVMultiple</code></div><p>Числовой параметр «Gunner Cam FOVMultiple».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>10.0</span><span><b>Использование</b>Чтение: 4 · запись: 4</span><span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunner Cam FOVMultiple Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Cam FOVMultiple</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Gunner Cam FOVMultiple Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Gunner Cam FOVMultiple</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnercamfovstep gunner cam fovstep camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnerCamFOVStep</code></div><p>Числовой параметр «Gunner Cam FOVStep».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>1.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>CameraZoom</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunner Cam FOVStep Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Cam FOVStep</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnercamerayawmaxvalue gunner camera yaw max value camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnerCameraYawMaxValue</code></div><p>Числовой параметр «Gunner Camera Yaw Max Value».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>10.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunner Camera Yaw Max Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Camera Yaw Max Value</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnesrmagnificationmax gunnesr magnification max camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnesrMagnificationMax</code></div><p>Числовой параметр «Gunnesr Magnification Max».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>12.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunnesr Magnification Max Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunnesr Magnification Max</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnesrmagnificationmin gunnesr magnification min camera|gunnercamera|baseparameters camera › gunner camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Gunner Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnesrMagnificationMin</code></div><p>Числовой параметр «Gunnesr Magnification Min».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>4.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunnesr Magnification Min Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunnesr Magnification Min</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="7">
+<summary>
+<span>Main Camera › Base Parameters</span>
+<b data-bp-subgroup-count>7</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="camerarot camera rot camera|main camera|base parameters camera › main camera › base parameters rotator"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>CameraRot</code></div><p>Ссылка на <code>Rotator</code>, используемая как «Camera Rot».</p><div class="bp-auth-meta"><span><b>Тип</b>Rotator</span><span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span><span><b>Использование</b>Чтение: 2 · запись: 1</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Camera Rot Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Camera Rot</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Camera Rot Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera Rot</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="camera yoffset camera yoffset camera|maincamera|baseparameters camera › main camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>Camera YOffset</code></div><p>Смещение «Camera YOffset».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>5.0</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>CameraRotMacro</code>, <code>Client_InputGraph</code>, <code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Camera YOffset Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Camera YOffset</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="gunnercamerayawminvalue gunner camera yaw min value camera|maincamera|baseparameters camera › main camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>GunnerCameraYawMinValue</code></div><p>Числовой параметр «Gunner Camera Yaw Min Value».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>-10.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Gunner Camera Yaw Min Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Gunner Camera Yaw Min Value</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maincamfovmultiple main cam fovmultiple camera|maincamera|baseparameters camera › main camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>MainCamFOVMultiple</code></div><p>Числовой параметр «Main Cam FOVMultiple».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>2.0</span><span><b>Использование</b>Чтение: 4 · запись: 4</span><span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Main Cam FOVMultiple Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Cam FOVMultiple</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Main Cam FOVMultiple Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Cam FOVMultiple</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="temp current zoom temp current zoom camera|maincamera|baseparameters camera › main camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>Temp Current Zoom</code></div><p>Числовой параметр «Temp Current Zoom».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 1</span><span><b>Графы</b><code>CameraZoom</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Temp Current Zoom Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Temp Current Zoom</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Temp Current Zoom Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Temp Current Zoom</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="zoom bounds zoom bounds camera|maincamera|baseparameters camera › main camera › base parameters vector2d"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>Zoom Bounds</code></div><p>Допустимый диапазон «Zoom Bounds».</p><div class="bp-auth-meta"><span><b>Тип</b>Vector2D</span><span><b>В BP_Tank_Master</b>X=+0, Y=10.0</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>CameraZoom</code>, <code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Zoom Bounds Blueprint variable" title="Vector2D"><span class="bp-auth-var-node__name">Zoom Bounds</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="zoom step zoom step camera|maincamera|baseparameters camera › main camera › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Camera › Main Camera › Base Parameters</span><div class="bp-auth-card__title"><code>Zoom Step</code></div><p>Числовой параметр «Zoom Step».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>120.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>CameraZoom</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Zoom Step Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Zoom Step</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+</div>
+</details>
+<details class="bp-auth-group" data-bp-group data-bp-total="8">
+<summary>
+<span class="bp-auth-group__title">Controls</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>8</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Boolean</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="blockleftside block left side controls|boolean controls › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Boolean</span><div class="bp-auth-card__title"><code>BlockLeftSide</code></div><p>Флаг состояния «Block Left Side».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 4</span><span><b>Графы</b><code>Server_SeparateMovement DEV</code>, <code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Block Left Side Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Block Left Side</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Block Left Side Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Block Left Side</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="blockrightside block right side controls|boolean controls › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Boolean</span><div class="bp-auth-card__title"><code>BlockRightSide</code></div><p>Флаг состояния «Block Right Side».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 4</span><span><b>Графы</b><code>Server_SeparateMovement DEV</code>, <code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Block Right Side Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Block Right Side</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Block Right Side Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Block Right Side</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="separatemovement separate movement controls|boolean controls › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Boolean</span><div class="bp-auth-card__title"><code>SeparateMovement</code></div><p>Флаг состояния «Separate Movement».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_SeparateMovement DEV</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Separate Movement Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Separate Movement</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="5">
+<summary>
+<span>Float</span>
+<b data-bp-subgroup-count>5</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="forwardspeed forward speed controls|float controls › float float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Float</span><div class="bp-auth-card__title"><code>ForwardSpeed</code></div><p>Скорость или темп для «Forward Speed».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 4 · запись: 1</span><span><b>Графы</b><code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Forward Speed Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Forward Speed</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Forward Speed Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Forward Speed</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maxtorque max torque controls|float controls › float float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Float</span><div class="bp-auth-card__title"><code>MaxTorque</code></div><p>Числовой параметр «Max Torque».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>2000.0</span><span><b>Использование</b>Чтение: 8 · запись: 0</span><span><b>Графы</b><code>Server_SeparateMovement DEV</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Max Torque Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Max Torque</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="moverighttriggeredseconds move right triggered seconds controls|float controls › float float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Float</span><div class="bp-auth-card__title"><code>MoveRightTriggeredSeconds</code></div><p>Числовой параметр «Move Right Triggered Seconds».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Move Right Triggered Seconds Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Move Right Triggered Seconds</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Move Right Triggered Seconds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Move Right Triggered Seconds</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="throttleinput throttle input controls|float controls › float float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Float</span><div class="bp-auth-card__title"><code>ThrottleInput</code></div><p>Числовой параметр «Throttle Input».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 4 · запись: 1</span><span><b>Графы</b><code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Throttle Input Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Throttle Input</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Throttle Input Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Throttle Input</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="throttletriggeredseconds throttle triggered seconds controls|float controls › float float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Controls › Float</span><div class="bp-auth-card__title"><code>ThrottleTriggeredSeconds</code></div><p>Числовой параметр «Throttle Triggered Seconds».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Throttle Triggered Seconds Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Throttle Triggered Seconds</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Throttle Triggered Seconds Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Throttle Triggered Seconds</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+</div>
+</details>
+</div>
+</details>
+<details class="bp-auth-group" data-bp-group data-bp-total="71">
+<summary>
+<span class="bp-auth-group__title">Tank Systems</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>71</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Boolean</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="destroyed destroyed tankcomponent|boolean tank systems › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Boolean</span><div class="bp-auth-card__title"><code>Destroyed</code></div><p>Флаг состояния «Destroyed».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 11 · запись: 3</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>EventGraph</code>, <code>Server_Damage</code>, <code>Server_FiringGraph</code>, <code>Server_Input</code> +1</span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Destroyed Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Destroyed</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Destroyed Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Destroyed</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="isaimtypeswitch? is aim type switch? tankcomponent|boolean tank systems › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Boolean</span><div class="bp-auth-card__title"><code>IsAimTypeSwitch?</code></div><p>Флаг состояния «Is Aim Type Switch?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Aim Type Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Aim Type Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Aim Type Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Aim Type Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Boolean</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="isthermalvisswitch? is thermal vis switch? tankcomponent|firesystemcomponent|boolean tank systems › fire system › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Boolean</span><div class="bp-auth-card__title"><code>IsThermalVisSwitch?</code></div><p>Флаг состояния «Is Thermal Vis Switch?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Thermal Vis Switch? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Thermal Vis Switch?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Thermal Vis Switch? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Thermal Vis Switch?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="6">
+<summary>
+<span>Fire System › Machine Gun › Base Parameters</span>
+<b data-bp-subgroup-count>6</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="machiegunpitch machie gun pitch tankcomponent|firesystemcomponent|machinegun|baseparameters tank systems › fire system › machine gun › base parameters rotator"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MachieGunPitch</code></div><p>Поворот, используемый системой «Machie Gun Pitch».</p><div class="bp-auth-meta"><span><b>Тип</b>Rotator</span><span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_ComTowerRotationGraph</code>, <code>UpdateComTowerRotation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Machie Gun Pitch Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Machie Gun Pitch</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Machie Gun Pitch Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Machie Gun Pitch</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="machinegunfirerate machine gun fire rate tankcomponent|firesystemcomponent|machinegun|baseparameters tank systems › fire system › machine gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MachineGunFireRate</code></div><p>Скорость или темп для «Machine Gun Fire Rate».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>0.1</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Machine Gun Fire Rate Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Fire Rate</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="machinegunheat machine gun heat tankcomponent|firesystemcomponent|machinegun|baseparameters tank systems › fire system › machine gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MachineGunHeat</code></div><p>Числовой параметр «Machine Gun Heat».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Machine Gun Heat Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Heat</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="machinegunmomentumvalue machine gun momentum value tankcomponent|firesystemcomponent|machinegun|baseparameters tank systems › fire system › machine gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MachineGunMomentumValue</code></div><p>Числовой параметр «Machine Gun Momentum Value».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>0.2</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Machine Gun Momentum Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Momentum Value</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="machinegunreloaddelay machine gun reload delay tankcomponent|firesystemcomponent|machinegun|baseparameters tank systems › fire system › machine gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MachineGunReloadDelay</code></div><p>Числовой параметр «Machine Gun Reload Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Machine Gun Reload Delay Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Reload Delay</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Machine Gun Reload Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Machine Gun Reload Delay</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="machinegunreloadtime machine gun reload time tankcomponent|firesystemcomponent|machinegun|baseparameters tank systems › fire system › machine gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MachineGunReloadTime</code></div><p>Числовой параметр «Machine Gun Reload Time».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>5.0</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Machine Gun Reload Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Machine Gun Reload Time</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="7">
+<summary>
+<span>Fire System › Machine Gun › Boolean</span>
+<b data-bp-subgroup-count>7</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search=" server_ismachinegunoverheatting?  server is machine gun over heatting? tankcomponent|firesystemcomponent|machinegun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code> Server_IsMachineGunOverHeatting?</code></div><p>Флаг состояния « Server Is Machine Gun Over Heatting?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>OnRep_ Server_IsMachineGunOverHeatting?</code>, <code>Server_FiringGraph</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_ Server_IsMachineGunOverHeatting?</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get  Server Is Machine Gun Over Heatting? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name"> Server Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set  Server Is Machine Gun Over Heatting? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"> Server Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="client_ismachinegunoverheatting? client is machine gun over heatting? tank component|fire system component|machine gun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code>Client_IsMachineGunOverHeatting?</code></div><p>Флаг состояния «Client Is Machine Gun Over Heatting?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_ Server_IsMachineGunOverHeatting?</code>, <code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Machine Gun Over Heatting? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Machine Gun Over Heatting? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Machine Gun Over Heatting?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="client_ismachinegunreloaded? client is machine gun reloaded? tank component|fire system component|machine gun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code>Client_IsMachineGunReloaded?</code></div><p>Флаг состояния «Client Is Machine Gun Reloaded?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_Server_IsMachineGunReloaded?</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Machine Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Machine Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Machine Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Machine Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="ismachinegunfiredelay is machine gun fire delay tankcomponent|firesystemcomponent|machinegun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code>IsMachineGunFireDelay</code></div><p>Флаг состояния «Is Machine Gun Fire Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Machine Gun Fire Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Machine Gun Fire Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Machine Gun Fire Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Machine Gun Fire Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="ismachinegunfire? is machine gun fire? tankcomponent|firesystemcomponent|machinegun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code>IsMachineGunFire?</code></div><p>Флаг состояния «Is Machine Gun Fire?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Machine Gun Fire? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Machine Gun Fire?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Machine Gun Fire? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Machine Gun Fire?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="mg_mesh_change mg mesh change tank component|fire system component|machine gun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code>MG_Mesh_Change</code></div><p>Флаг состояния «MG Mesh Change».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>EventGraph</code>, <code>Server_UpdateComTowerRotation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get MG Mesh Change Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">MG Mesh Change</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_ismachinegunreloaded? server is machine gun reloaded? tankcomponent|firesystemcomponent|machinegun|boolean tank systems › fire system › machine gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Boolean</span><div class="bp-auth-card__title"><code>Server_IsMachineGunReloaded?</code></div><p>Флаг состояния «Server Is Machine Gun Reloaded?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>OnRep_Server_IsMachineGunReloaded?</code>, <code>Server_FiringGraph</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_IsMachineGunReloaded?</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Is Machine Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Is Machine Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Is Machine Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Is Machine Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Machine Gun › Integer</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="mgtype mgtype tank component|fire system component|machine gun|integer tank systems › fire system › machine gun › integer integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Integer</span><div class="bp-auth-card__title"><code>MGType</code></div><p>Числовой параметр «MGType».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>2</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get MGType Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">MGType</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Machine Gun › Muzzle Socket</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="machinegunmuzzlesocket machine gun muzzle socket tankcomponent|firesystemcomponent|machinegun|muzzlesocket tank systems › fire system › machine gun › muzzle socket name"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Muzzle Socket</span><div class="bp-auth-card__title"><code>MachineGunMuzzleSocket</code></div><p>Текстовый идентификатор «Machine Gun Muzzle Socket».</p><div class="bp-auth-meta"><span><b>Тип</b>Name</span><span><b>В BP_Tank_Master</b>MachineGunMuzzleSocket</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Machine Gun Muzzle Socket Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Machine Gun Muzzle Socket</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Fire System › Machine Gun › Particles</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="machinegunfireniagaraeffect machine gun fire niagara effect tankcomponent|firesystemcomponent|machinegun|particle tank systems › fire system › machine gun › particles niagarasystem"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Particles</span><div class="bp-auth-card__title"><code>MachineGunFireNiagaraEffect</code></div><p>Рабочее значение «Machine Gun Fire Niagara Effect» типа <code>NiagaraSystem</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>NiagaraSystem</span><span><b>В BP_Tank_Master</b>-395</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Machine Gun Fire Niagara Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Machine Gun Fire Niagara Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="overheatingniagaraeffect overheating niagara effect tankcomponent|firesystemcomponent|machinegun|particle tank systems › fire system › machine gun › particles niagarasystem"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Particles</span><div class="bp-auth-card__title"><code>OverheatingNiagaraEffect</code></div><p>Рабочее значение «Overheating Niagara Effect» типа <code>NiagaraSystem</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>NiagaraSystem</span><span><b>В BP_Tank_Master</b>-397</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Overheating Niagara Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Overheating Niagara Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Machine Gun › Projectile</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="machinegunprojectile machine gun projectile tankcomponent|firesystemcomponent|machinegun|projectile tank systems › fire system › machine gun › projectile class class"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Projectile</span><div class="bp-auth-card__title"><code>MachineGunProjectile</code></div><p>Рабочее значение «Machine Gun Projectile» типа <code>Class Class</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>Class Class</span><span><b>В BP_Tank_Master</b>-12</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Machine Gun Projectile Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Machine Gun Projectile</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Machine Gun › Timers</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="machinegunfiretimer machine gun fire timer tankcomponent|firesystemcomponent|machinegun|timer tank systems › fire system › machine gun › timers timerhandle"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Machine Gun › Timers</span><div class="bp-auth-card__title"><code>MachineGunFireTimer</code></div><p>Дескриптор таймера «Machine Gun Fire Timer».</p><div class="bp-auth-meta"><span><b>Тип</b>TimerHandle</span><span><b>В BP_Tank_Master</b>0</span><span><b>Использование</b>Чтение: 3 · запись: 1</span><span><b>Графы</b><code>Server_Damage</code>, <code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Machine Gun Fire Timer Blueprint variable" title="TimerHandle"><span class="bp-auth-var-node__name">Machine Gun Fire Timer</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Machine Gun Fire Timer Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Machine Gun Fire Timer</span><span class="bp-auth-pin__type">TimerHandle</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">TimerHandle</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="4">
+<summary>
+<span>Fire System › Main Gun › Base Parameters</span>
+<b data-bp-subgroup-count>4</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="maingunmomentumvalue main gun momentum value tankcomponent|firesystemcomponent|maingun|baseparameters tank systems › fire system › main gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MainGunMomentumValue</code></div><p>Числовой параметр «Main Gun Momentum Value».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>20.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Main Gun Momentum Value Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Momentum Value</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunphysfloat main gun phys float tankcomponent|firesystemcomponent|maingun|baseparameters tank systems › fire system › main gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MainGunPhysFloat</code></div><p>Числовой параметр «Main Gun Phys Float».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 1</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Main Gun Phys Float Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Phys Float</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Main Gun Phys Float Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Phys Float</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunreloaddelay main gun reload delay tankcomponent|firesystemcomponent|maingun|baseparameters tank systems › fire system › main gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MainGunReloadDelay</code></div><p>Числовой параметр «Main Gun Reload Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Main Gun Reload Delay Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Reload Delay</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Main Gun Reload Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Reload Delay</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunreloadtime main gun reload time tankcomponent|firesystemcomponent|maingun|baseparameters tank systems › fire system › main gun › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Base Parameters</span><div class="bp-auth-card__title"><code>MainGunReloadTime</code></div><p>Числовой параметр «Main Gun Reload Time».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>0.016</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Main Gun Reload Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Main Gun Reload Time</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="6">
+<summary>
+<span>Fire System › Main Gun › Boolean</span>
+<b data-bp-subgroup-count>6</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="client_ejectionanimplay client ejection anim play tank component|fire system component|main gun|boolean tank systems › fire system › main gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Boolean</span><div class="bp-auth-card__title"><code>Client_EjectionAnimPlay</code></div><p>Флаг состояния «Client Ejection Anim Play».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>OnRep_Server_EjectionAnimPlay</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Ejection Anim Play Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Ejection Anim Play</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Ejection Anim Play Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Ejection Anim Play</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="client_ismaingunreloaded? client is main gun reloaded? tank component|fire system component|main gun|boolean tank systems › fire system › main gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Boolean</span><div class="bp-auth-card__title"><code>Client_IsMainGunReloaded?</code></div><p>Флаг состояния «Client Is Main Gun Reloaded?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_Server_IsMainGunReloaded?</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Main Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Main Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Main Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Main Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="ejectionanimenable ejection anim enable tank component|fire system component|main gun|boolean tank systems › fire system › main gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Boolean</span><div class="bp-auth-card__title"><code>EjectionAnimEnable</code></div><p>Флаг состояния «Ejection Anim Enable».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Ejection Anim Enable Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Ejection Anim Enable</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="ismaingunfiredelay? is main gun fire delay? tankcomponent|firesystemcomponent|maingun|boolean tank systems › fire system › main gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Boolean</span><div class="bp-auth-card__title"><code>IsMainGunFireDelay?</code></div><p>Флаг состояния «Is Main Gun Fire Delay?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Main Gun Fire Delay? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Main Gun Fire Delay?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Main Gun Fire Delay? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Main Gun Fire Delay?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_ejectionanimplay server ejection anim play tank component|fire system component|main gun|boolean tank systems › fire system › main gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Boolean</span><div class="bp-auth-card__title"><code>Server_EjectionAnimPlay</code></div><p>Флаг состояния «Server Ejection Anim Play».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>OnRep_Server_EjectionAnimPlay</code>, <code>Server_FiringGraph</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_EjectionAnimPlay</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Ejection Anim Play Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Ejection Anim Play</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Ejection Anim Play Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Ejection Anim Play</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_ismaingunreloaded? server is main gun reloaded? tankcomponent|firesystemcomponent|maingun|boolean tank systems › fire system › main gun › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Boolean</span><div class="bp-auth-card__title"><code>Server_IsMainGunReloaded?</code></div><p>Флаг состояния «Server Is Main Gun Reloaded?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>OnRep_Server_IsMainGunReloaded?</code>, <code>Server_FiringGraph</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_IsMainGunReloaded?</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Is Main Gun Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Is Main Gun Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Is Main Gun Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Is Main Gun Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Main Gun › Integer</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="maingunfiretimer main gun fire timer tankcomponent|firesystemcomponent|maingun|integer tank systems › fire system › main gun › integer timerhandle"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Integer</span><div class="bp-auth-card__title"><code>MainGunFireTimer</code></div><p>Дескриптор таймера «Main Gun Fire Timer».</p><div class="bp-auth-meta"><span><b>Тип</b>TimerHandle</span><span><b>В BP_Tank_Master</b>0</span><span><b>Использование</b>Чтение: 2 · запись: 1</span><span><b>Графы</b><code>Server_Damage</code>, <code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Main Gun Fire Timer Blueprint variable" title="TimerHandle"><span class="bp-auth-var-node__name">Main Gun Fire Timer</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Main Gun Fire Timer Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Fire Timer</span><span class="bp-auth-pin__type">TimerHandle</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">TimerHandle</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Fire System › Main Gun › Particles</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="maingun fire ground effect main gun fire ground effect tankcomponent|firesystemcomponent|maingun|particle tank systems › fire system › main gun › particles niagarasystem"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Particles</span><div class="bp-auth-card__title"><code>MainGun Fire Ground Effect</code></div><p>Рабочее значение «Main Gun Fire Ground Effect» типа <code>NiagaraSystem</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>NiagaraSystem</span><span><b>В BP_Tank_Master</b>-392</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Main Gun Fire Ground Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Main Gun Fire Ground Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunfireniagaraeffect main gun fire niagara effect tankcomponent|firesystemcomponent|maingun|particle tank systems › fire system › main gun › particles niagarasystem"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Particles</span><div class="bp-auth-card__title"><code>MainGunFireNiagaraEffect</code></div><p>Рабочее значение «Main Gun Fire Niagara Effect» типа <code>NiagaraSystem</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>NiagaraSystem</span><span><b>В BP_Tank_Master</b>-396</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Main Gun Fire Niagara Effect Blueprint variable" title="NiagaraSystem"><span class="bp-auth-var-node__name">Main Gun Fire Niagara Effect</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Fire System › Main Gun › Projectile</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="ejectedcartridge ejected cartridge tankcomponent|firesystemcomponent|maingun|projectile tank systems › fire system › main gun › projectile class class"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Projectile</span><div class="bp-auth-card__title"><code>EjectedCartridge</code></div><p>Рабочее значение «Ejected Cartridge» типа <code>Class Class</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>Class Class</span><span><b>В BP_Tank_Master</b>-10</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Ejected Cartridge Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Ejected Cartridge</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunprojectile main gun projectile tankcomponent|firesystemcomponent|maingun|projectile tank systems › fire system › main gun › projectile class class"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Projectile</span><div class="bp-auth-card__title"><code>MainGunProjectile</code></div><p>Рабочее значение «Main Gun Projectile» типа <code>Class Class</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>Class Class</span><span><b>В BP_Tank_Master</b>-13</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Main Gun Projectile Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Main Gun Projectile</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunshellprojectille main gun shell projectille tankcomponent|firesystemcomponent|maingun|projectile tank systems › fire system › main gun › projectile class class"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Projectile</span><div class="bp-auth-card__title"><code>MainGunShellProjectille</code></div><p>Рабочее значение «Main Gun Shell Projectille» типа <code>Class Class</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>Class Class</span><span><b>В BP_Tank_Master</b>-14</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Main Gun Shell Projectille Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Main Gun Shell Projectille</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Main Gun › Rotator</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="maingunpitch main gun pitch tankcomponent|firesystemcomponent|maingun|rotator tank systems › fire system › main gun › rotator rotator"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Main Gun › Rotator</span><div class="bp-auth-card__title"><code>MainGunPitch</code></div><p>Поворот, используемый системой «Main Gun Pitch».</p><div class="bp-auth-meta"><span><b>Тип</b>Rotator</span><span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>Server_SoundGraph</code>, <code>Server_TowerRotationGraph</code>, <code>Server_Update Tower Rotation</code>, <code>UpdateTowerRotation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Main Gun Pitch Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Main Gun Pitch</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Main Gun Pitch Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Pitch</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Fire System › Replenishment › Boolean</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="canitbereplenishing? can it be replenishing? tankcomponent|firesystemcomponent|replenishsys|boolean tank systems › fire system › replenishment › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Replenishment › Boolean</span><div class="bp-auth-card__title"><code>CanItBeReplenishing?</code></div><p>Флаг состояния «Can It be Replenishing?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 1</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Can It be Replenishing? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Can It be Replenishing?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Can It be Replenishing? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Can It be Replenishing?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maingunammochangetracker main gun ammo change tracker tankcomponent|firesystemcomponent|replenishsys|boolean tank systems › fire system › replenishment › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Replenishment › Boolean</span><div class="bp-auth-card__title"><code>MainGunAmmoChangeTracker</code></div><p>Флаг состояния «Main Gun Ammo Change Tracker».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 0 · запись: 1</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Main Gun Ammo Change Tracker Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Main Gun Ammo Change Tracker</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Main Gun Ammo Change Tracker Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Main Gun Ammo Change Tracker</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="subreplanishboolreturn sub replanish bool return tankcomponent|firesystemcomponent|replenishsys|boolean tank systems › fire system › replenishment › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Replenishment › Boolean</span><div class="bp-auth-card__title"><code>SubReplanishBoolReturn</code></div><p>Флаг состояния «Sub Replanish Bool Return».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Sub Replanish Bool Return Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Sub Replanish Bool Return</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Sub Replanish Bool Return Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Sub Replanish Bool Return</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Fire System › Smoke Shell › Base Parameters</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="smokeshellrate smoke shell rate tankcomponent|firesystemcomponent|smokeshall|baseparameters tank systems › fire system › smoke shell › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Base Parameters</span><div class="bp-auth-card__title"><code>SmokeShellRate</code></div><p>Скорость или темп для «Smoke Shell Rate».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>0.5</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Smoke Shell Rate Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Smoke Shell Rate</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="smokeshellreloaddelay smoke shell reload delay tankcomponent|firesystemcomponent|smokeshall|baseparameters tank systems › fire system › smoke shell › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Base Parameters</span><div class="bp-auth-card__title"><code>SmokeShellReloadDelay</code></div><p>Числовой параметр «Smoke Shell Reload Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Smoke Shell Reload Delay Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Smoke Shell Reload Delay</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Smoke Shell Reload Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Smoke Shell Reload Delay</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="smokeshellreloadtime smoke shell reload time tankcomponent|firesystemcomponent|smokeshall|baseparameters tank systems › fire system › smoke shell › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Base Parameters</span><div class="bp-auth-card__title"><code>SmokeShellReloadTime</code></div><p>Числовой параметр «Smoke Shell Reload Time».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>1.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Smoke Shell Reload Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Smoke Shell Reload Time</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="4">
+<summary>
+<span>Fire System › Smoke Shell › Boolean</span>
+<b data-bp-subgroup-count>4</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="client_issmokeshellreloaded? client is smoke shell reloaded? tank component|fire system component|smoke shall|boolean tank systems › fire system › smoke shell › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Boolean</span><div class="bp-auth-card__title"><code>Client_IsSmokeShellReloaded?</code></div><p>Флаг состояния «Client Is Smoke Shell Reloaded?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Dispatcher_OnUIStateChangedGraph</code>, <code>OnRep_Server_IsSmokeShellReloaded?</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Is Smoke Shell Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Is Smoke Shell Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="issmokeshellfiredelay is smoke shell fire delay tank component|fire system component|smoke shall|boolean tank systems › fire system › smoke shell › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Boolean</span><div class="bp-auth-card__title"><code>IsSmokeShellFireDelay</code></div><p>Флаг состояния «Is Smoke Shell Fire Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Smoke Shell Fire Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Smoke Shell Fire Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Smoke Shell Fire Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Smoke Shell Fire Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="issmokeshellfire? is smoke shell fire? tankcomponent|firesystemcomponent|smokeshall|boolean tank systems › fire system › smoke shell › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Boolean</span><div class="bp-auth-card__title"><code>IsSmokeShellFire?</code></div><p>Флаг состояния «Is Smoke Shell Fire?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Smoke Shell Fire? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Smoke Shell Fire?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Smoke Shell Fire? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Smoke Shell Fire?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_issmokeshellreloaded? server is smoke shell reloaded? tankcomponent|firesystemcomponent|smokeshall|boolean tank systems › fire system › smoke shell › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Boolean</span><div class="bp-auth-card__title"><code>Server_IsSmokeShellReloaded?</code></div><p>Флаг состояния «Server Is Smoke Shell Reloaded?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 2 · запись: 3</span><span><b>Графы</b><code>OnRep_Server_IsSmokeShellReloaded?</code>, <code>Server_FiringGraph</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_IsSmokeShellReloaded?</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Is Smoke Shell Reloaded? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Is Smoke Shell Reloaded? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Is Smoke Shell Reloaded?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Smoke Shell › Integer</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="smokeshelltimer smoke shell timer tankcomponent|firesystemcomponent|smokeshall|integer tank systems › fire system › smoke shell › integer timerhandle"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Integer</span><div class="bp-auth-card__title"><code>SmokeShellTimer</code></div><p>Дескриптор таймера «Smoke Shell Timer».</p><div class="bp-auth-meta"><span><b>Тип</b>TimerHandle</span><span><b>В BP_Tank_Master</b>0</span><span><b>Использование</b>Чтение: 2 · запись: 1</span><span><b>Графы</b><code>Server_Damage</code>, <code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Smoke Shell Timer Blueprint variable" title="TimerHandle"><span class="bp-auth-var-node__name">Smoke Shell Timer</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="struct" role="img" aria-label="Set Smoke Shell Timer Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Smoke Shell Timer</span><span class="bp-auth-pin__type">TimerHandle</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="struct" title="TimerHandle"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">TimerHandle</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Fire System › Smoke Shell › Projectile</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="smokeshellprojectile smoke shell projectile tankcomponent|firesystemcomponent|smokeshall|projectile tank systems › fire system › smoke shell › projectile class class"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Projectile</span><div class="bp-auth-card__title"><code>SmokeShellProjectile</code></div><p>Рабочее значение «Smoke Shell Projectile» типа <code>Class Class</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>Class Class</span><span><b>В BP_Tank_Master</b>-11</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="class" role="img" aria-label="Get Smoke Shell Projectile Blueprint variable" title="Class Class"><span class="bp-auth-var-node__name">Smoke Shell Projectile</span><span class="bp-auth-pin__dot" data-pin-type="class"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="4">
+<summary>
+<span>Fire System › Smoke Shell › Sockets</span>
+<b data-bp-subgroup-count>4</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket01 smoke shell socket 01 tankcomponent|firesystemcomponent|smokeshall|sockets tank systems › fire system › smoke shell › sockets array&lt;name&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Sockets</span><div class="bp-auth-card__title"><code>SmokeShellSocket01</code></div><p>Рабочий список «Smoke Shell Socket 01».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Name&gt;</span><span><b>В BP_Tank_Master</b>SmokeShellSocket_L01, SmokeShellSocket_L02, SmokeShellSocket_R01, SmokeShellSocket_R02</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 01 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 01</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket02 smoke shell socket 02 tankcomponent|firesystemcomponent|smokeshall|sockets tank systems › fire system › smoke shell › sockets array&lt;name&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Sockets</span><div class="bp-auth-card__title"><code>SmokeShellSocket02</code></div><p>Рабочий список «Smoke Shell Socket 02».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Name&gt;</span><span><b>В BP_Tank_Master</b>SmokeShellSocket_L03, SmokeShellSocket_L04, SmokeShellSocket_R03, SmokeShellSocket_R04</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 02 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 02</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket03 smoke shell socket 03 tankcomponent|firesystemcomponent|smokeshall|sockets tank systems › fire system › smoke shell › sockets array&lt;name&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Sockets</span><div class="bp-auth-card__title"><code>SmokeShellSocket03</code></div><p>Рабочий список «Smoke Shell Socket 03».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Name&gt;</span><span><b>В BP_Tank_Master</b>SmokeShellSocket_L05, SmokeShellSocket_L06, SmokeShellSocket_R05, SmokeShellSocket_R06</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 03 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 03</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="smokeshellsocket04 smoke shell socket 04 tankcomponent|firesystemcomponent|smokeshall|sockets tank systems › fire system › smoke shell › sockets array&lt;name&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Smoke Shell › Sockets</span><div class="bp-auth-card__title"><code>SmokeShellSocket04</code></div><p>Рабочий список «Smoke Shell Socket 04».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Name&gt;</span><span><b>В BP_Tank_Master</b>SmokeShellSocket_L07, SmokeShellSocket_L08, SmokeShellSocket_R07, SmokeShellSocket_R08</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Smoke Shell Socket 04 Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Smoke Shell Socket 04</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Fire System › Thermal Vision › Material Parameters</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="thermalmaterialparameter thermal material parameter tankcomponent|firesystemcomponent|thermal|materialparameters tank systems › fire system › thermal vision › material parameters materialparametercollection"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Thermal Vision › Material Parameters</span><div class="bp-auth-card__title"><code>ThermalMaterialParameter</code></div><p>Ссылка на <code>MaterialParameterCollection</code>, используемая как «Thermal Material Parameter».</p><div class="bp-auth-meta"><span><b>Тип</b>MaterialParameterCollection</span><span><b>В BP_Tank_Master</b>-389</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Thermal Material Parameter Blueprint variable" title="MaterialParameterCollection"><span class="bp-auth-var-node__name">Thermal Material Parameter</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="thermalparametername thermal parameter name tankcomponent|firesystemcomponent|thermal|materialparameters tank systems › fire system › thermal vision › material parameters name"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Thermal Vision › Material Parameters</span><div class="bp-auth-card__title"><code>ThermalParameterName</code></div><p>Текстовый идентификатор «Thermal Parameter Name».</p><div class="bp-auth-meta"><span><b>Тип</b>Name</span><span><b>В BP_Tank_Master</b>ThermalEffect</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Thermal Parameter Name Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Thermal Parameter Name</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Fire System › Thermal Vision › Post Process Settings</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="thermalpostprocesssettings_default thermal post process settings default tankcomponent|firesystemcomponent|thermal|postprocesssettings tank systems › fire system › thermal vision › post process settings postprocesssettings"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Thermal Vision › Post Process Settings</span><div class="bp-auth-card__title"><code>ThermalPostProcessSettings_Default</code></div><p>Рабочее значение «Thermal Post Process Settings Default» типа <code>PostProcessSettings</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>PostProcessSettings</span><span><b>В BP_Tank_Master</b>412 items</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Thermal Post Process Settings Default Blueprint variable" title="PostProcessSettings"><span class="bp-auth-var-node__name">Thermal Post Process Settings Default</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="thermalpost process settings_mod thermal post process settings mod tankcomponent|firesystemcomponent|thermal|postprocesssettings tank systems › fire system › thermal vision › post process settings postprocesssettings"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Fire System › Thermal Vision › Post Process Settings</span><div class="bp-auth-card__title"><code>ThermalPost Process Settings_Mod</code></div><p>Рабочее значение «Thermal Post Process Settings Mod» типа <code>PostProcessSettings</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>PostProcessSettings</span><span><b>В BP_Tank_Master</b>412 items</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Client_InputGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Thermal Post Process Settings Mod Blueprint variable" title="PostProcessSettings"><span class="bp-auth-var-node__name">Thermal Post Process Settings Mod</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Material Instances</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="midynamics midynamics tankcomponent|mi tank systems › material instances array&lt;materialinstancedynamic&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Material Instances</span><div class="bp-auth-card__title"><code>MIDynamics</code></div><p>Рабочий список «MIDynamics».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;MaterialInstanceDynamic&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>CreateDynamicMI</code>, <code>Server_Damage</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get MIDynamics Blueprint variable" title="Array&lt;MaterialInstanceDynamic&gt;"><span class="bp-auth-var-node__name">MIDynamics</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Movement › Base Parameters</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="curentrpmratio curent rpmratio tankcomponent|movements|baseparameters tank systems › movement › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Movement › Base Parameters</span><div class="bp-auth-card__title"><code>CurentRPMRatio</code></div><p>Числовой параметр «Curent RPMRatio».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Curent RPMRatio Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Curent RPMRatio</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Curent RPMRatio Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Curent RPMRatio</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="forwardaxis  forward axis  tankcomponent|movements|baseparameters tank systems › movement › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Movement › Base Parameters</span><div class="bp-auth-card__title"><code>ForwardAxis </code></div><p>Числовой параметр «Forward Axis ».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 4 · запись: 6</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_Damage</code>, <code>Server_Input</code>, <code>Server_SeparateMovement DEV</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Forward Axis  Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Forward Axis </span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Forward Axis  Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Forward Axis </span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="yaw yaw tankcomponent|movements|baseparameters tank systems › movement › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Movement › Base Parameters</span><div class="bp-auth-card__title"><code>Yaw</code></div><p>Числовой параметр «Yaw».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 6</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_Damage</code>, <code>Server_Input</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Yaw Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Yaw</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Yaw Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Yaw</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Sound › Crew</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="crewvoicedelay crew voice delay tank component|sound|crew tank systems › sound › crew boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Sound › Crew</span><div class="bp-auth-card__title"><code>CrewVoiceDelay</code></div><p>Флаг состояния «Crew Voice Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 2</span><span><b>Графы</b><code>Server_FiringGraph</code>, <code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Crew Voice Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Crew Voice Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Crew Voice Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Crew Voice Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Sound › No Reverb</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="nrsound nrsound tankcomponent|sound|noreverb tank systems › sound › no reverb array&lt;audiocomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Sound › No Reverb</span><div class="bp-auth-card__title"><code>NRSound</code></div><p>Рабочий список «NRSound».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;AudioComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 1</span><span><b>Графы</b><code>Server_Damage</code>, <code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get NRSound Blueprint variable" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-var-node__name">NRSound</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set NRSound Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">NRSound</span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Sound › Reverb</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="rsound rsound tankcomponent|sound|reverb tank systems › sound › reverb array&lt;audiocomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Sound › Reverb</span><div class="bp-auth-card__title"><code>RSound</code></div><p>Рабочий список «RSound».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;AudioComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 1</span><span><b>Графы</b><code>Server_Damage</code>, <code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get RSound Blueprint variable" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-var-node__name">RSound</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set RSound Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">RSound</span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;AudioComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;AudioComponent&gt;</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Stabilization › Boolean</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="isstabilizationenabled? is stabilization enabled? tankcomponent|stabilization|boolean tank systems › stabilization › boolean boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Stabilization › Boolean</span><div class="bp-auth-card__title"><code>IsStabilizationEnabled?</code></div><p>Флаг состояния «Is Stabilization Enabled?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 3 · запись: 1</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code>, <code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Stabilization Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Stabilization Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Stabilization Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Stabilization Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Turrets › Commander Tower › Rotator</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="ctcomtowerrotation ctcom tower rotation tankcomponent|tower|comtower|rotator tank systems › turrets › commander tower › rotator rotator"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Turrets › Commander Tower › Rotator</span><div class="bp-auth-card__title"><code>CTComTowerRotation</code></div><p>Поворот, используемый системой «CTCom Tower Rotation».</p><div class="bp-auth-meta"><span><b>Тип</b>Rotator</span><span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_ComTowerRotationGraph</code>, <code>Server_UpdateComTowerRotation</code>, <code>UpdateComTowerRotation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get CTCom Tower Rotation Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">CTCom Tower Rotation</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set CTCom Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CTCom Tower Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="mgcomtowerrotation mgcom tower rotation tankcomponent|tower|comtower|rotator tank systems › turrets › commander tower › rotator rotator"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Turrets › Commander Tower › Rotator</span><div class="bp-auth-card__title"><code>MGComTowerRotation</code></div><p>Поворот, используемый системой «MGCom Tower Rotation».</p><div class="bp-auth-meta"><span><b>Тип</b>Rotator</span><span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Server_ComTowerRotationGraph</code>, <code>Server_UpdateComTowerRotation</code>, <code>UpdateComTowerRotation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get MGCom Tower Rotation Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">MGCom Tower Rotation</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set MGCom Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MGCom Tower Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Turrets › Main Tower › Bone Names</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="ejectingsocket ejecting socket tankcomponent|tower|maintower|bonenames tank systems › turrets › main tower › bone names name"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Turrets › Main Tower › Bone Names</span><div class="bp-auth-card__title"><code>EjectingSocket</code></div><p>Текстовый идентификатор «Ejecting Socket».</p><div class="bp-auth-meta"><span><b>Тип</b>Name</span><span><b>В BP_Tank_Master</b>EjectingSocket</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Ejecting Socket Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Ejecting Socket</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Turrets › Main Tower › Rotator</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="towerrotation tower rotation tankcomponent|tower|maintower|rotator tank systems › turrets › main tower › rotator rotator"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Tank Systems › Turrets › Main Tower › Rotator</span><div class="bp-auth-card__title"><code>TowerRotation</code></div><p>Поворот, используемый системой «Tower Rotation».</p><div class="bp-auth-meta"><span><b>Тип</b>Rotator</span><span><b>В BP_Tank_Master</b>Pitch=+0, Yaw=+0, Roll=+0</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>Server_SoundGraph</code>, <code>Server_TowerRotationGraph</code>, <code>Server_Update Tower Rotation</code>, <code>UpdateTowerRotation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="rotator" role="img" aria-label="Get Tower Rotation Blueprint variable" title="Rotator"><span class="bp-auth-var-node__name">Tower Rotation</span><span class="bp-auth-pin__dot" data-pin-type="rotator"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="rotator" role="img" aria-label="Set Tower Rotation Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tower Rotation</span><span class="bp-auth-pin__type">Rotator</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div></div></article>
+</div>
+</details>
+</div>
+</details>
+<details class="bp-auth-group" data-bp-group data-bp-total="49">
+<summary>
+<span class="bp-auth-group__title">Track System</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>49</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="4">
+<summary>
+<span>Track Builder › Chassis Calculation</span>
+<b data-bp-subgroup-count>4</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="wheeldeltadistancel wheel delta distance l trackcomponents|trackmaker|chassiscalculation track system › track builder › chassis calculation float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Chassis Calculation</span><div class="bp-auth-card__title"><code>WheelDeltaDistanceL</code></div><p>Числовой параметр «Wheel Delta Distance L».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Wheel Delta Distance L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Delta Distance L</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Wheel Delta Distance L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Delta Distance L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="wheeldeltadistancer wheel delta distance r trackcomponents|trackmaker|chassiscalculation track system › track builder › chassis calculation float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Chassis Calculation</span><div class="bp-auth-card__title"><code>WheelDeltaDistanceR</code></div><p>Числовой параметр «Wheel Delta Distance R».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Wheel Delta Distance R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Delta Distance R</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Wheel Delta Distance R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Delta Distance R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="wheeldistancel wheel distance l trackcomponents|trackmaker|chassiscalculation track system › track builder › chassis calculation float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Chassis Calculation</span><div class="bp-auth-card__title"><code>WheelDistanceL</code></div><p>Числовой параметр «Wheel Distance L».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>10.0</span><span><b>Использование</b>Чтение: 3 · запись: 3</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Wheel Distance L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Distance L</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Wheel Distance L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Distance L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="wheeldistancer wheel distance r trackcomponents|trackmaker|chassiscalculation track system › track builder › chassis calculation float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Chassis Calculation</span><div class="bp-auth-card__title"><code>WheelDistanceR</code></div><p>Числовой параметр «Wheel Distance R».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 3</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Wheel Distance R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Wheel Distance R</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Wheel Distance R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Wheel Distance R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="4">
+<summary>
+<span>Track Builder › Roller Preferences › Roller Indexes</span>
+<b data-bp-subgroup-count>4</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="down front spline point index down front spline point index track components|track maker|roller preferences|roller indexes track system › track builder › roller preferences › roller indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Indexes</span><div class="bp-auth-card__title"><code>Down Front Spline Point Index</code></div><p>Числовой параметр «Down Front Spline Point Index».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>1</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Down Front Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Down Front Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="downrearsplinepointindex down rear spline point index track components|track maker|roller preferences|roller indexes track system › track builder › roller preferences › roller indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Indexes</span><div class="bp-auth-card__title"><code>DownRearSplinePointIndex</code></div><p>Числовой параметр «Down Rear Spline Point Index».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>11</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Down Rear Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Down Rear Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="up front spline point index up front spline point index track components|track maker|roller preferences|roller indexes track system › track builder › roller preferences › roller indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Indexes</span><div class="bp-auth-card__title"><code>Up Front Spline Point Index</code></div><p>Числовой параметр «Up Front Spline Point Index».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>2</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Up Front Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Up Front Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="uprearsplinepointindex up rear spline point index track components|track maker|roller preferences|roller indexes track system › track builder › roller preferences › roller indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Indexes</span><div class="bp-auth-card__title"><code>UpRearSplinePointIndex</code></div><p>Числовой параметр «Up Rear Spline Point Index».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>10</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Up Rear Spline Point Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Up Rear Spline Point Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="5">
+<summary>
+<span>Track Builder › Roller Preferences › Roller Parameters</span>
+<b data-bp-subgroup-count>5</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="frontwheelbonename front wheel bone name track components|track maker|roller preferences|roller parameters track system › track builder › roller preferences › roller parameters name"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Parameters</span><div class="bp-auth-card__title"><code>FrontWheelBoneName</code></div><p>Текстовый идентификатор «Front Wheel Bone Name».</p><div class="bp-auth-meta"><span><b>Тип</b>Name</span><span><b>В BP_Tank_Master</b>RF_Wheel_00</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Front Wheel Bone Name Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Front Wheel Bone Name</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="frontwheelradius front wheel radius track components|track maker|roller preferences|roller parameters track system › track builder › roller preferences › roller parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Parameters</span><div class="bp-auth-card__title"><code>FrontWheelRadius</code></div><p>Числовой параметр «Front Wheel Radius».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>26.1031</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Front Wheel Radius Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Front Wheel Radius</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="rearwheelbonename rear wheel bone name track components|track maker|roller preferences|roller parameters track system › track builder › roller preferences › roller parameters name"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Parameters</span><div class="bp-auth-card__title"><code>RearWheelBoneName</code></div><p>Текстовый идентификатор «Rear Wheel Bone Name».</p><div class="bp-auth-meta"><span><b>Тип</b>Name</span><span><b>В BP_Tank_Master</b>RB_Wheel_07</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Rear Wheel Bone Name Blueprint variable" title="Name"><span class="bp-auth-var-node__name">Rear Wheel Bone Name</span><span class="bp-auth-pin__dot" data-pin-type="name"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="rearwheelradius rear wheel radius track components|track maker|roller preferences|roller parameters track system › track builder › roller preferences › roller parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Parameters</span><div class="bp-auth-card__title"><code>RearWheelRadius</code></div><p>Числовой параметр «Rear Wheel Radius».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>28.8204</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Rear Wheel Radius Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Rear Wheel Radius</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="topwheelradius top wheel radius track components|track maker|roller preferences|roller parameters track system › track builder › roller preferences › roller parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Parameters</span><div class="bp-auth-card__title"><code>TopWheelRadius</code></div><p>Числовой параметр «Top Wheel Radius».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>10.0361</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Top Wheel Radius Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Top Wheel Radius</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="8">
+<summary>
+<span>Track Builder › Roller Preferences › Roller Velocities</span>
+<b data-bp-subgroup-count>8</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="frontwheelangularvelocity_l front wheel angular velocity l track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>FrontWheelAngularVelocity_L</code></div><p>Числовой параметр «Front Wheel Angular Velocity L».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Front Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Front Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Front Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Front Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="frontwheelangularvelocity_r front wheel angular velocity r track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>FrontWheelAngularVelocity_R</code></div><p>Числовой параметр «Front Wheel Angular Velocity R».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Front Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Front Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Front Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Front Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="middlewheelangularvelocity_l middle wheel angular velocity l trackcomponents|trackmaker|roller preferences|rollersvelocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>MiddleWheelAngularVelocity_L</code></div><p>Числовой параметр «Middle Wheel Angular Velocity L».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Middle Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Middle Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Middle Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Middle Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="middlewheelangularvelocity_r middle wheel angular velocity r track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>MiddleWheelAngularVelocity_R</code></div><p>Числовой параметр «Middle Wheel Angular Velocity R».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Middle Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Middle Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Middle Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Middle Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="rearwheelangularvelocity_l rear wheel angular velocity l track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>RearWheelAngularVelocity_L</code></div><p>Числовой параметр «Rear Wheel Angular Velocity L».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Rear Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Rear Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Rear Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rear Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="rearwheelangularvelocity_r rear wheel angular velocity r track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>RearWheelAngularVelocity_R</code></div><p>Числовой параметр «Rear Wheel Angular Velocity R».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Rear Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Rear Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Rear Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rear Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="topwheelangularvelocity_l top wheel angular velocity l track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>TopWheelAngularVelocity_L</code></div><p>Числовой параметр «Top Wheel Angular Velocity L».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Top Wheel Angular Velocity L Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Top Wheel Angular Velocity L</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Top Wheel Angular Velocity L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Top Wheel Angular Velocity L</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="topwheelangularvelocity_r top wheel angular velocity r track components|track maker|roller preferences|rollers velocity track system › track builder › roller preferences › roller velocities float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Roller Preferences › Roller Velocities</span><div class="bp-auth-card__title"><code>TopWheelAngularVelocity_R</code></div><p>Числовой параметр «Top Wheel Angular Velocity R».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Top Wheel Angular Velocity R Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Top Wheel Angular Velocity R</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Top Wheel Angular Velocity R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Top Wheel Angular Velocity R</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Track Builder › Sagging Preferences › Spline Parameters</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="uppersplinepointarray upper spline point array trackcomponents|trackmaker|sagging preferences|spline parameters track system › track builder › sagging preferences › spline parameters array&lt;integer&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Sagging Preferences › Spline Parameters</span><div class="bp-auth-card__title"><code>UpperSplinePointArray</code></div><p>Рабочий список «Upper Spline Point Array».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Integer&gt;</span><span><b>В BP_Tank_Master</b>0, 3, 5, 7, 9, 11, 14</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Upper Spline Point Array Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Upper Spline Point Array</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="uppersplinepointzpositionarray_l upper spline point zposition array l track components|track maker|sagging preferences|spline parameters track system › track builder › sagging preferences › spline parameters array&lt;vector&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Sagging Preferences › Spline Parameters</span><div class="bp-auth-card__title"><code>UpperSplinePointZPositionArray_L</code></div><p>Рабочий список «Upper Spline Point ZPosition Array L».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Vector&gt;</span><span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Upper Spline Point ZPosition Array L Blueprint variable" title="Array&lt;Vector&gt;"><span class="bp-auth-var-node__name">Upper Spline Point ZPosition Array L</span><span class="bp-auth-pin__dot" data-pin-type="vector" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="uppersplinepointzpositionarray_r upper spline point zposition array r track components|track maker|sagging preferences|spline parameters track system › track builder › sagging preferences › spline parameters array&lt;vector&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Sagging Preferences › Spline Parameters</span><div class="bp-auth-card__title"><code>UpperSplinePointZPositionArray_R</code></div><p>Рабочий список «Upper Spline Point ZPosition Array R».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Vector&gt;</span><span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0, X=+0, Y=+0, Z=+0</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Upper Spline Point ZPosition Array R Blueprint variable" title="Array&lt;Vector&gt;"><span class="bp-auth-var-node__name">Upper Spline Point ZPosition Array R</span><span class="bp-auth-pin__dot" data-pin-type="vector" data-pin-container="array"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Track Builder › Spline Preferences › Spline Floats</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="baseangledeg base angle deg track components|track maker|spline preferences|spline floats track system › track builder › spline preferences › spline floats float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Floats</span><div class="bp-auth-card__title"><code>BaseAngleDeg</code></div><p>Числовой параметр «Base Angle Deg».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>90.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Base Angle Deg Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Base Angle Deg</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="tracktraceheight track trace height track components|track maker|spline preferences|spline floats track system › track builder › spline preferences › spline floats float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Floats</span><div class="bp-auth-card__title"><code>TrackTraceHeight</code></div><p>Числовой параметр «Track Trace Height».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>40.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Track Trace Height Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Track Trace Height</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="7">
+<summary>
+<span>Track Builder › Spline Preferences › Spline Indexes</span>
+<b data-bp-subgroup-count>7</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="absoluteendsplinepoint absolute end spline point track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>AbsoluteEndSplinePoint</code></div><p>Числовой параметр «Absolute End Spline Point».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>16</span><span><b>Использование</b>Чтение: 10 · запись: 2</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>SplineMirrorCopy</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Absolute End Spline Point Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Absolute End Spline Point</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="int" role="img" aria-label="Set Absolute End Spline Point Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Absolute End Spline Point</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Integer</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="endsplinepoint end spline point track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>EndSplinePoint</code></div><p>Числовой параметр «End Spline Point».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>16</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get End Spline Point Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">End Spline Point</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="int" role="img" aria-label="Set End Spline Point Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">End Spline Point</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Integer</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="physicssplinepointarray physics spline point array track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes array&lt;integer&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>PhysicsSplinePointArray</code></div><p>Рабочий список «Physics Spline Point Array».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Integer&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Physics Spline Point Array Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Physics Spline Point Array</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="startsplinepoint start spline point track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>StartSplinePoint</code></div><p>Числовой параметр «Start Spline Point».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>15</span><span><b>Использование</b>Чтение: 13 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>SplineMirrorCopy</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Start Spline Point Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Start Spline Point</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="supportindixesarray support indixes array track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes array&lt;integer&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>SupportIndixesArray</code></div><p>Рабочий список «Support Indixes Array».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Integer&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Support Indixes Array Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Support Indixes Array</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="suspendedindexes suspended indexes track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes array&lt;integer&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>SuspendedIndexes</code></div><p>Рабочий список «Suspended Indexes».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Integer&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Suspended Indexes Blueprint variable" title="Array&lt;Integer&gt;"><span class="bp-auth-var-node__name">Suspended Indexes</span><span class="bp-auth-pin__dot" data-pin-type="int" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="wheelsamount wheels amount track components|track maker|spline preferences|spline indexes track system › track builder › spline preferences › spline indexes integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Indexes</span><div class="bp-auth-card__title"><code>WheelsAmount</code></div><p>Числовой параметр «Wheels Amount».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>7</span><span><b>Использование</b>Чтение: 15 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Wheels Amount Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Wheels Amount</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Track Builder › Spline Preferences › Spline Names</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="trackhelpernames_l track helper names l track components|track maker|spline preferences|spline names track system › track builder › spline preferences › spline names array&lt;name&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Names</span><div class="bp-auth-card__title"><code>TrackHelperNames_L</code></div><p>Рабочий список «Track Helper Names L».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Name&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Track Helper Names L Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Track Helper Names L</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="trackhelpernames_r track helper names r track components|track maker|spline preferences|spline names track system › track builder › spline preferences › spline names array&lt;name&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Names</span><div class="bp-auth-card__title"><code>TrackHelperNames_R</code></div><p>Рабочий список «Track Helper Names R».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Name&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 5 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="name" role="img" aria-label="Get Track Helper Names R Blueprint variable" title="Array&lt;Name&gt;"><span class="bp-auth-var-node__name">Track Helper Names R</span><span class="bp-auth-pin__dot" data-pin-type="name" data-pin-container="array"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Track Builder › Spline Preferences › Spline Vectors</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="customtangent custom tangent track components|track maker|spline preferences|spline vectors track system › track builder › spline preferences › spline vectors vector"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Vectors</span><div class="bp-auth-card__title"><code>CustomTangent</code></div><p>Положение или координатное значение «Custom Tangent».</p><div class="bp-auth-meta"><span><b>Тип</b>Vector</span><span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=+0</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Custom Tangent Blueprint variable" title="Vector"><span class="bp-auth-var-node__name">Custom Tangent</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="vector" role="img" aria-label="Set Custom Tangent Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Custom Tangent</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Vector</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="physicssplinepointlocationarray physics spline point location array track components|track maker|spline preferences|spline vectors track system › track builder › spline preferences › spline vectors array&lt;vector&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Vectors</span><div class="bp-auth-card__title"><code>PhysicsSplinePointLocationArray</code></div><p>Рабочий список «Physics Spline Point Location Array».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;Vector&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Physics Spline Point Location Array Blueprint variable" title="Array&lt;Vector&gt;"><span class="bp-auth-var-node__name">Physics Spline Point Location Array</span><span class="bp-auth-pin__dot" data-pin-type="vector" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="trackoffset track offset track components|track maker|spline preferences|spline vectors track system › track builder › spline preferences › spline vectors vector"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Spline Preferences › Spline Vectors</span><div class="bp-auth-card__title"><code>TrackOffset</code></div><p>Смещение «Track Offset».</p><div class="bp-auth-meta"><span><b>Тип</b>Vector</span><span><b>В BP_Tank_Master</b>X=+0, Y=+0, Z=7.0</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Server_TrackPhysGraph</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="vector" role="img" aria-label="Get Track Offset Blueprint variable" title="Vector"><span class="bp-auth-var-node__name">Track Offset</span><span class="bp-auth-pin__dot" data-pin-type="vector"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Track Builder › Track Preferences › Base Parameters</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="trackmeshoffset track mesh offset track components|track maker|track preferences|base parameters track system › track builder › track preferences › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Base Parameters</span><div class="bp-auth-card__title"><code>TrackMeshOffset</code></div><p>Смещение «Track Mesh Offset».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>SetTracksTransform</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Track Mesh Offset Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Track Mesh Offset</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Track Mesh Offset Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Track Mesh Offset</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="tracksplinelength track spline length track components|track maker|track preferences|base parameters track system › track builder › track preferences › base parameters float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Base Parameters</span><div class="bp-auth-card__title"><code>TrackSplineLength</code></div><p>Числовой параметр «Track Spline Length».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>1400.0</span><span><b>Использование</b>Чтение: 0 · запись: 1</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Track Spline Length Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Track Spline Length</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Track Spline Length Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Track Spline Length</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="6">
+<summary>
+<span>Track Builder › Track Preferences › Components</span>
+<b data-bp-subgroup-count>6</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="constraint instances_l constraint instances l track components|track maker|track preferences|components track system › track builder › track preferences › components array&lt;staticmeshcomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Components</span><div class="bp-auth-card__title"><code>Constraint Instances_L</code></div><p>Рабочий список «Constraint Instances L».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;StaticMeshComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpperSplinePointSagging</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Constraint Instances L Blueprint variable" title="Array&lt;StaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Constraint Instances L</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="constraint instances_r constraint instances r track components|track maker|track preferences|components track system › track builder › track preferences › components array&lt;staticmeshcomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Components</span><div class="bp-auth-card__title"><code>Constraint Instances_R</code></div><p>Рабочий список «Constraint Instances R».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;StaticMeshComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpperSplinePointSagging</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Constraint Instances R Blueprint variable" title="Array&lt;StaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Constraint Instances R</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="splinetrack_l spline track l track components|track maker|track preferences|components track system › track builder › track preferences › components splinecomponent"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Components</span><div class="bp-auth-card__title"><code>SplineTrack_L</code></div><p>Ссылка на <code>SplineComponent</code>, используемая как «Spline Track L».</p><div class="bp-auth-meta"><span><b>Тип</b>SplineComponent</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 5 · запись: 1</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code>, <code>WheelMovCalculation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Spline Track L Blueprint variable" title="SplineComponent"><span class="bp-auth-var-node__name">Spline Track L</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set Spline Track L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Spline Track L</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">SplineComponent</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="trackstaticmeshes track static meshes trackcomponents|trackmaker|track preferences|components track system › track builder › track preferences › components array&lt;staticmesh&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Components</span><div class="bp-auth-card__title"><code>TrackStaticMeshes</code></div><p>Рабочий список «Track Static Meshes».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;StaticMesh&gt;</span><span><b>В BP_Tank_Master</b>-583, -584</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>InstanceTracksCreation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Track Static Meshes Blueprint variable" title="Array&lt;StaticMesh&gt;"><span class="bp-auth-var-node__name">Track Static Meshes</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="tracksinstances_l tracks instances l track components|track maker|track preferences|components track system › track builder › track preferences › components array&lt;instancedstaticmeshcomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Components</span><div class="bp-auth-card__title"><code>TracksInstances_L</code></div><p>Рабочий список «Tracks Instances L».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;InstancedStaticMeshComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Tracks Instances L Blueprint variable" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Tracks Instances L</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set Tracks Instances L Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tracks Instances L</span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="tracksinstances_r tracks instances r track components|track maker|track preferences|components track system › track builder › track preferences › components array&lt;instancedstaticmeshcomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Components</span><div class="bp-auth-card__title"><code>TracksInstances_R</code></div><p>Рабочий список «Tracks Instances R».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;InstancedStaticMeshComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>Server_TrackPhysGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Tracks Instances R Blueprint variable" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Tracks Instances R</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set Tracks Instances R Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tracks Instances R</span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="3">
+<summary>
+<span>Track Builder › Track Preferences › Index</span>
+<b data-bp-subgroup-count>3</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="trackindex track index trackcomponents|trackmaker|track preferences||index track system › track builder › track preferences › index integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Index</span><div class="bp-auth-card__title"><code>TrackIndex</code></div><p>Числовой параметр «Track Index».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>101</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>SetTracksTransform</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Track Index Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Track Index</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="trackmeshesamount track meshes amount track components|track maker|track preferences|index track system › track builder › track preferences › index integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Index</span><div class="bp-auth-card__title"><code>TrackMeshesAmount</code></div><p>Числовой параметр «Track Meshes Amount».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 1</span><span><b>Графы</b><code>InstanceTracksCreation</code>, <code>SetTracksTransform</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Track Meshes Amount Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Track Meshes Amount</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="int" role="img" aria-label="Set Track Meshes Amount Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Track Meshes Amount</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Integer</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="trackonside track on side track components|track maker|track preferences|index track system › track builder › track preferences › index integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Track System › Track Builder › Track Preferences › Index</span><div class="bp-auth-card__title"><code>TrackOnSide</code></div><p>Числовой параметр «Track on Side».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>158</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>InstanceTracksCreation</code>, <code>SetTracksTransform</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Track on Side Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Track on Side</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+</div>
+</details>
+</div>
+</details>
+<details class="bp-auth-group" data-bp-group data-bp-total="2">
+<summary>
+<span class="bp-auth-group__title">Components</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>2</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Chaos</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="as chaos wheeled vehicle movement component as chaos wheeled vehicle movement component components|chaos components › chaos chaoswheeledvehiclemovementcomponent"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Components › Chaos</span><div class="bp-auth-card__title"><code>As Chaos Wheeled Vehicle Movement Component</code></div><p>Ссылка на <code>ChaosWheeledVehicleMovementComponent</code>, используемая как «As Chaos Wheeled Vehicle Movement Component».</p><div class="bp-auth-meta"><span><b>Тип</b>ChaosWheeledVehicleMovementComponent</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 7 · запись: 1</span><span><b>Графы</b><code>EventGraph</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>Server_SoundGraph</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code> +2</span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get As Chaos Wheeled Vehicle Movement Component Blueprint variable" title="ChaosWheeledVehicleMovementComponent"><span class="bp-auth-var-node__name">As Chaos Wheeled Vehicle Movement Component</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set As Chaos Wheeled Vehicle Movement Component Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="ChaosWheeledVehicleMovementComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">As Chaos Wheeled Vehicle Movement Component</span><span class="bp-auth-pin__type">ChaosWheeledVehicleMovementComponent</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" title="ChaosWheeledVehicleMovementComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">ChaosWheeledVehicleMovementComponent</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Material Instance Arrays</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="trackarray track array components|miarrays components › material instance arrays array&lt;instancedstaticmeshcomponent&gt;"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Components › Material Instance Arrays</span><div class="bp-auth-card__title"><code>TrackArray</code></div><p>Рабочий список «Track Array».</p><div class="bp-auth-meta"><span><b>Тип</b>Array&lt;InstancedStaticMeshComponent&gt;</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_Damage</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get Track Array Blueprint variable" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-var-node__name">Track Array</span><span class="bp-auth-pin__dot" data-pin-type="object" data-pin-container="array"></span></div></div></article>
+</div>
+</details>
+</div>
+</details>
+<details class="bp-auth-group" data-bp-group data-bp-total="18">
+<summary>
+<span class="bp-auth-group__title">Preferences</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>18</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="2">
+<summary>
+<span>Client</span>
+<b data-bp-subgroup-count>2</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="client_engineondelay client engine on delay preferences|client preferences › client boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Client</span><div class="bp-auth-card__title"><code>Client_EngineOnDelay</code></div><p>Флаг состояния «Client Engine on Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>OnRep_Server_EngineOnDelay</code>, <code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Client Engine on Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Client Engine on Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Client Engine on Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Client Engine on Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="crewvoicesenable crew voices enable preferences|client preferences › client boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Client</span><div class="bp-auth-card__title"><code>CrewVoicesEnable</code></div><p>Флаг состояния «Crew Voices Enable».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 4 · запись: 0</span><span><b>Графы</b><code>Server_FiringGraph</code>, <code>Server_SoundGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Crew Voices Enable Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Crew Voices Enable</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Debug</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="debugon debug on preferences|debug preferences › debug boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Debug</span><div class="bp-auth-card__title"><code>DebugOn</code></div><p>Флаг состояния «Debug On».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>DebugSwitch</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Debug On Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Debug On</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Debug On Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Debug On</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>General</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="server_ammostate server ammo state preferences preferences st_ammostate"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences</span><div class="bp-auth-card__title"><code>Server_AmmoState</code></div><p>Рабочее значение «Server Ammo State» типа <code>ST_AmmoState</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>ST_AmmoState</span><span><b>В BP_Tank_Master</b>Empty</span><span><b>Использование</b>Чтение: 30 · запись: 0</span><span><b>Графы</b><code>MachineGunCoolingCalculation</code>, <code>Server_FiringGraph</code>, <code>Server_HandleAmmoStateChanged</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_AmmoState</span></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="struct" role="img" aria-label="Get Server Ammo State Blueprint variable" title="ST_AmmoState"><span class="bp-auth-var-node__name">Server Ammo State</span><span class="bp-auth-pin__dot" data-pin-type="struct"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="5">
+<summary>
+<span>Server</span>
+<b data-bp-subgroup-count>5</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="enginestartingtime engine starting time preferences|server preferences › server float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Server</span><div class="bp-auth-card__title"><code>EngineStartingTime</code></div><p>Числовой параметр «Engine Starting Time».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>0.699999988079071</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Server_Input</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Engine Starting Time Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Engine Starting Time</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_engineison server engine is on preferences|server preferences › server boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Server</span><div class="bp-auth-card__title"><code>Server_EngineIsOn</code></div><p>Флаг состояния «Server Engine Is On».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 4 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Server_Input</code>, <code>Server_SoundGraph</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Engine Is On Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Engine Is On</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Engine Is On Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Engine Is On</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_engineondelay server engine on delay preferences|server preferences › server boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Server</span><div class="bp-auth-card__title"><code>Server_EngineOnDelay</code></div><p>Флаг состояния «Server Engine on Delay».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 0 · запись: 2</span><span><b>Графы</b><code>Server_Input</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_EngineOnDelay</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Engine on Delay Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Engine on Delay</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Engine on Delay Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Engine on Delay</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_healthpoint server health point preferences|server preferences › server float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Server</span><div class="bp-auth-card__title"><code>Server_HealthPoint</code></div><p>Числовой параметр «Server Health Point».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>100.0</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>Server_Damage</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · без RepNotify</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Server Health Point Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Server Health Point</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="real" role="img" aria-label="Set Server Health Point Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Health Point</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="server_startengineprocess server start engine process preferences|server preferences › server boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Server</span><div class="bp-auth-card__title"><code>Server_StartEngineProcess</code></div><p>Флаг состояния «Server Start Engine Process».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 2 · запись: 2</span><span><b>Графы</b><code>OnRep_Server_EngineOnDelay</code>, <code>OnRep_Server_StartEngineProcess</code>, <code>Server_Input</code></span></div><span class="bp-auth-badge bp-auth-badge--net">Replicated · OnRep_Server_StartEngineProcess</span></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Server Start Engine Process Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Server Start Engine Process</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Server Start Engine Process Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Server Start Engine Process</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="8">
+<summary>
+<span>Spline Condition</span>
+<b data-bp-subgroup-count>8</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="attachsplinepointstowheels attach spline points to wheels preferences|spline condition preferences › spline condition boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>AttachSplinePointsToWheels</code></div><p>Флаг состояния «Attach Spline Points to Wheels».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Attach Spline Points to Wheels Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Attach Spline Points to Wheels</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="enable track constraints physics simulation enable track constraints physics simulation preferences|spline condition preferences › spline condition boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>Enable Track Constraints Physics Simulation</code></div><p>Флаг состояния «Enable Track Constraints Physics Simulation».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>True</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Enable Track Constraints Physics Simulation Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Enable Track Constraints Physics Simulation</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="maxsplinesagging max spline sagging preferences|spline condition preferences › spline condition float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>MaxSplineSagging</code></div><p>Числовой параметр «Max Spline Sagging».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>30.0</span><span><b>Использование</b>Чтение: 2 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Max Spline Sagging Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Max Spline Sagging</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="splineparabolawidth spline parabola width preferences|spline condition preferences › spline condition float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>SplineParabolaWidth</code></div><p>Числовой параметр «Spline Parabola Width».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>1.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Spline Parabola Width Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Spline Parabola Width</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="splinesubdivision spline subdivision preferences|splinecondition preferences › spline condition integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>SplineSubdivision</code></div><p>Числовой параметр «Spline Subdivision».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>1</span><span><b>Использование</b>Чтение: 7 · запись: 0</span><span><b>Графы</b><code>Construct Spline Track</code>, <code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Spline Subdivision Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Spline Subdivision</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="stepdeg step deg preferences|spline condition preferences › spline condition float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>StepDeg</code></div><p>Числовой параметр «Step Deg».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>15.0</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Step Deg Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Step Deg</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="subtracecount sub trace count preferences|spline condition preferences › spline condition integer"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>SubTraceCount</code></div><p>Числовой параметр «Sub Trace Count».</p><div class="bp-auth-meta"><span><b>Тип</b>Integer</span><span><b>В BP_Tank_Master</b>6</span><span><b>Использование</b>Чтение: 3 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="int" role="img" aria-label="Get Sub Trace Count Blueprint variable" title="Integer"><span class="bp-auth-var-node__name">Sub Trace Count</span><span class="bp-auth-pin__dot" data-pin-type="int"></span></div></div></article>
+<article class="bp-auth-card" data-bp-item data-search="suggingexp sugging exp preferences|spline condition preferences › spline condition float"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › Spline Condition</span><div class="bp-auth-card__title"><code>SuggingExp</code></div><p>Числовой параметр «Sugging Exp».</p><div class="bp-auth-meta"><span><b>Тип</b>Float</span><span><b>В BP_Tank_Master</b>0.5</span><span><b>Использование</b>Чтение: 1 · запись: 0</span><span><b>Графы</b><code>UpdateTracksLocation</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="real" role="img" aria-label="Get Sugging Exp Blueprint variable" title="Float"><span class="bp-auth-var-node__name">Sugging Exp</span><span class="bp-auth-pin__dot" data-pin-type="real"></span></div></div></article>
+</div>
+</details>
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>UI</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="isshowcontrolsenabled? is show controls enabled? preferences|ui preferences › ui boolean"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">Preferences › UI</span><div class="bp-auth-card__title"><code>IsShowControlsEnabled?</code></div><p>Флаг состояния «Is Show Controls Enabled?».</p><div class="bp-auth-meta"><span><b>Тип</b>Boolean</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 2</span><span><b>Графы</b><code>Client_InputGraph</code>, <code>Dispatcher_OnUIStateChangedGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="bool" role="img" aria-label="Get Is Show Controls Enabled? Blueprint variable" title="Boolean"><span class="bp-auth-var-node__name">Is Show Controls Enabled?</span><span class="bp-auth-pin__dot" data-pin-type="bool"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="bool" role="img" aria-label="Set Is Show Controls Enabled? Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Show Controls Enabled?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Boolean</span></div></div></div></div></div></div></article>
+</div>
+</details>
+</div>
+</details>
+<details class="bp-auth-group" data-bp-group data-bp-total="1">
+<summary>
+<span class="bp-auth-group__title">UI</span>
+<span class="bp-auth-group__count"><b data-bp-group-count>1</b> переменных</span>
+</summary>
+<div class="bp-auth-group__body">
+<details class="bp-auth-subgroup" data-bp-subgroup data-bp-total="1">
+<summary>
+<span>Components</span>
+<b data-bp-subgroup-count>1</b>
+</summary>
+<div class="bp-auth-grid bp-auth-grid--variables">
+<article class="bp-auth-card" data-bp-item data-search="ui ui ui|components ui › components object"><div class="bp-auth-card__copy"><span class="bp-auth-kicker">UI › Components</span><div class="bp-auth-card__title"><code>UI</code></div><p>Рабочее значение «UI» типа <code>Object</code>.</p><div class="bp-auth-meta"><span><b>Тип</b>Object</span><span><b>В BP_Tank_Master</b>Наследуется / не сохранено</span><span><b>Использование</b>Чтение: 1 · запись: 1</span><span><b>Графы</b><code>EventGraph</code></span></div></div><div class="bp-auth-card__visual"><div class="bp-auth-node-pair"><div class="bp-auth-var-node bp-auth-var-node--get" data-node-value-type="object" role="img" aria-label="Get UI Blueprint variable" title="Object"><span class="bp-auth-var-node__name">UI</span><span class="bp-auth-pin__dot" data-pin-type="object"></span></div><div class="bp-auth-node bp-auth-node--setter" data-node-value-type="object" role="img" aria-label="Set UI Blueprint node"><div class="bp-auth-node__header"><span>SET</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="Object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UI</span><span class="bp-auth-pin__type">Object</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="object" title="Object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Object</span></div></div></div></div></div></div></article>
+</div>
+</details>
+</div>
+</details>
 </div></section>
 
 <section class="bp-auth-section" data-bp-section="functions">
@@ -2840,7 +836,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateTracksLocation Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>UpdateTracksLocation</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UseASimpleSimulation?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EnableTension</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackOffset</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSecond</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" data-pin-container="array" title="Array&lt;Float&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentSplineAngle</span><span class="bp-auth-pin__type">Array&lt;Float&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentMidPointOfSheafNormalized</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MidPointOfSheafArray</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpdateTracksLocation Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>UpdateTracksLocation</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UseASimpleSimulation?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EnableTension</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackOffset</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSecond</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" data-pin-container="array" title="Array&lt;Float&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentSplineAngle</span><span class="bp-auth-pin__type">Array&lt;Float&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentMidPointOfSheafNormalized</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MidPointOfSheafArray</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="wheelmovcalculation general logic|tank component|track component function server_trackphysgraph rearwheelradius frontwheelradius topwheelradius wheeldistancel wheeldistancer wheeldeltadistancer wheeldeltadistancel as chaos wheeled vehicle movement component wheels splinetrack_l blockrightside blockleftside autosplinetrack_r frontwheelangularvelocity_l frontwheelangularvelocity_r middlewheelangularvelocity_l middlewheelangularvelocity_r rearwheelangularvelocity_l topwheelangularvelocity_r topwheelangularvelocity_l rearwheelangularvelocity_r wheeldistancel wheeldistancer wheeldeltadistancer wheeldeltadistancel">
 <div class="bp-auth-card__copy">
@@ -2872,7 +868,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="WheelMovCalculation Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>WheelMovCalculation</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="WheelMovCalculation Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>WheelMovCalculation</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="camerazoom general logic|camera|zoom function eventtick springarm targetarmlength zoom step maincamfovmultiple isgunnercameraswitch? gunnercamera gunnercamfovstep gunnercamfovmultiple fieldofview comtowercamera comtowercamfovstep comtowercamfovmultiple iscomtowercameraswitch? zoom bounds relativelocation gunnercamfovbounds comtowercamfovbounds temp current zoom targetarmlength gunnercamfov comtowercamfov">
 <div class="bp-auth-card__copy">
@@ -3000,7 +996,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="MachineGunCoolingCalculation Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>MachineGunCoolingCalculation</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSeconds</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="MachineGunCoolingCalculation Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>MachineGunCoolingCalculation</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DeltaSeconds</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_firesystem server logic|tankcomponent|firesystemcomponent function maingunfiresys machinegunfiresys projectille momentumvalue isapfsds? shellprojectille momentummesh ">
 <div class="bp-auth-card__copy">
@@ -3032,7 +1028,7 @@ page_kind: reference
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_FireSystem Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>Server_FireSystem</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SkeletalMeshComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TankMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="name" title="Name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumDirectionCalcSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="name" title="Name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumValue</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="SkeletalMeshComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SkeletalMeshComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DirectionCalcMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsAPFSDS?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class" title="Class Class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ShellProjectille</span><span class="bp-auth-pin__type">Class Class</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class" title="Class Class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Projectille</span><span class="bp-auth-pin__type">Class Class</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_FireSystem Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>Server_FireSystem</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SkeletalMeshComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TankMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="name" title="Name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumDirectionCalcSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="name" title="Name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumSocket</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumValue</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" title="SkeletalMeshComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MomentumMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SkeletalMeshComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DirectionCalcMesh</span><span class="bp-auth-pin__type">SkeletalMeshComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsAPFSDS?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class" title="Class Class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ShellProjectille</span><span class="bp-auth-pin__type">Class Class</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="class" title="Class Class"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Projectille</span><span class="bp-auth-pin__type">Class Class</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="trace of weapon uiaim calculation general logic|camera|ui function eventtick maincamera aimcube commanderaimcube globaltracelenght freecamswitch isgunnercameraswitch? iscomtowercameraswitch? isdoublefiresysenable? islocktargetenabled? isballisticcomputerenable? weaponaimsystem ">
 <div class="bp-auth-card__copy">
@@ -3256,7 +1252,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetTracksTransform Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>SetTracksTransform</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackInstances</span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ChassisDistance</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetTracksTransform Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>SetTracksTransform</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object" data-pin-container="array" title="Array&lt;InstancedStaticMeshComponent&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackInstances</span><span class="bp-auth-pin__type">Array&lt;InstancedStaticMeshComponent&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ChassisDistance</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="constructrear|frontsplinepoint general logic|track components|track maker function old mesh ">
 <div class="bp-auth-card__copy">
@@ -3288,7 +1284,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructRear|FrontSplinePoint Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>ConstructRear|FrontSplinePoint</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DownRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UpRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="name" title="Name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InSocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WhellRadius</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InvertDownAxis</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructRear|FrontSplinePoint Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>ConstructRear|FrontSplinePoint</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DownRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UpRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="name" title="Name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InSocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WhellRadius</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InvertDownAxis</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="uppersplinepointsagging general logic|track components|track maker function updatetrackslocation vehiclemovementcomponent constraint instances_r relativelocation constraint instances_l ">
 <div class="bp-auth-card__copy">
@@ -3320,7 +1316,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpperSplinePointSagging Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>UpperSplinePointSagging</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Index</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AmountOfTrackOnTheGround</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackDownwards</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackUpwards</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DisableTension?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="UpperSplinePointSagging Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>UpperSplinePointSagging</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="vector" data-pin-container="array" title="Array&lt;Vector&gt;"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Array</span><span class="bp-auth-pin__type">Array&lt;Vector&gt;</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Index</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndSplinePoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AmountOfTrackOnTheGround</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackDownwards</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MultiplyingSlackUpwards</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">IsLeftSide?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SimulateConstraintsPhysics?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DisableTension?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="constructsimulativepoints general logic|track components|track maker function construct spline track mesh ">
 <div class="bp-auth-card__copy">
@@ -3416,7 +1412,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveTorqueBySide Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>SetDriveTorqueBySide</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorqueMultiply</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveTorqueBySide Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>SetDriveTorqueBySide</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorqueMultiply</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="setdrivebrakebyside general logic|controls function server_separatemovement dev wheelsamount as chaos wheeled vehicle movement component ">
 <div class="bp-auth-card__copy">
@@ -3448,7 +1444,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveBrakeBySide Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>SetDriveBrakeBySide</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TorqueMultiply</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveBrakeBySide Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>SetDriveBrakeBySide</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="bool" title="Boolean"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TorqueMultiply</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getavgwheelsangularvelocity general logic|tankcomponent|trackcomponent function wheelmovcalculation as chaos wheeled vehicle movement component wheels wheelsamount avgl avgr avgl avgr">
 <div class="bp-auth-card__copy">
@@ -3480,7 +1476,7 @@ page_kind: reference
 </div>
 
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetAvgWheelsAngularVelocity Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>GetAvgWheelsAngularVelocity</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityL</span><span class="bp-auth-pin__type">Float</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityR</span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetAvgWheelsAngularVelocity Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>GetAvgWheelsAngularVelocity</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coeficient</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityL</span><span class="bp-auth-pin__type">Float</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin"></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AvgWheelsAngularVelocityR</span><span class="bp-auth-pin__type">Float</span></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="server_update tower rotation server logic function server_towerrotationgraph towerrotation maingunpitch ">
 <div class="bp-auth-card__copy">
@@ -3576,7 +1572,7 @@ page_kind: reference
 </div>
 <span class="bp-auth-badge">Server</span>
 </div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_SeparateMovement DEV Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>Server_SeparateMovement DEV</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ForwardAxis</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Yaw</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="Server_SeparateMovement DEV Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">ƒ</span><span>Server_SeparateMovement DEV</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec" title="Exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name"></span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ForwardAxis</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Yaw</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="construct spline track general logic|track components|track maker function userconstructionscript uppersplinepointarray splinetrack_l constraint instances_r constraint instances_l uppersplinepointzpositionarray_r uppersplinepointzpositionarray_l enable track constraints physics simulation absoluteendsplinepoint autosplinetrack_r splinetrack_l tracksinstances_l tracksinstances_r tracksplinelength customtangent">
 <div class="bp-auth-card__copy">
@@ -3992,7 +1988,7 @@ page_kind: reference
 <span><b>Граф</b>9 нод</span>
 <span><b>Сигнатура</b>2 in · 2 out</span>
 </div></div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="CalculateTruckTransform Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>CalculateTruckTransform</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentTrackDistance</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Locatioin</span><span class="bp-auth-pin__type">Vector</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rotation</span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="CalculateTruckTransform Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>CalculateTruckTransform</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">CurrentTrackDistance</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Locatioin</span><span class="bp-auth-pin__type">Vector</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SplineComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Rotation</span><span class="bp-auth-pin__type">Rotator</span></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="debugswitch macro updatetrackslocation debugon ">
 <div class="bp-auth-card__copy">
@@ -4050,7 +2046,7 @@ page_kind: reference
 <span><b>Граф</b>22 нод</span>
 <span><b>Сигнатура</b>7 in · 1 out</span>
 </div></div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="SafeClampInterp Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>SafeClampInterp</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SceneComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SpringArm</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Rotator</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SceneComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AxisFrom</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SceneComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Min</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Max</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="float" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InterpSpeed</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="SafeClampInterp Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>SafeClampInterp</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SceneComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">SpringArm</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="rotator" title="Rotator"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Rotator</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SceneComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">AxisFrom</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="SceneComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera</span><span class="bp-auth-pin__type">SceneComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="vector" title="Vector"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Vector</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Min</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Max</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Float"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InterpSpeed</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="parabolicmarco macro updatetrackslocation  ">
 <div class="bp-auth-card__copy">
@@ -4079,7 +2075,7 @@ page_kind: reference
 <span><b>Граф</b>17 нод</span>
 <span><b>Сигнатура</b>6 in · 1 out</span>
 </div></div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="ParabolicMarco Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>ParabolicMarco</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tension</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Height</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Width</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="ParabolicMarco Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>ParabolicMarco</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Tension</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">ReturnValue</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Height</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Element</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">EndPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="int" title="Integer"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">StartPoint</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Width</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="camerarotmacro macro cameratickcomponent  ">
 <div class="bp-auth-card__copy">
@@ -4195,7 +2191,7 @@ page_kind: reference
 <span><b>Граф</b>23 нод</span>
 <span><b>Сигнатура</b>4 in · 2 out</span>
 </div></div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="FOVtoX Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>FOVtoX</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="CameraComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera</span><span class="bp-auth-pin__type">CameraComponent</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MaxX</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Max</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MinX</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Min</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="double" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coef</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
+<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--macro" role="img" aria-label="FOVtoX Blueprint node"><div class="bp-auth-node__header"><span class="bp-auth-node__icon" aria-hidden="true">M</span><span>FOVtoX</span></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="object" title="CameraComponent"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Camera</span><span class="bp-auth-pin__type">CameraComponent</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MaxX</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Max</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">MinX</span><span class="bp-auth-pin__type">Double</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Min</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input is-linked" data-pin-type="real" title="Double"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Coef</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 </div></section>
 
@@ -4242,6 +2238,20 @@ page_kind: reference
         const match = !query || (item.dataset.search || '').includes(query);
         item.hidden = !match;
         if (isActive && match) visible += 1;
+      });
+      section.querySelectorAll('[data-bp-subgroup]').forEach(group => {
+        const matches = [...group.querySelectorAll('[data-bp-item]')].filter(item => !item.hidden).length;
+        group.hidden = matches === 0;
+        const count = group.querySelector('[data-bp-subgroup-count]');
+        if (count) count.textContent = String(query ? matches : Number(group.dataset.bpTotal || matches));
+        if (query && matches) group.open = true;
+      });
+      section.querySelectorAll('[data-bp-group]').forEach(group => {
+        const matches = [...group.querySelectorAll('[data-bp-item]')].filter(item => !item.hidden).length;
+        group.hidden = matches === 0;
+        const count = group.querySelector(':scope > summary [data-bp-group-count]');
+        if (count) count.textContent = String(query ? matches : Number(group.dataset.bpTotal || matches));
+        if (query && matches) group.open = true;
       });
     });
     buttons.forEach(button => button.classList.toggle('is-active', button.dataset.bpTarget === active));

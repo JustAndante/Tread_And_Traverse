@@ -1999,6 +1999,146 @@ a:hover {
   to { opacity: 1; transform: none; }
 }
 
+.bp-auth-group-list {
+  display: grid;
+  gap: .72rem;
+  margin: 1rem 0 2rem;
+}
+
+.bp-auth-group,
+.bp-auth-subgroup {
+  min-width: 0;
+}
+
+.bp-auth-group[hidden],
+.bp-auth-subgroup[hidden] {
+  display: none;
+}
+
+.bp-auth-group {
+  overflow: clip;
+  background: color-mix(in srgb, var(--tt-surface) 92%, #071118);
+  border: 1px solid var(--tt-line);
+  border-radius: .78rem;
+  box-shadow: 0 .3rem 1.1rem rgba(0, 0, 0, .08);
+}
+
+.bp-auth-group > summary,
+.bp-auth-subgroup > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bp-auth-group > summary::-webkit-details-marker,
+.bp-auth-subgroup > summary::-webkit-details-marker {
+  display: none;
+}
+
+.bp-auth-group > summary {
+  position: relative;
+  min-height: 3.2rem;
+  padding: .68rem 1rem .68rem 2.45rem;
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--tt-accent) 12%, transparent), transparent 42%),
+    color-mix(in srgb, var(--tt-surface) 95%, #0b1c25);
+}
+
+.bp-auth-group > summary::before,
+.bp-auth-subgroup > summary::before {
+  position: absolute;
+  border-right: .12rem solid currentColor;
+  border-bottom: .12rem solid currentColor;
+  content: "";
+  transform: rotate(-45deg);
+  transition: transform .16s ease;
+}
+
+.bp-auth-group > summary::before {
+  left: 1.05rem;
+  width: .46rem;
+  height: .46rem;
+  color: var(--tt-accent-strong);
+}
+
+.bp-auth-group[open] > summary::before,
+.bp-auth-subgroup[open] > summary::before {
+  transform: rotate(45deg) translate(-.08rem, -.08rem);
+}
+
+.bp-auth-group__title {
+  color: var(--tt-ink);
+  font: 750 1rem/1.2 "Segoe UI", sans-serif;
+}
+
+.bp-auth-group__count {
+  flex: 0 0 auto;
+  color: var(--tt-muted);
+  font-size: .68rem;
+}
+
+.bp-auth-group__count b {
+  color: var(--tt-accent-strong);
+}
+
+.bp-auth-group__body {
+  display: grid;
+  gap: .55rem;
+  padding: .65rem;
+  border-top: 1px solid color-mix(in srgb, var(--tt-line) 75%, transparent);
+}
+
+.bp-auth-subgroup {
+  overflow: clip;
+  background: color-mix(in srgb, var(--tt-bg) 36%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt-line) 78%, transparent);
+  border-radius: .55rem;
+}
+
+.bp-auth-subgroup > summary {
+  position: relative;
+  min-height: 2.55rem;
+  padding: .52rem .75rem .52rem 2rem;
+  color: var(--tt-muted);
+  font-size: .75rem;
+  font-weight: 720;
+}
+
+.bp-auth-subgroup > summary:hover,
+.bp-auth-group > summary:hover {
+  background-color: color-mix(in srgb, var(--tt-accent) 7%, transparent);
+}
+
+.bp-auth-subgroup > summary::before {
+  left: .82rem;
+  width: .36rem;
+  height: .36rem;
+  color: var(--tt-muted);
+}
+
+.bp-auth-subgroup > summary b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.65rem;
+  height: 1.35rem;
+  padding: 0 .34rem;
+  color: var(--tt-accent-strong);
+  background: color-mix(in srgb, var(--tt-accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt-accent) 22%, var(--tt-line));
+  border-radius: 999px;
+  font-size: .62rem;
+}
+
+.bp-auth-subgroup > .bp-auth-grid {
+  margin: 0;
+  padding: .55rem;
+  border-top: 1px solid color-mix(in srgb, var(--tt-line) 68%, transparent);
+}
+
 .bp-auth-grid {
   display: grid;
   gap: .82rem;
@@ -2412,7 +2552,8 @@ a:hover {
 [data-pin-type="class"], [data-node-value-type="class"] { --bp-pin-color: #5900bc; }
 [data-pin-type="int"], [data-node-value-type="int"] { --bp-pin-color: #1fe3af; }
 [data-pin-type="int64"], [data-node-value-type="int64"] { --bp-pin-color: #ace3af; }
-[data-pin-type="float"], [data-node-value-type="float"] { --bp-pin-color: #a1ff45; }
+[data-pin-type="real"], [data-node-value-type="real"],
+[data-pin-type="float"], [data-node-value-type="float"],
 [data-pin-type="double"], [data-node-value-type="double"] { --bp-pin-color: #38d500; }
 [data-pin-type="name"], [data-node-value-type="name"] { --bp-pin-color: #cd82ff; }
 [data-pin-type="delegate"], [data-node-value-type="delegate"] { --bp-pin-color: #ff3838; }
