@@ -2510,11 +2510,13 @@ a:hover {
 
 .bp-auth-pin--output .bp-auth-pin__dot {
   grid-column: 3;
+  grid-row: 1;
   order: initial;
 }
 
 .bp-auth-pin--output .bp-auth-pin__name {
   grid-column: 2;
+  grid-row: 1;
 }
 
 .bp-auth-pin__dot {
