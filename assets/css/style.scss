@@ -1955,6 +1955,7 @@ a:hover {
 }
 
 .bp-auth-toolbar input {
+  box-sizing: border-box;
   width: 100%;
   min-height: 2.35rem;
   padding: .5rem .72rem;
