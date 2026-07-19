@@ -2293,49 +2293,9 @@ a:hover {
 }
 
 .bp-auth-card-summary code,
-.bp-auth-behavior code,
-.bp-auth-footprint code {
+.bp-auth-behavior code {
   overflow-wrap: anywhere;
   white-space: normal;
-}
-
-.bp-auth-footprint {
-  display: grid;
-  grid-template-columns: 7.3rem minmax(0, 1fr);
-  gap: .26rem .62rem;
-  margin: .58rem 0 0;
-  padding: .5rem .68rem;
-  background: color-mix(in srgb, var(--tt-bg) 42%, transparent);
-  border: 1px solid color-mix(in srgb, var(--tt-line) 68%, transparent);
-  border-radius: .38rem;
-}
-
-.bp-auth-footprint dt,
-.bp-auth-footprint dd {
-  margin: 0;
-  font-size: .66rem;
-  line-height: 1.45;
-}
-
-.bp-auth-footprint dt {
-  color: var(--tt-muted);
-  font-weight: 700;
-}
-
-.bp-auth-footprint dd {
-  min-width: 0;
-  color: var(--tt-ink);
-  overflow-wrap: anywhere;
-}
-
-.bp-auth-footprint code {
-  padding: .02rem .2rem;
-  font-size: .62rem;
-}
-
-.bp-auth-more {
-  color: var(--tt-muted);
-  white-space: nowrap;
 }
 
 .bp-auth-meta {
@@ -2461,6 +2421,11 @@ a:hover {
 
 .bp-auth-node__header span {
   white-space: nowrap;
+}
+
+.bp-auth-node__header > span:last-child {
+  line-height: 1;
+  transform: translateY(-.04rem);
 }
 
 .bp-auth-node__icon {
@@ -2741,15 +2706,6 @@ a:hover {
 
   .bp-auth-card {
     padding: .72rem;
-  }
-
-  .bp-auth-footprint {
-    grid-template-columns: 1fr;
-    gap: .08rem;
-  }
-
-  .bp-auth-footprint dd + dt {
-    margin-top: .34rem;
   }
 
   .bp-auth-meta {
