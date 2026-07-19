@@ -1914,11 +1914,9 @@ a:hover {
   z-index: 12;
   top: .6rem;
   display: grid;
-  grid-template-columns: minmax(12rem, 1fr) auto;
-  align-items: end;
-  gap: .8rem;
+  gap: .9rem;
   margin: 1.2rem 0 1.6rem;
-  padding: .72rem;
+  padding: .9rem;
   background: color-mix(in srgb, var(--tt-bg) 88%, transparent);
   border: 1px solid var(--tt-line);
   border-radius: .8rem;
@@ -1926,17 +1924,34 @@ a:hover {
   backdrop-filter: blur(14px);
 }
 
+.bp-auth-toolbar__search,
+.bp-auth-toolbar__nav {
+  min-width: 0;
+}
+
+.bp-auth-toolbar__nav {
+  display: grid;
+  gap: .42rem;
+  padding-top: .75rem;
+  border-top: 1px solid color-mix(in srgb, var(--tt-line) 82%, transparent);
+}
+
 .bp-auth-toolbar label {
   display: grid;
   gap: .3rem;
 }
 
-.bp-auth-toolbar label > span {
+.bp-auth-toolbar label > span,
+.bp-auth-toolbar__caption {
   color: var(--tt-muted);
   font-size: .65rem;
   font-weight: 800;
   letter-spacing: .08em;
   text-transform: uppercase;
+}
+
+.bp-auth-toolbar__caption {
+  display: block;
 }
 
 .bp-auth-toolbar input {
@@ -1957,32 +1972,59 @@ a:hover {
 }
 
 .bp-auth-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: .35rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: .5rem;
 }
 
 .bp-auth-tabs button {
-  min-height: 2.35rem;
-  padding: .45rem .68rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .65rem;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: .58rem .72rem;
   color: var(--tt-muted);
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: .48rem;
-  font: 700 .72rem/1 "Segoe UI", sans-serif;
+  background: color-mix(in srgb, var(--tt-surface) 62%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt-line) 82%, transparent);
+  border-radius: .58rem;
+  font: 700 .76rem/1.15 "Segoe UI", sans-serif;
+  text-align: left;
   cursor: pointer;
+  transition: color .15s ease, background .15s ease, border-color .15s ease, transform .15s ease;
 }
 
 .bp-auth-tabs button:hover {
   color: var(--tt-ink);
-  background: color-mix(in srgb, var(--tt-surface) 74%, transparent);
+  background: color-mix(in srgb, var(--tt-surface) 88%, transparent);
+  border-color: color-mix(in srgb, var(--tt-accent) 30%, var(--tt-line));
+  transform: translateY(-1px);
 }
 
 .bp-auth-tabs button.is-active {
   color: #eaffff;
   background: color-mix(in srgb, var(--tt-accent) 26%, var(--tt-surface));
   border-color: color-mix(in srgb, var(--tt-accent) 44%, var(--tt-line));
+  box-shadow: inset 3px 0 0 var(--tt-accent);
+}
+
+.bp-auth-tabs__count {
+  flex: 0 0 auto;
+  min-width: 1.7rem;
+  padding: .22rem .38rem;
+  color: var(--tt-muted);
+  background: color-mix(in srgb, var(--tt-bg) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--tt-line) 88%, transparent);
+  border-radius: 999px;
+  font: 800 .65rem/1 "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+.bp-auth-tabs button.is-active .bp-auth-tabs__count {
+  color: #eaffff;
+  background: color-mix(in srgb, var(--tt-accent) 24%, var(--tt-bg));
+  border-color: color-mix(in srgb, var(--tt-accent) 48%, var(--tt-line));
 }
 
 .bp-auth-section {
@@ -2672,11 +2714,6 @@ a:hover {
 
   .bp-auth-toolbar {
     position: static;
-    grid-template-columns: 1fr;
-  }
-
-  .bp-auth-tabs {
-    justify-content: flex-start;
   }
 
   .bp-auth-card {
@@ -2694,8 +2731,7 @@ a:hover {
   }
 
   .bp-auth-tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .bp-auth-tabs button {
