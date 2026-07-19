@@ -19,9 +19,11 @@ page_kind: reference
 
 This page covers the items authored directly in `BP_Tank_Master` and shown in the **My Blueprint** panel. It is separate from the plugin C++ API: the sections below contain project variables, authored functions, macros, and event dispatchers. Names and pins match the Blueprint asset.
 
+The release reference includes only items reachable from live Event Graphs, Construction Script, and automatic RepNotify handlers. Uncalled debug helpers and legacy drafts are intentionally omitted.
+
 <section class="bp-auth-summary">
 <article><strong>182</strong><span>used variables</span></article>
-<article><strong>38</strong><span>functions</span></article>
+<article><strong>36</strong><span>used functions</span></article>
 <article><strong>9</strong><span>macros</span></article>
 <article><strong>2</strong><span>Event Dispatcher</span></article>
 </section>
@@ -542,8 +544,8 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-meta">
 <span><b>Type</b>ChaosWheeledVehicleMovementComponent</span>
 <span><b>Default</b>None</span>
-<span><b>Usage</b>Reads: 9 · writes: 1</span>
-<span><b>Graphs</b><code>EventGraph</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>GetWheelsDebug</code>, <code>Server_SoundGraph</code>, <code>SetDriveBrakeBySide</code> +3</span>
+<span><b>Usage</b>Reads: 7 · writes: 1</span>
+<span><b>Graphs</b><code>EventGraph</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>Server_SoundGraph</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code> +2</span>
 </div>
 
 </div>
@@ -2417,8 +2419,8 @@ Only authored variables that are actually read or written by the graphs are show
 <div class="bp-auth-meta">
 <span><b>Type</b>Integer</span>
 <span><b>Default</b>7</span>
-<span><b>Usage</b>Reads: 17 · writes: 0</span>
-<span><b>Graphs</b><code>Construct Spline Track</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>GetWheelsDebug</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code> +1</span>
+<span><b>Usage</b>Reads: 15 · writes: 0</span>
+<span><b>Graphs</b><code>Construct Spline Track</code>, <code>GetAvgWheelsAngularVelocity</code>, <code>SetDriveBrakeBySide</code>, <code>SetDriveTorqueBySide</code>, <code>UpdateTracksLocation</code></span>
 </div>
 
 </div>
@@ -3287,38 +3289,6 @@ Each function is explained in its BP_Tank_Master context: internal flow, affecte
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="ConstructRear|FrontSplinePoint Blueprint node"><div class="bp-auth-node__header"><span>ConstructRear|FrontSplinePoint</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DownRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="int"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">UpRearSplinePointIndex</span><span class="bp-auth-pin__type">Integer</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="object"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TrackPath</span><span class="bp-auth-pin__type">SplineComponent</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="name"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InSocketName</span><span class="bp-auth-pin__type">Name</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WhellRadius</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">InvertDownAxis</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
-<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="angularvelocity general logic|tank component|track component function   ">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">General Logic|Tank Component|Track Component</span>
-<div class="bp-auth-card__title"><code>AngularVelocity</code></div>
-<div class="bp-auth-card-summary">
-<span>Purpose</span>
-<p>Reads or converts angular velocity for movement calculations.</p>
-</div>
-<div class="bp-auth-behavior">
-<div>
-<span>How it works</span>
-<p>Divides travelled linear distance by radius and converts the result through π into the Blueprint wheel-rotation value.</p>
-</div>
-<div>
-<span>Result</span>
-<p>Returns the wheel angle corresponding to the same distance travelled by the track.</p>
-</div>
-</div>
-<dl class="bp-auth-footprint">
-<dt>Called from</dt><dd>Not called by stored graphs</dd>
-<dt>Reads state</dt><dd>—</dd>
-<dt>Writes state</dt><dd>—</dd>
-</dl>
-<div class="bp-auth-meta">
-<span><b>Graph</b>8 nodes</span>
-<span><b>Signature</b>3 in · 2 out</span>
-<span><b>Call steps</b>1</span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="AngularVelocity Blueprint node"><div class="bp-auth-node__header"><span>AngularVelocity</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">WheelDistance</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Angle</span><span class="bp-auth-pin__type">Double</span><span class="bp-auth-pin__default">0.0</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Radius</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
-</article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="uppersplinepointsagging general logic|track components|track maker function updatetrackslocation vehiclemovementcomponent constraint instances_r relativelocation constraint instances_l ">
 <div class="bp-auth-card__copy">
 <span class="bp-auth-kicker">General Logic|Track Components|Track Maker</span>
@@ -3478,38 +3448,6 @@ Each function is explained in its BP_Tank_Master context: internal flow, affecte
 
 </div>
 <div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="SetDriveBrakeBySide Blueprint node"><div class="bp-auth-node__header"><span>SetDriveBrakeBySide</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">DriveTorque</span><span class="bp-auth-pin__type">Float</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TorqueMultiply</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="real"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">TurnGerarRatio</span><span class="bp-auth-pin__type">Double</span></div><div class="bp-auth-pin"></div></div></div></div></div>
-</article>
-<article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getwheelsdebug general logic|controls function  wheelsamount as chaos wheeled vehicle movement component wheels ">
-<div class="bp-auth-card__copy">
-<span class="bp-auth-kicker">General Logic|Controls</span>
-<div class="bp-auth-card__title"><code>GetWheelsDebug</code></div>
-<div class="bp-auth-card-summary">
-<span>Purpose</span>
-<p>Collects wheel-state information for diagnostics.</p>
-</div>
-<div class="bp-auth-behavior">
-<div>
-<span>How it works</span>
-<p>Iterates the selected side, reads wheel state, contact data, and angular velocity, then prints the values.</p>
-</div>
-<div>
-<span>Result</span>
-<p>This is a manual read-only diagnostic helper and is not called by the stored release graphs.</p>
-</div>
-</div>
-<dl class="bp-auth-footprint">
-<dt>Called from</dt><dd>Not called by stored graphs</dd>
-<dt>Reads state</dt><dd><code>WheelsAmount</code>, <code>As Chaos Wheeled Vehicle Movement Component</code>, <code>Wheels</code></dd>
-<dt>Writes state</dt><dd>—</dd>
-</dl>
-<div class="bp-auth-meta">
-<span><b>Graph</b>21 nodes</span>
-<span><b>Signature</b>2 in · 1 out</span>
-<span><b>Call steps</b>9</span>
-</div>
-
-</div>
-<div class="bp-auth-card__visual"><div class="bp-auth-node bp-auth-node--function" role="img" aria-label="GetWheelsDebug Blueprint node"><div class="bp-auth-node__header"><span>GetWheelsDebug</span><small>FUNCTION</small></div><div class="bp-auth-node__body"><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div><div class="bp-auth-pin bp-auth-pin--output" data-pin-type="exec"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Exec</span><span class="bp-auth-pin__type">Exec</span></div></div><div class="bp-auth-node__row"><div class="bp-auth-pin bp-auth-pin--input" data-pin-type="bool"><span class="bp-auth-pin__dot"></span><span class="bp-auth-pin__name">Is Left Side?</span><span class="bp-auth-pin__type">Boolean</span></div><div class="bp-auth-pin"></div></div></div></div></div>
 </article>
 <article class="bp-auth-card bp-auth-card--explained" data-bp-item data-search="getavgwheelsangularvelocity general logic|tankcomponent|trackcomponent function wheelmovcalculation as chaos wheeled vehicle movement component wheels wheelsamount avgl avgr avgl avgr">
 <div class="bp-auth-card__copy">
