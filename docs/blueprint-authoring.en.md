@@ -2256,6 +2256,7 @@ Dispatchers let UI and other systems react to changes without being tightly coup
     });
     buttons.forEach(button => button.classList.toggle('is-active', button.dataset.bpTarget === active));
     if (empty) empty.hidden = visible !== 0;
+    document.dispatchEvent(new CustomEvent('tt:content-visibility-changed'));
   };
   buttons.forEach(button => button.addEventListener('click', () => { active = button.dataset.bpTarget; refresh(); }));
   search?.addEventListener('input', refresh);

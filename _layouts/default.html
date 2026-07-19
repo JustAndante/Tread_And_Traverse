@@ -172,9 +172,12 @@
         var ticking = false;
         function updateActiveLink() {
           ticking = false;
-          var active = headings[0];
-          for (var index = 0; index < headings.length; index += 1) {
-            if (headings[index].getBoundingClientRect().top <= 150) active = headings[index];
+          var visibleHeadings = headings.filter(function (heading) {
+            return heading.offsetParent !== null;
+          });
+          var active = visibleHeadings[0] || headings[0];
+          for (var index = 0; index < visibleHeadings.length; index += 1) {
+            if (visibleHeadings[index].getBoundingClientRect().top <= 150) active = visibleHeadings[index];
             else break;
           }
 
@@ -195,6 +198,7 @@
             window.requestAnimationFrame(updateActiveLink);
           }
         }, { passive: true });
+        document.addEventListener("tt:content-visibility-changed", updateActiveLink);
         updateActiveLink();
       }());
     </script>
