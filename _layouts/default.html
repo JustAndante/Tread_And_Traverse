@@ -67,35 +67,35 @@
               <nav class="product-nav">
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Начало работы{% else %}Getting started{% endif %}</strong>
-                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Компоненты{% else %}Components{% endif %}</strong>
-                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#solver-settings' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#solver-settings' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Настройки Solver{% else %}Solver settings{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#solver-settings' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#solver-settings' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Настройки Solver{% else %}Solver settings{% endif %}</a>
                   <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#simulation-runtime' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#simulation-runtime' | relative_url }}{% endif %}">Simulation & Runtime</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>Blueprint API</strong>
-                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#builder-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#builder-nodes' | relative_url }}{% endif %}">Builder {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
-                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#solver-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#solver-nodes' | relative_url }}{% endif %}">Solver {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#builder-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#builder-nodes' | relative_url }}{% endif %}">Builder {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#solver-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#solver-nodes' | relative_url }}{% endif %}">Solver {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
                 </section>
               </nav>
               {% else %}
               <nav class="product-nav">
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Начало работы{% else %}Getting started{% endif %}</strong>
-                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Интеграция{% else %}Integration{% endif %}</strong>
-                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#installations' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#installations' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Схемы установки{% else %}Installation patterns{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#installations' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#installations' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Схемы установки{% else %}Installation patterns{% endif %}</a>
                   <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#aiming-stabilization' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#aiming-stabilization' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Прицеливание и стабилизация{% else %}Aiming and stabilization{% endif %}</a>
                   <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#replication' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#replication' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Репликация{% else %}Replication{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>Blueprint API</strong>
-                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#core-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#core-nodes' | relative_url }}{% endif %}">Core {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
-                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#advanced-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#advanced-nodes' | relative_url }}{% endif %}">Advanced {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#core-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#core-nodes' | relative_url }}{% endif %}">Core {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#advanced-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#advanced-nodes' | relative_url }}{% endif %}">Advanced {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
                 </section>
               </nav>
               {% endif %}

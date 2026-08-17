@@ -7,6 +7,33 @@
   var productPanel = document.querySelector("[data-product-sidebar]");
   if (!article) return;
 
+  var productLinks = Array.prototype.slice.call(document.querySelectorAll(".product-nav a"));
+
+  function normalizedPath(pathname) {
+    return pathname.replace(/\/index\.html$/, "/").replace(/\/$/, "");
+  }
+
+  function updateProductActiveLink() {
+    var currentPath = normalizedPath(window.location.pathname);
+    var candidates = productLinks.filter(function (link) {
+      return normalizedPath(new URL(link.href, window.location.href).pathname) === currentPath;
+    });
+
+    productLinks.forEach(function (link) {
+      link.classList.remove("is-active");
+    });
+    if (!candidates.length) return;
+
+    var active = candidates[0];
+    candidates.forEach(function (link) {
+      var url = new URL(link.href, window.location.href);
+      var targetId = decodeURIComponent(url.hash.slice(1));
+      var target = targetId ? document.getElementById(targetId) : null;
+      if (target && target.getBoundingClientRect().top <= 170) active = link;
+    });
+    active.classList.add("is-active");
+  }
+
   var sectionHeadings = Array.prototype.slice.call(article.querySelectorAll("h2"));
   sectionHeadings.forEach(function (heading, index) {
     if (!heading.id) heading.id = "section-" + (index + 1);
@@ -91,6 +118,7 @@
   var ticking = false;
   function updateActiveLink() {
     ticking = false;
+    updateProductActiveLink();
     if (!sectionHeadings.length) return;
     var active = sectionHeadings[0];
     for (var index = 0; index < sectionHeadings.length; index += 1) {
@@ -113,6 +141,7 @@
     }
   }, { passive: true });
   document.addEventListener("tt:content-visibility-changed", updateActiveLink);
+  window.addEventListener("hashchange", updateActiveLink);
   updateActiveLink();
 
   var searchInput = document.querySelector("[data-doc-search]");
