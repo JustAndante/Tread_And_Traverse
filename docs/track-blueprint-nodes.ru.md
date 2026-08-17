@@ -4,13 +4,10 @@ title: "Blueprint-ноды гусеницы — Русский"
 description: "Справочник Blueprint-нод Track Spline Builder и Track Physics Solver"
 lang: ru
 page_kind: reference
+product: track
+doc_section: nodes
 ---
 
-<div class="doc-breadcrumbs">
-  <a href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">← Инструкция по гусеницам</a>
-  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Справочник Blueprint-нод</a>
-  <a href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">English</a>
-</div>
 
 # Blueprint-ноды гусеницы
 
@@ -67,6 +64,8 @@ page_kind: reference
 
 При включённых `Update Every Tick` и связи solver с builder вызывать solve и обновление инстансов каждый кадр из Blueprint не требуется.
 
+<a id="builder-nodes"></a>
+
 ## Track Spline Builder — Core
 
 | Нода | Когда использовать | Результат |
@@ -94,6 +93,8 @@ page_kind: reference
 | `Calculate Track Link Count` | Возвращает расчётное количество звеньев без создания инстансов. |
 
 Для обычной машины предпочтительнее компонентный API: он хранит настройки, кэш ориентации и scratch-массивы между кадрами.
+
+<a id="solver-nodes"></a>
 
 ## Track Physics Solver — Core
 

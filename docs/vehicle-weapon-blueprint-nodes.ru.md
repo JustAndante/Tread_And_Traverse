@@ -4,13 +4,10 @@ title: "Vehicle Weapon System: Blueprint-ноды — Русский"
 description: "Справочник Blueprint-нод Vehicle Weapon System"
 lang: ru
 page_kind: reference
+product: weapon
+doc_section: nodes
 ---
 
-<div class="doc-breadcrumbs">
-  <a href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">← Инструкция по вооружению</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Справочник Blueprint-нод</a>
-  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">English</a>
-</div>
 
 # Blueprint-ноды Vehicle Weapon System
 
@@ -72,6 +69,8 @@ page_kind: reference
 
 Каждая нода возвращает простой `Success`. Подробные результаты сохраняются в компоненте и доступны диагностическим запросам. Нормальному графу не нужно собирать массивы axis requests, вручную обновлять реестры или применять pending-команды.
 
+<a id="core-nodes"></a>
+
 ## Core — Runtime
 
 | Нода | Назначение |
@@ -128,6 +127,8 @@ page_kind: reference
 |---|---|
 | `Set Native Axis Replication Enabled` | Включает или выключает встроенную controlled-rate репликацию осей. Не включайте одновременно со старым rotation RPC workflow. |
 | `Should Evaluate Local Weapon Runtime` | Возвращает, должна ли эта копия Pawn считать локальные aim sources, traces и ballistics. Используйте как gate для vehicle-specific Blueprint-логики. |
+
+<a id="advanced-nodes"></a>
 
 ## Advanced — Configuration и Registry
 

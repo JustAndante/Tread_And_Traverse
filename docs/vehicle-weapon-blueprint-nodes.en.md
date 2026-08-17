@@ -4,13 +4,10 @@ title: "Vehicle Weapon System Blueprint nodes — English"
 description: "Blueprint node reference for Vehicle Weapon System"
 lang: en
 page_kind: reference
+product: weapon
+doc_section: nodes
 ---
 
-<div class="doc-breadcrumbs">
-  <a href="{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}">← Weapon guide</a>
-  <a class="is-active" href="{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}">Blueprint node reference</a>
-  <a href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Русский</a>
-</div>
 
 # Vehicle Weapon System Blueprint nodes
 
@@ -72,6 +69,8 @@ After preparing the camera and AimCubes, call:
 
 The compact nodes return `Success`; detailed results remain cached on the component. A normal graph does not build axis-request arrays, refresh registries, or apply pending commands manually.
 
+<a id="core-nodes"></a>
+
 ## Core — Runtime
 
 | Node | Purpose |
@@ -126,6 +125,8 @@ Component queries:
 |---|---|
 | `Set Native Axis Replication Enabled` | Enables controlled-rate native axis replication. Do not run it beside legacy rotation RPCs. |
 | `Should Evaluate Local Weapon Runtime` | Gates local aim, trace, ballistic, and vehicle-specific visual preparation. |
+
+<a id="advanced-nodes"></a>
 
 ## Advanced — Configuration and Registry
 

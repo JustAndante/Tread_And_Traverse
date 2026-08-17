@@ -44,19 +44,77 @@
 
     <main id="content" class="main-content page-kind-{{ page.page_kind | default: 'reference' }}" role="main">
       {% if page.page_kind == 'reference' %}
-      <div class="reference-shell">
-        <aside class="doc-sidebar" aria-label="{% if page.lang == 'ru' %}Навигация по странице{% else %}Page navigation{% endif %}">
+      <div class="reference-shell {% if page.product %}has-product{% endif %}">
+        {% if page.product %}
+        <aside class="product-sidebar" aria-label="{% if page.lang == 'ru' %}Разделы плагина{% else %}Plugin sections{% endif %}">
+          <details class="product-sidebar__panel" data-product-sidebar open>
+            <summary>
+              <span>{% if page.product == 'track' %}Track Spline Builder{% else %}Vehicle Weapon System{% endif %}</span>
+              <span class="doc-sidebar__chevron" aria-hidden="true"></span>
+            </summary>
+            <div class="product-sidebar__body">
+              <a class="product-sidebar__back" href="{% if page.lang == 'ru' %}{{ '/ru/' | relative_url }}{% else %}{{ '/en/' | relative_url }}{% endif %}">
+                {% if page.lang == 'ru' %}← Вся документация{% else %}← All documentation{% endif %}
+              </a>
+
+              <label class="doc-search">
+                <span>{% if page.lang == 'ru' %}Поиск по странице{% else %}Search this page{% endif %}</span>
+                <input type="search" data-doc-search autocomplete="off" placeholder="{% if page.lang == 'ru' %}Параметр, нода, раздел…{% else %}Setting, node, section…{% endif %}">
+              </label>
+              <div class="doc-search-results" data-doc-search-results hidden></div>
+
+              {% if page.product == 'track' %}
+              <nav class="product-nav">
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Начало работы{% else %}Getting started{% endif %}</strong>
+                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Компоненты{% else %}Components{% endif %}</strong>
+                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#solver-settings' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#solver-settings' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Настройки Solver{% else %}Solver settings{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#simulation-runtime' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#simulation-runtime' | relative_url }}{% endif %}">Simulation & Runtime</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>Blueprint API</strong>
+                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#builder-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#builder-nodes' | relative_url }}{% endif %}">Builder {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#solver-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#solver-nodes' | relative_url }}{% endif %}">Solver {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                </section>
+              </nav>
+              {% else %}
+              <nav class="product-nav">
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Начало работы{% else %}Getting started{% endif %}</strong>
+                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Интеграция{% else %}Integration{% endif %}</strong>
+                  <a class="{% if page.doc_section == 'guide' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#installations' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#installations' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Схемы установки{% else %}Installation patterns{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#aiming-stabilization' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#aiming-stabilization' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Прицеливание и стабилизация{% else %}Aiming and stabilization{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#replication' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#replication' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Репликация{% else %}Replication{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>Blueprint API</strong>
+                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#core-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#core-nodes' | relative_url }}{% endif %}">Core {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <a class="{% if page.doc_section == 'nodes' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#advanced-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#advanced-nodes' | relative_url }}{% endif %}">Advanced {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                </section>
+              </nav>
+              {% endif %}
+            </div>
+          </details>
+        </aside>
+        {% endif %}
+        <article class="doc-article" data-doc-article>
+          {{ content }}
+        </article>
+        <aside class="doc-sidebar" aria-label="{% if page.lang == 'ru' %}Содержание страницы{% else %}On this page{% endif %}">
           <details class="doc-sidebar__panel" data-doc-sidebar open>
             <summary>
-              <span>{% if page.lang == 'ru' %}Содержание{% else %}On this page{% endif %}</span>
+              <span>{% if page.lang == 'ru' %}На этой странице{% else %}On this page{% endif %}</span>
               <span class="doc-sidebar__chevron" aria-hidden="true"></span>
             </summary>
             <nav class="doc-sidebar__nav" data-doc-outline></nav>
           </details>
         </aside>
-        <article class="doc-article" data-doc-article>
-          {{ content }}
-        </article>
       </div>
       {% else %}
       {{ content }}
@@ -69,6 +127,7 @@
     </main>
 
     <script src="{{ '/assets/js/blueprint-nodes.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+    <script src="{{ '/assets/js/docs-navigation.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
     <script>
       (function () {
@@ -94,112 +153,6 @@
         }
         renderTheme();
 
-        var article = document.querySelector("[data-doc-article]");
-        var outline = document.querySelector("[data-doc-outline]");
-        var sidebar = document.querySelector("[data-doc-sidebar]");
-        if (!article || !outline || !sidebar) return;
-
-        var headings = Array.prototype.slice.call(article.querySelectorAll("h2, h3"));
-        var sectionHeadings = headings.filter(function (heading) { return heading.tagName === "H2"; });
-        if (sectionHeadings.length < 2) {
-          sidebar.parentNode.hidden = true;
-          return;
-        }
-
-        headings.forEach(function (heading, index) {
-          if (!heading.id) heading.id = "section-" + (index + 1);
-        });
-
-        var linkById = {};
-        sectionHeadings.forEach(function (heading, index) {
-          var childHeadings = [];
-          var cursor = heading.nextElementSibling;
-          while (cursor && cursor.tagName !== "H2") {
-            if (cursor.tagName === "H3") childHeadings.push(cursor);
-            cursor = cursor.nextElementSibling;
-          }
-
-          var group;
-          if (childHeadings.length) {
-            group = document.createElement("details");
-            group.className = "doc-nav-group";
-            if (index === 0) group.open = true;
-
-            var summary = document.createElement("summary");
-            var sectionLink = document.createElement("a");
-            sectionLink.href = "#" + heading.id;
-            sectionLink.textContent = heading.textContent;
-            sectionLink.dataset.headingId = heading.id;
-            summary.appendChild(sectionLink);
-            group.appendChild(summary);
-            linkById[heading.id] = sectionLink;
-
-            var children = document.createElement("div");
-            children.className = "doc-nav-group__children";
-            childHeadings.forEach(function (child) {
-              var childLink = document.createElement("a");
-              childLink.href = "#" + child.id;
-              childLink.textContent = child.textContent;
-              childLink.dataset.headingId = child.id;
-              children.appendChild(childLink);
-              linkById[child.id] = childLink;
-            });
-            group.appendChild(children);
-          } else {
-            group = document.createElement("a");
-            group.className = "doc-nav-link";
-            group.href = "#" + heading.id;
-            group.textContent = heading.textContent;
-            group.dataset.headingId = heading.id;
-            linkById[heading.id] = group;
-          }
-          outline.appendChild(group);
-        });
-
-        var compact = window.matchMedia("(max-width: 58rem)");
-        function applySidebarMode() {
-          if (compact.matches) sidebar.removeAttribute("open");
-          else sidebar.setAttribute("open", "");
-        }
-        applySidebarMode();
-        if (compact.addEventListener) compact.addEventListener("change", applySidebarMode);
-
-        outline.addEventListener("click", function (event) {
-          var link = event.target.closest("a");
-          if (link && compact.matches) sidebar.removeAttribute("open");
-        });
-
-        var ticking = false;
-        function updateActiveLink() {
-          ticking = false;
-          var visibleHeadings = headings.filter(function (heading) {
-            return heading.offsetParent !== null;
-          });
-          var active = visibleHeadings[0] || headings[0];
-          for (var index = 0; index < visibleHeadings.length; index += 1) {
-            if (visibleHeadings[index].getBoundingClientRect().top <= 150) active = visibleHeadings[index];
-            else break;
-          }
-
-          Object.keys(linkById).forEach(function (id) {
-            linkById[id].classList.toggle("is-active", id === active.id);
-          });
-
-          var activeLink = linkById[active.id];
-          if (activeLink) {
-            var parentGroup = activeLink.closest(".doc-nav-group");
-            if (parentGroup) parentGroup.open = true;
-          }
-        }
-
-        window.addEventListener("scroll", function () {
-          if (!ticking) {
-            ticking = true;
-            window.requestAnimationFrame(updateActiveLink);
-          }
-        }, { passive: true });
-        document.addEventListener("tt:content-visibility-changed", updateActiveLink);
-        updateActiveLink();
       }());
     </script>
   </body>

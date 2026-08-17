@@ -4,13 +4,10 @@ title: "Track Blueprint nodes — English"
 description: "Blueprint node reference for Track Spline Builder and Track Physics Solver"
 lang: en
 page_kind: reference
+product: track
+doc_section: nodes
 ---
 
-<div class="doc-breadcrumbs">
-  <a href="{{ '/docs/track-physics-solver.en.html' | relative_url }}">← Track guide</a>
-  <a class="is-active" href="{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}">Blueprint node reference</a>
-  <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Русский</a>
-</div>
 
 # Track Blueprint nodes
 
@@ -67,6 +64,8 @@ With automatic updates enabled, the solver and builder run without a per-frame B
 
 Do not call the manual solve/update nodes every frame while the matching `Update Every Tick` option is enabled.
 
+<a id="builder-nodes"></a>
+
 ## Track Spline Builder — Core
 
 | Node | Use | Result |
@@ -94,6 +93,8 @@ These Blueprint Function Library calls are for graphs that intentionally supply 
 | `Calculate Track Link Count` | Calculates the link count without creating instances. |
 
 The component API is preferred for vehicles because it retains settings, orientation state, and scratch storage between frames.
+
+<a id="solver-nodes"></a>
 
 ## Track Physics Solver — Core
 
