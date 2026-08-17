@@ -17,7 +17,7 @@ page_kind: reference
 
 # Track Physics Solver Settings Reference
 
-For callable Blueprint actions and queries, see [Track Blueprint Nodes]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}) or the [Russian node reference]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}).
+For callable Blueprint actions and queries, see [Track Blueprint Nodes]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}) or the [Russian node reference]({{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}).
 
 This reference follows the release-facing `Track Physics Solver` component
 Details panel from top to bottom. It covers the normal bone-rig workflow,
