@@ -17,7 +17,7 @@ page_kind: reference
 
 # Track Physics Solver: справочник настроек
 
-Вызываемые действия и запросы описаны отдельно в [справочнике Blueprint-нод гусеницы]({{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}). Английская версия: [Track Blueprint Nodes]({{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}).
+Вызываемые действия и запросы описаны отдельно в [справочнике Blueprint-нод гусеницы]({{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}). Английская версия: [Track Blueprint Nodes]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}).
 
 Этот справочник повторяет порядок релизных параметров компонента
 `Track Physics Solver` в панели Details сверху вниз. Он описывает основной
