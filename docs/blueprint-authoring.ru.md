@@ -7,11 +7,8 @@ page_kind: reference
 ---
 
 <div class="doc-breadcrumbs">
-  <a href="{{ '/ru/' | relative_url }}">← Русская документация</a>
-  <a href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Параметры</a>
-  <a href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды плагина</a>
-  <a class="is-active" href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Blueprint проекта</a>
-  <a href="{{ '/docs/track-cpp-api.ru.html' | relative_url }}">C++ API</a>
+  <a href="{{ '/ru/' | relative_url }}">← Документация</a>
+  <a class="is-active" href="{{ '/docs/blueprint-authoring.ru.html' | relative_url }}">Пример Blueprint Master</a>
   <a href="{{ '/docs/blueprint-authoring.en.html' | relative_url }}">English</a>
 </div>
 
