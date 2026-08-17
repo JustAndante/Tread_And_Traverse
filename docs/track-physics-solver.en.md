@@ -15,18 +15,21 @@ page_kind: reference
   <a href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Русский</a>
 </div>
 
-# Track Physics Solver settings and setup
+# Track Physics Solver Settings Reference
 
-The settings below follow the same order as the `Track Physics Solver`
-Details panel. Use this reference to build the track from suspension bones,
-configure terrain contact and physical behavior, and enable diagnostics when
-you need them.
+For callable Blueprint actions and queries, see [Track Blueprint Nodes]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}) or the [Russian node reference]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}).
 
-Field names match Unreal Engine exactly. The tables show native class defaults.
-Selecting a `Physics Feel Preset` applies that preset's values, so an
-existing vehicle may display different numbers. Child settings are hidden when
-their parent feature is disabled. Distances use Unreal centimeters unless
-stated otherwise.
+This reference follows the release-facing `Track Physics Solver` component
+Details panel from top to bottom. It covers the normal bone-rig workflow,
+useful diagnostics, and supported physics, output, and runtime controls.
+
+The values shown below are native class defaults. Runtime does not silently
+retune editable fields: the values visible in Details remain authoritative.
+Child settings are hidden when their parent feature is disabled.
+Distances use Unreal centimeters unless stated otherwise.
+
+This guide focuses on the supported release workflow built from suspension and
+wheel bones.
 
 ## Output: target spline
 
@@ -42,7 +45,6 @@ stated otherwise.
 | `Closed Loop` (Advanced) | On | Treats the first and last solved points as connected. A continuous tank track should remain closed. |
 | `Generate From Bone Rig` | On | Generates the complete track control loop from road-wheel, top-roller, and end-wheel bones. Leave it enabled for the supported release workflow. |
 | `Source Mesh Component` | None | Skeletal or scene component that owns the configured wheel bones. It is also the authoritative source used for runtime suspension-motion sampling. |
-| `Side Preset` | Auto | Fills the left/right naming fields. `Left` and `Right` use their corresponding bone names, `Auto` infers the side where possible, and `Custom` leaves manual names untouched. Manual edits remain authoritative. |
 | `Auto Detect Wheel Counts` | On | Searches sequential bone names and stops when the numbered road-wheel or top-roller sequence ends. |
 | `Wheel Auto-Detection Limit` (Advanced) | 32 | Maximum numbered bones checked for each road-wheel and top-roller prefix. Visible only while automatic count detection is enabled. |
 
@@ -59,7 +61,7 @@ normal controls.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
-| `Road Wheel Prefix` | `LM_Wheel_` | Text before the numbered road-wheel index. The side preset may replace it with the selected side's prefix. |
+| `Road Wheel Prefix` | `LM_Wheel_` | Text before the numbered road-wheel index. Set it explicitly for each track side. |
 | `Road Wheel Suffix` | Empty | Text after the numbered index. Leave empty for names such as `LM_Wheel_01`; use a suffix only when the skeletal rig includes one. |
 | `First Road Wheel Index` | 1 | First numbered road-wheel bone in the sequence. |
 | `Road Wheel Count` | 7 | Manual number of road wheels. Visible only when `Auto Detect Wheel Counts` is disabled. |
@@ -75,7 +77,7 @@ All child settings in this section hide when `Generate Top Rollers` is disabled.
 | --- | ---: | --- |
 | `Generate Top Rollers` | On | Includes the configured return rollers in the generated upper run. |
 | `Top Roller Bone Prefix` (Advanced) | `TopWheel` | Text before the numbered top-roller index. |
-| `Top Roller Bone Suffix` (Advanced) | `_L` | Text after the numbered top-roller index. The side preset updates this for left/right rigs. |
+| `Top Roller Bone Suffix` (Advanced) | `_L` | Text after the numbered top-roller index. Set it explicitly when the two sides use different suffixes. |
 | `First Top Roller Index` | 1 | First numbered top-roller bone in the sequence. |
 | `Top Roller Count` | 4 | Manual number of top rollers. Visible only when automatic wheel-count detection is disabled. |
 | `Top Roller Index Digits` (Advanced) | 2 | Minimum digit count used when composing top-roller bone names. |
@@ -84,7 +86,7 @@ All child settings in this section hide when `Generate Top Rollers` is disabled.
 | `Top Run Physics` | On | Enables physical simulation for the upper return run. Disable it for a cheaper generated upper shape. |
 | `Upper Run Physics Weight` (Advanced) | 0.45 | Strength with which detached upper-run points receive physical motion and inertia. Visible only when upper physics and detachment are both enabled. |
 | `Detached Upper Travel Limit` (Advanced) | 18 cm | Maximum travel around the generated upper shape for detached upper points. A value of 0 disables this upper envelope. |
-| `Speed Tension` | Off | Reduces upper-run sag as vehicle speed rises without changing the lower contact shape. The selected physics preset defines the response. |
+| `Speed Tension` | Off | Reduces upper-run sag as vehicle speed rises without changing the lower contact shape. Its child fields define the response directly. |
 
 ## Setup: end wheels
 
@@ -94,7 +96,7 @@ as long as the configured bones and radii match the loop order.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
-| `Generate End Rollers` | On | Generates the front and rear end-wheel arcs that connect the upper and lower runs. |
+| `Generate End Wheels` | On | Generates the front and rear end-wheel arcs that connect the upper and lower runs. |
 | `Front End Wheel Bone` | `LF_Wheel_00` | Bone used as the center of the front end-wheel wrap. |
 | `Rear Drive Wheel Bone` | `LB_Wheel_08` | Bone used as the center of the rear end-wheel wrap and, by default, the visual track-distance driver. |
 | `Front End Wheel Wrap Radius` | 55 cm | Radius of the generated track-center arc around the front end wheel. |
@@ -117,6 +119,9 @@ as long as the configured bones and radii match the loop order.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
+| `Surface Query Mode` | World Static Only | Selects the collision filter shared by generated ground traces, physical-chain sweeps, and runtime overlap broadphase. `World Static Only` excludes the vehicle body, pawns, and movable scene clutter without requiring a project-specific collision channel. |
+| `Surface Object Types` | Empty | Object types accepted when `Surface Query Mode` is `Object Types`. Populate the list to support movable platforms or project-defined surface object channels. An empty list intentionally disables surface hits in this mode. |
+| `Surface Trace Channel` | Visibility | Channel used only when `Surface Query Mode` is `Trace Channel`. This compatibility/custom mode accepts any component that blocks the selected channel. |
 | `Enable Ground Tracing` | On | Allows generated trace-enabled points to find world surfaces and build lower-run contacts. |
 | `Snap Trace Points To Ground` | On | Places accepted trace points directly on the contact result. When disabled, the solver uses `Ground Alignment Strength` for a softer blend. |
 | `Ground Trace Length` | 350 cm | Total downward search length available to automatically generated trace points. |
@@ -131,6 +136,11 @@ as long as the configured bones and radii match the loop order.
 The trace length defines where the solver may search. The snap and drop limits
 define which search results it may accept. They solve different problems and
 should not be treated as interchangeable values.
+
+The surface query filter affects only the visual track solver. It does not
+change Chaos vehicle collision. Choose `Object Types` or `Trace Channel` when
+tracks must follow movable platforms or another explicitly configured surface;
+otherwise keep the release default `World Static Only`.
 
 ## Debug drawing and runtime diagnostics
 
@@ -204,9 +214,9 @@ advanced status categories only when investigating a specific problem.
 | --- | --- |
 | `Last Average Physics Weight` | Average effective simulation weight across dynamic points. |
 | `Last Dynamic Point Count` | Points currently allowed to simulate. |
-| `Last Effective Pinned Point Count` | Points effectively fixed after preset and quality overrides. |
-| `Last Effective Physical Target Pull` | Actual generated-shape pull used by the current preset/mode. |
-| `Last Effective Wheel Surface Guide Strength` | Actual wheel-surface following strength after preset minimums and quality overrides. |
+| `Last Effective Pinned Point Count` | Points effectively fixed after runtime-quality overrides. |
+| `Last Effective Physical Target Pull` | Actual generated-shape pull used by the current runtime mode. |
+| `Last Effective Wheel Surface Guide Strength` | Actual wheel-surface following strength after runtime-quality overrides. |
 | `Last Owner Carry Distance` | Owner-transform displacement carried into the simulation on the latest update. |
 | `Last Owner Inertia Speed` | Effective owner-motion inertia speed applied to free physical points. |
 | `Last Sag Limit Correction Count` | Points corrected by the extra-sag envelope. |
@@ -271,17 +281,9 @@ action and the component immediately clears the checkbox.
 
 ## Simulation
 
-Changing `Physics Feel Preset` applies a complete group of physical values and
-resets solver history. Choose the closest preset first, then make small changes
-to the exposed controls if necessary.
-
 | Setting | Default | Purpose |
 | --- | ---: | --- |
-| `Physics Feel Preset` | Realistic Heavy | Selects the overall solver mode and a coherent set of physical tuning values. |
-| `Responsive` | Preset option | Uses fast target following with a tight, stable response and minimal free inertia. It is the cheapest and least physically loose preset. |
-| `Realistic Heavy` | Preset option | Uses the physical chain with restrained slack, strong wheel guidance, ground contacts, suspension response, and heavy damping. This is the recommended starting point for a tank. |
-| `Loose Physical` | Preset option | Uses more slack, inertia, detached upper motion, and weaker shape guidance. It is more expressive but easier to destabilize on extreme geometry. |
-| `Chain Gravity Scale` | 1.0 | Multiplier applied to gravity during physical-chain integration. The selected preset normally replaces the native default. |
+| `Chain Gravity Scale` | 1.0 | Multiplier applied to gravity during physical-chain integration. |
 | `Generated Shape Pull` | 0.35 | Pulls simulated points toward the generated desired track shape. Higher values are more controlled; lower values leave contacts, constraints, and inertia more authoritative. |
 | `Wheel Guide Pull` (Advanced) | 0.10 | Minimum attraction toward top-roller and end-wheel guide shapes. Detached upper points receive only a reduced fraction. |
 | `Per-Segment Slack Ratio` | 0 | Adds compliant rest-length slack to each physical segment. Effective slack is also scaled by `Unsupported Span Sag Ratio`. |
@@ -290,7 +292,7 @@ to the exposed controls if necessary.
 | `Ground Contact Strength` (Advanced) | 1.0 | Strength of the preserved-contact correction. Visible only while ground-contact preservation is enabled. |
 | `Maximum Extra Sag` | 35 cm | Maximum additional downward travel below the generated unsupported-span shape. A value of 0 disables this envelope. |
 | `Keep Track Outside Wheels` | On | Applies one-sided road, top, and end-wheel radius constraints. It prevents physical points from passing through configured wheels without pulling already-clear points back onto the circle. |
-| `Wheel Surface Following` (Advanced) | 0 | Guides nearby physical points along the wheel circumference after the outside-wheel limit. The recommended preset supplies its own non-zero value. |
+| `Wheel Surface Following` (Advanced) | 0 | Guides nearby physical points along the wheel circumference after the outside-wheel limit. |
 
 ## Output: solved spline and Track Builder
 
@@ -307,28 +309,39 @@ to the exposed controls if necessary.
 | Setting | Default | Purpose |
 | --- | ---: | --- |
 | `Rebuild On Begin Play` | On | Schedules an initial runtime generation/rebuild after BeginPlay. |
-| `Runtime Quality` | Full Physical | `Full Physical` runs normal traces and physical solve. `Cheap Remote` disables expensive physical/traced detail and preserves only the key generated shape for distant or replicated visual copies. |
-| `Lower Shoe Tangent Scale` | 0.55 | Cheap Remote spline tangent length along the lower shoe run. Visible only in `Cheap Remote`. |
-| `Lower Transition Tangent Scale` | 0.35 | Cheap Remote tangent length where the lower run enters an end-wheel arc. Visible only in `Cheap Remote`. |
+| `Manual / Fallback Quality` | Full Physical | Used directly by `Manual`, and as the safe fallback before `External` receives a value. `Full Physical` runs the normal traced solver, `Cheap Remote` keeps the inexpensive procedural shape, and `Advanced Material Track` enables the persistent material-chain renderer. |
+| `Quality Selection Policy` | Manual | `Manual` never overrides the selected quality. `Local Ownership` gives a locally controlled player Pawn its local quality and all other Pawns the remote quality. `Local Ownership + Distance` also divides remote Pawns into near and far groups using the nearest local camera. `External` accepts an explicit local Blueprint/C++ decision. |
+| `Locally Controlled Quality` | Full Physical | Quality used for a Pawn controlled by a local human Player Controller. AI controllers are not treated as a local player. |
+| `Remote / Near Quality` | Cheap Remote | Quality used for non-local Pawns by `Local Ownership`, or for nearby non-local Pawns by the distance policy. |
+| `Remote Far Quality` | Cheap Remote | Quality used by the distance policy for distant non-local Pawns and for clients or dedicated servers without a valid local view. With `Local Ownership`, all non-local Pawns use `Remote / Near Quality`. |
+| `Remote Near Distance` | 5000 cm | Camera distance separating near and far remote Pawns. Distance is evaluated independently on each client. |
+| `Distance Hysteresis` | 500 cm | Prevents repeated quality switching around the distance boundary. |
+| `Selection Update Interval` | 0.25 s | How often automatic ownership/distance selection is reevaluated. Use `Refresh Runtime Quality Selection` after an immediate possession or camera change. |
+| `Lower Shoe Tangent Scale` | 0.55 | Cheap Remote spline tangent length along the lower shoe run. |
+| `Lower Transition Tangent Scale` | 0.35 | Cheap Remote tangent length where the lower run enters an end-wheel arc. |
 | `BeginPlay Rebuild Delay` (Advanced) | 0.2 s | Delay before the scheduled BeginPlay rebuild. It allows skeletal and vehicle components to initialize first. |
 | `Regenerate Controls On BeginPlay` | On | Regenerates controls from the suspension and wheel bones before the BeginPlay rebuild. Leave it enabled for the supported release workflow. |
 | `Update Every Tick` | On | Enables continuous runtime solving. The component still respects `Solve Interval`. |
 | `Solve Interval` (Advanced) | 0.033 s | Minimum time between solves. A value of 0 solves every component tick; larger values reduce work but also reduce response cadence. |
 | `Max Solve Delta Time` (Advanced) | 0.05 s | Maximum time step accepted by one solve. Longer accumulated frames are clamped to protect the physical integration from large jumps. |
 
-## Quick setup order
+Quality selection is deliberately local and is not replicated. This lets every
+player choose an appropriate rendering cost without changing authoritative
+vehicle state. For complete project-side control, set the policy to `External`
+and call `Set External Runtime Quality`; call `Clear External Runtime Quality`
+to return to `Manual / Fallback Quality`.
 
-For a first setup, work through the component in this order:
+## Recommended documentation path
 
-1. connect the components and verify the left/right naming;
-2. generate the control points and check that the loop is correct;
-3. set the road, top, and end-wheel radii, then verify track width;
-4. choose a suitable `Physics Feel Preset`;
-5. configure link count, orientation, and drive behavior in `Track Builder`;
-6. use debug drawing and status fields only when investigating a specific problem;
-7. finish by testing performance and quality modes under the intended gameplay conditions.
+For customer-facing setup material, pair this field reference with a shorter
+task-oriented Quick Start that covers:
 
-You do not need to tune every Advanced setting for a first pass. Start with a
-preset and open the additional controls only when you know which behavior needs
-to change.
+1. component wiring and left/right naming;
+2. generation and validation;
+3. road/top/end radii and track width;
+4. tuning the exposed simulation controls;
+5. Builder link count, orientation, and drive setup;
+6. debug/status interpretation;
+7. performance and multiplayer quality modes.
 
+This guide intentionally stays focused on supported release controls.
