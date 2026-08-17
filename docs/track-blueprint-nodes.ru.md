@@ -17,7 +17,7 @@ page_kind: reference
 
 # Blueprint-ноды гусеницы
 
-Этот справочник описывает публичные Blueprint-ноды компонентов `Track Spline Builder` и `Track Physics Solver`. Служебные функции редактора, старый reference-loop workflow и примерный пресет конкретной машины намеренно скрыты из палитры и здесь не описываются.
+Этот справочник описывает публичные Blueprint-ноды компонентов `Track Spline Builder` и `Track Physics Solver`. Служебные функции редактора и старый reference-loop workflow намеренно скрыты из палитры и здесь не описываются.
 
 > Визуальный блок в каждой строке ниже строится по актуальной публичной `UFUNCTION`-сигнатуре: показаны реальное имя ноды, все exec/data-пины и параметры `AdvancedDisplay` в развёрнутом виде.
 
@@ -28,11 +28,11 @@ page_kind: reference
     <p>Сначала создайте точки по колёсам, затем перестройте визуальные звенья. Скорость задавайте отдельно, только если движение трака управляется вручную.</p>
     <span class="bp-showcase__note">Пины строятся по актуальным UFUNCTION-сигнатурам; это стилизованная схема, а не снимок редактора.</span>
   </div>
-  <div class="bp-graph" role="img" aria-label="Последовательность Generate Control Points From Wheels, Rebuild Track и Set Track Speed">
+  <div class="bp-graph" role="img" aria-label="Последовательность Generate Controls From Wheel Rig, Rebuild Track и Set Track Speed">
     <div class="bp-graph__flow">
       <div class="bp-node">
         <span class="bp-node__phase">01 · SETUP</span>
-        <div class="bp-node__header">Generate Control Points From Wheels</div>
+        <div class="bp-node__header">Generate Controls From Wheel Rig</div>
         <div class="bp-node__ports">
           <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
           <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span></div>
@@ -64,7 +64,7 @@ page_kind: reference
 
 В штатной конфигурации физический solver и builder обновляются автоматически. Обычный Blueprint чаще всего использует только:
 
-1. `Generate Control Points From Wheels` — один раз после настройки костей и радиусов;
+1. `Generate Controls From Wheel Rig` — один раз после настройки костей и радиусов;
 2. `Rebuild Track` — после изменения сетки, количества звеньев или топологии;
 3. `Set Track Speed` либо `Set Distance Offset` — если движение трака задаётся вручную.
 
@@ -102,7 +102,7 @@ page_kind: reference
 
 | Нода | Когда использовать | Результат |
 |---|---|---|
-| `Generate Control Points From Wheels` | После назначения скелетного меша, стороны, шаблонов костей и радиусов колёс. | Пересобирает контрольные точки по ходовой и обновляет setup-статус. |
+| `Generate Controls From Wheel Rig` | После назначения скелетного меша, стороны, имён костей колёс и радиусов. | Пересобирает контрольные точки по настроенной ходовой и обновляет setup-статус. |
 | `Update Track Physics Spline` | Только для собственного расписания solve, когда автоматический Tick отключён. | Продвигает физическую модель на `Delta Time`, записывает solved loop в target spline и возвращает число точек. |
 
 Не вызывайте `Update Track Physics Spline` параллельно с включённым `Update Every Tick`: это даст два solve за кадр.
@@ -111,7 +111,6 @@ page_kind: reference
 
 | Нода | Назначение |
 |---|---|
-| `Apply Physics Preset` | Применяет выбранный `Physics Feel Preset` к рабочим параметрам solver. |
 | `Auto Assign Components` | Ищет подходящие spline, source mesh и track builder у владельца компонента. После выполнения проверьте найденные ссылки. |
 | `Validate Setup` | Проверяет зависимости, колёса, контрольные точки и основные ограничения; возвращает количество обнаруженных проблем. |
 
@@ -122,6 +121,19 @@ page_kind: reference
 | `Rebuild Track Physics Spline` | Выполняет немедленный полный solve. `Snap` сбрасывает переход и сразу принимает новое положение. |
 | `Reset Track Physics State` | Очищает накопленные позиции, скорости, контактную память и инерцию перед следующим solve. |
 | `Append Control Points From Wheels` | Добавляет найденные точки ходовой к существующему массиву вместо его замены. Нужна только для составных нестандартных контуров. |
+
+## Track Physics Solver — Runtime Quality
+
+| Нода | Назначение |
+|---|---|
+| `Refresh Runtime Quality Selection` | Немедленно повторяет локальный выбор после смены possession, камеры или настроек. |
+| `Set External Runtime Quality` | Передаёт локальное нереплицируемое качество, используемое политикой `External`. |
+| `Clear External Runtime Quality` | Очищает внешнее значение; `External` снова использует `Manual / Fallback Quality`. |
+| `Get Effective Runtime Quality` | Возвращает качество, которое фактически используется на этой машине после применения политики. |
+
+Сама политика полностью доступна в Details и Blueprint. Результат намеренно
+локальный; не реплицируйте его, если проекту не требуется одинаковая стоимость
+отрисовки на всех клиентах.
 
 ## Track Physics Solver — Diagnostics
 
@@ -135,6 +147,3 @@ page_kind: reference
 - Не смешивайте автоматический Tick и ручной `Update Track Physics Spline`.
 - После изменения количества контрольных точек сбросьте физическое состояние либо выполните rebuild со `Snap`.
 - Builder должен читать тот же target spline, в который пишет соответствующий solver.
-
-
-
