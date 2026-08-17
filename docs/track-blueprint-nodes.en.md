@@ -17,7 +17,7 @@ page_kind: reference
 
 # Track Blueprint nodes
 
-This reference covers the public Blueprint nodes exposed by `Track Spline Builder` and `Track Physics Solver`. Editor-only helpers, the retired reference-loop workflow, and the vehicle-specific example preset are intentionally hidden from the palette and omitted here.
+This reference covers the public Blueprint nodes exposed by `Track Spline Builder` and `Track Physics Solver`. Editor-only helpers and the retired reference-loop workflow are intentionally hidden from the palette and omitted here.
 
 > The visual block in every row below is generated from the current public `UFUNCTION` signature, including every exec/data pin and expanded `AdvancedDisplay` parameters.
 
@@ -28,11 +28,11 @@ This reference covers the public Blueprint nodes exposed by `Track Spline Builde
     <p>Generate the wheel-based control points first, then rebuild the visible links. Set track speed separately only when belt travel is driven manually.</p>
     <span class="bp-showcase__note">Pins come from the current UFUNCTION signatures; this is a styled diagram rather than an editor screenshot.</span>
   </div>
-  <div class="bp-graph" role="img" aria-label="Generate Control Points From Wheels, Rebuild Track, and Set Track Speed workflow">
+  <div class="bp-graph" role="img" aria-label="Generate Controls From Wheel Rig, Rebuild Track, and Set Track Speed workflow">
     <div class="bp-graph__flow">
       <div class="bp-node">
         <span class="bp-node__phase">01 · SETUP</span>
-        <div class="bp-node__header">Generate Control Points From Wheels</div>
+        <div class="bp-node__header">Generate Controls From Wheel Rig</div>
         <div class="bp-node__ports">
           <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
           <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span></div>
@@ -64,7 +64,7 @@ This reference covers the public Blueprint nodes exposed by `Track Spline Builde
 
 With automatic updates enabled, the solver and builder run without a per-frame Blueprint graph. A typical setup only needs:
 
-1. `Generate Control Points From Wheels` after configuring bones and wheel radii;
+1. `Generate Controls From Wheel Rig` after configuring bones and wheel radii;
 2. `Rebuild Track` after changing mesh, link count, or topology;
 3. `Set Track Speed` or `Set Distance Offset` when track travel is driven explicitly.
 
@@ -102,14 +102,13 @@ The component API is preferred for vehicles because it retains settings, orienta
 
 | Node | Use | Result |
 |---|---|---|
-| `Generate Control Points From Wheels` | After assigning the skeletal mesh, side, bone patterns, and wheel radii. | Rebuilds the control layout and refreshes setup status. |
+| `Generate Controls From Wheel Rig` | After assigning the skeletal mesh, side, wheel naming, and radii. | Rebuilds the control layout from the configured wheel rig and refreshes setup status. |
 | `Update Track Physics Spline` | Only for a custom solve schedule with automatic Tick disabled. | Advances the simulation by `Delta Time`, writes the solved loop, and returns its point count. |
 
 ## Track Physics Solver — Setup
 
 | Node | Purpose |
 |---|---|
-| `Apply Physics Preset` | Applies the selected `Physics Feel Preset` to the live solver settings. |
 | `Auto Assign Components` | Searches the owner for suitable spline, source mesh, and track builder components. Verify the resolved references afterward. |
 | `Validate Setup` | Checks dependencies, wheels, control points, and primary constraints; returns the issue count. |
 
@@ -120,6 +119,19 @@ The component API is preferred for vehicles because it retains settings, orienta
 | `Rebuild Track Physics Spline` | Runs an immediate full solve. `Snap` accepts the new position without a transition. |
 | `Reset Track Physics State` | Clears accumulated positions, velocities, contact memory, and inertia. |
 | `Append Control Points From Wheels` | Appends detected wheel points instead of replacing the array; intended for unusual compound loops. |
+
+## Track Physics Solver — Runtime Quality
+
+| Node | Purpose |
+|---|---|
+| `Refresh Runtime Quality Selection` | Immediately reevaluates local ownership and camera distance after possession, camera, or settings changes. |
+| `Set External Runtime Quality` | Supplies the local non-replicated value consumed by the `External` policy. |
+| `Clear External Runtime Quality` | Clears the external value and returns `External` to `Manual / Fallback Quality`. |
+| `Get Effective Runtime Quality` | Returns the quality currently used on this machine after policy selection. |
+
+The policy itself remains fully editable in Details or Blueprint. Selection is
+local by design; do not replicate the result unless your game deliberately
+wants every client to use the same visual cost.
 
 ## Track Physics Solver — Diagnostics
 
@@ -133,6 +145,3 @@ The component API is preferred for vehicles because it retains settings, orienta
 - Do not combine automatic Tick with manual `Update Track Physics Spline` calls.
 - Reset physics or perform a snapped rebuild after changing control-point topology.
 - The builder must read the same target spline written by its paired solver.
-
-
-
