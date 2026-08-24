@@ -142,4 +142,3 @@ wants every client to use the same visual cost.
 - Do not combine automatic Tick with manual `Update Track Physics Spline` calls.
 - Reset physics or perform a snapped rebuild after changing control-point topology.
 - The builder must read the same target spline written by its paired solver.
-
