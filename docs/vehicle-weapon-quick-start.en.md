@@ -15,7 +15,9 @@ the shared fire graph. `Vehicle Weapon System` owns turrets, guns, MGs, smoke
 launchers, stabilization, traces, ballistics, presentation, and network state.
 The paired `AmmoSystem` owns ammo types, reserves, chamber/feed, and reload.
 
-For the exact public nodes, use the
+For complete vehicle authoring, also read
+[Integrating Your Tank]({{ '/docs/blueprint-authoring.en.html' | relative_url }}).
+For exact public Blueprint operations, use the
 [Blueprint API reference]({{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}).
 
 ## First working result
@@ -34,23 +36,24 @@ For a normal `hull -> turret -> gun` vehicle:
 7. Run `Validate Vehicle Weapon System Configuration`, then test in a dedicated
    PIE map.
 
-Duplicating a close working variant is safer than authoring every profile from
-an empty asset: it exposes every required link without adding vehicle-specific
-logic to the master.
+For a first integration, duplicate the closest working variant instead of
+building empty profiles. It exposes every required link without adding
+vehicle-specific logic to the master.
 
 ## One owner for every value
 
 | Location | Owns |
 |---|---|
 | `DA_VWS_MyTank` | turret axes, weapon installations, muzzle sockets, traces |
-| `DA_WeaponLoadout_MyTank` | trigger, feed, cadence, reload, heat, recoil, ejection, smoke banks, FX, audio |
-| `AmmoSystem -> Ammo Type Definitions` | projectile, reserve, trajectory prediction, icon, selection input |
+| `DA_WeaponLoadout_MyTank` | trigger, feed, cadence, reload, heat, body recoil, ejection, smoke banks, FX, audio |
+| `AmmoSystem -> Ammo Type Definitions` | projectile class, reserve, trajectory prediction, icon, selection input |
 | Projectile Blueprint | `Initial Speed`, damage, impact/trail, optional sabot |
 | `DA_ArmamentProfile_MyTank` | links to VWS and Weapon Loadout profiles |
 | `DA_TankVariant_MyTank` | the single top-level vehicle selection |
 
-Do not duplicate projectile speed, reload duration, or fire presentation in a
-second location.
+Do not duplicate projectile speed, reload duration, effects, or ammo reserve in
+a second location. There is no separate Effects or Smoke profile in the current
+workflow.
 
 ## 1. Select the configuration source
 
@@ -58,10 +61,12 @@ Enable `Use Tank Profile Weapon System Settings` on `WeaponAimSystem`.
 
 - **On — recommended:** mechanics are imported from `Tank Variant Profile`,
   while vehicle-specific component/socket bindings remain on the child.
-- **Off — Local Configuration:** the component's built-in arrays are
-  authoritative; use this only for a prototype or a self-contained Blueprint.
+- **Off — Local Configuration:** the component's local arrays are authoritative;
+  use this only for a prototype or a deliberately self-contained Blueprint.
 
-Do not populate both workflows for one production vehicle.
+Do not populate both workflows for one production vehicle. Leave
+`Direct Weapon System Profile (Advanced)` and `Direct Armament Profile
+(Fallback)` empty when a Tank Variant Profile is assigned.
 
 ## 2. Keep stable IDs consistent
 
@@ -93,56 +98,75 @@ mechanism.
 If an AnimBP or Control Rig already rotates a bone, read the resolved axis
 rotations there. Do not let two systems write the same pivot.
 
-For every `Weapon ID`, add one installation and one muzzle/trace entry. Bind
-the real component and socket, keep `Ignore Owning Vehicle` enabled, and enable
-continuous trace only when firing or HUD actually needs it. Muzzle data never
-owns ammo, cadence, or projectile speed.
+For every `Weapon ID`:
+
+1. Add one Vehicle Weapon Installation.
+2. Select its Axis Group, or configure it as fixed.
+3. Add one Vehicle Muzzle And Trace entry with the same ID.
+4. Bind the real component and muzzle socket.
+5. Keep `Ignore Owning Vehicle` enabled.
+6. Enable continuous trace only when firing or HUD actually needs it.
+
+Muzzle data owns the physical origin of tracing and firing. It never owns ammo,
+cadence, reload, effects, or projectile speed.
 
 ## 4. Configure the Weapon Loadout
 
-Each `DA_WeaponLoadout_MyTank` row completely describes one weapon.
+Each row in `DA_WeaponLoadout_MyTank` describes one weapon's feed, trigger,
+timing, heat, recoil, launcher geometry, and presentation.
 
 | Weapon | Ammo Feed Mode | Trigger Behavior |
 |---|---|---|
-| Main gun | `Chamber / Ready Round` | single press or repeat after reload while held |
-| MG | `Magazine / Belt` | automatic while held |
-| Smoke | `Round Bank / Launcher Bank` | single press or automatic while held |
+| Main gun | `Chamber / Ready Round` | `Single Shot On Press` or `Repeat After Reload While Held` |
+| MG | `Magazine / Belt` | `Automatic While Held` |
+| Smoke | `Round Bank / Launcher Bank` | `Single Shot On Press` or `Automatic While Held` |
 
 Set `Initial Ammo Type ID`, ready capacity, `Time Between Shots`, and
 `Reload Duration`. Enable heat/overheat only for weapons that use it.
-`Vehicle Body Recoil Strength` is the per-weapon physical torque applied to the
-vehicle body; zero disables it.
+
+`Vehicle Body Recoil Strength` is the per-weapon rotational kick applied to the
+physical vehicle body. Zero disables body recoil for that weapon.
 
 `Effects & Audio` owns muzzle flash, ground blast, fire/reload/overheat audio,
 Camera Shake, and crew callouts. Concurrency and attenuation remain on the
 Sound asset or Audio Component. Projectile impact, trail, and damage stay in
 the Projectile Blueprint.
 
+### Smoke
+
 Smoke is a normal `Weapon ID`; no separate Smoke Data Asset is required. Its
 loadout contains launcher component, socket banks, ready capacity, and reload.
-Its projectile, reserve, icon, and key are an Ammo Type entry for `WeaponId=Smoke`.
+Its projectile, reserve, icon, and key are an Ammo Type entry for
+`WeaponId=Smoke`.
 
 ## 5. Add ammo types
 
-In the vehicle child, open `AmmoSystem -> Ammo Type Definitions`. One row is
-the pair `Weapon ID + Ammo Type ID`.
+In the vehicle child, open `AmmoSystem -> Ammo Type Definitions`. One row is the
+pair `Weapon ID + Ammo Type ID`.
 
-Set projectile class, starting/maximum reserve, trajectory prediction settings,
-icon, and optional `Selection Input Action`. Muzzle velocity has one owner:
-`Projectile Movement -> Initial Speed` in the selected Projectile Blueprint.
-The ballistic predictor reads it from that class.
+Set:
+
+- `Projectile Class`;
+- `Starting Count` and `Maximum Count`;
+- trajectory prediction settings except speed;
+- UI icon;
+- optional `Selection Input Action`.
+
+Muzzle velocity has one owner: `Projectile Movement -> Initial Speed` in the
+selected Projectile Blueprint. The ballistic predictor reads it from that
+class. Do not enter a fallback speed elsewhere.
 
 `Initial Ammo Type ID` in the Weapon Loadout explicitly chooses the initially
-chambered type. `Set Selected Ammo Type` queues a type for the next load; it
-does not replace an already chambered projectile.
+chambered type. `Set Selected Ammo Type` queues another type for the next load;
+it does not replace an already chambered projectile.
 
-To add a fourth ammo type, add another row with a new ID. A dynamic HUD can
-enumerate it from the runtime snapshot; a fixed visual layout needs one more
-visual card.
+To add a fourth ammo type, add another row with a new ID, projectile, icon, and
+reserve. A dynamic HUD can enumerate it from the runtime snapshot; a fixed
+visual layout needs one more visual card.
 
 ## 6. Compose and assign profiles
 
-In `DA_ArmamentProfile_MyTank` assign:
+In `DA_ArmamentProfile_MyTank`, assign:
 
 ```text
 Aiming / Turret Setup -> DA_VWS_MyTank
@@ -156,8 +180,18 @@ Tank Variant Profile                    -> DA_TankVariant_MyTank
 Use Tank Profile Weapon System Settings -> On
 ```
 
-Leave `Direct Weapon System Profile (Advanced)` and `Direct Armament Profile
-(Fallback)` empty. A vehicle should have one obvious configuration source.
+The production ownership chain is therefore:
+
+```text
+Tank Variant
+└─ Armament Profile
+   ├─ Aiming / Turret Setup (DA_VWS)
+   └─ Weapon Loadouts
+
+Vehicle child
+└─ AmmoSystem
+   └─ Ammo Type Definitions
+```
 
 ## 7. Connect input and HUD
 
@@ -168,7 +202,8 @@ and `AmmoSystem` own cadence, reload, and heat; do not add a parallel Timeline.
 Optional selectable groups use `Selectable Weapon Channels`:
 
 - `Set Active Weapon Channel` selects one exclusive channel;
-- `Set Weapon Channel Active` adds/removes a channel for combined fire;
+- `Set Weapon Channel Active` adds or removes one channel without changing the
+  others;
 - `Cycle Weapon Channel` selects the next or previous profile entry.
 
 HUD should consume cached data instead of repeating traces or ballistics:
@@ -179,13 +214,29 @@ HUD should consume cached data instead of repeating traces or ballistics:
 - `Get Aim Source HUD State` — a camera, sight, or AI source;
 - `Get Vehicle Weapon HUD Snapshot` — a dynamic snapshot for any weapon count.
 
-Vehicle-specific artwork and reticles remain ordinary Blueprint/UMG so buyers
-can replace one visual child or the complete HUD.
+Vehicle-specific artwork, tank icons, and reticles remain ordinary
+Blueprint/UMG. A buyer can replace their visual child without modifying the
+runtime component.
+
+## Adding another weapon
+
+To add another MG, cannon, launcher, or fixed weapon:
+
+1. Choose a new stable `Weapon ID`.
+2. Add its installation and muzzle entry to `DA_VWS_MyTank`.
+3. Add its feed, timing, heat, recoil, launcher, and presentation row to
+   `DA_WeaponLoadout_MyTank`.
+4. Add one or more Ammo Type rows for the same Weapon ID.
+5. Optionally add it to a selectable weapon channel.
+6. Send its press/release through the same configured trigger node.
+7. Read its HUD state through the same per-ID queries.
+
+No master Blueprint or C++ API change is required.
 
 ## Verification
 
-1. Validation reports no blocking errors.
-2. Every trace begins at the intended socket and debug draw is off afterward.
+1. `Validate Vehicle Weapon System Configuration` reports no blocking errors.
+2. Every trace begins at the intended socket; debug draw is off afterward.
 3. Yaw/pitch limits work and AnimBP receives the intended axes.
 4. MainGun, every MG, and Smoke spawn the correct projectile, FX, and audio.
 5. Ammo, reload, heat, and replenish are independent per `Weapon ID`.
@@ -209,5 +260,5 @@ can replace one visual child or the complete HUD.
 | Smoke does not fire | launcher component, banks, sockets, Round Bank state |
 | Profile does not apply | top-level Tank Variant assigned; direct profile fields empty |
 
-Continue with [installation patterns]({{ '/docs/weapon-installations.en.html' | relative_url }})
-or the [complete Blueprint node reference]({{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}).
+Start with the Core API. Advanced operations are intended for a custom
+scheduler, unusual aim sources, or migration of an existing graph.
