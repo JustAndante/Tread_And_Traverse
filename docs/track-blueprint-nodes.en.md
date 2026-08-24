@@ -116,7 +116,6 @@ The component API is preferred for vehicles because it retains settings, orienta
 |---|---|
 | `Rebuild Track Physics Spline` | Runs an immediate full solve. `Snap` accepts the new position without a transition. |
 | `Reset Track Physics State` | Clears accumulated positions, velocities, contact memory, and inertia. |
-| `Append Control Points From Wheels` | Appends detected wheel points instead of replacing the array; intended for unusual compound loops. |
 
 ## Track Physics Solver — Runtime Quality
 
@@ -143,3 +142,4 @@ wants every client to use the same visual cost.
 - Do not combine automatic Tick with manual `Update Track Physics Spline` calls.
 - Reset physics or perform a snapped rebuild after changing control-point topology.
 - The builder must read the same target spline written by its paired solver.
+
