@@ -115,7 +115,9 @@ projectile здесь не настраиваются.
 
 ## 4. Настройте Weapon Loadout
 
-В `DA_WeaponLoadout_MyTank` одна запись полностью описывает одно оружие.
+В `DA_WeaponLoadout_MyTank` одна запись описывает feed, trigger, timing, heat,
+отдачу, launcher geometry и presentation одного оружия. Projectile class и
+запас принадлежат Ammo Type Definitions и здесь не дублируются.
 
 | Оружие | `Ammo Feed Mode` | `Trigger Behavior` |
 |---|---|---|
@@ -157,7 +159,8 @@ ready capacity и reload. Projectile, запас, иконка и клавиша
 
 Начальная скорость задаётся только в
 `Projectile Movement → Initial Speed` выбранного Projectile Blueprint.
-Баллистический вычислитель читает её оттуда.
+Баллистический вычислитель читает её оттуда. Не задавайте fallback-скорость в
+другом месте.
 
 `Initial Ammo Type ID` в Weapon Loadout явно определяет стартовый заряженный
 тип. Выбор через `Set Selected Ammo Type` ставит другой тип следующим в очередь,
@@ -214,6 +217,21 @@ HUD не должен повторять traces и баллистический 
 Так третье оружие или вторая пушка добавляются новым запросом по ID. Внешний
 вид, карточки и уникальные сетки остаются обычным Blueprint/UMG пользователя.
 
+## Добавление ещё одного оружия
+
+Для нового MG, орудия, launcher или фиксированного оружия:
+
+1. Выберите новый стабильный `Weapon ID`.
+2. Добавьте installation и muzzle с этим ID в `DA_VWS_MyTank`.
+3. Добавьте feed, timing, heat, recoil, launcher и presentation в
+   `DA_WeaponLoadout_MyTank`.
+4. Добавьте один или несколько Ammo Type с тем же Weapon ID.
+5. При необходимости добавьте оружие в selectable weapon channel.
+6. Передавайте press/release через ту же configured trigger-ноду.
+7. Получайте HUD через те же запросы по Weapon ID.
+
+Править `BP_Tank_Master` или добавлять новую C++-ноду не требуется.
+
 ## Проверка
 
 1. `Validate Vehicle Weapon System Configuration` не возвращает blocking errors.
@@ -244,7 +262,7 @@ HUD не должен повторять traces и баллистический 
 ## Справочники
 
 - [Blueprint-ноды Vehicle Weapon System]({{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }})
-- [Blueprint authoring]({{ '/docs/blueprint-authoring.ru.html' | relative_url }})
+- [Добавление своего танка в VehicleCore]({{ '/docs/blueprint-authoring.ru.html' | relative_url }})
 - `DA_VWS_T80U`, `DA_WeaponLoadout_T80U` и `BP_T80U_Variant` — пример основной
   пушки, двух MG и smoke banks.
 
