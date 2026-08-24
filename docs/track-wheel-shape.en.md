@@ -20,7 +20,8 @@ ground contact.
 1. Use consistently numbered road-wheel bones.
 2. Use separate prefixes for the left and right sides.
 3. Bind end wheels and support rollers separately.
-4. Run `Generate Bone Rig Now` again after changing bone names, count, or order.
+4. Runtime refreshes controls automatically. With a custom schedule, call
+   `Generate Controls From Wheel Rig` after changing bone names, count, or order.
 
 ## Verify the radii
 
@@ -42,4 +43,5 @@ All fields: [Geometry Source and Wheels]({{ '/docs/track-settings-reference.en.h
 [← Guide]({{ '/docs/track-physics-solver.en.html' | relative_url }})
 [Next: ground contact →]({{ '/docs/track-ground-contact.en.html' | relative_url }})
 </div>
+
 
