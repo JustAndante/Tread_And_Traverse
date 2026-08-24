@@ -29,7 +29,6 @@ centimeters unless stated otherwise.
 | Setting | Default | Purpose |
 | --- | ---: | --- |
 | `Target Spline` | None | Name of the spline component that receives the solved track loop. Select the same spline used by the matching `Track Spline Builder`. |
-| `Target Spline Override` (Advanced) | None | Direct component reference used before the name lookup. Normally leave this empty and use `Target Spline`; it exists for unusual component ownership or programmatic setups. |
 
 <a id="geometry-source"></a>
 
@@ -62,7 +61,7 @@ normal controls.
 | `Road Wheel Count` | 7 | Manual number of road wheels. Visible only when `Auto Detect Wheel Counts` is disabled. |
 | `Road Wheel Index Digits` (Advanced) | 2 | Minimum number of digits in the generated index. A value of 2 produces `01`, `02`, and so on. |
 | `Trace Ground Between Road Wheels` | On | Ground-traces the generated lower detail points between neighboring road-wheel centers. Disable only when a rigid/interpolated lower run is desired. |
-| `Road Wheel Radius` | 39 cm | Authoritative contact radius used to place the lower track under each road-wheel center and constrain the physical track outside the wheel. |
+| `Road Wheel Contact Radius` | 39 cm | Radius used only for solver shape and road-wheel contact. Link travel speed is calculated separately by `Track Spline Builder` from the selected Chaos wheel's runtime radius. |
 
 ## Setup: top rollers
 
@@ -123,7 +122,7 @@ as long as the configured bones and radii match the loop order.
 | `Snap Trace Points To Ground` | On | Places accepted trace points directly on the contact result. When disabled, the solver uses `Ground Alignment Strength` for a softer blend. |
 | `Ground Trace Length` | 350 cm | Total downward search length available to automatically generated trace points. |
 | `Ground Trace Start Height` | 120 cm | Distance above the generated point where its downward trace begins. |
-| `Track Contact Width` | 0 cm | Extra lateral width used to probe the footprint of a track shoe. A value of 0 uses the center probe only; values near the shoe width enable the three-probe contact manifold. |
+| `Track Contact Width` | 0 cm | Single full width used by generated probes and runtime contact. A value of 0 uses only the center probe; otherwise use approximately the physical shoe width. |
 | `Ground Trace Shape` (Advanced) | Sphere | `Line` uses a zero-radius ray. `Sphere` sweeps the configured radius and is more tolerant of small gaps and sharp mesh details. |
 | `Ground Trace Radius` (Advanced) | 3 cm | Sphere radius used when `Ground Trace Shape` is `Sphere`. |
 | `Ground Alignment Strength` (Advanced) | 0.35 | Blend toward the accepted surface when direct ground snapping is disabled. |
@@ -139,7 +138,12 @@ change Chaos vehicle collision. Choose `Object Types` or `Trace Channel` when
 tracks must follow movable platforms or another explicitly configured surface;
 otherwise keep the release default `World Static Only`.
 
-## Debug drawing and runtime diagnostics
+## Optional Track Physics Diagnostics component
+
+Debug controls are intentionally absent from the normal solver Details panel.
+Add one editor-only `Track Physics Diagnostics` component to the vehicle,
+select the corresponding solver, and use it only while investigating a setup or
+runtime problem. The component is stripped from cooked builds.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
@@ -159,11 +163,11 @@ otherwise keep the release default `World Static Only`.
 | `Debug Wheel Guide Color` | Purple | Color of wheel guide geometry. |
 | `Debug Wheel Limit Color` | Magenta | Color of one-sided wheel-limit corrections. |
 
-## Read-only solver status
+## Diagnostic log fields (internal)
 
-Status fields report the most recent generation or solve. They do not change
-the track. The three text fields are the normal starting point; expand the
-advanced status categories only when investigating a specific problem.
+These values are solver-owned diagnostic data and are not normal tuning
+controls. The diagnostics component combines the relevant values into its
+single `Copy-Ready Diagnostic Log` field.
 
 ### Primary status
 
@@ -266,15 +270,13 @@ advanced status categories only when investigating a specific problem.
 | `Last First Desired Point` | Local-space position of the first desired point, useful for loop-order diagnostics. |
 | `Last Last Desired Point` | Local-space position of the final desired point, useful for seam/closure diagnostics. |
 
-## Editor actions
+## Setup utilities
 
-Editor actions appear as momentary checkboxes. Selecting one executes the
-action and the component immediately clears the checkbox.
-
-| Action | Purpose |
-| --- | --- |
-| `Generate Bone Rig Now` | Regenerates the main control loop from the current source component, side, wheel names, radii, wrap, shape, and trace settings. Use it after changing topology or bone naming. |
-| `Preview Solved Spline After Generate` (read-only) | Reports whether editor generation is currently configured to leave the target spline in solved-preview form. Normal generation keeps the authored/generated loop stable. |
+| Utility | Available from | Purpose |
+| --- | --- | --- |
+| `Auto Assign Components` | Details / Blueprint | Resolves the normal same-actor spline, source mesh, and Builder when the setup is unambiguous. |
+| `Validate Setup` | Details / Blueprint | Returns the number of setup issues. A release-ready configuration should return 0. |
+| `Generate Controls From Wheel Rig` | Blueprint | Explicitly refreshes the control loop after changing wheel topology or bone names. Normal runtime also regenerates it automatically when required. |
 
 <a id="simulation-runtime"></a>
 
@@ -282,16 +284,19 @@ action and the component immediately clears the checkbox.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
+| `Solver Mode` (Advanced) | Physical Chain | Selects the track-shape algorithm. This is separate from per-viewer runtime quality selection. |
 | `Chain Gravity Scale` | 1.0 | Multiplier applied to gravity during physical-chain integration. |
 | `Generated Shape Pull` | 0.35 | Pulls simulated points toward the generated desired track shape. Higher values are more controlled; lower values leave contacts, constraints, and inertia more authoritative. |
 | `Wheel Guide Pull` (Advanced) | 0.10 | Minimum attraction toward top-roller and end-wheel guide shapes. Detached upper points receive only a reduced fraction. |
 | `Per-Segment Slack Ratio` | 0 | Adds compliant rest-length slack to each physical segment. Effective slack is also scaled by `Unsupported Span Sag Ratio`. |
 | `Chain Velocity Damping` (Advanced) | 0.15 | Removes physical point velocity each step. Higher values settle motion sooner; excessive damping makes the track look rigid. |
 | `Preserve Ground Contacts` (Advanced) | On | Retains accepted ground contacts during physical constraint solving instead of allowing the chain to immediately fall away. |
-| `Ground Contact Strength` (Advanced) | 1.0 | Strength of the preserved-contact correction. Visible only while ground-contact preservation is enabled. |
+| `Physical Contact Hold Strength` (Advanced) | 1.0 | Strength used to preserve an already accepted physical ground contact. It does not control trace alignment. |
 | `Maximum Extra Sag` | 35 cm | Maximum additional downward travel below the generated unsupported-span shape. A value of 0 disables this envelope. |
 | `Keep Track Outside Wheels` | On | Applies one-sided road, top, and end-wheel radius constraints. It prevents physical points from passing through configured wheels without pulling already-clear points back onto the circle. |
+| `Wheel Clearance` (Advanced) | 0 cm | Single extra radial clearance used by all outside-wheel constraints. |
 | `Wheel Surface Following` (Advanced) | 0 | Guides nearby physical points along the wheel circumference after the outside-wheel limit. |
+| `Traced Point Physics Weight` (Advanced) | 0.2 | Physics participation assigned to points created from ground traces. It does not change trace alignment or contact hold strength. |
 
 ## Output: solved spline and Track Builder
 
@@ -307,9 +312,9 @@ action and the component immediately clears the checkbox.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
-| `Rebuild On Begin Play` | On | Schedules an initial runtime generation/rebuild after BeginPlay. |
+| `Solve Track On BeginPlay` | On | Generates controls when requested, solves the spline after the configured delay, and refreshes the paired Builder. |
 | `Manual / Fallback Quality` | Full Physical | Used directly by `Manual`, and as the safe fallback before `External` receives a value. `Full Physical` runs the normal traced solver, `Cheap Remote` keeps the inexpensive procedural shape, and `Advanced Material Track` enables the persistent material-chain renderer. |
-| `Quality Selection Policy` | Manual | `Manual` never overrides the selected quality. `Local Ownership` gives a locally controlled player Pawn its local quality and all other Pawns the remote quality. `Local Ownership + Distance` also divides remote Pawns into near and far groups using the nearest local camera. `External` accepts an explicit local Blueprint/C++ decision. |
+| `Quality Selection` | Manual | `Manual` never overrides the selected quality. `Local Ownership` gives a locally controlled player Pawn its local quality and all other Pawns the remote quality. `Local Ownership + Distance` also divides remote Pawns into near and far groups using the nearest local camera. `External` accepts an explicit local Blueprint/C++ decision. |
 | `Locally Controlled Quality` | Full Physical | Quality used for a Pawn controlled by a local human Player Controller. AI controllers are not treated as a local player. |
 | `Remote / Near Quality` | Cheap Remote | Quality used for non-local Pawns by `Local Ownership`, or for nearby non-local Pawns by the distance policy. |
 | `Remote Far Quality` | Cheap Remote | Quality used by the distance policy for distant non-local Pawns and for clients or dedicated servers without a valid local view. With `Local Ownership`, all non-local Pawns use `Remote / Near Quality`. |
@@ -329,4 +334,5 @@ player choose an appropriate rendering cost without changing authoritative
 vehicle state. For complete project-side control, set the policy to `External`
 and call `Set External Runtime Quality`; call `Clear External Runtime Quality`
 to return to `Manual / Fallback Quality`.
+
 

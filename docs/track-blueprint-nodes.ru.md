@@ -118,7 +118,6 @@ doc_section: nodes
 |---|---|
 | `Rebuild Track Physics Spline` | Выполняет немедленный полный solve. `Snap` сбрасывает переход и сразу принимает новое положение. |
 | `Reset Track Physics State` | Очищает накопленные позиции, скорости, контактную память и инерцию перед следующим solve. |
-| `Append Control Points From Wheels` | Добавляет найденные точки ходовой к существующему массиву вместо его замены. Нужна только для составных нестандартных контуров. |
 
 ## Track Physics Solver — Runtime Quality
 

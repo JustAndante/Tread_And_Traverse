@@ -51,7 +51,8 @@ doc_section: guide
 2. Укажите `Source Mesh Component`.
 3. Задайте префикс костей опорных катков и кости крайних колёс.
 4. Проверьте радиусы контакта колёс.
-5. Нажмите `Generate Bone Rig Now`.
+5. Оставьте включённым `Generate Controls On BeginPlay`. Для собственного
+   расписания вызовите Blueprint-ноду `Generate Controls From Wheel Rig`.
 
 ### 4. Свяжите Solver и Builder
 
@@ -98,4 +99,5 @@ doc_section: guide
 <div class="guide-next" markdown="1">
 **Продолжить по порядку:** [настройте форму по колёсам]({{ '/docs/track-wheel-shape.ru.html' | relative_url }}).
 </div>
+
 

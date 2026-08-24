@@ -51,7 +51,8 @@ In `Track Physics Solver`:
 2. Set `Source Mesh Component`.
 3. Enter the road-wheel bone prefix and end-wheel bones.
 4. Verify the wheel contact radii.
-5. Run `Generate Bone Rig Now`.
+5. Keep `Generate Controls On BeginPlay` enabled. With a custom schedule, call
+   the `Generate Controls From Wheel Rig` Blueprint node explicitly.
 
 ### 4. Connect Solver and Builder
 
@@ -98,4 +99,5 @@ listed in the [settings reference]({{ '/docs/track-settings-reference.en.html' |
 <div class="guide-next" markdown="1">
 **Continue in order:** [configure the wheel shape]({{ '/docs/track-wheel-shape.en.html' | relative_url }}).
 </div>
+
 
