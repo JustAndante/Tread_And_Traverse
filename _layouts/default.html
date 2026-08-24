@@ -58,44 +58,49 @@
               </a>
 
               <label class="doc-search">
-                <span>{% if page.lang == 'ru' %}Поиск по странице{% else %}Search this page{% endif %}</span>
-                <input type="search" data-doc-search autocomplete="off" placeholder="{% if page.lang == 'ru' %}Параметр, нода, раздел…{% else %}Setting, node, section…{% endif %}">
+                <span>{% if page.lang == 'ru' %}Поиск по плагину{% else %}Search this plugin{% endif %}</span>
+                <input type="search" data-doc-search autocomplete="off" placeholder="{% if page.lang == 'ru' %}Настройка, задача или нода…{% else %}Setting, task, or node…{% endif %}">
               </label>
               <div class="doc-search-results" data-doc-search-results hidden></div>
 
               {% if page.product == 'track' %}
               <nav class="product-nav">
                 <section class="product-nav__group">
-                  <strong>{% if page.lang == 'ru' %}Начало работы{% else %}Getting started{% endif %}</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Начало{% else %}Start{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Руководство{% else %}Guide{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
-                  <strong>{% if page.lang == 'ru' %}Компоненты{% else %}Components{% endif %}</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#solver-settings' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#solver-settings' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Настройки Solver{% else %}Solver settings{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#simulation-runtime' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#simulation-runtime' | relative_url }}{% endif %}">Simulation & Runtime</a>
+                  <strong>{% if page.lang == 'ru' %}Задачи{% else %}Tasks{% endif %}</strong>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#wheels' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#wheels' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Форма по колёсам{% else %}Wheel shape{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#ground' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#ground' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Контакт с землёй{% else %}Ground contact{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#links' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#links' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Звенья и движение{% else %}Links and motion{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#quality' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#quality' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Качество и сеть{% else %}Quality and network{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#troubleshooting' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#troubleshooting' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика{% else %}Troubleshooting{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
-                  <strong>Blueprint API</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#builder-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#builder-nodes' | relative_url }}{% endif %}">Builder {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html#solver-nodes' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html#solver-nodes' | relative_url }}{% endif %}">Solver {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Справочник{% else %}Reference{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-settings-reference.ru.html' | relative_url }}{% else %}{{ '/docs/track-settings-reference.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Все настройки{% else %}All settings{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}{% endif %}">Blueprint-{% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
                 </section>
               </nav>
               {% else %}
               <nav class="product-nav">
                 <section class="product-nav__group">
-                  <strong>{% if page.lang == 'ru' %}Начало работы{% else %}Getting started{% endif %}</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#quick-start' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#quick-start' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрая настройка{% else %}Quick start{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Начало{% else %}Start{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Руководство{% else %}Guide{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
-                  <strong>{% if page.lang == 'ru' %}Интеграция{% else %}Integration{% endif %}</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#installations' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#installations' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Схемы установки{% else %}Installation patterns{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#aiming-stabilization' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#aiming-stabilization' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Прицеливание и стабилизация{% else %}Aiming and stabilization{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Задачи{% else %}Tasks{% endif %}</strong>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#installations' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#installations' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Схемы установки{% else %}Installations{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#aiming' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#aiming' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Наведение{% else %}Aiming{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#ui' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#ui' | relative_url }}{% endif %}">UI</a>
                   <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#replication' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#replication' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Репликация{% else %}Replication{% endif %}</a>
+                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#troubleshooting' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#troubleshooting' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика{% else %}Troubleshooting{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
-                  <strong>Blueprint API</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#core-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#core-nodes' | relative_url }}{% endif %}">Core {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html#advanced-nodes' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html#advanced-nodes' | relative_url }}{% endif %}">Advanced {% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Справочник{% else %}Reference{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-reference.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-reference.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Подробная интеграция{% else %}Detailed integration{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}{% endif %}">Blueprint-{% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
                 </section>
               </nav>
               {% endif %}

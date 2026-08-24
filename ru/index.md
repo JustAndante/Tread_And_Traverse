@@ -11,7 +11,7 @@ permalink: /ru/
   <div class="hub-hero__copy">
     <p class="eyebrow">TREAD & TRAVERSE · ДОКУМЕНТАЦИЯ</p>
     <h1>Документация</h1>
-    <p>Два независимых плагина Unreal Engine. Каждое руководство начинается с быстрой настройки и продолжается полным поддерживаемым справочником.</p>
+    <p>Выберите плагин и соберите первый рабочий результат. Подробные настройки и Blueprint-ноды вынесены в справочник и не мешают быстрому старту.</p>
   </div>
   <aside class="hub-hero__aside">
     <strong>English version</strong>
@@ -25,13 +25,13 @@ permalink: /ru/
     <h2>Track Spline Builder</h2>
     <p>Строит визуальный контур по костям колёс, деформирует его по подвеске и поверхности и распределяет звенья и коннекторы.</p>
     <div class="tag-row">
-      <span class="tag">Быстрый старт</span>
-      <span class="tag">Все настройки</span>
-      <span class="tag">Blueprint-ноды</span>
+      <span class="tag">5 шагов до PIE</span>
+      <span class="tag">Задачи</span>
+      <span class="tag">Диагностика</span>
     </div>
     <div class="card-actions">
-      <a class="card-link" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Настройка и полное руководство</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
+      <a class="card-link" href="{{ '/docs/track-physics-solver.ru.html' | relative_url }}">Открыть руководство</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/track-settings-reference.ru.html' | relative_url }}">Справочник</a>
     </div>
   </article>
 
@@ -40,13 +40,13 @@ permalink: /ru/
     <h2>Vehicle Weapon System</h2>
     <p>Настраивает оси башни, стабилизацию, источники прицеливания, дульные точки, оружейные установки и репликацию.</p>
     <div class="tag-row">
-      <span class="tag">Быстрый старт</span>
-      <span class="tag">Интеграция</span>
-      <span class="tag">Blueprint-ноды</span>
+      <span class="tag">5 шагов до runtime</span>
+      <span class="tag">Схемы установки</span>
+      <span class="tag">Диагностика</span>
     </div>
     <div class="card-actions">
-      <a class="card-link" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Настройка и полное руководство</a>
-      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }}">Blueprint-ноды</a>
+      <a class="card-link" href="{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}">Открыть руководство</a>
+      <a class="card-link card-link--secondary" href="{{ '/docs/vehicle-weapon-reference.ru.html' | relative_url }}">Справочник</a>
     </div>
   </article>
 </div>

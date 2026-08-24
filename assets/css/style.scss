@@ -2936,6 +2936,71 @@ a:hover {
   margin-top: 0;
 }
 
+.guide-callout,
+.guide-next {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1rem 1.1rem;
+  background: var(--tt-accent-soft);
+  border: 1px solid color-mix(in srgb, var(--tt-accent) 38%, var(--tt-line));
+  border-left: .28rem solid var(--tt-accent);
+  border-radius: .55rem;
+}
+
+.guide-callout > :first-child,
+.guide-next > :first-child {
+  margin-top: 0;
+}
+
+.guide-callout > :last-child,
+.guide-next > :last-child {
+  margin-bottom: 0;
+}
+
+.guide-next {
+  background: var(--tt-surface-soft);
+  border-color: var(--tt-line);
+  border-left-color: var(--tt-blue);
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem;
+  margin: 1rem 0 2rem;
+}
+
+.task-card {
+  display: flex;
+  min-height: 5.35rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: .3rem;
+  padding: .9rem 1rem;
+  color: var(--tt-ink);
+  text-decoration: none;
+  background: var(--tt-surface);
+  border: 1px solid var(--tt-line);
+  border-radius: .55rem;
+  transition: border-color .16s ease, transform .16s ease, background .16s ease;
+}
+
+.task-card:hover {
+  background: var(--tt-accent-soft);
+  border-color: color-mix(in srgb, var(--tt-accent) 45%, var(--tt-line));
+  transform: translateY(-1px);
+}
+
+.task-card strong {
+  color: var(--tt-accent-strong);
+  font-size: .88rem;
+}
+
+.task-card span {
+  color: var(--tt-muted);
+  font-size: .76rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 82rem) {
   .reference-shell.has-product {
     grid-template-columns: minmax(13rem, 15rem) minmax(0, 1fr);
@@ -2981,5 +3046,9 @@ a:hover {
   .doc-sidebar__nav {
     max-height: min(65vh, 34rem);
     overflow-y: auto;
+  }
+
+  .task-grid {
+    grid-template-columns: 1fr;
   }
 }

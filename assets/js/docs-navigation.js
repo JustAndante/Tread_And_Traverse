@@ -155,22 +155,72 @@
     return cleanText(value).toLocaleLowerCase();
   }
 
-  var searchIndex = sectionHeadings.map(function (heading, index) {
-    var parts = [heading.textContent];
-    var cursor = heading.nextElementSibling;
-    while (cursor && cursor.tagName !== "H2") {
-      parts.push(cursor.textContent || "");
-      cursor = cursor.nextElementSibling;
-    }
-    var text = cleanText(parts.join(" "));
-    return {
-      id: heading.id,
-      title: cleanText(heading.textContent),
-      text: text,
-      normalized: normalized(text),
-      order: index
-    };
-  });
+  function indexArticle(root, pageUrl) {
+    var pageTitleNode = root.querySelector("h1");
+    var pageTitle = pageTitleNode ? cleanText(pageTitleNode.textContent) : "";
+    return Array.prototype.slice.call(root.querySelectorAll("h2")).map(function (heading, index) {
+      var parts = [heading.textContent];
+      var cursor = heading.nextElementSibling;
+      while (cursor && cursor.tagName !== "H2") {
+        parts.push(cursor.textContent || "");
+        cursor = cursor.nextElementSibling;
+      }
+      var text = cleanText(parts.join(" "));
+      return {
+        id: heading.id || "section-" + (index + 1),
+        pageTitle: pageTitle,
+        title: cleanText(heading.textContent),
+        text: text,
+        normalized: normalized(pageTitle + " " + text),
+        order: index,
+        url: pageUrl
+      };
+    });
+  }
+
+  var currentUrl = new URL(window.location.href);
+  currentUrl.hash = "";
+  var searchIndex = indexArticle(article, currentUrl.href);
+  var searchablePages = Array.prototype.slice.call(document.querySelectorAll("[data-search-page]"))
+    .map(function (link) {
+      var url = new URL(link.href, window.location.href);
+      url.hash = "";
+      return url.href;
+    })
+    .filter(function (url, index, all) {
+      return normalizedPath(new URL(url).pathname) !== normalizedPath(currentUrl.pathname) &&
+        all.indexOf(url) === index;
+    });
+  var searchPagesRequested = false;
+  var searchPagesLoading = false;
+
+  function loadSearchablePages() {
+    if (searchPagesRequested) return;
+    searchPagesRequested = true;
+    searchPagesLoading = true;
+
+    Promise.all(searchablePages.map(function (url) {
+      return fetch(url, { credentials: "same-origin" })
+        .then(function (response) {
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          return response.text();
+        })
+        .then(function (html) {
+          var documentCopy = new DOMParser().parseFromString(html, "text/html");
+          var remoteArticle = documentCopy.querySelector("[data-doc-article]");
+          return remoteArticle ? indexArticle(remoteArticle, url) : [];
+        })
+        .catch(function () {
+          return [];
+        });
+    })).then(function (pageIndexes) {
+      pageIndexes.forEach(function (items) {
+        searchIndex = searchIndex.concat(items);
+      });
+      searchPagesLoading = false;
+      renderSearch();
+    });
+  }
 
   function renderSearch() {
     var query = normalized(searchInput.value);
@@ -179,15 +229,20 @@
       searchResults.hidden = true;
       return;
     }
+    loadSearchablePages();
 
     var matches = searchIndex.filter(function (item) {
       return item.normalized.indexOf(query) !== -1;
-    }).slice(0, 8);
+    }).slice(0, 10);
 
     if (!matches.length) {
       var empty = document.createElement("span");
       empty.className = "doc-search-results__empty";
-      empty.textContent = document.documentElement.lang.indexOf("ru") === 0 ? "Ничего не найдено" : "No results";
+      if (searchPagesLoading) {
+        empty.textContent = document.documentElement.lang.indexOf("ru") === 0 ? "Ищем по разделу…" : "Searching this plugin…";
+      } else {
+        empty.textContent = document.documentElement.lang.indexOf("ru") === 0 ? "Ничего не найдено" : "No results";
+      }
       searchResults.appendChild(empty);
       searchResults.hidden = false;
       return;
@@ -195,10 +250,10 @@
 
     matches.forEach(function (item) {
       var link = document.createElement("a");
-      link.href = "#" + item.id;
+      link.href = item.url + "#" + item.id;
 
       var title = document.createElement("strong");
-      title.textContent = item.title;
+      title.textContent = item.pageTitle ? item.pageTitle + " · " + item.title : item.title;
       link.appendChild(title);
 
       var rawPosition = item.normalized.indexOf(query);
