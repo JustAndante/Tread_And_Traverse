@@ -64,91 +64,24 @@ large structs or repeat traces for UI every Tick.
 [detailed reference]({{ '/docs/vehicle-weapon-reference.en.html' | relative_url }}).
 </div>
 
-## What do you want to configure?
+## Choose the next task
 
 <div class="task-grid">
-  <a class="task-card" href="#installations"><strong>Installation pattern</strong><span>Main, coaxial, independent, or fixed weapon.</span></a>
-  <a class="task-card" href="#aiming"><strong>Aiming and stabilization</strong><span>Target sources, axis modes, and mechanical drive.</span></a>
-  <a class="task-card" href="#ui"><strong>Reticle and UI</strong><span>Cached points, screen coordinates, and widgets.</span></a>
-  <a class="task-card" href="#replication"><strong>Replication</strong><span>What the component synchronizes and what stays project-owned.</span></a>
-  <a class="task-card" href="#troubleshooting"><strong>Fix a problem</strong><span>A short checklist for common failures.</span></a>
+  <a class="task-card" href="{{ '/docs/weapon-installations.en.html' | relative_url }}"><strong>1. Installation patterns</strong><span>Main, coaxial, independent, or fixed weapon.</span></a>
+  <a class="task-card" href="{{ '/docs/weapon-aiming.en.html' | relative_url }}"><strong>2. Aiming and stabilization</strong><span>Target sources, axis modes, and mechanical drive.</span></a>
+  <a class="task-card" href="{{ '/docs/weapon-ui.en.html' | relative_url }}"><strong>3. Reticle and UI</strong><span>Cached points, screen coordinates, and widgets.</span></a>
+  <a class="task-card" href="{{ '/docs/weapon-replication.en.html' | relative_url }}"><strong>4. Replication</strong><span>What the component synchronizes and what stays project-owned.</span></a>
+  <a class="task-card" href="{{ '/docs/weapon-troubleshooting.en.html' | relative_url }}"><strong>Fix a problem</strong><span>Short checks organized by visible symptom.</span></a>
 </div>
 
-<a id="installations"></a>
+## How this section is organized
 
-## Installation patterns
+- **Guide** — the first component, one turret, and one weapon.
+- **Build the system** — installations, aiming, and UI on separate pages.
+- **Run and ship** — a dedicated replication check.
+- **Reference** — detailed integration and every Blueprint node.
 
-- **Main + coaxial:** two installations share one axis group but use separate
-  Weapon IDs and muzzle points.
-- **Independent turret:** create a separate axis group and bind its weapons.
-- **Limited parent-mounted weapon:** use `Parent Mounted (Limited Cone)` and
-  configure the mechanical cone.
-- **Fixed weapon:** disable `Uses Axis Group`; keep a muzzle definition for
-  tracing or ballistics.
-- **Multiple barrels:** add one installation and muzzle definition for every
-  stable Weapon ID.
+<div class="guide-next" markdown="1">
+**Continue in order:** [choose an installation pattern]({{ '/docs/weapon-installations.en.html' | relative_url }}).
+</div>
 
-Detailed patterns: [installation patterns]({{ '/docs/vehicle-weapon-reference.en.html#installations' | relative_url }}).
-
-<a id="aiming"></a>
-
-## Aiming and stabilization
-
-- `Update Vehicle Aim Sources` produces the standard External, Gunner,
-  Commander, and held/sub-gunner sources.
-- Change axis mode through `Set Weapon Axis Control State` when the mode
-  changes; do not rebuild an array of structs every Tick.
-- For intentional mechanical movement, call `Arm Weapon Axis Mechanical Drive`
-  from the input event before the normal yaw/pitch call.
-- Pass yaw and pitch independently: `(YawDelta, 0)` and `(0, PitchDelta)`.
-- Camera switching, input, firing effects, and damage policy stay vehicle-owned.
-
-Details: [aiming and stabilization]({{ '/docs/vehicle-weapon-reference.en.html#aiming-stabilization' | relative_url }}).
-
-<a id="ui"></a>
-
-## Reticle and UI
-
-UI should read the cache instead of tracing again:
-
-- `Get Vehicle Weapon Trace UI`;
-- `Get Vehicle Weapon Ballistic UI`;
-- `Get Vehicle Weapon UI Pair`;
-- `Find Vehicle Weapon System`.
-
-`Refresh Vehicle Weapon UI Cache` is only needed by a custom project with an
-explicit Player Controller or independently scheduled UI.
-
-Details: [modular UI frame]({{ '/docs/vehicle-weapon-reference.en.html#ui-frame' | relative_url }}).
-
-<a id="replication"></a>
-
-## Replication
-
-- Enable supported replication only when component-owned axes must synchronize.
-- Cameras, local HUD, and cosmetic quality remain local.
-- Stable Axis Group IDs and Weapon IDs must match on server and clients.
-- Verify single-player first, then listen server, and finally dedicated server.
-
-Details: [replication]({{ '/docs/vehicle-weapon-reference.en.html#replication' | relative_url }}).
-
-<a id="troubleshooting"></a>
-
-## Quick troubleshooting
-
-| Symptom | Check first |
-| --- | --- |
-| Runtime is not ready | Both editor commands, duplicate IDs, and missing bindings. |
-| Turret does not move | Axis Group ID, yaw/pitch pivots, axis mode, and the three-call order. |
-| Reticle drifts after camera switch | Active aim source and selected `Aim Target Policy`. |
-| Coaxial weapon aims independently | Both installations must reference the same Axis Group. |
-| UI shows an old point | Runtime update order and cache reads after the update. |
-| Client sees a different pose | Axis replication, stable IDs, and matching configuration. |
-
-Use the plugin-wide search on the left for an exact node name, or open the
-[Blueprint node reference]({{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }}).
-
-## Next step
-
-- [Detailed integration and supported scenarios]({{ '/docs/vehicle-weapon-reference.en.html' | relative_url }})
-- [Blueprint node reference]({{ '/docs/vehicle-weapon-blueprint-nodes.en.html' | relative_url }})

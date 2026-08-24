@@ -78,88 +78,24 @@ Keep `Surface Query Mode = World Static Only` for a conventional vehicle.
 listed in the [settings reference]({{ '/docs/track-settings-reference.en.html' | relative_url }}).
 </div>
 
-## What do you want to configure?
+## Choose the next task
 
 <div class="task-grid">
-  <a class="task-card" href="#wheels"><strong>Shape around wheels</strong><span>Bones, radii, end wheels, and top rollers.</span></a>
-  <a class="task-card" href="#ground"><strong>Ground contact</strong><span>Traces, filtering, and rough terrain behavior.</span></a>
-  <a class="task-card" href="#links"><strong>Links and motion</strong><span>Count, pitch, orientation, direction, and speed.</span></a>
-  <a class="task-card" href="#quality"><strong>Quality and network</strong><span>Full Physical, Cheap Remote, and local policy.</span></a>
-  <a class="task-card" href="#troubleshooting"><strong>Fix a problem</strong><span>A short checklist for common symptoms.</span></a>
+  <a class="task-card" href="{{ '/docs/track-wheel-shape.en.html' | relative_url }}"><strong>1. Shape around wheels</strong><span>Bones, radii, end wheels, and top rollers.</span></a>
+  <a class="task-card" href="{{ '/docs/track-ground-contact.en.html' | relative_url }}"><strong>2. Ground contact</strong><span>Traces, filtering, and rough-terrain behavior.</span></a>
+  <a class="task-card" href="{{ '/docs/track-links-motion.en.html' | relative_url }}"><strong>3. Links and motion</strong><span>Count, orientation, direction, and speed.</span></a>
+  <a class="task-card" href="{{ '/docs/track-quality-network.en.html' | relative_url }}"><strong>4. Quality and network</strong><span>Local quality, remote vehicles, and dedicated server.</span></a>
+  <a class="task-card" href="{{ '/docs/track-troubleshooting.en.html' | relative_url }}"><strong>Fix a problem</strong><span>Short checks organized by visible symptom.</span></a>
 </div>
 
-<a id="wheels"></a>
+## How this section is organized
 
-## Shape around wheels
+- **Guide** — only the first working result.
+- **Build the track** — short pages for shape, terrain, and links.
+- **Run and ship** — quality for local, remote, and server copies.
+- **Reference** — every field and Blueprint node without abbreviation.
 
-- Use a stable bone naming scheme and separate prefixes for left and right.
-- Solver radii describe contact geometry. Link speed comes from the selected
-  drive source and its Chaos wheel radius.
-- Run `Generate Bone Rig Now` again after changing bone count, names, or order.
-- Add support rollers only where the upper run should actually be supported.
+<div class="guide-next" markdown="1">
+**Continue in order:** [configure the wheel shape]({{ '/docs/track-wheel-shape.en.html' | relative_url }}).
+</div>
 
-All fields: [geometry source and wheels]({{ '/docs/track-settings-reference.en.html#geometry-source' | relative_url }}).
-
-<a id="ground"></a>
-
-## Ground contact
-
-- Start with `World Static Only`: the hull, weapons, and other vehicle
-  components must not become track terrain.
-- `Track Contact Width` defines the working query width. Increase it only when
-  a narrow query misses a road edge.
-- Test a flat surface first, then small bumps, and only then sharp transitions.
-- For idle jitter, verify stable floor collision and ensure the Solver is not
-  alternating between competing surfaces.
-
-All fields: [surface tracing]({{ '/docs/track-settings-reference.en.html#surface-tracing' | relative_url }}).
-
-<a id="links"></a>
-
-## Links and motion
-
-- Use a fixed link count for a tank track. Spline deformation must not add or
-  remove instances.
-- `Reverse Track Direction` is the manual direction switch.
-- Configure the rotation source, axis, and sign compatibility in the drive group.
-  Do not repair direction with a negative speed scale.
-- Link meshes need consistent local axes and pivots. If individual links flip,
-  verify the mesh first and then the orientation mode.
-- A connector must use the same material phase as its paired links.
-
-Callable actions and runtime switches: [Blueprint node reference]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}).
-
-<a id="quality"></a>
-
-## Quality and network
-
-- Use `Full Physical` for the local or nearby vehicle.
-- `Cheap Remote` keeps the visual loop without the expensive physical chain.
-- `Local Ownership + Distance` lets every client choose its own visual cost;
-  that cosmetic state is not replicated.
-- Use `External` when the project owns quality selection in Blueprint.
-- Visual tracks are normally disabled on a dedicated server.
-
-All fields: [Simulation and Runtime]({{ '/docs/track-settings-reference.en.html#simulation-runtime' | relative_url }}).
-
-<a id="troubleshooting"></a>
-
-## Quick troubleshooting
-
-| Symptom | Check first |
-| --- | --- |
-| No loop appears | `Target Spline`, `Source Mesh Component`, bone names, and `Validate Setup`. |
-| Left and right move in opposite directions | `Reverse Track Direction`, rotation axis, and compatibility sign matching. |
-| Speed does not match the vehicle | Rotation source, matching Chaos wheel, and its actual radius. |
-| Track reacts to the hull | `Surface Query Mode = World Static Only` and the surface collision profile. |
-| Links flip | Mesh local axes/pivot and `Orientation Mode`. |
-| Spacing changes | Fixed link count, closed spline, and stable topology. |
-| Idle jitter | Ground-hit stability, competing surfaces, and solve frequency. |
-
-Use the plugin-wide search on the left when you need an exact field, or open the
-[complete settings reference]({{ '/docs/track-settings-reference.en.html' | relative_url }}).
-
-## Next step
-
-- [Solver and Builder settings reference]({{ '/docs/track-settings-reference.en.html' | relative_url }})
-- [Blueprint node reference]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }})

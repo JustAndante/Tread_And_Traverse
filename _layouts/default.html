@@ -68,15 +68,21 @@
               <nav class="product-nav">
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Начало{% else %}Start{% endif %}</strong>
-                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Руководство{% else %}Guide{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрый старт{% else %}Quick start{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
-                  <strong>{% if page.lang == 'ru' %}Задачи{% else %}Tasks{% endif %}</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#wheels' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#wheels' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Форма по колёсам{% else %}Wheel shape{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#ground' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#ground' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Контакт с землёй{% else %}Ground contact{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#links' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#links' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Звенья и движение{% else %}Links and motion{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#quality' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#quality' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Качество и сеть{% else %}Quality and network{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/track-physics-solver.ru.html#troubleshooting' | relative_url }}{% else %}{{ '/docs/track-physics-solver.en.html#troubleshooting' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика{% else %}Troubleshooting{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Сборка гусеницы{% else %}Build the track{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-wheel-shape.ru.html' | relative_url }}{% else %}{{ '/docs/track-wheel-shape.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}1. Форма по колёсам{% else %}1. Wheel shape{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-ground-contact.ru.html' | relative_url }}{% else %}{{ '/docs/track-ground-contact.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}2. Контакт с поверхностью{% else %}2. Ground contact{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-links-motion.ru.html' | relative_url }}{% else %}{{ '/docs/track-links-motion.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}3. Звенья и движение{% else %}3. Links and motion{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Запуск и поставка{% else %}Run and ship{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-quality-network.ru.html' | relative_url }}{% else %}{{ '/docs/track-quality-network.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Качество и сеть{% else %}Quality and network{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Помощь{% else %}Help{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-troubleshooting.ru.html' | relative_url }}{% else %}{{ '/docs/track-troubleshooting.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика{% else %}Troubleshooting{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Справочник{% else %}Reference{% endif %}</strong>
@@ -88,15 +94,21 @@
               <nav class="product-nav">
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Начало{% else %}Start{% endif %}</strong>
-                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Руководство{% else %}Guide{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрый старт{% else %}Quick start{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
-                  <strong>{% if page.lang == 'ru' %}Задачи{% else %}Tasks{% endif %}</strong>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#installations' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#installations' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Схемы установки{% else %}Installations{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#aiming' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#aiming' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Наведение{% else %}Aiming{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#ui' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#ui' | relative_url }}{% endif %}">UI</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#replication' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#replication' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Репликация{% else %}Replication{% endif %}</a>
-                  <a href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html#troubleshooting' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html#troubleshooting' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика{% else %}Troubleshooting{% endif %}</a>
+                  <strong>{% if page.lang == 'ru' %}Сборка системы{% else %}Build the system{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/weapon-installations.ru.html' | relative_url }}{% else %}{{ '/docs/weapon-installations.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}1. Схемы установки{% else %}1. Installations{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/weapon-aiming.ru.html' | relative_url }}{% else %}{{ '/docs/weapon-aiming.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}2. Наведение{% else %}2. Aiming{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/weapon-ui.ru.html' | relative_url }}{% else %}{{ '/docs/weapon-ui.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}3. Прицел и UI{% else %}3. Reticle and UI{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Запуск и поставка{% else %}Run and ship{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/weapon-replication.ru.html' | relative_url }}{% else %}{{ '/docs/weapon-replication.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Репликация{% else %}Replication{% endif %}</a>
+                </section>
+                <section class="product-nav__group">
+                  <strong>{% if page.lang == 'ru' %}Помощь{% else %}Help{% endif %}</strong>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/weapon-troubleshooting.ru.html' | relative_url }}{% else %}{{ '/docs/weapon-troubleshooting.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика{% else %}Troubleshooting{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Справочник{% else %}Reference{% endif %}</strong>
@@ -163,4 +175,5 @@
     </script>
   </body>
 </html>
+
 

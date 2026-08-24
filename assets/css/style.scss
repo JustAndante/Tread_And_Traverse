@@ -3001,6 +3001,39 @@ a:hover {
   line-height: 1.45;
 }
 
+.doc-breadcrumb {
+  margin: 0 0 .65rem;
+  color: var(--tt-accent-strong);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--tt-line);
+}
+
+.page-nav p {
+  display: contents;
+}
+
+.page-nav a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-nav a:last-child {
+  margin-left: auto;
+  text-align: right;
+}
+
 @media (max-width: 82rem) {
   .reference-shell.has-product {
     grid-template-columns: minmax(13rem, 15rem) minmax(0, 1fr);
@@ -3051,4 +3084,15 @@ a:hover {
   .task-grid {
     grid-template-columns: 1fr;
   }
+
+  .page-nav {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .page-nav a:last-child {
+    margin-left: 0;
+    text-align: left;
+  }
 }
+
