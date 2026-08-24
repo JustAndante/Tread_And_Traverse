@@ -10,9 +10,10 @@ doc_section: guide
 
 # Vehicle Weapon System
 
-Один компонент управляет конфигурацией осей башни, стабилизацией, источниками
-прицеливания, дульными точками, оружейными установками и опциональной
-репликацией.
+`Vehicle Weapon System` управляет осями башен, стабилизацией, источниками
+прицеливания, дульными точками, установками, эффектами и опциональной
+репликацией. Связанный `AmmoSystem` хранит типы боеприпасов, запас и состояние
+перезарядки.
 
 <div class="guide-callout" markdown="1">
 **Рекомендуемый путь:** сначала настройте одну башню и одно оружие. После
@@ -23,33 +24,35 @@ doc_section: guide
 
 ## Быстрый старт
 
-### 1. Добавьте компонент
+### 1. Начните с готового варианта
 
-Добавьте `Vehicle Weapon System` в Blueprint машины и выберите
-`Definition Source = Embedded Definitions`.
+Создайте child от общего Blueprint машины и продублируйте четыре профиля
+ближайшего демонстрационного танка:
 
-### 2. Опишите физические оси
+1. `DA_VWS_*` — оси, установки и muzzle sockets;
+2. `DA_WeaponLoadout_*` — trigger, reload, heat, recoil, FX и audio;
+3. `DA_ArmamentProfile_*` — ссылки на первые два профиля;
+4. `DA_TankVariant_*` — одна верхняя точка подключения варианта.
 
-Создайте один `Embedded Axis Definition` для каждой независимо наводимой
-yaw/pitch-механики. Используйте стабильный `Axis Group ID`, например
-`MainTurretAxes`.
+### 2. Сохраните единые ID
 
-### 3. Добавьте дульную точку и оружие
+Один `Weapon ID` должен совпадать в installation, muzzle, loadout и записи
+`Ammo Type Definitions`, например `MainGun`, `CoaxMG` или `Smoke`. Для каждой
+независимой yaw/pitch-механики используйте стабильный `Axis Group ID`.
 
-1. Создайте `Embedded Muzzle Definition` для логического ствола.
-2. Создайте `Embedded Weapon Installation`.
-3. Назначьте стабильный `Weapon ID`, например `MainGun`.
-4. Свяжите установку с нужной группой осей и дульной точкой.
+### 3. Замените привязки и ассеты
 
-### 4. Соберите и проверьте
+В `DA_VWS_*` назначьте компоненты осей и реальные muzzle sockets нового меша.
+В `DA_WeaponLoadout_*` настройте способ подачи, trigger, reload, heat, recoil,
+эффекты и звук. Projectile, запас, trajectory prediction, иконка и клавиша
+каждого типа находятся в `AmmoSystem -> Ammo Type Definitions`.
 
-В Details компонента выполните:
+### 4. Назначьте профиль и проверьте
 
-1. `Rebuild Embedded Weapon Runtime`;
-2. `Validate Vehicle Weapon System Configuration`.
-
-Количество настроенных и готовых элементов должно совпадать, а список ошибок
-должен быть пустым.
+В `WeaponAimSystem` назначьте `Tank Variant Profile`, включите
+`Use Tank Profile Weapon System Settings` и выполните
+`Validate Vehicle Weapon System Configuration`. Direct profile-поля оставьте
+пустыми, если верхний Tank Variant Profile уже назначен.
 
 ### 5. Подключите обычный runtime-граф
 
@@ -66,6 +69,9 @@ yaw/pitch-механики. Используйте стабильный `Axis Gr
 **Готово?** Выберите следующую задачу. Низкоуровневые детали сохранены в
 [подробном справочнике]({{ '/docs/vehicle-weapon-reference.ru.html' | relative_url }}).
 </div>
+
+Полная последовательность с примерами MainGun, нескольких MG, Smoke и HUD:
+[быстрый старт интеграции]({{ '/docs/vehicle-weapon-quick-start.ru.html' | relative_url }}).
 
 ## Выберите следующую задачу
 

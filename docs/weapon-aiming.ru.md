@@ -19,9 +19,10 @@ doc_section: aiming
 
 1. `Update Vehicle Aim Sources` формирует External, Gunner, Commander и
    held/sub-gunner sources.
-2. При смене режима вызовите `Set Weapon Axis Control State`.
-3. Для ручного механического движения сначала вызовите
-   `Arm Weapon Axis Mechanical Drive` из события ввода.
+2. При смене режима вызовите `Configure Weapon Axis Aim And Stabilization`;
+   для возврата к профилю — `Reset Weapon Axis Aim And Stabilization`.
+3. Ручное механическое движение передавайте через
+   `Submit Manual Weapon Axis Input` из события ввода.
 4. Передавайте yaw и pitch раздельно: `(YawDelta, 0)` и `(0, PitchDelta)`.
 
 Не пересобирайте массивы definition-структур каждый Tick. Камеры, ввод, эффекты

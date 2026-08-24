@@ -17,13 +17,18 @@ UI должен читать готовый runtime-кэш. Не запуска�
 
 ## Используйте готовые данные
 
-- `Get Vehicle Weapon Trace UI` — результат прямой трассировки;
-- `Get Vehicle Weapon Ballistic UI` — баллистическая точка;
-- `Get Vehicle Weapon UI Pair` — согласованная пара данных;
+- `Get Weapon HUD Screen Data(Vehicle, Weapon ID)` — все экранные точки одного
+  произвольного оружия, включая максимальную дальность лучей без hit correction;
+- `Get Weapon Muzzle Trace HUD Data(Vehicle, Weapon ID)` — только muzzle trace;
+- `Get Weapon Ballistic Aim HUD Data(Vehicle, Weapon ID)` — баллистический маркер;
+- `Get Aim Source HUD State(Vehicle, Aim Source ID)` — камера, прицел или AI source;
+- `Get Vehicle Weapon HUD Snapshot` — динамический список любого числа оружия;
 - `Find Vehicle Weapon System` — поиск компонента без жёсткой ссылки.
 
-`Refresh Vehicle Weapon UI Cache` нужен только проекту с явным Player
-Controller или отдельным расписанием UI.
+Для третьего или четвёртого оружия передайте его ID в ту же ноду. Отдельных
+Primary/Secondary-слотов в текущем API нет. Advanced-нода
+`Refresh Vehicle Weapon HUD Cache (Advanced)` нужна только собственному
+scheduler с явным Player Controller.
 
 ## Проверка
 

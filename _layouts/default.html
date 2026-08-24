@@ -94,7 +94,8 @@
               <nav class="product-nav">
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Начало{% else %}Start{% endif %}</strong>
-                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрый старт{% else %}Quick start{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-quick-start.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-quick-start.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Быстрый старт{% else %}Quick start{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/vehicle-weapon-system.ru.html' | relative_url }}{% else %}{{ '/docs/vehicle-weapon-system.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Обзор системы{% else %}System overview{% endif %}</a>
                 </section>
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Сборка системы{% else %}Build the system{% endif %}</strong>

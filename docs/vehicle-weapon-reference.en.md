@@ -43,15 +43,15 @@ The normal Blueprint graph uses only the compact frame calls:
 - `Update Vehicle Aim Sources` after the vehicle has positioned its main camera, AimCube, and commander AimCube. It continuously traces and caches External, Gunner, Commander, and held/sub-gunner sources;
 - `Update Vehicle Weapon System` after that call. It consumes the cached aim-source frame and builds requests for every configured axis internally; it does not need an Aim Frame, Axis Group Request array, or legacy trace samples.
 
-Deferred physical commands are applied automatically by the component's pre-presentation tick before controlled skeletal poses, sockets, SpringArms, and cameras update. Do not add `Apply Pending Vehicle Axis Commands` or `Apply Vehicle Turret Commands` to a normal embedded setup. Those calls remain only under the advanced/migration API for rigs that explicitly own their application phase.
+Deferred physical commands are applied automatically by the component's pre-presentation tick before controlled skeletal poses, sockets, SpringArms, and cameras update. Do not add `Apply Pending Vehicle Turret Commands (Advanced)` to a normal profile-driven setup. That call is only for custom rigs that explicitly own their application phase.
 
 The compact calls return only success/failure. Detailed frames stay cached on the component for diagnostics, so normal graphs do not need to split or copy the large result structures. The older detailed calls remain available under the advanced/migration categories.
 
-Each `Embedded Axis Definition` contains default yaw/pitch aim channels and default stabilization state. If camera or weapon mode changes those choices at runtime, call `Set Weapon Axis Control State` for that Axis Group ID. The component retains the state, so the setter normally belongs on the mode-change path rather than being rebuilt as a struct array every Tick. Its advanced current-angle inputs exist only for compatibility with an old calculate-only axis whose state still lives in Blueprint; normally leave them hidden and let the component read the physical pivots.
+Each Axis Group entry in `DA_VWS_*` defines yaw/pitch channels, limits, drive rates, and default stabilization state. At runtime change them with `Configure Weapon Axis Aim And Stabilization` or restore the profile values with `Reset Weapon Axis Aim And Stabilization`. Send manual input through `Submit Manual Weapon Axis Input`; do not rebuild configuration arrays every Tick.
 
-If a player-controlled stabilized axis must distinguish deliberate drive activity from automatic camera/parent refresh, call `Arm Weapon Axis Mechanical Drive` from the same input event before its normal yaw/pitch input call. Keep yaw and pitch on separate lanes: `(YawDelta, 0)` and `(0, PitchDelta)`. A non-zero sample only arms that plane; its sign and magnitude never become an angle, target, lease, or accumulated command. The single routed target determines direction. The drive remains armed until the physical axis reaches that target, so one mouse/input event may move the sight while the motor completes its normal bounded catch-up.
+If a player-controlled stabilized axis must distinguish deliberate drive activity from automatic camera/parent refresh, call `Submit Manual Weapon Axis Input` from the same input event. Keep yaw and pitch on separate lanes: `(YawDelta, 0)` and `(0, PitchDelta)`. A non-zero sample arms that plane; its sign and magnitude never become an angle, target, or accumulated command. The single routed target determines direction. The drive remains armed until the physical axis reaches that target, so one mouse/input event may move the sight while the motor completes its normal bounded catch-up.
 
-Camera switching, AimCubes, SpringArm zoom, input selection, UI styling, firing effects, and damage policy remain vehicle-specific Blueprint logic. The component owns the reusable aim solving, physical axis commands, muzzle rays, ballistics caches, configuration validation, and optional axis replication.
+Camera switching, AimCubes, SpringArm zoom, input selection, UI styling, and damage policy remain vehicle-specific Blueprint logic. The component owns reusable aim solving, physical axis commands, muzzle rays, ballistics caches, profiled effects/audio, configuration validation, and optional axis replication.
 
 ## Stable IDs
 
@@ -102,24 +102,16 @@ Add one installation and one muzzle per Weapon ID. Weapons may share an axis gro
 
 ## Reusable profiles and fast model swaps
 
-Create a Data Asset of type `Vehicle Weapon System Profile`.
+The recommended chain has four layers, each with one responsibility:
 
-To capture a working tank:
+1. `DA_VWS_*` — axes, installations, muzzle bindings, and ballistic prediction.
+2. `DA_WeaponLoadout_*` — feed, cadence, reload, heat, recoil, effects/audio, and smoke-launcher banks.
+3. `DA_ArmamentProfile_*` — references to Aiming / Turret Setup and Weapon Loadouts.
+4. `DA_TankVariant_*` — the top-level profile for one vehicle variant.
 
-1. Assign the Data Asset to `Configuration Profile`.
-2. Click `Export Current Setup To Assigned Weapon System Profile`.
-3. Save the profile asset.
+In the child Blueprint, assign only `Tank Variant Profile` and enable `Use Tank Profile Weapon System Settings`. Components, bones, and sockets remain bindings of that child. `Direct Weapon System Profile (Advanced)` and `Direct Armament Profile (Fallback)` exist for custom direct integration; do not populate several configuration sources at once.
 
-To apply shared behavior to another model while keeping that model's components/sockets:
-
-1. Create local axis and muzzle entries with the same stable IDs as the profile.
-2. Assign the new model's aim basis, yaw/pitch components, muzzle components, and sockets.
-3. Assign the profile and click `Validate Assigned Weapon System Profile Compatibility`.
-4. Resolve every missing-binding/error entry.
-5. Leave `Preserve Vehicle Bindings When Applying Profile` enabled.
-6. Click `Apply Assigned Weapon System Profile`, then validate the complete vehicle configuration.
-
-The compatibility preflight is non-destructive. It checks duplicate/missing IDs, installation references, limits/ranges/ballistic speed, and whether all axis and muzzle bindings can be preserved before the profile mutates the vehicle setup.
+Validate with `Validate Tank Variant Profile`, `Validate Vehicle Armament Profile`, `Validate Weapon Loadout Profile`, and `Validate Vehicle Weapon System Configuration`. A direct profile can be checked with `Validate Direct Weapon System Profile Compatibility`, applied with `Apply Direct Weapon System Profile`, and populated from local configuration with `Export Built-In Setup To Direct Weapon System Profile`.
 
 <a id="aiming-stabilization"></a>
 
@@ -138,18 +130,20 @@ Continuous rays are per Weapon ID and are independent of which camera is active.
 
 ## Modular UI frame and custom Blueprint integration
 
-`Vehicle Weapon System` maintains one cached `Vehicle Weapon UI Frame`. It contains an arbitrary stable-sorted collection of named aim sources and an arbitrary collection of Weapon-ID entries. Each weapon entry exposes its continuous trace, ballistic result, hit/valid flags, world positions, projected screen positions, and cache revision. It does not run another collision trace or ballistic prediction; it only projects the coherent results already calculated by the runtime frame.
+`Vehicle Weapon System` maintains one cached `Vehicle Weapon HUD Snapshot`. It contains an arbitrary stable-sorted collection of named aim sources and an arbitrary collection of Weapon-ID entries. Each weapon entry exposes its continuous trace, ballistic result, hit/valid flags, world positions, projected screen positions, and cache revision. It does not run another collision trace or ballistic prediction; it only projects the coherent results already calculated by the runtime frame.
 
-The standard `Update Vehicle Aim Sources` call refreshes this cache automatically. Use `Update Vehicle Weapon UI Frame` only when a custom vehicle needs an explicit Player Controller, viewport-relative projection, or an independently scheduled UI update. Direction-only aim sources use `Direction Marker Projection Distance`; world-point sources and weapon endpoints are unchanged.
+The standard `Update Vehicle Aim Sources` call refreshes this cache automatically. Use `Refresh Vehicle Weapon HUD Cache (Advanced)` only when a custom vehicle needs an explicit Player Controller, viewport-relative projection, or an independently scheduled UI update. Direction-only aim sources use `Direction Marker Projection Distance`; world-point sources and weapon endpoints are unchanged.
 
 For a widget owned by a generic vehicle Actor, the shortest Blueprint surface is:
 
-- `Get Vehicle Weapon Trace UI(Vehicle, Weapon ID)` for muzzle start, resolved end, screen position, hit and projection flags;
-- `Get Vehicle Weapon Ballistic UI(Vehicle, Weapon ID)` for ballistic aim point, screen position, hit and projection flags;
-- `Get Vehicle Weapon UI Pair(Vehicle, Primary ID, Secondary ID)` for a conventional two-weapon HUD;
-- `Find Vehicle Weapon System(Vehicle)` when the widget needs the component itself or a named/standard aim-source query.
+- `Get Weapon HUD Screen Data(Vehicle, Weapon ID)` returns the complete projected data for one weapon;
+- `Get Weapon Muzzle Trace HUD Data(Vehicle, Weapon ID)` returns the physical muzzle trace;
+- `Get Weapon Ballistic Aim HUD Data(Vehicle, Weapon ID)` returns the ballistic aim point;
+- `Get Aim Source HUD State(Vehicle, Aim Source ID)` returns any camera, sight, or AI source;
+- `Get Vehicle Weapon HUD Snapshot(Vehicle)` returns a scalable collection for a dynamic HUD;
+- `Find Vehicle Weapon System(Vehicle)` returns the component itself.
 
-Component-aware Blueprints may instead use `Get Cached Weapon Trace UI`, `Get Cached Weapon Ballistic UI`, `Get Cached Aim Source UI State`, or `Get Cached Standard Aim Source UI State`. `Get Cached Vehicle Weapon UI Frame` is available for systems that intentionally want the complete arbitrary-size frame. The two-weapon adapter is convenience/migration glue only; it does not limit the runtime to a main gun and coaxial MG.
+Blueprints that already hold the component may use the matching `Get Cached ...` nodes. `Get Cached Vehicle Weapon HUD Snapshot` is available to systems that intentionally need the complete arbitrary-size frame. The public API does not assume a fixed MainGun/CoaxMG pair: every query is addressed by stable ID.
 
 Custom camera or AI logic may keep using the explicit aim-channel/frame APIs. Custom widgets may query only one Weapon ID. A vehicle may combine the supplied aim solver with its own UI, or the supplied UI cache with its own named aim sources, without inheriting the Leopard Blueprint or copying its compatibility variables.
 

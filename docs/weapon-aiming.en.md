@@ -19,9 +19,10 @@ physical axes already described by configuration.
 
 1. `Update Vehicle Aim Sources` produces External, Gunner, Commander, and
    held/sub-gunner sources.
-2. Call `Set Weapon Axis Control State` when the control mode changes.
-3. For manual mechanical movement, call `Arm Weapon Axis Mechanical Drive`
-   from the input event first.
+2. Call `Configure Weapon Axis Aim And Stabilization` when the control mode
+   changes; use `Reset Weapon Axis Aim And Stabilization` to restore profile values.
+3. Send manual mechanical movement through `Submit Manual Weapon Axis Input`
+   from the input event.
 4. Pass yaw and pitch independently: `(YawDelta, 0)` and `(0, PitchDelta)`.
 
 Do not rebuild definition arrays every Tick. Cameras, input, firing effects,

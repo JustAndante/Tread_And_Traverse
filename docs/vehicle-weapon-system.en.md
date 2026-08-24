@@ -10,8 +10,9 @@ doc_section: guide
 
 # Vehicle Weapon System
 
-One component owns turret-axis configuration, stabilization, aim sources, muzzle
-points, weapon installations, and optional replication.
+`Vehicle Weapon System` owns turret axes, stabilization, aim sources, muzzles,
+installations, presentation, and optional replication. Its paired `AmmoSystem`
+owns ammo types, reserve counts, and reload state.
 
 <div class="guide-callout" markdown="1">
 **Recommended path:** configure one turret and one weapon first. Add coaxial,
@@ -22,31 +23,35 @@ commander, and independent installations only after that setup validates.
 
 ## Quick start
 
-### 1. Add the component
+### 1. Start from a working variant
 
-Add `Vehicle Weapon System` to the vehicle Blueprint and select
-`Definition Source = Embedded Definitions`.
+Create a child of the shared vehicle Blueprint and duplicate the four profiles
+from the closest example tank:
 
-### 2. Define physical axes
+1. `DA_VWS_*` — axes, installations, and muzzle sockets;
+2. `DA_WeaponLoadout_*` — trigger, reload, heat, recoil, FX, and audio;
+3. `DA_ArmamentProfile_*` — references to the first two profiles;
+4. `DA_TankVariant_*` — the single top-level variant entry point.
 
-Create one `Embedded Axis Definition` for every independently aimed yaw/pitch
-mechanism. Use a stable `Axis Group ID`, such as `MainTurretAxes`.
+### 2. Keep stable IDs consistent
 
-### 3. Add a muzzle and weapon
+The same `Weapon ID` must be used by the installation, muzzle, loadout, and
+`Ammo Type Definitions` entry, for example `MainGun`, `CoaxMG`, or `Smoke`.
+Use one stable `Axis Group ID` for each independent yaw/pitch mechanism.
 
-1. Create an `Embedded Muzzle Definition` for the logical barrel.
-2. Create an `Embedded Weapon Installation`.
-3. Assign a stable `Weapon ID`, such as `MainGun`.
-4. Bind the installation to the required axis group and muzzle definition.
+### 3. Replace bindings and assets
 
-### 4. Build and validate
+In `DA_VWS_*`, bind the new mesh components and real muzzle sockets. In
+`DA_WeaponLoadout_*`, configure feed, trigger, reload, heat, recoil, effects,
+and audio. Projectile class, reserve count, trajectory prediction, icon, and
+selection input belong to `AmmoSystem -> Ammo Type Definitions`.
 
-In the component Details panel, run:
+### 4. Assign and validate the profile
 
-1. `Rebuild Embedded Weapon Runtime`;
-2. `Validate Vehicle Weapon System Configuration`.
-
-Configured and ready counts should match, and the error list should be empty.
+Assign `Tank Variant Profile` on `WeaponAimSystem`, enable
+`Use Tank Profile Weapon System Settings`, and run
+`Validate Vehicle Weapon System Configuration`. Leave direct profile fields
+empty when a top-level Tank Variant Profile is assigned.
 
 ### 5. Connect the normal runtime graph
 
@@ -63,6 +68,9 @@ large structs or repeat traces for UI every Tick.
 **Working?** Choose the next task below. Low-level detail remains in the
 [detailed reference]({{ '/docs/vehicle-weapon-reference.en.html' | relative_url }}).
 </div>
+
+For the complete sequence with MainGun, multiple MGs, Smoke, and HUD examples,
+read the [integration quick start]({{ '/docs/vehicle-weapon-quick-start.en.html' | relative_url }}).
 
 ## Choose the next task
 
