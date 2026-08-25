@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 390" role="img" aria-labelledby="title desc">
+  <title id="title">Wheel rig anatomy</title><desc id="desc">A track loop around front and rear end wheels, road wheels, and top rollers.</desc>
+  <defs><style>.track{fill:none;stroke:#d7a85a;stroke-width:18;stroke-linecap:round;stroke-linejoin:round}.wheel{fill:#18212a;stroke:#75b9dd;stroke-width:5}.roller{fill:#18212a;stroke:#7b91a1;stroke-width:4}.t{fill:#eef5f8;font:700 20px system-ui,sans-serif}.s{fill:#aebfca;font:16px system-ui,sans-serif}.leader{stroke:#728b9d;stroke-width:2}</style></defs>
+  <rect width="1120" height="390" rx="24" fill="#0f1318"/>
+  <path class="track" d="M105 270 Q55 195 105 105 Q170 58 265 87 L850 87 Q945 65 1015 120 Q1060 205 1007 278 Q920 326 825 310 L245 310 Q155 322 105 270 Z"/>
+  <circle class="wheel" cx="135" cy="210" r="86"/><circle class="wheel" cx="985" cy="210" r="86"/>
+  <circle class="wheel" cx="310" cy="258" r="64"/><circle class="wheel" cx="455" cy="258" r="64"/><circle class="wheel" cx="600" cy="258" r="64"/><circle class="wheel" cx="745" cy="258" r="64"/>
+  <circle class="roller" cx="385" cy="113" r="30"/><circle class="roller" cx="555" cy="113" r="30"/><circle class="roller" cx="725" cy="113" r="30"/>
+  <text class="t" x="135" y="36" text-anchor="middle">Front End Wheel</text><line class="leader" x1="135" y1="48" x2="135" y2="110"/>
+  <text class="t" x="985" y="36" text-anchor="middle">Rear Drive Wheel</text><line class="leader" x1="985" y1="48" x2="985" y2="110"/>
+  <text class="t" x="545" y="370" text-anchor="middle">Road Wheels</text><text class="s" x="545" y="345" text-anchor="middle">Contact radius controls the solver shape — not track speed</text>
+  <text class="t" x="555" y="48" text-anchor="middle">Top Rollers</text>
+</svg>

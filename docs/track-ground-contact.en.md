@@ -12,6 +12,11 @@ doc_section: ground-contact
 
 # Ground contact
 
+<figure class="doc-figure">
+  <img src="{{ '/assets/images/track/ground-contact.svg' | relative_url }}" alt="Center and side probes under the lower run query World Static">
+  <figcaption>One contact width controls the probe envelope; the surface filter controls what may be accepted.</figcaption>
+</figure>
+
 The surface should push the track outward without turning the hull or unrelated
 components into track support.
 

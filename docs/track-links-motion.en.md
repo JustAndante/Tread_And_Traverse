@@ -12,6 +12,11 @@ doc_section: links-motion
 
 # Links and motion
 
+<figure class="doc-figure">
+  <img src="{{ '/assets/images/track/links-motion.svg' | relative_url }}" alt="A fixed number of links and connectors moves around the closed spline">
+  <figcaption>Count stays fixed while actual pitch follows the current solved-loop length evenly.</figcaption>
+</figure>
+
 Builder places a constant number of visual links along the solved spline.
 Deformation should change shape, not track composition.
 

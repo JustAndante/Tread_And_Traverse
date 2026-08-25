@@ -13,6 +13,11 @@ doc_section: guide
 Создаёт замкнутую визуальную гусеницу по костям ходовой, деформирует её по
 подвеске и поверхности и размещает звенья с постоянным количеством.
 
+<figure class="doc-figure doc-figure--wide">
+  <img src="{{ '/assets/images/track/component-flow.svg' | relative_url }}" alt="Кости колёс передают форму Solver, Solver записывает сплайн, Builder размещает звенья">
+  <figcaption>Минимальная схема одной стороны гусеницы. У второй стороны свой такой же набор компонентов.</figcaption>
+</figure>
+
 <div class="guide-callout" markdown="1">
 **Рекомендуемый путь:** сначала соберите одну сторону по разделу ниже. Когда она
 работает в PIE, скопируйте компоненты на вторую сторону и поменяйте только имена
@@ -75,8 +80,9 @@ doc_section: guide
 Для обычной машины оставьте `Surface Query Mode = World Static Only`.
 
 <div class="guide-next" markdown="1">
-**Готово?** Перейдите к нужной задаче ниже. Все поля без сокращений находятся в
-[справочнике настроек]({{ '/docs/track-settings-reference.ru.html' | relative_url }}).
+**Готово?** Перейдите к нужной задаче ниже. Поля разделены на
+[настройки Builder]({{ '/docs/track-builder-settings.ru.html' | relative_url }})
+и [настройки Solver]({{ '/docs/track-settings-reference.ru.html' | relative_url }}).
 </div>
 
 ## Выберите следующую задачу
@@ -94,7 +100,7 @@ doc_section: guide
 - **Руководство** — только первый рабочий результат.
 - **Сборка гусеницы** — короткие страницы по форме, поверхности и звеньям.
 - **Запуск и поставка** — качество для локальных, удалённых и серверных копий.
-- **Справочник** — полный список полей и Blueprint-нод без сокращений.
+- **Справочник** — отдельные страницы Builder, Solver, диагностики и Blueprint-нод.
 
 <div class="guide-next" markdown="1">
 **Продолжить по порядку:** [настройте форму по колёсам]({{ '/docs/track-wheel-shape.ru.html' | relative_url }}).

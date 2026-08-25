@@ -12,6 +12,11 @@ doc_section: ground-contact
 
 # Контакт с поверхностью
 
+<figure class="doc-figure">
+  <img src="{{ '/assets/images/track/ground-contact.svg' | relative_url }}" alt="Центральные и боковые probes нижней ветви ищут World Static">
+  <figcaption>Одна ширина контакта управляет областью поиска под башмаком; фильтр определяет допустимые поверхности.</figcaption>
+</figure>
+
 Цель — дать поверхности выталкивать гусеницу наружу, не превращая корпус танка
 или случайные компоненты в опору.
 
