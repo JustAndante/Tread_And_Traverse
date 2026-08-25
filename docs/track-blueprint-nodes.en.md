@@ -62,7 +62,8 @@ With automatic updates enabled, the solver and builder run without a per-frame B
 2. `Rebuild Track` after changing mesh, link count, or topology;
 3. `Set Track Speed` or `Set Distance Offset` when track travel is driven explicitly.
 
-Do not call the manual solve/update nodes every frame while the matching `Update Every Tick` option is enabled.
+Do not call manual solve/update nodes every frame while Solver `Solve Every Tick`
+or Builder `Animate From Track Speed` already performs the matching update.
 
 <a id="builder-nodes"></a>
 
@@ -73,7 +74,7 @@ Do not call the manual solve/update nodes every frame while the matching `Update
 | `Rebuild Track` | After changing the spline, mesh, link count, connectors, or orientation. | Recreates all instances and returns the resulting count. |
 | `Update Track Offset` | When topology is already built and only link travel changed. | Updates transforms without a full rebuild. |
 | `Set Distance Offset` | To control the link position around the closed loop directly. | Stores the offset and optionally updates instances immediately. |
-| `Set Track Speed` | To drive automatic link travel while `Update Every Tick` is enabled. | Changes the travel speed along the spline. |
+| `Set Track Speed` | To drive automatic link travel while `Animate From Track Speed` is enabled. | Changes the travel speed along the spline. |
 
 ## Track Spline Builder — Diagnostics and Advanced
 

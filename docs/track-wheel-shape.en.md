@@ -12,6 +12,11 @@ doc_section: wheel-shape
 
 # Shape around wheels
 
+<figure class="doc-figure">
+  <img src="{{ '/assets/images/track/wheel-shape.svg' | relative_url }}" alt="Front and rear end wheels, road wheels, and top rollers">
+  <figcaption>Map wheel roles to rig bones first, then tune the wrap radii.</figcaption>
+</figure>
+
 This defines the initial track loop. Make the wheel shape correct before adding
 ground contact.
 

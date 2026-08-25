@@ -62,7 +62,9 @@ doc_section: nodes
 2. `Rebuild Track` — после изменения сетки, количества звеньев или топологии;
 3. `Set Track Speed` либо `Set Distance Offset` — если движение трака задаётся вручную.
 
-При включённых `Update Every Tick` и связи solver с builder вызывать solve и обновление инстансов каждый кадр из Blueprint не требуется.
+При включённых `Solve Every Tick` у Solver, `Animate From Track Speed` у Builder
+и связи между компонентами вызывать solve и обновление инстансов каждый кадр из
+Blueprint не требуется.
 
 <a id="builder-nodes"></a>
 
@@ -73,7 +75,7 @@ doc_section: nodes
 | `Rebuild Track` | После изменения сплайна, меша, количества звеньев, коннекторов или ориентации. | Полностью пересоздаёт инстансы и возвращает их количество. |
 | `Update Track Offset` | Когда топология уже собрана, а нужно только прокрутить существующие звенья. | Обновляет трансформы без полного rebuild. |
 | `Set Distance Offset` | Для прямого управления положением звеньев вдоль замкнутого контура. | Записывает offset; при `Update Now` сразу обновляет инстансы. |
-| `Set Track Speed` | Для автоматической прокрутки при включённом `Update Every Tick`. | Меняет скорость движения звеньев по сплайну. |
+| `Set Track Speed` | Для автоматической прокрутки при включённом `Animate From Track Speed`. | Меняет скорость движения звеньев по сплайну. |
 
 ## Track Spline Builder — Diagnostics и Advanced
 
@@ -103,7 +105,8 @@ doc_section: nodes
 | `Generate Controls From Wheel Rig` | После назначения скелетного меша, стороны, имён костей колёс и радиусов. | Пересобирает контрольные точки по настроенной ходовой и обновляет setup-статус. |
 | `Update Track Physics Spline` | Только для собственного расписания solve, когда автоматический Tick отключён. | Продвигает физическую модель на `Delta Time`, записывает solved loop в target spline и возвращает число точек. |
 
-Не вызывайте `Update Track Physics Spline` параллельно с включённым `Update Every Tick`: это даст два solve за кадр.
+Не вызывайте `Update Track Physics Spline` параллельно с включённым
+`Solve Every Tick`: это даст два solve за кадр.
 
 ## Track Physics Solver — Setup
 

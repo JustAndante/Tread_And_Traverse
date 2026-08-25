@@ -2962,6 +2962,35 @@ a:hover {
   border-left-color: var(--tt-blue);
 }
 
+.doc-figure {
+  margin: 1.25rem 0 1.8rem;
+  padding: .75rem;
+  background: var(--tt-surface);
+  border: 1px solid var(--tt-line);
+  border-radius: .65rem;
+}
+
+.doc-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 24rem;
+  object-fit: contain;
+  border-radius: .4rem;
+}
+
+.doc-figure--wide img {
+  max-height: 20rem;
+}
+
+.doc-figure figcaption {
+  margin-top: .65rem;
+  color: var(--tt-muted);
+  font-size: .76rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
 .task-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

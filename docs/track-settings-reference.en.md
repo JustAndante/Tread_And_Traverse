@@ -2,23 +2,23 @@
 layout: default
 lang: en
 page_kind: reference
-title: "Track Spline Builder — Settings Reference"
-description: "Complete supported settings reference for Track Spline Builder and Track Physics Solver"
+title: "Track Spline Builder — Solver settings"
+description: "Track Physics Solver shape, contact, physics, and runtime fields"
 product: track
 doc_section: settings
 ---
 
 
-# Track Spline Builder: settings reference
+# Track Physics Solver settings
 
-This page lists every supported component field without shortening it. Use the
+This page collects the release-facing fields of the `Track Physics Solver`. Use the
 [short guide]({{ '/docs/track-physics-solver.en.html' | relative_url }}) for
 first setup and task-based help. Callable actions are listed separately in the
 [Blueprint node reference]({{ '/docs/track-blueprint-nodes.en.html' | relative_url }}).
 
 <a id="solver-settings"></a>
 
-## Component settings
+## How to read this page
 
 Names below match the Unreal Engine Details panel. Values are native class
 defaults; runtime does not silently retune editable fields. Distances use Unreal
@@ -36,8 +36,7 @@ centimeters unless stated otherwise.
 
 | Setting | Default | Purpose |
 | --- | ---: | --- |
-| `Closed Loop` (Advanced) | On | Treats the first and last solved points as connected. A continuous tank track should remain closed. |
-| `Generate From Bone Rig` | On | Generates the complete track control loop from road-wheel, top-roller, and end-wheel bones. Leave it enabled for the supported release workflow. |
+| `Closed Track Loop` (Advanced) | On | Connects the first and last solved points. Keep a continuous tank track closed. |
 | `Source Mesh Component` | None | Skeletal or scene component that owns the configured wheel bones. It is also the authoritative source used for runtime suspension-motion sampling. |
 | `Auto Detect Wheel Counts` | On | Searches sequential bone names and stops when the numbered road-wheel or top-roller sequence ends. |
 | `Wheel Auto-Detection Limit` (Advanced) | 32 | Maximum numbered bones checked for each road-wheel and top-roller prefix. Visible only while automatic count detection is enabled. |
@@ -60,6 +59,8 @@ normal controls.
 | `First Road Wheel Index` | 1 | First numbered road-wheel bone in the sequence. |
 | `Road Wheel Count` | 7 | Manual number of road wheels. Visible only when `Auto Detect Wheel Counts` is disabled. |
 | `Road Wheel Index Digits` (Advanced) | 2 | Minimum number of digits in the generated index. A value of 2 produces `01`, `02`, and so on. |
+| `Pin Edge Road Wheel Anchors (Guided)` (Advanced) | Off | Hard-pins generated edge anchors to wheel-center radius positions in guided modes. Physical Chain may still move normal road-wheel points. |
+| `Trace Free Wheel Anchors` (Advanced) | On | Lets free wheel anchors query an accepted surface instead of unconditionally following interpolation. |
 | `Trace Ground Between Road Wheels` | On | Ground-traces the generated lower detail points between neighboring road-wheel centers. Disable only when a rigid/interpolated lower run is desired. |
 | `Road Wheel Contact Radius` | 39 cm | Radius used only for solver shape and road-wheel contact. Link travel speed is calculated separately by `Track Spline Builder` from the selected Chaos wheel's runtime radius. |
 
@@ -75,12 +76,18 @@ All child settings in this section hide when `Generate Top Rollers` is disabled.
 | `First Top Roller Index` | 1 | First numbered top-roller bone in the sequence. |
 | `Top Roller Count` | 4 | Manual number of top rollers. Visible only when automatic wheel-count detection is disabled. |
 | `Top Roller Index Digits` (Advanced) | 2 | Minimum digit count used when composing top-roller bone names. |
+| `Detail Points To Next` (Advanced) | 2 | Additional points between the current top roller and the next control. |
+| `Sag To Next` (Advanced) | 8 cm | Extra sag applied to the span after the top roller. |
 | `Top Roller Contact Radius` | 22 cm | Radius used to place the track around each top-roller center and to enforce its one-sided wheel constraint. |
 | `Allow Top Roller Detach` | Off | Lets top-roller anchor points leave their exact bone positions while retaining radius guidance. This allows the upper track to react to impacts and suspension inertia. |
 | `Top Run Physics` | On | Enables physical simulation for the upper return run. Disable it for a cheaper generated upper shape. |
 | `Upper Run Physics Weight` (Advanced) | 0.45 | Strength with which detached upper-run points receive physical motion and inertia. Visible only when upper physics and detachment are both enabled. |
+| `Upper Run Impulse Multiplier` (Advanced) | 1.0 | Scales owner and suspension impulses for the physical upper run only. It does not change gravity, constraints, or lower-run points. |
 | `Detached Upper Travel Limit` (Advanced) | 18 cm | Maximum travel around the generated upper shape for detached upper points. A value of 0 disables this upper envelope. |
 | `Speed Tension` | Off | Reduces upper-run sag as vehicle speed rises without changing the lower contact shape. Its child fields define the response directly. |
+| `Speed Tension Start` (Advanced) | 250 cm/s | Speed where tension begins. |
+| `Speed Tension Full` (Advanced) | 950 cm/s | Speed where tension reaches full strength. |
+| `Speed Tension Strength` (Advanced) | 0.85 | Fraction of upper sag removed at full speed. |
 
 ## Setup: end wheels
 
@@ -96,8 +103,13 @@ as long as the configured bones and radii match the loop order.
 | `Front End Wheel Wrap Radius` | 55 cm | Radius of the generated track-center arc around the front end wheel. |
 | `Rear Drive Wheel Wrap Radius` | 0 cm | Radius around the rear drive wheel. A value of 0 reuses `Front End Wheel Wrap Radius`. |
 | `Wrap Points Per End Wheel` | 3 | Number of main generated control points on each end-wheel arc. More points describe the circle more closely but add solve work. |
+| `Edge Road Wheel Guard Points` | 3 | Adds shape points next to the first and last road wheel so spline interpolation does not cut through a large edge wheel. |
 | `End Wheel Wrap Arc` (Advanced) | 130 degrees | Angular portion of each end-wheel circle used by the generated track loop. |
 | `End Wheel Wrap Angle Offset` (Advanced) | 0 degrees | Rotates both generated wrap arcs around their wheel centers to align the transitions with a particular rig. |
+| `End Wheel Physics Weight` (Advanced) | 0 | Physical motion allowed on the main end-arc points. |
+| `Trace Lower Transitions` (Advanced) | On | Lets lower transitions between the edge road wheel and end arc query the surface. |
+| `Transition Detail Points` (Advanced) | 2 | Trace-point count on each lower transition. |
+| `Transition Sag To Next` (Advanced) | 0 cm | Extra lower-transition sag before the next control. |
 
 ## Setup: shape
 
@@ -108,6 +120,8 @@ as long as the configured bones and radii match the loop order.
 | `Maximum Detail Points Per Segment` (Advanced) | 6 | Safety cap on automatically generated intermediate points between two neighboring main controls. |
 | `Trace Generated Detail Points` | On | Lets intermediate points sample the ground instead of merely interpolating between the main controls. This is important for steps and obstacles between wheels. |
 | `Unsupported Span Sag Ratio` | 0.08 | Sag depth as a fraction of unsupported span length. It also scales the physical-chain slack and extra-sag limits, so large changes affect both the generated target and physical response. |
+| `Contact Solve Iterations` (Advanced) | 4 | Local passes used to refine unsupported-span contact. |
+| `Runtime Point Merge Radius` (Advanced) | 2 cm | Merges nearly coincident runtime points after loop generation to prevent tiny segments. |
 
 <a id="surface-tracing"></a>
 
@@ -138,137 +152,11 @@ change Chaos vehicle collision. Choose `Object Types` or `Trace Channel` when
 tracks must follow movable platforms or another explicitly configured surface;
 otherwise keep the release default `World Static Only`.
 
-## Optional Track Physics Diagnostics component
+## Diagnostics use a separate component
 
-Debug controls are intentionally absent from the normal solver Details panel.
-Add one editor-only `Track Physics Diagnostics` component to the vehicle,
-select the corresponding solver, and use it only while investigating a setup or
-runtime problem. The component is stripped from cooked builds.
-
-| Setting | Default | Purpose |
-| --- | ---: | --- |
-| `Draw Debug` | Off | Enables solver visualization in the editor or PIE. Leave off for normal runtime and performance measurements. |
-| `Detailed Runtime Diagnostics` | Off | Collects lifetime wheel/target/output peaks and per-stage point snapshots. Enable it only for focused investigation because it adds repeated array snapshots and diagnostic-string work. |
-| `Draw Debug Traces` | On | Draws ground probes and hit/miss results while `Draw Debug` is enabled. |
-| `Draw Debug Points` | On | Draws desired, fixed, contact, and physical point markers. |
-| `Draw Debug Solved Spline` | On | Draws the final solved loop. |
-| `Draw Debug Wheel Guides` | On | Draws wheel circles, guide ownership, and wheel-limit information. |
-| `Debug Draw Interval` (Advanced) | 0.1 s | Minimum time between debug redraws. It changes visualization cadence, not solver cadence. |
-| `Debug Point Size` (Advanced) | 8 cm | Size of debug point markers. |
-| `Debug Line Thickness` (Advanced) | 1.5 | Thickness of debug lines. |
-| `Debug Anchor Color` | Cyan | Color of fixed/source anchors. |
-| `Debug Solved Color` | Yellow | Color of the solved spline. |
-| `Debug Trace Hit Color` | Green | Color of successful traces. |
-| `Debug Trace Miss Color` | Red | Color of unsuccessful traces. |
-| `Debug Wheel Guide Color` | Purple | Color of wheel guide geometry. |
-| `Debug Wheel Limit Color` | Magenta | Color of one-sided wheel-limit corrections. |
-
-## Diagnostic log fields (internal)
-
-These values are solver-owned diagnostic data and are not normal tuning
-controls. The diagnostics component combines the relevant values into its
-single `Copy-Ready Diagnostic Log` field.
-
-### Primary status
-
-| Field | Meaning |
-| --- | --- |
-| `Last Solver Status` | Human-readable summary of the latest generation, solve, contacts, physical mode, Builder update, and important diagnostic values. |
-| `Last Validation Status` | Result of the latest setup validation, including missing spline/source/builder information and geometry issues. |
-| `Last Debug Snapshot` | Most recent detailed diagnostic snapshot captured by the solver. Detailed peak attribution requires `Detailed Runtime Diagnostics`. |
-| `Last Desired Point Count` | Number of points produced by the desired-shape stage. |
-| `Last Solved Point Count` | Number of points written by the final solve. It should normally match the desired count. |
-| `Last Missing Source Count` | Control points whose source component or bone/socket could not be resolved. Normal operation expects 0. |
-| `Last Ground Contact Count` | Number of desired points currently accepted as ground contacts. |
-| `Last Matched Wheel Points` | Generated points successfully associated with configured wheel bones/guides. |
-| `Last Generated Control Point Count` | Number of main controls created by the latest generation action. |
-| `Last Skipped Endpoint Wheels` | Endpoint wheel bones intentionally omitted from the road-wheel sequence because they are handled by the end-wheel generator. |
-| `Last Desired Extent` | Approximate spatial extent of the generated loop used by validation and diagnostics. |
-| `Last Bad Segment Count` | Segments rejected by bad-geometry protection. Normal operation expects 0. |
-| `Last Max Segment Length` | Longest segment in the most recent solved loop. Unexpected spikes indicate broken topology or a point jump. |
-
-### Contact and generated-shape status (Advanced)
-
-| Field | Meaning |
-| --- | --- |
-| `Last Fixed Support Count` | Desired points treated as fixed/source supports. |
-| `Last Suspended Support Count` | Supports used to delimit unsupported sag spans. |
-| `Last Suspended Span Count` | Unsupported spans that received procedural sag. |
-| `Last Trace Penetration Recoveries` | Initial-overlap traces recovered through the penetration-recovery path. |
-| `Last Trace Rejected Initial Penetration Count` | Initial-overlap trace results rejected as unsafe. |
-| `Last Trace Rejected Far Drop Count` | Trace hits rejected by `Maximum Ground Search Drop`. |
-| `Last Trace Rejected Max Snap Distance Count` | Trace hits rejected by `Maximum Ground Snap Distance`. |
-| `Last Ground Contact Hysteresis Hold Count` | Existing contacts retained temporarily by release hysteresis to prevent support chatter. |
-| `Last Merged Generated Duplicate Count` | Duplicate points removed during bone-rig generation. |
-| `Last Merged Runtime Point Count` | Near-duplicate detail points merged during runtime desired-shape construction. |
-| `Last Effective Detail Scale` | Runtime multiplier applied to detail spacing, normally 1 in Full Physical quality. |
-| `Last Effective Trace Fan Count` | Actual lateral probe count after applying the selected runtime quality mode. |
-| `Last Trace Fallback Hit Count` | Contacts accepted from a fallback probe rather than the primary probe. |
-| `Last Trace Memory Hit Count` | Contacts restored from the same point's recent trace memory. |
-| `Last Trace Nearest Memory Hit Count` | Contacts restored from a nearby compatible trace-memory entry. |
-| `Last Trace Detail Point Count` | Total generated detail points that performed traces. |
-| `Last Lower Trace Detail Point Count` | Traced detail points specifically belonging to the lower run. |
-
-### Physical-chain status (Advanced)
-
-| Field | Meaning |
-| --- | --- |
-| `Last Average Physics Weight` | Average effective simulation weight across dynamic points. |
-| `Last Dynamic Point Count` | Points currently allowed to simulate. |
-| `Last Effective Pinned Point Count` | Points effectively fixed after runtime-quality overrides. |
-| `Last Effective Physical Target Pull` | Actual generated-shape pull used by the current runtime mode. |
-| `Last Effective Wheel Surface Guide Strength` | Actual wheel-surface following strength after runtime-quality overrides. |
-| `Last Owner Carry Distance` | Owner-transform displacement carried into the simulation on the latest update. |
-| `Last Owner Inertia Speed` | Effective owner-motion inertia speed applied to free physical points. |
-| `Last Sag Limit Correction Count` | Points corrected by the extra-sag envelope. |
-| `Last Physical Velocity Clamp Count` | Point velocities limited by the maximum-speed safety value. |
-| `Last Physical Constraint Clamp Count` | Constraint corrections limited by the maximum-correction safety value. |
-| `Last Wheel Anchor Limit Count` | One-sided wheel-radius corrections applied in the latest solve. |
-| `Last Max Wheel Limit Correction` | Largest wheel-radius correction in the latest solve. |
-| `Last Top Roller Support Correction Count` | Upper points corrected against top-roller support circles. |
-| `Last Max Top Roller Support Correction` | Largest top-roller support correction. |
-| `Last Top Sag Envelope Correction Count` | Upper-run points corrected by the detached travel envelope. |
-| `Last Wheel Surface Guide Count` | Wheel-surface guide corrections applied. |
-| `Last Runtime Surface Contact Count` | Runtime point-versus-surface contacts accepted during physical solving. |
-| `Last Max Runtime Surface Contact Correction` | Largest runtime surface-contact correction. |
-| `Last Track Plane Limit Count` | Points corrected back toward the configured track plane. |
-| `Last Max Track Plane Error` | Largest lateral track-plane error detected. |
-| `Last Wheel Guide Count` | Total generated wheel guides. |
-| `Last Active Wheel Guide Count` | Guides active in the current solve. |
-| `Last Generated Wheel Guide Anchor Count` | Guide-anchor records created by bone-rig generation. |
-| `Last Top Sag Point Count` | Detail points identified as upper unsupported-span points. |
-| `Last Physical Topology Resample Count` | Number of physical-state resamples caused by a desired-point topology change. |
-| `Last Physical Topology Resample From Count` | Previous point count before the latest resample. |
-| `Last Physical Topology Resample To Count` | New point count after the latest resample. |
-| `Last Runtime Subdivision Hold Count` | Runtime subdivision decisions held from the previous frame to prevent topology chatter. |
-| `Last Free Road Wheel Trace Count` | Free lower points around road-wheel spans that performed runtime road traces. |
-| `Last Ground Friction Count` | Points that received longitudinal ground-friction processing. |
-| `Last Max Ground Contact Correction` | Largest preserved-ground-contact correction. |
-| `Last Average Rest Length Error` | Average absolute physical segment error relative to its current rest length. |
-| `Last Max Rest Length Error` | Largest physical segment rest-length error. |
-| `Last Average Physical Slack` | Average slack currently available in physical segments. |
-| `Last Max Physical Slack` | Largest slack value on one physical segment. |
-| `Last Average Segment Length` | Average solved segment length. |
-| `Last Min Segment Length` | Shortest solved segment. |
-| `Last Short Segment Count` | Segments classified as suspiciously short. |
-| `Last Average Point Speed` | Average speed of simulated points. |
-| `Last Max Point Speed` | Highest simulated point speed. |
-| `Last Top Sag Speed Tension Alpha` | Current normalized speed-tension amount from 0 to 1. |
-| `Last Top Sag Speed Tension Speed` | Vehicle speed used for the current speed-tension calculation. |
-| `Last Max Extra Sag` | Largest procedural unsupported-span sag depth generated in the latest solve. |
-
-### Output and timing status (Advanced)
-
-| Field | Meaning |
-| --- | --- |
-| `Last Effective Update Interval` | Actual solve interval after runtime quality or adaptive-rate overrides. |
-| `Last Builder Update Max Delta` | Largest point movement considered by the most recent Builder-update decision. |
-| `Last Skipped Builder Update Count` | Consecutive or accumulated stable Builder updates skipped by the optimization. |
-| `Last Builder Update Status` | Text explanation of the latest Builder resolution/update decision. |
-| `Last Solve Delta Time` | Time step consumed by the latest solve after interval accumulation. |
-| `Last Solve Delta Time Clamped` | True when the latest solve time step was limited by `Max Solve Delta Time`. |
-| `Last First Desired Point` | Local-space position of the first desired point, useful for loop-order diagnostics. |
-| `Last Last Desired Point` | Local-space position of the final desired point, useful for seam/closure diagnostics. |
+Debug drawing, point-map recording, and the copy-ready log belong to the
+editor-only [Track Physics Diagnostics]({{ '/docs/track-diagnostics-reference.en.html' | relative_url }})
+component. These are not Solver settings; the component is excluded from cooked builds.
 
 ## Setup utilities
 
@@ -324,8 +212,8 @@ single `Copy-Ready Diagnostic Log` field.
 | `Lower Shoe Tangent Scale` | 0.55 | Cheap Remote spline tangent length along the lower shoe run. |
 | `Lower Transition Tangent Scale` | 0.35 | Cheap Remote tangent length where the lower run enters an end-wheel arc. |
 | `BeginPlay Rebuild Delay` (Advanced) | 0.2 s | Delay before the scheduled BeginPlay rebuild. It allows skeletal and vehicle components to initialize first. |
-| `Regenerate Controls On BeginPlay` | On | Regenerates controls from the suspension and wheel bones before the BeginPlay rebuild. Leave it enabled for the supported release workflow. |
-| `Update Every Tick` | On | Enables continuous runtime solving. The component still respects `Solve Interval`. |
+| `Generate Controls On BeginPlay` | On | Generates controls from suspension and wheel bones before the scheduled BeginPlay rebuild. Keep it enabled for normal setup. |
+| `Solve Every Tick` | On | Enables continuous runtime solving while respecting `Solve Interval`. |
 | `Solve Interval` (Advanced) | 0.033 s | Minimum time between solves. A value of 0 solves every component tick; larger values reduce work but also reduce response cadence. |
 | `Max Solve Delta Time` (Advanced) | 0.05 s | Maximum time step accepted by one solve. Longer accumulated frames are clamped to protect the physical integration from large jumps. |
 

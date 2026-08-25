@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 370" role="img" aria-labelledby="title desc">
+  <title id="title">Track ground-contact probes</title><desc id="desc">Center and side probes sample World Static under the lower track run.</desc>
+  <defs><style>.shoe{fill:#26313b;stroke:#d7a85a;stroke-width:4}.ground{fill:#182027;stroke:#768b98;stroke-width:4}.probe{stroke:#61c4ee;stroke-width:4;stroke-dasharray:10 8}.hit{fill:#68d391}.t{fill:#eef5f8;font:700 21px system-ui,sans-serif}.s{fill:#aebfca;font:16px system-ui,sans-serif}</style></defs>
+  <rect width="1120" height="370" rx="24" fill="#0f1318"/>
+  <path class="ground" d="M40 300 L210 278 L370 305 L530 244 L700 273 L860 222 L1080 255 L1080 340 L40 340 Z"/>
+  <g transform="translate(145 95)"><rect class="shoe" width="190" height="42" rx="8"/><path class="probe" d="M25 45 V176 M95 45 V191 M165 45 V174"/><circle class="hit" cx="25" cy="176" r="8"/><circle class="hit" cx="95" cy="191" r="8"/><circle class="hit" cx="165" cy="174" r="8"/></g>
+  <g transform="translate(475 95)"><rect class="shoe" width="190" height="42" rx="8"/><path class="probe" d="M25 45 V165 M95 45 V151 M165 45 V170"/><circle class="hit" cx="25" cy="165" r="8"/><circle class="hit" cx="95" cy="151" r="8"/><circle class="hit" cx="165" cy="170" r="8"/></g>
+  <g transform="translate(805 95)"><rect class="shoe" width="190" height="42" rx="8"/><path class="probe" d="M25 45 V141 M95 45 V128 M165 45 V145"/><circle class="hit" cx="25" cy="141" r="8"/><circle class="hit" cx="95" cy="128" r="8"/><circle class="hit" cx="165" cy="145" r="8"/></g>
+  <text class="t" x="560" y="50" text-anchor="middle">Track Contact Width</text><text class="s" x="560" y="78" text-anchor="middle">one width drives the center and side probe envelope</text>
+  <text class="t" x="560" y="355" text-anchor="middle">Surface Query Mode = World Static Only</text>
+</svg>

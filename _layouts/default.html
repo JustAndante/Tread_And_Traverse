@@ -86,7 +86,9 @@
                 </section>
                 <section class="product-nav__group">
                   <strong>{% if page.lang == 'ru' %}Справочник{% else %}Reference{% endif %}</strong>
-                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-settings-reference.ru.html' | relative_url }}{% else %}{{ '/docs/track-settings-reference.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Все настройки{% else %}All settings{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-builder-settings.ru.html' | relative_url }}{% else %}{{ '/docs/track-builder-settings.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Настройки Builder{% else %}Builder settings{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-settings-reference.ru.html' | relative_url }}{% else %}{{ '/docs/track-settings-reference.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Настройки Solver{% else %}Solver settings{% endif %}</a>
+                  <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-diagnostics-reference.ru.html' | relative_url }}{% else %}{{ '/docs/track-diagnostics-reference.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Диагностика Solver{% else %}Solver diagnostics{% endif %}</a>
                   <a data-search-page href="{% if page.lang == 'ru' %}{{ '/docs/track-blueprint-nodes.ru.html' | relative_url }}{% else %}{{ '/docs/track-blueprint-nodes.en.html' | relative_url }}{% endif %}">Blueprint-{% if page.lang == 'ru' %}ноды{% else %}nodes{% endif %}</a>
                 </section>
               </nav>

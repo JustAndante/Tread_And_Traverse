@@ -13,6 +13,11 @@ doc_section: guide
 Builds a closed visual track from running-gear bones, deforms it against the
 suspension and terrain, and places a constant number of links.
 
+<figure class="doc-figure doc-figure--wide">
+  <img src="{{ '/assets/images/track/component-flow.svg' | relative_url }}" alt="Wheel bones feed the Solver, the Solver writes a spline, and the Builder places links">
+  <figcaption>Minimum component flow for one track side. The other side uses its own matching set.</figcaption>
+</figure>
+
 <div class="guide-callout" markdown="1">
 **Recommended path:** build one side with the quick start below. Once it works in
 PIE, copy the components to the other side and change only bone names, direction,
@@ -75,8 +80,9 @@ A working result has:
 Keep `Surface Query Mode = World Static Only` for a conventional vehicle.
 
 <div class="guide-next" markdown="1">
-**Working?** Continue with the task you need below. Every supported field is
-listed in the [settings reference]({{ '/docs/track-settings-reference.en.html' | relative_url }}).
+**Working?** Continue with the task you need below. Fields are split into
+[Builder settings]({{ '/docs/track-builder-settings.en.html' | relative_url }})
+and [Solver settings]({{ '/docs/track-settings-reference.en.html' | relative_url }}).
 </div>
 
 ## Choose the next task
@@ -94,7 +100,7 @@ listed in the [settings reference]({{ '/docs/track-settings-reference.en.html' |
 - **Guide** — only the first working result.
 - **Build the track** — short pages for shape, terrain, and links.
 - **Run and ship** — quality for local, remote, and server copies.
-- **Reference** — every field and Blueprint node without abbreviation.
+- **Reference** — separate Builder, Solver, diagnostics, and Blueprint-node pages.
 
 <div class="guide-next" markdown="1">
 **Continue in order:** [configure the wheel shape]({{ '/docs/track-wheel-shape.en.html' | relative_url }}).
