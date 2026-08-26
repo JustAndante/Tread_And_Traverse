@@ -199,6 +199,22 @@ Send press/release to
 `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`. The runtime
 and `AmmoSystem` own cadence, reload, and heat; do not add a parallel Timeline.
 
+For a standard configured weapon, that one input follows this path:
+
+```text
+input press/release
+-> configured trigger route by Weapon ID
+-> AmmoSystem validates and consumes the loaded ammo
+-> runtime spawns the chambered Projectile Class from the configured muzzle
+-> runtime plays recoil and Effects & Audio for the same Weapon ID
+-> one per-Weapon-ID reload timer completes the AmmoSystem transaction
+```
+
+`Blueprint Custom` is the deliberate exception: the child Blueprint owns its
+special launch transaction, while the component still owns the configured
+trigger state and reload timing. Do not build a second standard fire path next
+to the runtime one.
+
 Optional selectable groups use `Selectable Weapon Channels`:
 
 - `Set Active Weapon Channel` selects one exclusive channel;
@@ -262,3 +278,4 @@ No master Blueprint or C++ API change is required.
 
 Start with the Core API. Advanced operations are intended for a custom
 scheduler, unusual aim sources, or migration of an existing graph.
+
