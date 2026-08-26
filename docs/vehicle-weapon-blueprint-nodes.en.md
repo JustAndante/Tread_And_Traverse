@@ -8,15 +8,14 @@ product: weapon
 doc_section: nodes
 ---
 
-
 # Vehicle Weapon System Blueprint nodes
 
-This page is generated from the current public runtime `UFUNCTION` surface. Every table name is the exact name to search in the Blueprint Palette.
+This is the curated buyer-facing Vehicle Weapon System Blueprint API. Every table name is the exact name to search in the Blueprint Palette.
 
 - `Vehicle | Weapon System | Core` — normal vehicle integration, input, firing, HUD, and profiles;
 - `Vehicle | Weapon System | Advanced` — custom schedulers, explicit channels/registries, and detailed diagnostics.
 
-> Start with Core. A profile-driven vehicle does not need Advanced nodes. Shadow, Legacy, and Migration helpers are not buyer-facing API and are intentionally omitted.
+> Start with Core. A profile-driven vehicle does not need Advanced nodes. Deprecated/Migration, Diagnostics/Internal helpers, and adjacent generic vehicle utilities are intentionally omitted even when they remain public for compatibility or developer tooling.
 
 ## Normal runtime order
 
@@ -36,8 +35,8 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 |---|---|
 | `Configure Weapon Axis Aim And Stabilization` | Changes one configured axis input without rebuilding controllers. Normally call this only when camera/weapon mode or stabilization changes. |
 | `Get Configured Axis Group Rotations` | Reads the real configured yaw/pitch component rotations for a stable Axis Group ID. AnimBP, sound, networking, and custom presentation may consume these values; the function never runs another solver or writes a transform. |
-| `Get Weapon Axis Aim And Stabilization Settings` | Performs the “Get Weapon Axis Aim And Stabilization Settings” operation from `Vehicle\|Weapon System\|Core\|Axis Control`. |
-| `Reset Weapon Axis Aim And Stabilization` | Performs the “Reset Weapon Axis Aim And Stabilization” operation from `Vehicle\|Weapon System\|Core\|Axis Control`. |
+| `Get Weapon Axis Aim And Stabilization Settings` | Reads the current aim-source and stabilization settings for one Axis Group ID. |
+| `Reset Weapon Axis Aim And Stabilization` | Restores one Axis Group to the aim-source and stabilization values imported from its profile. |
 | `Submit Manual Weapon Axis Input` | Reports manual yaw and pitch input activity for this axis group. The current routed aim target determines direction; these values only activate the corresponding mechanical drive plane and are never added to stabilization compensation. Use independent yaw-only and pitch-only input event lanes. |
 ### Ballistics
 
@@ -74,10 +73,10 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 | `Get Resolved Smoke Launcher Setup` | Returns the runtime-ready smoke setup when the profile contains one. |
 | `Get Resolved Weapon Effects And Audio` | Returns runtime-ready effects/audio data for any stable Weapon ID. |
 | `Get Resolved Weapon Loadout` | Returns runtime-ready loadout data for any stable Weapon ID. |
-| `Get Weapon Loadout Definition` | Performs the “Get Weapon Loadout Definition” operation from `Vehicle\|Weapon System\|Core\|Profiles`. |
-| `Validate Tank Variant Profile` | Performs the “Validate Weapon Loadout Profile” operation from `Vehicle\|Weapon System\|Core\|Profiles`. |
-| `Validate Vehicle Armament Profile` | Performs the “Validate Weapon Loadout Profile” operation from `Vehicle\|Weapon System\|Core\|Profiles`. |
-| `Validate Weapon Loadout Profile` | Performs the “Validate Weapon Loadout Profile” operation from `Vehicle\|Weapon System\|Core\|Profiles`. |
+| `Get Weapon Loadout Definition` | Finds the immutable profile definition for one Weapon ID. |
+| `Validate Tank Variant Profile` | Validates the top-level Tank Variant and every referenced armament profile. |
+| `Validate Vehicle Armament Profile` | Validates the links from an Armament Profile to its aiming and loadout profiles. |
+| `Validate Weapon Loadout Profile` | Validates IDs, feed settings, timing, ammo defaults, launcher banks, and presentation in one loadout profile. |
 ### Replication
 
 | Node | Purpose |
@@ -88,7 +87,7 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 
 | Node | Purpose |
 |---|---|
-| `Is Weapon System Active` | Performs the “Is Weapon System Active” operation from `Vehicle\|Weapon System\|Core\|Runtime`. |
+| `Is Weapon System Active` | Reads the component-wide lifecycle gate used for destroyed, disabled, or repaired vehicles. |
 | `Set Weapon System Active` | One lifecycle gate for destroyed, disabled, or repaired vehicles. Inactive systems skip aim rays, axis solving, traces, ballistics, UI projection, stabilization, and native replication work even if the owning Blueprint continues to call its compact update nodes. |
 | `Update Vehicle Aim Sources` | Converts configured camera/AimCube inputs into the coherent aim-source cache. |
 | `Update Vehicle Weapon System` | Solves and routes all configured axes from the cached sources. |
@@ -148,15 +147,20 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 | Node | Purpose |
 |---|---|
 | `Clear All Aim Channels` | Clears all cached channels. |
-| `Clear Named Aim Channel` | Performs the “Clear Named Aim Channel” operation from `Vehicle\|Weapon System\|Advanced\|Aim Channels`. |
+| `Clear Named Aim Channel` | Removes the cached state of one named aim channel. |
 | `Get Aim Channel State` | Reads a named channel. |
-| `Get Standard Aim Channel ID` | Performs the “Get Standard Aim Channel ID” operation from `Vehicle\|Weapon System\|Advanced\|Aim Channels`. |
+| `Get Standard Aim Channel ID` | Converts a standard aim-channel enum to its stable channel ID. |
 | `Get Standard Aim Channel State` | Reads a standard channel by enum. |
 | `Set Active Standard Aim Channel` | Selects the active standard source. |
 | `Set Aim Channel Enabled` | Enables/disables a named channel without removing it. |
 | `Set Named Aim Channel Target` | Writes a target to a custom named channel. |
 | `Set Standard Aim Channel Target` | Writes a target to a standard channel. |
 | `Submit Standard Aim Sources` | Updates all four standard channels with one shared revision. |
+### Aim Sources
+
+| Node | Purpose |
+|---|---|
+| `Update Vehicle Aim Sources (Advanced / Detailed)` | Detailed version of the normal aim-source update. Use it only when a custom Blueprint needs the full result structure; the Core node is the normal integration path. |
 ### Aim Routing
 
 | Node | Purpose |
@@ -196,20 +200,20 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 | Node | Purpose |
 |---|---|
 | `Apply Built-In Weapon Installation Change (Advanced)` | Rebinds one logical weapon to another axis and optionally another muzzle. |
-| `Get Resolved Weapon Installation` | Performs the “Get Resolved Weapon Installation” operation from `Vehicle\|Weapon System\|Advanced\|Configuration\|Installations`. |
+| `Get Resolved Weapon Installation` | Returns the runtime axis/muzzle binding resolved for one Weapon ID. |
 | `Refresh Weapon Installation Registry` | Rebuilds Weapon ID to axis/muzzle mappings. |
 ### Configuration / Runtime Setup
 
 | Node | Purpose |
 |---|---|
-| `Rebuild Runtime From Built-In Configuration (Advanced)` | Performs the “Rebuild Runtime From Built-In Configuration (Advanced)” operation from `Vehicle\|Weapon System\|Advanced\|Configuration\|Runtime Setup`. |
+| `Rebuild Runtime From Built-In Configuration (Advanced)` | Rebuilds registries directly from the component's Local Configuration arrays. Use only when the local workflow is authoritative. |
 ### Custom Aim
 
 | Node | Purpose |
 |---|---|
-| `Make World Direction Aim Target (Advanced)` | Performs the “Make World Direction Aim Target (Advanced)” operation from `Vehicle\|Weapon System\|Advanced\|Custom Aim`. |
-| `Make World Point Aim Target (Advanced)` | Performs the “Make World Point Aim Target (Advanced)” operation from `Vehicle\|Weapon System\|Advanced\|Custom Aim`. |
-| `Solve Two-Axis Weapon Aim (Advanced)` | Performs the “Solve Two-Axis Weapon Aim (Advanced)” operation from `Vehicle\|Weapon System\|Advanced\|Custom Aim`. |
+| `Make World Direction Aim Target (Advanced)` | Creates an aim target from a world origin and direction without requiring a hit point. |
+| `Make World Point Aim Target (Advanced)` | Creates an aim target from a world point and records whether it came from a blocking hit. |
+| `Solve Two-Axis Weapon Aim (Advanced)` | Solves yaw and pitch for an explicit target, basis, current angles, limits, and drive settings. |
 ### Muzzles
 
 | Node | Purpose |
@@ -235,6 +239,11 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 | Node | Purpose |
 |---|---|
 | `Update Muzzle Traces And Ballistics (Advanced / Detailed)` | One early node for continuous rays plus optional projectile prediction. |
+### Presentation
+
+| Node | Purpose |
+|---|---|
+| `Refresh Turret Animation Update Order (Advanced)` | Reapplies the configured skeletal-mesh tick prerequisites after a variant changes turret or gun presentation components at runtime. Normal profile-driven vehicles do not call it every frame. |
 ### UI
 
 | Node | Purpose |
@@ -249,4 +258,5 @@ Fire through `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`.
 
 ## How parity is maintained
 
-Names and visual pins come from the runtime module reflected API. When a public node changes, this reference and `assets/js/blueprint-nodes.js` must be regenerated together.
+Names and visual pins are checked against the runtime module reflected API, then filtered to the buyer-facing Weapon System surface described above. When a listed node changes, this reference and `assets/js/blueprint-nodes.js` must be regenerated together.
+
