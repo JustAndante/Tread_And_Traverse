@@ -198,6 +198,21 @@ Use Tank Profile Weapon System Settings -> On
 runtime и `AmmoSystem` выполняют cadence, reload и heat; не добавляйте
 параллельные Timeline.
 
+Для стандартного настроенного оружия этот единственный input проходит путь:
+
+```text
+input press/release
+-> configured trigger route по Weapon ID
+-> AmmoSystem проверяет и расходует заряженный боеприпас
+-> runtime создаёт заряженный Projectile Class из настроенного muzzle
+-> runtime воспроизводит recoil и Effects & Audio того же Weapon ID
+-> отдельный reload timer этого Weapon ID завершает транзакцию AmmoSystem
+```
+
+`Blueprint Custom` — намеренное исключение: особая launch-транзакция остаётся в
+child Blueprint, а компонент по-прежнему владеет configured trigger state и
+reload timing. Не создавайте рядом второй стандартный путь выстрела.
+
 Для переключаемых групп заполните `Selectable Weapon Channels`:
 
 - `Set Active Weapon Channel` выбирает один канал;
@@ -261,10 +276,11 @@ HUD не должен повторять traces и баллистический 
 
 ## Справочники
 
-- [Blueprint-ноды Vehicle Weapon System]({{ '/docs/vehicle-weapon-blueprint-nodes.ru.html' | relative_url }})
-- [Добавление своего танка в VehicleCore]({{ '/docs/blueprint-authoring.ru.html' | relative_url }})
+- [Blueprint-ноды Vehicle Weapon System](VehicleWeaponBlueprintNodes.ru.md)
+- [Добавление своего танка в VehicleCore](../../../Content/VehicleCore/Documentation/Integrating_Your_Tank.md)
 - `DA_VWS_T80U`, `DA_WeaponLoadout_T80U` и `BP_T80U_Variant` — пример основной
   пушки, двух MG и smoke banks.
 
 Начинайте с Core API. Advanced-ноды нужны только для собственного scheduler,
 нестандартных aim sources или миграции существующего графа.
+
