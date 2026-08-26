@@ -53,7 +53,8 @@ doc_section: guide
 | `DA_ArmamentProfile_MyTank` | ссылки на VWS и Weapon Loadout |
 | `DA_TankVariant_MyTank` | одна верхняя точка подключения конкретного танка |
 
-Не дублируйте скорость projectile, reload или эффекты в других местах.
+Не дублируйте скорость projectile, reload или эффекты в других местах. В
+текущем workflow нет отдельных Effects или Smoke-профилей.
 
 ## 1. Выберите источник настроек
 
@@ -190,6 +191,19 @@ Use Tank Profile Weapon System Settings -> On
 На компоненте оставьте пустыми `Direct Weapon System Profile (Advanced)` и
 `Direct Armament Profile (Fallback)`: для машины должен существовать один
 очевидный профильный источник настроек.
+
+Итоговая production-цепочка выглядит так:
+
+```text
+Tank Variant
+└─ Armament Profile
+   ├─ Aiming / Turret Setup (DA_VWS)
+   └─ Weapon Loadouts
+
+Vehicle child
+└─ AmmoSystem
+   └─ Ammo Type Definitions
+```
 
 ## 7. Подключите input и UI
 
