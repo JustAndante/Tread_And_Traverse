@@ -287,7 +287,7 @@ scheduler, unusual aim sources, or migration of an existing graph.
 ## References
 
 - [Vehicle Weapon System Blueprint nodes](vehicle-weapon-blueprint-nodes.en.md)
-- [Vehicle Weapon System guide](vehicle-weapon-system.en.md)
+- [Integrating a custom tank into VehicleCore](vehicle-weapon-system.en.md)
 - `DA_VWS_T80U`, `DA_WeaponLoadout_T80U`, and `BP_T80U_Variant` demonstrate a
   main gun, two MGs, and smoke launcher banks.
 
