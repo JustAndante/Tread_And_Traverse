@@ -84,8 +84,11 @@ it does not require another C++ signature or an edit to `BP_Tank_Master`.
 
 ## 3. Configure axes, installations, and muzzles
 
-Open `DA_VWS_MyTank`. One Axis Group describes one independent yaw/pitch
-mechanism.
+Open `DA_VWS_MyTank`.
+
+### Axes
+
+One Axis Group describes one independent yaw/pitch mechanism.
 
 | Installation | Typical setup |
 |---|---|
@@ -97,6 +100,8 @@ mechanism.
 
 If an AnimBP or Control Rig already rotates a bone, read the resolved axis
 rotations there. Do not let two systems write the same pivot.
+
+### Installation and muzzle
 
 For every `Weapon ID`:
 
@@ -278,4 +283,11 @@ No master Blueprint or C++ API change is required.
 
 Start with the Core API. Advanced operations are intended for a custom
 scheduler, unusual aim sources, or migration of an existing graph.
+
+## References
+
+- [Vehicle Weapon System Blueprint nodes](vehicle-weapon-blueprint-nodes.en.md)
+- [Vehicle Weapon System guide](vehicle-weapon-system.en.md)
+- `DA_VWS_T80U`, `DA_WeaponLoadout_T80U`, and `BP_T80U_Variant` demonstrate a
+  main gun, two MGs, and smoke launcher banks.
 
