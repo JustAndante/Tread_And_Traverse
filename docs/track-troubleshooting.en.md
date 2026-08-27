@@ -18,7 +18,10 @@ Start from the visible symptom. Do not change several setting groups at once.
 | --- | --- |
 | No loop appears | `Target Spline`, `Source Mesh Component`, bone names, and `Validate Setup`. |
 | Sides move in different directions | `Reverse Track Direction`, rotation axis, and compatibility sign matching. |
-| Speed does not match the vehicle | Rotation source, matching Chaos wheel, and its actual radius. |
+| Link speed does not match the vehicle | Rotation source, matching Chaos wheel, and its actual radius. |
+| Steering is too weak or too sharp | `Maximum Drive Torque` and a positive `Turn Gear Ratio`. Do not change Chaos transmission ratios to tune steering. |
+| A turn immediately drops the gearbox to first | The Actor must have one `Tracked Vehicle Engine RPM`; verify two contiguous driven-wheel side groups and enabled automatic shifting. |
+| Real slowdown does not downshift | `Change Down RPM`, automatic transmission, and correct driven-wheel side grouping. |
 | Track reacts to the hull | `World Static Only` and the surface collision profile. |
 | Links flip | Mesh local axes/pivot and `Orientation Mode`. |
 | Spacing changes | Fixed link count, closed spline, and stable topology. |
@@ -37,4 +40,3 @@ Start from the visible symptom. Do not change several setting groups at once.
 [← Quality and network]({{ '/docs/track-quality-network.en.html' | relative_url }})
 [All settings →]({{ '/docs/track-settings-reference.en.html' | relative_url }})
 </div>
-
