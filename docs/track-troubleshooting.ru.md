@@ -18,7 +18,10 @@ doc_section: troubleshooting
 | --- | --- |
 | Контур не появился | `Target Spline`, `Source Mesh Component`, имена костей и `Validate Setup`. |
 | Стороны идут в разные направления | `Reverse Track Direction`, ось вращения и compatibility sign matching. |
-| Скорость не совпадает с машиной | Источник вращения, соответствующее Chaos wheel и его реальный radius. |
+| Скорость звеньев не совпадает с машиной | Источник вращения, соответствующее Chaos wheel и его реальный radius. |
+| Поворот слишком слабый или резкий | `Maximum Drive Torque` и положительный `Turn Gear Ratio`. Не меняйте ради этого передаточные числа коробки Chaos. |
+| При повороте коробка сразу падает на первую | На Actor должен быть один `Tracked Vehicle Engine RPM`; проверьте две последовательные группы ведущих Chaos wheels и включённый automatic. |
+| При реальном замедлении передачи не понижаются | `Change Down RPM`, automatic transmission и корректное разбиение ведущих колёс по сторонам. |
 | Гусеница реагирует на корпус | `World Static Only` и collision profile поверхности. |
 | Звенья переворачиваются | Локальные оси/pivot меша и `Orientation Mode`. |
 | Расстояние между звеньями гуляет | Фиксированное число, замкнутый сплайн и стабильную topology. |
@@ -37,4 +40,3 @@ doc_section: troubleshooting
 [← Качество и сеть]({{ '/docs/track-quality-network.ru.html' | relative_url }})
 [Все настройки →]({{ '/docs/track-settings-reference.ru.html' | relative_url }})
 </div>
-
