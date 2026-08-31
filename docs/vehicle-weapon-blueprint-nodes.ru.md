@@ -1,274 +1,264 @@
 ---
 layout: default
-title: "Vehicle Weapon System: Blueprint-ноды — Русский"
-description: "Справочник Blueprint-нод Vehicle Weapon System"
+title: "Blueprint-ноды Vehicle Weapon System — Русский"
+description: "Актуальный отобранный покупательский Blueprint API Vehicle Weapon System"
 lang: ru
 page_kind: reference
 product: weapon
 doc_section: nodes
 ---
 
-
 # Blueprint-ноды Vehicle Weapon System
 
-Система специально разделена на два уровня:
+Это отобранный покупательский Blueprint API Vehicle Weapon System. Имя в таблице совпадает с именем, которое нужно искать в Blueprint Palette.
 
-- `Vehicle | Weapon System | Core` — ноды, из которых собирается обычная машина;
-- `Vehicle | Weapon System | Advanced` — явное управление каналами, реестрами, отдельными контроллерами и подробными runtime-кадрами.
+- `Vehicle | Weapon System | Core` — обычная интеграция танка, input, fire, HUD и профили;
+- `Vehicle | Weapon System | Advanced` — собственный scheduler, ручные каналы/реестры и подробная диагностика.
 
-Начинайте с `Core`. Переходите к `Advanced` только тогда, когда стандартный компонентный workflow действительно не подходит.
+> Начинайте с Core. Advanced не требуется для стандартного профильного workflow. Deprecated/Migration, Diagnostics/Internal и соседние общие vehicle-утилиты намеренно не перечисляются, даже если они остаются публичными ради совместимости или developer tooling.
 
-> Визуальный блок в каждой строке ниже строится по актуальной публичной `UFUNCTION`-сигнатуре: показаны реальное имя ноды, все exec/data-пины и параметры `AdvancedDisplay` в развёрнутом виде.
+## Обычный runtime-порядок
 
-<section class="bp-showcase" aria-label="Пример Blueprint-графа Vehicle Weapon System">
-  <div class="bp-showcase__copy">
-    <span class="bp-showcase__eyebrow">ОБЫЧНЫЙ RUNTIME-КАДР</span>
-    <strong>Три вызова в фиксированном порядке</strong>
-    <p>Сначала обновляются лучи и баллистика, затем источники прицеливания, после чего система рассчитывает и применяет команды всех осей.</p>
-    <span class="bp-showcase__note">Это основной маршрут. Подробные Advanced-ноды нужны только нестандартным интеграциям.</span>
-  </div>
-  <div class="bp-graph" role="img" aria-label="Последовательность трёх основных runtime-нод Vehicle Weapon System">
-    <div class="bp-graph__flow">
-      <div class="bp-node bp-node--system">
-        <span class="bp-node__phase">01 · TRACES</span>
-        <div class="bp-node__header">Update Weapon Traces And Ballistics</div>
-        <div class="bp-node__ports">
-          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
-          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span><span class="bp-port bp-port--bool bp-port--out"><i class="bp-port__dot"></i>Success</span></div>
-        </div>
-      </div>
-      <span class="bp-wire" aria-hidden="true"></span>
-      <div class="bp-node bp-node--system">
-        <span class="bp-node__phase">02 · AIM SOURCES</span>
-        <div class="bp-node__header">Update Vehicle Aim Sources</div>
-        <div class="bp-node__ports">
-          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
-          <div class="bp-node__port-row"><span class="bp-port"><i class="bp-port__dot"></i>Target</span><span class="bp-port bp-port--bool bp-port--out"><i class="bp-port__dot"></i>Success</span></div>
-        </div>
-      </div>
-      <span class="bp-wire" aria-hidden="true"></span>
-      <div class="bp-node bp-node--system">
-        <span class="bp-node__phase">03 · SOLVE</span>
-        <div class="bp-node__header">Update Vehicle Weapon System</div>
-        <div class="bp-node__ports">
-          <div class="bp-node__port-row"><span class="bp-port bp-port--exec"><i class="bp-port__dot"></i>Exec</span><span class="bp-port bp-port--exec bp-port--out"><i class="bp-port__dot"></i>Then</span></div>
-          <div class="bp-node__port-row"><span class="bp-port bp-port--number"><i class="bp-port__dot"></i>Delta Seconds</span><span class="bp-port bp-port--bool bp-port--out"><i class="bp-port__dot"></i>Success</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+1. `Update Weapon Traces And Ballistics`;
+2. `Update Vehicle Aim Sources`;
+3. `Update Vehicle Weapon System`.
 
-## Обычный runtime-граф
-
-Вызывайте эти ноды в указанном порядке после подготовки камеры и AimCube:
-
-1. `Update Weapon Traces And Ballistics` — обновляет непрерывные лучи всех зарегистрированных дульных срезов и, при необходимости, баллистику;
-2. `Update Vehicle Aim Sources` — строит и кэширует External, Gunner, Commander и дополнительные источники прицеливания;
-3. `Update Vehicle Weapon System` — маршрутизирует кэшированные цели на все настроенные оси и формирует команды физическим pivot-компонентам.
-
-Каждая нода возвращает простой `Success`. Подробные результаты сохраняются в компоненте и доступны диагностическим запросам. Нормальному графу не нужно собирать массивы axis requests, вручную обновлять реестры или применять pending-команды.
+Стрельбу вызывайте через `Request Configured Weapon Trigger State(Weapon ID, Trigger Held)`. HUD запрашивайте по произвольному `Weapon ID`; в API нет ограничения «основное + вторичное оружие».
 
 <a id="core-nodes"></a>
 
-## Core — Runtime
+## Core
+
+### Управление осями
 
 | Нода | Назначение |
 |---|---|
-| `Update Weapon Traces And Ballistics` | Обновляет muzzle transforms, непрерывные weapon traces и опциональный ballistic cache. |
+| `Configure Weapon Axis Aim And Stabilization` | Меняет aim source и режим стабилизации одной Axis Group без перестройки контроллеров. Вызывайте при смене режима камеры, оружия или стабилизатора, а не каждый кадр. |
+| `Get Configured Axis Group Rotations` | Возвращает реальные relative rotations yaw/pitch-компонентов выбранной Axis Group. Подходит для AnimBP, звука, сети и уникальной presentation; повторно solver не запускает. |
+| `Get Weapon Axis Aim And Stabilization Settings` | Читает текущие aim channels и состояние стабилизации выбранной Axis Group. |
+| `Reset Weapon Axis Aim And Stabilization` | Возвращает aim channels и стабилизацию Axis Group к профильным значениям. |
+| `Submit Manual Weapon Axis Input` | Сообщает активность ручного yaw/pitch ввода. Направление по-прежнему задаёт routed aim target; input только включает соответствующий привод и не складывается с компенсацией стабилизатора. |
+### Баллистика
+
+| Нода | Назначение |
+|---|---|
+| `Apply Ammo Type Ballistics` | Применяет выбранный Ammo Type к прогнозу баллистики Weapon ID. Скорость берётся только из `Initial Speed` заряженного Projectile Class, остальные параметры — из Ammo Type. |
+### Конфигурация
+
+| Нода | Назначение |
+|---|---|
+| `Apply Direct Weapon System Profile` | Импортирует профиль, назначенный в `Configuration Profile`; доступна также как editor-кнопка. |
+| `Apply Weapon System Profile` | Применяет переданный профиль; может сохранить vehicle-specific bindings и сразу перестроить runtime. |
+| `Export Built-In Setup To Direct Weapon System Profile` | Копирует текущие Local Configuration массивы в назначенный Data Asset. |
+| `Initialize Vehicle Armament Profile` | Разрешает и кэширует назначенную профильную цепочку конкретного танка. |
+| `Validate Direct Weapon System Profile Compatibility` | Проверяет ID, ссылки, настройки и возможность сохранить vehicle bindings, не применяя профиль. |
+| `Validate Vehicle Weapon System Configuration` | Перестраивает реестры и возвращает полный readiness report с ошибками и предупреждениями. |
+### Эффекты
+
+| Нода | Назначение |
+|---|---|
+| `Play Configured Weapon Camera Shake` | Воспроизводит Camera Shake, назначенный конкретному Weapon ID, без asset literals в графе. |
+| `Play Configured Weapon Presentation` | Реплицирует одно профильное presentation-событие по Weapon ID. Standard runtime вызывает его сам; Blueprint Custom вызывает после принятой собственной транзакции. |
+### Интеграция
+
+| Нода | Назначение |
+|---|---|
+| `Find Vehicle Weapon System` | Находит единственный компонент Vehicle Weapon System у переданного Actor. |
+### Профили
+
+| Нода | Назначение |
+|---|---|
+| `Get All Resolved Weapon Loadouts` | Возвращает все включённые loadout-записи в стабильном порядке профиля. |
+| `Get Effective Vehicle Armament Profile` | Возвращает Armament Profile из Tank Variant Profile либо явный fallback. |
+| `Get Resolved Weapon Effects And Audio` | Возвращает готовые эффекты и audio любого стабильного Weapon ID. |
+| `Get Resolved Weapon Loadout` | Возвращает готовые runtime-настройки одного Weapon ID. |
+| `Get Weapon Loadout Definition` | Находит неизменяемое описание оружия в назначенном Weapon Loadout Profile. |
+| `Validate Tank Variant Profile` | Проверяет верхний Tank Variant Profile и всю цепочку его вооружения. |
+| `Validate Vehicle Armament Profile` | Проверяет связи Armament Profile с aiming/loadout-профилями. |
+| `Validate Weapon Loadout Profile` | Проверяет Weapon Loadout Profile и возвращает список ошибок конфигурации. |
+### Репликация
+
+| Нода | Назначение |
+|---|---|
+| `Set Optimized Turret Replication Enabled` | Включает или выключает штатную native-репликацию осей с ограниченной частотой обновления. |
+| `Should Evaluate Local Weapon Runtime` | Возвращает, должна ли эта копия Pawn считать локальные aim sources, traces и ballistics. Используйте как gate для vehicle-specific Blueprint-логики. |
+### Runtime
+
+| Нода | Назначение |
+|---|---|
+| `Is Weapon System Active` | Проверяет общий lifecycle-gate системы вооружения. |
+| `Set Weapon System Active` | Общий lifecycle-gate для уничтоженной, отключённой или восстановленной машины. При выключении прекращает расчёт aim, traces, ballistics, stabilization, UI projection и native replication. |
 | `Update Vehicle Aim Sources` | Преобразует настроенные camera/AimCube inputs в единый кэш источников прицеливания. |
 | `Update Vehicle Weapon System` | Решает и маршрутизирует оси по уже кэшированным источникам; обычная финальная нода кадра. |
-
-## Core — Axis Control
-
-| Нода | Назначение |
-|---|---|
-| `Set Weapon Axis Control State` | Меняет yaw/pitch aim channels и включение стабилизации для указанного `Axis Group ID`. Вызывайте при смене режима, а не каждый Tick. |
-| `Arm Weapon Axis Mechanical Drive` | Сообщает стабилизированной оси о ручном вводе. Передавайте yaw и pitch отдельными событиями: `(YawDelta, 0)` и `(0, PitchDelta)`. Значение не накапливается как угол. |
-| `Reset Weapon Axis Control To Defaults` | Возвращает runtime-состояние осевой группы к настройкам из definition/profile. |
-| `Get Weapon Axis Control State` | Возвращает текущие каналы, стабилизацию и временное состояние выбранной осевой группы. |
-
-## Core — Configuration
+| `Update Weapon Traces And Ballistics` | Обновляет muzzle transforms, непрерывные weapon traces и опциональный ballistic cache. |
+### HUD и UI
 
 | Нода | Назначение |
 |---|---|
-| `Apply Assigned Weapon System Profile` | Применяет Data Asset, назначенный в `Configuration Profile`. Также доступна как кнопка Details. |
-| `Apply Weapon System Profile` | Применяет переданный профиль; может сохранить vehicle-specific bindings и сразу перестроить runtime. |
-| `Export Current Setup To Assigned Weapon System Profile` | Копирует текущие embedded definitions в назначенный Data Asset. Изменяет asset — используйте в редакторе осознанно. |
-| `Validate Assigned Weapon System Profile Compatibility` | Проверяет профиль и возможность сохранить локальные component/socket bindings без применения. |
-| `Validate Vehicle Weapon System Configuration` | Перестраивает реестры и возвращает полный readiness report с ошибками и предупреждениями. |
-
-## Core — UI
-
-### Запросы от Actor
-
-Эти ноды удобны для универсальных widgets: достаточно передать Actor машины.
-
-| Нода | Назначение |
-|---|---|
-| `Find Vehicle Weapon System` | Находит `Vehicle Weapon System` у Actor. |
-| `Get Vehicle Weapon Trace UI` | Возвращает muzzle start, resolved trace end, screen position и hit-флаг для одного Weapon ID. |
-| `Get Vehicle Weapon Ballistic UI` | Возвращает ballistic aim point, screen position и hit-флаг. |
-| `Get Vehicle Weapon UI Pair` | Компактный адаптер для HUD с двумя выбранными Weapon ID; runtime при этом не ограничен двумя оружиями. |
-
-### Запросы от компонента
+| `Get Active View Aim HUD Screen Data` | Возвращает экранную точку текущей камеры или прицела без привязки к External, Gunner или Commander. |
+| `Get Aim Source HUD State` | Actor-facing запрос произвольной камеры, прицела или AI aim source по ID. |
+| `Get Cached Aim Source HUD State` | Читает произвольный именованный aim source из уже согласованного UI cache. |
+| `Get Cached HUD State For Weapon` | Компактный cached-запрос состояния одного Weapon ID для собственного виджета. |
+| `Get Cached Standard Aim Source HUD State` | Упрощённый cached-запрос Gunner, Commander, External или Main Gun Aim Ray. |
+| `Get Cached Weapon Ballistic Aim HUD Data` | Возвращает cached ballistic aim для пользовательской сетки или hit indicator. |
+| `Get Cached Weapon Muzzle Trace HUD Data` | Возвращает cached физический muzzle trace для пользовательской сетки или fire indicator. |
+| `Get Vehicle Weapon HUD Snapshot` | Возвращает масштабируемый снимок всех aim sources и оружия для динамического HUD. |
+| `Get Weapon Ballistic Aim HUD Data` | Возвращает мировую и экранную баллистическую точку выбранного Weapon ID. |
+| `Get Weapon HUD Screen Data` | Возвращает полный плоский набор экранных координат для одного произвольного Weapon ID, включая максимальную дальность лучей без учёта попаданий. |
+| `Get Weapon HUD State` | Actor-facing запрос полного HUD state произвольного Weapon ID. |
+| `Get Weapon Muzzle Trace HUD Data` | Возвращает начало, конец, экранную позицию и hit-флаг muzzle trace выбранного Weapon ID. |
+### Каналы оружия
 
 | Нода | Назначение |
 |---|---|
-| `Get Cached Weapon UI State` | Возвращает объединённое UI-состояние одного оружия. |
-| `Get Cached Weapon Trace UI` | Возвращает только непрерывный muzzle trace и его экранную позицию. |
-| `Get Cached Weapon Ballistic UI` | Возвращает ballistic result и его экранную позицию. |
-| `Get Cached Aim Source UI State` | Читает произвольный именованный aim source. |
-| `Get Cached Standard Aim Source UI State` | Читает стандартный канал через enum без ручного имени. |
-
-## Core — Replication
+| `Can Fire Weapon From Active Channels` | Проверяет, разрешают ли текущие active channel выбранному Weapon ID стрелять. |
+| `Cycle Weapon Channel` | Выбирает следующий или предыдущий канал по порядку в профиле. |
+| `Get Active Weapon Channels` | Возвращает текущий реплицируемый набор активных каналов. |
+| `Get Active Weapon IDs` | Возвращает уникальные Weapon ID из всех активных каналов. |
+| `Get Available Weapon Channels` | Возвращает доступные Channel ID в порядке профиля. |
+| `Is Weapon Channel Active` | Проверяет, включён ли указанный канал. |
+| `Request Weapon Channel Trigger State` | Network-safe input для всех Weapon ID одного selectable channel; граф ввода не зависит от числа установленных орудий. |
+| `Set Active Weapon Channel` | Выбирает один канал и выключает остальные. |
+| `Set Active Weapon Channels` | Одним вызовом полностью заменяет активный набор. |
+| `Set Weapon Channel Active` | Включает или выключает один канал, не меняя остальные; подходит для комбинированных групп. |
+### Оружие
 
 | Нода | Назначение |
 |---|---|
-| `Set Native Axis Replication Enabled` | Включает или выключает встроенную controlled-rate репликацию осей. Не включайте одновременно со старым rotation RPC workflow. |
-| `Should Evaluate Local Weapon Runtime` | Возвращает, должна ли эта копия Pawn считать локальные aim sources, traces и ballistics. Используйте как gate для vehicle-specific Blueprint-логики. |
+| `Cancel Configured Weapon Reload Completion` | Отменяет ожидающий reload timer одного Weapon ID, не изменяя состояние боеприпаса. |
+| `Execute Configured Standard Weapon Shot` | Создаёт один обычный projectile из настроенного muzzle и запускает профильную fire presentation. Проверка и расход боеприпаса остаются в AmmoSystem. |
+| `Get Configured Weapon Fire Data` | Собирает loadout, installation и живой muzzle binding любого Weapon ID для универсального fire route. |
+| `Get Configured Weapon Muzzle` | Возвращает точный component/socket, общий для traces, fire, muzzle FX и custom Blueprint. |
+| `Is Configured Weapon Reload Scheduled` | Проверяет, ожидается ли reload-completion pulse этого Weapon ID. |
+| `Is Configured Weapon Trigger Held` | Проверяет, удерживается ли configured trigger этого Weapon ID. |
+| `Release All Configured Weapon Triggers` | Отпускает все активные configured triggers компонента. |
+| `Request Configured Weapon Replenishment Update` | На сервере запрашивает одно обновление replenish после обновления состояния общей зоны пополнения. |
+| `Request Configured Weapon Trigger State` | Network-safe input для owning vehicle. Профиль сам выбирает standard runtime или Blueprint Custom route этого Weapon ID. |
+| `Schedule Configured Weapon Reload Completion` | Запускает отдельный reload timer Weapon ID по длительности из loadout; повторный вызов не перезапускает уже активный timer. |
+| `Set Configured Weapon Trigger Held` | Серверная установка trigger state. Single Shot даёт один pulse, Automatic повторяет его по cadence, Blueprint Custom передаётся child Blueprint. |
 
 <a id="advanced-nodes"></a>
 
-## Advanced — Configuration и Registry
+## Advanced
+
+### Каналы наведения
 
 | Нода | Назначение |
 |---|---|
-| `Set Weapon Definition Source` | Переключает источник definitions во время выполнения. |
-| `Rebuild Embedded Weapon Runtime` | Пересоздаёт внутренние axis controllers и muzzle components из embedded definitions. |
-| `Refresh Turret Presentation Synchronization` | Повторно строит Tick prerequisites после runtime-замены rig/profile. |
-| `Refresh Weapon Installation Registry` | Перестраивает соответствия `Weapon ID -> Axis Group/Muzzle`. |
-| `Get Weapon Installation State` | Возвращает разрешённое runtime-состояние одной установки. |
-| `Apply Embedded Weapon Installation Change` | Переназначает оружию axis group и/или muzzle без полной замены профиля. |
-| `Refresh Weapon Axis Registry` | Повторно сканирует контроллеры осевых групп владельца. |
-| `Get Registered Axis Group Controller` | Возвращает low-level controller по `Axis Group ID`. |
-| `Get Registered Axis Group For Weapon` | Находит осевую группу, связанную с Weapon ID. |
-| `Refresh Weapon Muzzle Registry` | Повторно сканирует muzzle components. |
-| `Get Registered Weapon Muzzle` | Возвращает low-level muzzle component по Weapon ID. |
-
-## Advanced — Aim Channels
-
-| Нода | Назначение |
-|---|---|
-| `Get Standard Aim Channel Name` | Преобразует стандартный enum канала в стабильное `FName`. |
-| `Set Standard Aim Channel Target` | Записывает цель в стандартный канал. |
-| `Set Named Aim Channel Target` | Записывает цель в произвольный именованный канал. |
-| `Submit Standard Aim Frame` | Одним вызовом обновляет все стандартные каналы с общей revision. |
+| `Clear All Aim Channels` | Очищает все кэшированные каналы. |
+| `Clear Named Aim Channel` | Удаляет cached state одного именованного aim channel. |
+| `Get Aim Channel State` | Читает состояние именованного канала. |
+| `Get Standard Aim Channel ID` | Преобразует enum стандартного канала в его стабильный Channel ID. |
+| `Get Standard Aim Channel State` | Читает состояние стандартного канала по enum. |
 | `Set Active Standard Aim Channel` | Выбирает активный стандартный канал для маршрутов, использующих active source. |
 | `Set Aim Channel Enabled` | Включает или выключает именованный канал без удаления его состояния. |
-| `Get Aim Channel State` | Читает состояние именованного канала. |
-| `Get Standard Aim Channel State` | Читает состояние стандартного канала по enum. |
-| `Clear Aim Channel` | Удаляет состояние одного именованного канала. |
-| `Clear All Aim Channels` | Очищает все кэшированные каналы. |
-
-## Advanced — Muzzles, traces и ballistics
+| `Set Named Aim Channel Target` | Записывает цель в произвольный именованный канал. |
+| `Set Standard Aim Channel Target` | Записывает цель в стандартный канал. |
+| `Submit Standard Aim Sources` | Обновляет четыре стандартных aim channel с одной общей revision. |
+### Источники наведения
 
 | Нода | Назначение |
 |---|---|
-| `Update Registered Weapon Muzzles` | Обновляет shadow state всех зарегистрированных muzzle components и возвращает подробный batch result. |
-| `Update Registered Native Weapon Traces` | Выполняет нативные continuous traces для всех зарегистрированных muzzle components. |
-| `Get Weapon Trace State` | Читает кэшированный trace state выбранного оружия. |
-| `Get Native Weapon Trace State` | Читает именно нативное состояние, минуя legacy compatibility cache. |
-| `Update Registered Weapon Ballistics` | Обновляет ballistic prediction всех включённых установок. |
-| `Get Weapon Ballistic State` | Читает подробный кэш баллистики одного Weapon ID. |
-
-## Advanced — подробные runtime-кадры и UI
+| `Get Cached Vehicle Aim Data` | Возвращает компактный camera/AimCube frame, уже подготовленный общим обновлением Weapon System. |
+| `Update Vehicle Aim Sources (Advanced / Detailed)` | Подробная версия обычного обновления aim sources. Используйте её только когда собственному Blueprint нужна полная структура результата; для стандартной интеграции предназначена Core-нода. |
+### Маршрутизация наведения
 
 | Нода | Назначение |
 |---|---|
-| `Update Weapon Runtime Frame (Advanced / Detailed)` | Подробная версия core runtime-ноды; возвращает полный `Weapon Runtime Frame Result`. |
-| `Update Vehicle Aim Source Frame (Advanced / Detailed)` | Подробная версия обновления camera/AimCube sources с collision/debug параметрами. |
-| `Update Vehicle Weapon System Frame (Advanced / Explicit Aim)` | Решает систему по переданному Standard Aim Frame. |
-| `Update Vehicle Weapon System Frame (Advanced / Detailed)` | Решает систему по уже кэшированным aim sources и возвращает полный frame result. |
-| `Refresh Vehicle Weapon UI Cache (Advanced)` | Явно перепроецирует UI с заданным Player Controller или viewport-relative режимом. |
-| `Get Cached Vehicle Weapon UI Frame` | Возвращает полный произвольного размера UI frame вместо компактных запросов одного оружия. |
-
-## Advanced — Axis Application и Routing
-
-| Нода | Назначение |
-|---|---|
-| `Evaluate And Queue Registered Axis Solutions` | Решает переданные axis requests и ставит физические команды в очередь. |
-| `Apply Pending Vehicle Axis Commands` | Применяет подробный batch pending-команд вручную. В embedded workflow это делает pre-presentation Tick. |
-| `Apply Pending Vehicle Turret Commands (Advanced)` | Компактная bool-версия ручного применения pending-команд. |
-| `Route Aim Channel To Turret Solution` | Маршрутизирует именованный канал на явно заданный low-level controller и basis transform. |
+| `Resolve Main Weapon Aim Channel` | Выбирает стандартный источник наведения основного оружия по текущим gunner, commander и double-fire режимам камеры. |
+| `Resolve Auxiliary Weapon Aim Channels` | Выбирает yaw/pitch источники для дополнительного или командирского оружия без веток под конкретный танк. |
+| `Route Active Aim Channel To Configured Turret` | Использует текущий active standard channel. |
 | `Route Aim Channel To Configured Turret` | То же, но использует basis, настроенный в controller. |
+| `Route Aim Channel To Turret Solution` | Маршрутизирует именованный канал на явно заданный low-level controller и basis transform. |
 | `Route Split Aim Channels To Configured Turret` | Использует разные именованные источники для yaw и pitch. |
 | `Route Standard Aim Channel To Configured Turret` | Маршрутизирует один стандартный enum-канал. |
 | `Route Standard Split Aim Channels To Configured Turret` | Маршрутизирует разные стандартные каналы на yaw и pitch. |
-| `Route Active Aim Channel To Configured Turret` | Использует текущий active standard channel. |
-| `Update Standard Aim Frame And Turret Solution` | Отправляет frame и сразу решает одну явно указанную турель. |
+| `Update Standard Aim Sources And Turret Solution` | Одним вызовом отправляет стандартные sources, выбирает active channel и решает одну основную башню. |
+### Применение осей
+
+| Нода | Назначение |
+|---|---|
+| `Apply Pending Turret Axis Commands (Advanced / Detailed)` | Применяет и удаляет axis-команды, подготовленные предыдущим согласованным кадром. |
+| `Apply Pending Vehicle Turret Commands (Advanced)` | Компактная bool-версия ручного применения pending-команд. |
+| `Evaluate And Queue All Turret Axis Commands (Advanced)` | Решает все запрошенные оси и ставит relative rotations в очередь для definition с deferred application. |
+### Маршрутизация осей
+
+| Нода | Назначение |
+|---|---|
 | `Route Standard Axis Group Solutions` | Решает массив axis-group requests по уже отправленным каналам. |
-| `Update Standard Aim Frame And Axis Groups` | Отправляет frame и решает массив групп одним вызовом. |
-
-## Advanced — low-level Turret Axis Controller
-
-Эти ноды предназначены для самостоятельного использования `Turret Axis Controller` без facade-компонента.
+| `Update Standard Aim Sources And Axis Groups` | Одним вызовом отправляет стандартные aim sources и маршрутизирует массив Axis Group requests. |
+### Баллистика
 
 | Нода | Назначение |
 |---|---|
-| `Update Low-Level Turret Solution (Advanced)` | Решает target относительно явно переданного aim basis. |
-| `Update Low-Level Turret From Active Target (Advanced)` | Решает ранее установленную active target. |
-| `Update Low-Level Configured Turret (Advanced)` | Использует component references, настроенные в controller. |
-| `Update Low-Level Split Axis Turret (Advanced)` | Принимает отдельные yaw/pitch targets. |
-| `Validate Configured Setup` | Проверяет ссылки и настройки controller. |
-| `Set Active Aim Target` | Сохраняет общую active target. |
-| `Set Active Axis Aim Targets` | Сохраняет разные active targets для yaw и pitch. |
-| `Clear Active Aim Target` | Сбрасывает active target state. |
-| `Has Valid Active Aim Target` | Проверяет наличие пригодной active target. |
-| `Set Weapon Axis Mount Mode` | Меняет механический режим крепления solver. |
-| `Get Weapon Axis Mount Mode` | Возвращает текущий mount mode. |
-
-## Advanced — low-level Weapon Muzzle
+| `Update All Weapon Ballistic Predictions` | Пересчитывает все включённые ballistic definitions из их зарегистрированных muzzle. |
+### Конфигурация / установки
 
 | Нода | Назначение |
 |---|---|
-| `Update Low-Level Weapon Muzzle (Advanced)` | Снимает настроенный muzzle transform и строит shadow state. |
-| `Execute Low-Level Muzzle Trace (Advanced)` | Выполняет trace непосредственно из low-level muzzle component. |
-| `Validate Configured Muzzle` | Проверяет component/socket, trace settings и выдаёт сообщение. |
-
-## Advanced — Custom Aim
-
-| Нода | Назначение |
-|---|---|
-| `Make Turret Aim Target From World Point (Advanced)` | Создаёт target, зафиксированный на мировой точке. |
-| `Make Turret Aim Target From World Direction (Advanced)` | Создаёт direction-only target без обязательной точки попадания. |
-| `Solve Two Axis Turret Aim (Advanced)` | Чистая calculate-only функция solver без component state и применения трансформов. |
-
-## Advanced — Migration
-
-Эти адаптеры нужны при постепенном переносе старого Blueprint-графа. В новой машине их лучше не использовать.
+| `Apply Built-In Weapon Installation Change (Advanced)` | Перепривязывает один Weapon ID к другой Axis Group и, при необходимости, другому muzzle. |
+| `Get Resolved Weapon Installation` | Возвращает runtime axis/muzzle binding выбранного Weapon ID. |
+| `Refresh Weapon Installation Registry` | Перестраивает соответствия `Weapon ID -> Axis Group/Muzzle`. |
+### Конфигурация / runtime
 
 | Нода | Назначение |
 |---|---|
-| `Get Configured Weapon Axis Rotations` | Читает фактические yaw/pitch rotations для старого звука, UI или networking bridge. |
-| `Make Weapon Trace Sample` | Собирает legacy trace sample из явного hit-флага. |
-| `Make Legacy Weapon Trace Sample From Resolved End` | Восстанавливает sample, когда старый helper не отдаёт hit-флаг. |
-| `Submit Weapon Trace Sample` | Отправляет один внешний legacy trace в compatibility cache. |
-| `Submit Weapon Trace Frame` | Отправляет массив legacy traces одной revision. |
-| `Clear Weapon Trace State` | Очищает compatibility state одного оружия. |
-| `Clear All Weapon Trace States` | Очищает весь compatibility trace cache. |
-| `Compare Native And Legacy Weapon Traces` | Выполняет оба пути и возвращает расхождения для миграционной проверки. |
-| `Get Weapon Trace Compatibility Frame` | Возвращает старый двухоружейный набор trace-переменных. |
-| `Get Vehicle Aim Compatibility Frame` | Возвращает старый набор camera/AimCube endpoints. |
-| `Get Two Weapon UI Compatibility Frame` | Возвращает старый фиксированный HUD-frame для двух Weapon ID. |
-| `Get Weapon Ballistic Crosshair Frame` | Возвращает старую пару ballistic crosshair points. |
-| `Update Vehicle Weapon System Frame (Advanced / Migration)` | Полный переходный кадр с explicit aim, axis requests и legacy traces. |
-
-## Advanced — Replication diagnostics
+| `Rebuild Runtime From Built-In Configuration (Advanced)` | Перестраивает runtime из Local Configuration массивов компонента. Используйте только когда локальный workflow является авторитетным. |
+### Пользовательское наведение
 
 | Нода | Назначение |
 |---|---|
-| `Should Use Legacy Axis Networking` | Проверяет, должен ли проект пока оставаться на старом networking path. |
-| `Update Native Axis Replication Diagnostics` | Принудительно обновляет/публикует replication diagnostics; обычный runtime делает это сам. |
-
-## Дополнительные vehicle-ноды
+| `Make World Direction Aim Target (Advanced)` | Создаёт aim target из мировой точки начала и направления без обязательного hit point. |
+| `Make World Point Aim Target (Advanced)` | Создаёт aim target по мировой точке и сохраняет признак blocking hit. |
+| `Solve Two-Axis Weapon Aim (Advanced)` | Решает yaw/pitch для явно переданных target, basis, текущих углов, ограничений и настроек привода. |
+### Дульные точки
 
 | Нода | Назначение |
 |---|---|
-| `Calculate Spring Arm Zoom Magnet` | Считает длину SpringArm и боковой zoom magnet с интерполяцией. |
-| `Calculate Camera FOV Zoom` | Безопасно ограничивает zoom index и интерполирует FOV. |
-| `Is Component Overlapping Named Object` | Проверяет overlap по имени объекта без небезопасного чтения пустого массива. |
-| `Safe Divide (Double)` | Делит конечные double-значения с fallback при нулевом/невалидном знаменателе. |
+| `Get Configured Weapon Skeletal Muzzle (Advanced)` | Возвращает настроенную muzzle-точку как Skeletal Mesh для интеграций, которым явно нужен этот тип компонента. |
+| `Resolve All Configured Weapon Muzzles (Advanced)` | Обновляет pose/ray всех зарегистрированных muzzle без collision traces. |
+### Реестры
 
+| Нода | Назначение |
+|---|---|
+| `Get Registered Axis Group Controller` | Возвращает low-level controller по `Axis Group ID`. |
+| `Get Registered Axis Group For Weapon` | Находит осевую группу, связанную с Weapon ID. |
+| `Get Registered Weapon Muzzle` | Возвращает low-level muzzle component по Weapon ID. |
+| `Refresh Turret Axis Registry` | Повторно сканирует universal turret controllers владельца; Tick компонентов не включает. |
+| `Refresh Weapon Muzzle Registry` | Повторно сканирует muzzle components. |
+### Runtime
 
+| Нода | Назначение |
+|---|---|
+| `Update Vehicle Weapon System (Advanced / Detailed Result)` | Маршрутизирует согласованный aim-source frame и возвращает подробный результат всего component update. |
+| `Update Vehicle Weapon System (Advanced / Explicit Aim Sources)` | Принимает camera/AimCube sources явно и строит axis requests из Axis Control States без legacy-массивов. |
+### Runtime-кадр
 
+| Нода | Назначение |
+|---|---|
+| `Update Muzzle Traces And Ballistics (Advanced / Detailed)` | Ранний подробный update всех continuous muzzle rays и optional projectile prediction. |
+### Presentation
+
+| Нода | Назначение |
+|---|---|
+| `Refresh Turret Animation Update Order (Advanced)` | Повторно назначает tick prerequisites skeletal-mesh компонентов после runtime-замены компонентов башни или орудия. Обычная профильная машина не вызывает эту ноду каждый кадр. |
+### HUD и UI
+
+| Нода | Назначение |
+|---|---|
+| `Get Cached Vehicle Weapon HUD Snapshot` | Возвращает полный cached список для UI, который динамически перечисляет любое число оружия. |
+| `Refresh Vehicle Weapon HUD Cache (Advanced)` | Перестраивает масштабируемый UI cache из уже готовых aim/trace/installation/ballistic caches без новых traces или prediction. |
+### Оружейные лучи
+
+| Нода | Назначение |
+|---|---|
+| `Update All Continuous Muzzle Traces (Advanced)` | Выполняет один collision trace для каждого включённого зарегистрированного muzzle. |
+
+## Как поддерживается актуальность
+
+Имена и визуальные пины сверяются с reflected API runtime-модуля, после чего список фильтруется до описанного выше покупательского Weapon System API. При изменении перечисленной ноды этот справочник и `assets/js/blueprint-nodes.js` должны регенерироваться вместе.
+
+<div class="page-nav" markdown="1">
+[← Подробная интеграция]({{ '/docs/vehicle-weapon-reference.ru.html' | relative_url }})
+[Дорожная карта →]({{ '/docs/roadmap.ru.html' | relative_url }})
+</div>

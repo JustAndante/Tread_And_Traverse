@@ -12,8 +12,10 @@ doc_section: replication
 
 # Репликация
 
-Включайте репликацию компонента только если именно он должен синхронизировать
-оси. Камеры, локальный HUD и косметическое представление остаются локальными.
+Включайте optional native axis path через
+`Set Optimized Turret Replication Enabled` только если именно компонент должен
+синхронизировать оси. Не запускайте рядом второй rotation RPC path для тех же
+осей. Камеры, локальный HUD и косметическая подготовка остаются локальными.
 
 ## Порядок проверки
 
@@ -28,6 +30,9 @@ doc_section: replication
 - authority применяет механические пределы;
 - remote proxy получает позу, но не рассчитывает локальный camera runtime;
 - серверная стрельба использует текущий физический muzzle socket сервера.
+
+Защищайте специфичную для машины подготовку camera, AimCube и widgets на proxy
+через `Should Evaluate Local Weapon Runtime`.
 
 Подробности: [Replication]({{ '/docs/vehicle-weapon-reference.ru.html#replication' | relative_url }}).
 

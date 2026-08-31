@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: English documentation
+    url: https://justandante.github.io/Tread_And_Traverse/en/
+    about: Read setup, reference, and troubleshooting guides before opening an issue.
+  - name: Документация на русском
+    url: https://justandante.github.io/Tread_And_Traverse/ru/
+    about: Перед созданием issue проверьте настройку, справочник и диагностику.
+  - name: Public roadmap / Публичная дорожная карта
+    url: https://justandante.github.io/Tread_And_Traverse/docs/roadmap.en.html
+    about: See current release priorities and planned work.

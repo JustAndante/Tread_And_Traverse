@@ -36,6 +36,9 @@ Start from the visible symptom. Do not change several setting groups at once.
 
 [Open the complete settings reference]({{ '/docs/track-settings-reference.en.html' | relative_url }}).
 
+If the checks above do not explain a reproducible problem,
+[open a structured bug report](https://github.com/JustAndante/Tread_And_Traverse/issues/new?template=bug_report.yml).
+
 <div class="page-nav" markdown="1">
 [← Quality and network]({{ '/docs/track-quality-network.en.html' | relative_url }})
 [All settings →]({{ '/docs/track-settings-reference.en.html' | relative_url }})

@@ -35,6 +35,8 @@
         <nav class="site-nav" aria-label="{% if page.lang == 'ru' %}Основная навигация{% else %}Main navigation{% endif %}">
           <a class="site-nav__link {% if page.lang == 'ru' %}is-active{% endif %}" href="{{ '/ru/' | relative_url }}">Русский</a>
           <a class="site-nav__link {% if page.lang == 'en' %}is-active{% endif %}" href="{{ '/en/' | relative_url }}">English</a>
+          <a class="site-nav__link {% if page.doc_section == 'roadmap' %}is-active{% endif %}" href="{% if page.lang == 'ru' %}{{ '/docs/roadmap.ru.html' | relative_url }}{% else %}{{ '/docs/roadmap.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Roadmap{% else %}Roadmap{% endif %}</a>
+          <a class="site-nav__link" href="https://github.com/JustAndante/Tread_And_Traverse/issues/new?template=bug_report.yml">{% if page.lang == 'ru' %}Сообщить об ошибке{% else %}Report a bug{% endif %}</a>
           <button class="theme-toggle" type="button" data-theme-toggle aria-label="{% if page.lang == 'ru' %}Переключить тему{% else %}Toggle theme{% endif %}">
             <span class="theme-toggle__icon" data-theme-icon aria-hidden="true">◐</span>
             <span data-theme-label>{% if page.lang == 'ru' %}Тема{% else %}Theme{% endif %}</span>
@@ -142,6 +144,8 @@
 
       <footer class="site-footer">
         <span>© 2026 JustAndante. All rights reserved.</span>
+        <a href="{% if page.lang == 'ru' %}{{ '/docs/roadmap.ru.html' | relative_url }}{% else %}{{ '/docs/roadmap.en.html' | relative_url }}{% endif %}">{% if page.lang == 'ru' %}Дорожная карта{% else %}Roadmap{% endif %}</a>
+        <a href="https://github.com/JustAndante/Tread_And_Traverse/issues/new?template=bug_report.yml">{% if page.lang == 'ru' %}Баг-репорт{% else %}Bug report{% endif %}</a>
         <a href="{{ site.github.repository_url }}">GitHub</a>
       </footer>
     </main>
