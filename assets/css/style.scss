@@ -839,11 +839,12 @@ a:hover {
 
   .site-nav {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .site-nav__link,
   .theme-toggle {
-    flex: 1 1 auto;
+    flex: 1 1 calc(50% - .35rem);
     padding: 0 .5rem;
   }
 

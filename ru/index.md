@@ -50,3 +50,9 @@ permalink: /ru/
     </div>
   </article>
 </div>
+
+<div class="guide-callout" markdown="1">
+**Готовим первый покупательский релиз.** Откройте
+[публичную дорожную карту]({{ '/docs/roadmap.ru.html' | relative_url }}) или
+[сообщите о воспроизводимом баге](https://github.com/JustAndante/Tread_And_Traverse/issues/new?template=bug_report.yml).
+</div>

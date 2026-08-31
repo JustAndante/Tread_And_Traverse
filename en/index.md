@@ -50,3 +50,9 @@ permalink: /en/
     </div>
   </article>
 </div>
+
+<div class="guide-callout" markdown="1">
+**Preparing the first customer-ready release.** Follow the
+[public roadmap]({{ '/docs/roadmap.en.html' | relative_url }}) or
+[report a reproducible bug](https://github.com/JustAndante/Tread_And_Traverse/issues/new?template=bug_report.yml).
+</div>

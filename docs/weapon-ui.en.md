@@ -17,13 +17,14 @@ ballistic calculation from a widget.
 
 ## Use prepared data
 
-- `Get Vehicle Weapon Trace UI` — direct trace result;
-- `Get Vehicle Weapon Ballistic UI` — ballistic point;
-- `Get Vehicle Weapon UI Pair` — a consistent data pair;
+- `Get Weapon HUD Screen Data` — complete screen data for one Weapon ID;
+- `Get Weapon Muzzle Trace HUD Data` — that weapon's physical muzzle trace;
+- `Get Weapon Ballistic Aim HUD Data` — its ballistic point;
+- `Get Vehicle Weapon HUD Snapshot` — a scalable all-weapon snapshot;
 - `Find Vehicle Weapon System` — component lookup without a hard reference.
 
-`Refresh Vehicle Weapon UI Cache` is only needed by a project with an explicit
-Player Controller or an independent UI schedule.
+`Refresh Vehicle Weapon HUD Cache (Advanced)` is only needed by a project with
+an explicit Player Controller or an independent UI schedule.
 
 ## Verify
 

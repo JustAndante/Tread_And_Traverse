@@ -17,13 +17,14 @@ UI должен читать готовый runtime-кэш. Не запуска�
 
 ## Используйте готовые данные
 
-- `Get Vehicle Weapon Trace UI` — результат прямой трассировки;
-- `Get Vehicle Weapon Ballistic UI` — баллистическая точка;
-- `Get Vehicle Weapon UI Pair` — согласованная пара данных;
+- `Get Weapon HUD Screen Data` — полный экранный набор одного Weapon ID;
+- `Get Weapon Muzzle Trace HUD Data` — физический muzzle trace оружия;
+- `Get Weapon Ballistic Aim HUD Data` — его баллистическая точка;
+- `Get Vehicle Weapon HUD Snapshot` — масштабируемый снимок всего оружия;
 - `Find Vehicle Weapon System` — поиск компонента без жёсткой ссылки.
 
-`Refresh Vehicle Weapon UI Cache` нужен только проекту с явным Player
-Controller или отдельным расписанием UI.
+`Refresh Vehicle Weapon HUD Cache (Advanced)` нужен только проекту с явным
+Player Controller или отдельным расписанием UI.
 
 ## Проверка
 

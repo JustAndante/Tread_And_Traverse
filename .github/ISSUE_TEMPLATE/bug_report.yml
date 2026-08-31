@@ -1,0 +1,147 @@
+name: Bug report / Сообщить об ошибке
+description: Report a reproducible problem in Track Spline Builder or Vehicle Weapon System
+title: "[Bug]: "
+labels:
+  - bug
+assignees:
+  - JustAndante
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Tread & Traverse. English and Russian reports are both welcome.
+
+        Спасибо за помощь в улучшении Tread & Traverse. Можно писать на русском или английском.
+
+        This is a public issue. Remove passwords, license keys, private project content, and personal information before submitting logs or screenshots.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting / Перед отправкой
+      options:
+        - label: I searched existing issues for the same problem / Я проверил существующие issues
+          required: true
+        - label: I removed secrets and private data from attachments / Я удалил секреты и приватные данные
+          required: true
+
+  - type: dropdown
+    id: system
+    attributes:
+      label: Affected system / Какая система
+      options:
+        - Track Spline Builder
+        - Vehicle Weapon System
+        - Both systems / Обе системы
+        - Documentation / Документация
+        - Not sure / Не уверен
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin version / Версия плагина
+      description: Use the descriptor or release package version, for example 0.2.0-pre.
+      placeholder: 0.2.0-pre
+    validations:
+      required: true
+
+  - type: input
+    id: engine_version
+    attributes:
+      label: Unreal Engine version / Версия Unreal Engine
+      placeholder: 5.4.4
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and build / Платформа и сборка
+      placeholder: Windows 11, Editor Development, PIE
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runtime_mode
+    attributes:
+      label: Runtime mode / Режим запуска
+      options:
+        - Editor only / Только Editor
+        - Single-player PIE
+        - Standalone
+        - Listen server and client
+        - Dedicated server
+        - Packaged build
+        - Not applicable / Не применимо
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Reproduction frequency / Частота воспроизведения
+      options:
+        - Every time / Всегда
+        - Often / Часто
+        - Sometimes / Иногда
+        - Once / Один раз
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: What happened? / Что произошло?
+      description: Describe the visible result and the first relevant error.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps / Шаги воспроизведения
+      placeholder: |
+        1. Create or open...
+        2. Configure...
+        3. Start PIE...
+        4. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected result / Ожидаемый результат
+    validations:
+      required: true
+
+  - type: textarea
+    id: relevant_configuration
+    attributes:
+      label: Relevant configuration / Важные настройки
+      description: Include quality mode, profile path, stable IDs, networking role, or other settings needed to reproduce the problem.
+      placeholder: |
+        Track quality / Weapon ID / Axis Group ID:
+        Profile or local configuration:
+        Local owner, authority, or simulated proxy:
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Логи
+      description: Paste only the relevant warning, error, call stack, or validation result. Redact local user names and private paths.
+      render: shell
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video / Скриншоты или видео
+      description: Drag files here when they clarify the problem.
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context / Дополнительный контекст
+      description: Mention whether the issue disappears with a specific feature or quality mode disabled.

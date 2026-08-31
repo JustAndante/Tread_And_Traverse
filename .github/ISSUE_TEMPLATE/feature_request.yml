@@ -1,0 +1,62 @@
+name: Feature request / Предложить улучшение
+description: Suggest a focused improvement for Tread & Traverse
+title: "[Feature]: "
+labels:
+  - enhancement
+assignees:
+  - JustAndante
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and Russian proposals are both welcome. Please describe the user problem before proposing an implementation.
+
+        Можно писать на русском или английском. Сначала опишите пользовательскую задачу, затем предлагаемое решение.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before submitting / Перед отправкой
+      options:
+        - label: I checked the public roadmap and existing issues / Я проверил roadmap и существующие issues
+          required: true
+
+  - type: dropdown
+    id: system
+    attributes:
+      label: Related system / Система
+      options:
+        - Track Spline Builder
+        - Vehicle Weapon System
+        - Both systems / Обе системы
+        - Documentation or onboarding / Документация или onboarding
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem / Пользовательская задача
+      description: What is difficult or impossible today, and who is affected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome / Желаемый результат
+      description: Describe the behavior or workflow you want, without requiring one implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround / Текущий обходной путь
+      description: Explain how you solve it now, if possible.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context / Дополнительный контекст
+      description: Add diagrams, examples, or compatibility constraints when useful.

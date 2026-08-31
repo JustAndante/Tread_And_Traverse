@@ -12,8 +12,10 @@ doc_section: replication
 
 # Replication
 
-Enable component replication only when this component should synchronize the
-axes. Cameras, local HUD, and cosmetic presentation remain local.
+Enable the optional native axis path through
+`Set Optimized Turret Replication Enabled` only when this component should
+synchronize the axes. Do not run another rotation RPC path for the same axes.
+Cameras, local HUD, and cosmetic preparation remain local.
 
 ## Verification order
 
@@ -28,6 +30,9 @@ axes. Cameras, local HUD, and cosmetic presentation remain local.
 - authority enforces mechanical limits;
 - a remote proxy receives pose without evaluating local camera runtime;
 - server firing uses the server's current physical muzzle socket.
+
+Use `Should Evaluate Local Weapon Runtime` to gate vehicle-specific camera,
+AimCube, and widget preparation on proxies.
 
 Details: [Replication]({{ '/docs/vehicle-weapon-reference.en.html#replication' | relative_url }}).
 

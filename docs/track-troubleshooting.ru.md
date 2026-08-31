@@ -36,6 +36,9 @@ doc_section: troubleshooting
 
 [Открыть полный справочник настроек]({{ '/docs/track-settings-reference.ru.html' | relative_url }}).
 
+Если проверки выше не объясняют воспроизводимую проблему,
+[создайте структурированный bug report](https://github.com/JustAndante/Tread_And_Traverse/issues/new?template=bug_report.yml).
+
 <div class="page-nav" markdown="1">
 [← Качество и сеть]({{ '/docs/track-quality-network.ru.html' | relative_url }})
 [Все настройки →]({{ '/docs/track-settings-reference.ru.html' | relative_url }})
